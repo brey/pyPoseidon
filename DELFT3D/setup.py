@@ -38,6 +38,14 @@ def  setrun(lon0,lon1,lat0,lat1,fname,to,path,ni,nj):
     print 'running with input from the day before {} '.format( datetime.datetime.strftime(runtime,"%Y-%m-%d %H:00") )
     p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
+  # Write meteo data
+  dlat=lat[1,0]-lat[0,0]
+  dlon=lon[0,1]-lon[0,0]
+  mlat0=lat[0,0] 
+  mlon0=lon[0,0] 
+  
+  meteo2delft3d(p,u,v,mlat0,mlon0,dlat,dlon,runtime,nt,path=path,curvi=False)
+  
   # set the grid 
   x=np.linspace(lon0,lon1,ni)
   y=np.linspace(lat0,lat1,nj)
@@ -55,12 +63,6 @@ def  setrun(lon0,lon1,lat0,lat1,fname,to,path,ni,nj):
   grd.properties = {'Coordinate System': 'Spherical', 'alfori': 0.0, 'xori': 0.0, 'yori': 0.0}
   
   grd.write(path+fname+'.grd')
-  
-  # Write meteo data
-  dlat=lat[1,0]-lat[0,0]
-  dlon=lon[0,1]-lon[0,0]
-  
-  meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,runtime,nt,path=path,curvi=False)
   
   # Write bathymetry file
   ba = Dep()
