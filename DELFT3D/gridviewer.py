@@ -3,7 +3,7 @@ import matplotlib.pyplot as plt
 from mpl_toolkits.basemap import Basemap, shiftgrid
 from grid import *
 from dep import *
-from nefis2 import *
+#from nefis2 import *
 import mdf
 import sys
 from netCDF4 import Dataset
