@@ -74,7 +74,7 @@ class Grid(object):
         f.write(str(self.properties['xori']) + ' ' + str(self.properties['yori']) + ' ' + str(self.properties['alfori']) + '\n')
         
         nrow = int(np.ceil(mn[1]/5)) # max 5 m-values per line
-        res=nrow%5
+        res=mn[1]%5
         if res != 0 : nrow=nrow+1
         
         for n in range(mn[0]):
