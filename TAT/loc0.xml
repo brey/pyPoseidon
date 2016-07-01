@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="0.91" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+<channel>
+   <title>STORM_SURGE</title>
+   <code>DELFT3D</code>
+<item>
+<title><![CDATA[FIX_MED_SEA Storm Surge Calculation]]></title>
+<image>/P1_MAXHEIGHT_END.jpg</image>
+<location></location>
+<depth></depth>
+<dc:subject xmlns:dc="dc">EPICENTER</dc:subject>
+<pubDate>09 Mar 2016 00:00</pubDate>
+<link></link>
+<initialConditions>
+    <Fault Nf="1">
+       <Lenght>   0</Lenght>
+	    <Width>   0</Width>
+       <Height>0.00</Height>
+       <Form>-1</Form>
+       <faultMagnitude>0.000000</faultMagnitude>
+       <faultLongitude>-1.000000</faultLongitude>
+       <faultLatitude>-1.000000</faultLatitude>
+       <Mode>0</Mode>
+       <Angle type="trig angle: north=90, south=-90">450.0</Angle>
+       <okadaPar>
+          <strike type="geogr angle: north=0, south=180"> 0.0</strike>
+          <dip> 0.0</dip>
+          <rake> 0.0</rake>
+          <depth  depthtype="top of the fault"> 0.0</depth>
+          </okadaPar>
+   </Fault>
+   <Bathym>4.000000</Bathym>
+   <window>
+       <lonmin>-5.500000</lonmin>
+       <lonmax>43.000000</lonmax>
+       <latmin>28.500000</latmin>
+       <latmax>47.500000</latmax>
+   </window>
+   <dtMax>0.000000</dtMax>
+</initialConditions>
+<geo:lat> -1.0</geo:lat>
+<geo:long> -1.0</geo:long>
+<Magnitude>-inf</Magnitude>
+</item>
+<description> Longitude= -1.0&lt;BR&gt;
+Latitude = -1.0&lt;BR&gt;
+Magnitude =-inf&lt;BR&gt;
+Water Depth    =   0&lt;BR&gt;
+</description>
+</channel>
+</rss>

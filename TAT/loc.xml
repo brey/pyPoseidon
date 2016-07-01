@@ -1,0 +1,27 @@
+<rss version="0.91" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+<item>
+<title><![CDATA[Italy: Giarette (0.23 m)]]></title>
+<description><![CDATA[Country: Italy
+Location: Giarette
+Time (hh:mm): 1317:00
+Maximum Height: 0.230439 m
+Time Max (hh:mm): 1529:00
+]]></description>
+<pubDate>02 May 2016 20:00:00</pubDate>
+<cityName>Giarette</cityName>
+<country>Italy</country>
+<maxHeight>0.230439</maxHeight>
+<ID>27433</ID>
+<timeMaxH>1529:00</timeMaxH>
+<timeMaxH_value>1529.000000</timeMaxH_value>
+<timeArrival>1317:00</timeArrival>
+<timeArrival_value>1317.000000</timeArrival_value>
+<cityClass>6</cityClass>
+<popEst>-1</popEst>
+<geo:long>12.429169</geo:long>
+<geo:lat>44.895832</geo:lat>
+<depth>27.000000</depth>
+<dc:subject xmlns:dc="dc">0</dc:subject>
+<cputime>9</cputime>
+</item>
+</rss>
