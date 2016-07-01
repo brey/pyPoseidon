@@ -3,3 +3,9 @@
 
 # the output of TAT interface
 TAT/D3/
+
+# dotx files
+*.dotx
+
+# dotx files
+*.doc
