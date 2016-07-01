@@ -163,3 +163,4 @@ if __name__ == "__main__":
 
   except:
     print 'usage: python setup minlon, maxlon, minlat, maxlat, basename, date (YYYYMMDD.HH), path, ni, nj'
+    print "ex: python setup -5.5 47.5 28.5 48. 'med' '20160620.00' '../../../tmp2/' 727 285"
