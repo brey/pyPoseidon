@@ -47,8 +47,8 @@ def view(path,basename):
   #BATH = m.contour(x,y,bt,10,linewidths=0.5,colors='k',animated=True)
   #plt.clabel(BATH, fmt = '%03g', colors = 'k', fontsize=14)
   BATH = m.contourf(x,y,bt,20,cmap=plt.cm.RdBu_r,animated=True)
-# GP=m.plot(x,y,'k.')
   plt.colorbar()
+  GP=m.scatter(x,y,s=2)
 
   parallels = np.arange(-90.,90,5.)
   meridians = np.arange(0.,360.,5.)
@@ -60,7 +60,12 @@ def view(path,basename):
 
   ax.set_title('bathymetry  ')
 
-  plt.show(block=False)
+  try:
+     __IPYTHON__ 
+     plt.show(block=False)
+  except:
+     plt.show()
+
 
 
 if __name__ == "__main__":

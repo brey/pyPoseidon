@@ -12,3 +12,6 @@ TAT/D3/
 
 # tif files
 *.tif
+
+# swp files
+*.swp
