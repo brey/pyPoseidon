@@ -30,13 +30,13 @@ def  setrun(lon0,lon1,lat0,lat1,fname,to,path,ni,nj):
   Tstop=60.*nt #minutes
 
   try: 
-    p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+    p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
   except:
     dd=dd-1
     hh=12
     runtime=datetime.datetime(yyyy,mm,dd,hh)
     print 'running with input from the day before {} '.format( datetime.datetime.strftime(runtime,"%Y-%m-%d %H:00") )
-    p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+    p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
   # Write meteo data
   dlat=lat[1,0]-lat[0,0]
