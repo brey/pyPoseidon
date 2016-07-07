@@ -28,7 +28,7 @@ FFwriter = animation.FFMpegWriter()
 PATH='/mnt/web/brey/2016H/6/14/12/'
 PATH='/mnt/web/brey/venice/2016/6/14/12/'
 PATH='/mnt/web/brey/NEPARTAK/2016/7/6/00/'
-tag='med'
+tag='nepartak'
 
 inp, ord = mdf.read(PATH+tag+'.mdf')
 
@@ -66,9 +66,9 @@ parallels = np.arange(-90.,90,20.)
 meridians = np.arange(0.,360.,20.)
 
 
-uu=u[0,:,:]
-vv=v[0,:,:]
-hh=h[-1,:,:]
+uu=u[-3,:,:]
+vv=v[-3,:,:]
+hh=h[-3,:,:]
 
 nt=h.shape[0]
 
@@ -156,13 +156,13 @@ def updatefig2(nt):
     global H,H1,bh
     bh=np.ma.masked_where(w==True,h[nt,:,:])
     for c in H.collections: c.remove()
-    if fig2.get_default_bbox_extra_artists():
-       for c in fig2.get_default_bbox_extra_artists(): c.pop()
+#   if fig2.get_default_bbox_extra_artists():
+#      for c in fig2.get_default_bbox_extra_artists(): c.pop()
     fig2.delaxes(fig2.axes[1]) 
     fig2.texts.pop()
     H = m.contourf(x,y,bh,clevs,cmap=plt.cm.RdBu_r,animated=True)
-    [[i,j]]=np.argwhere(bh==bh.max())
-    H1 = m.plot(x[i,j],y[i,j],'kx',markersize=20)
+#   [[i,j]]=np.argwhere(bh==bh.max())
+#   H1 = m.plot(x[i,j],y[i,j],'kx',markersize=20)
     cb = m.colorbar(H,"right", size="5%", pad="2%")
     plt.title('Water Level at '+ datetime.datetime.strftime(date+datetime.timedelta(hours=nt), '%a %b %d  %H:%M:%S %Z %Y'))
     fig2.text(.01,.05,'iter= '+np.str(nt),horizontalalignment='left',size='small')
@@ -170,7 +170,7 @@ def updatefig2(nt):
 ani = animation.FuncAnimation(fig2, updatefig2, frames=iframes, repeat=False)
 
     
-#ani.save('sea_level.mp4',writer = FFwriter)
+ani.save('sea_level.mp4',writer = FFwriter)
 
 
 def anim():
