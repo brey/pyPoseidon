@@ -1,9 +1,9 @@
 import numpy as np
-import matplotlib.pyplot as plt
 import datetime
 import glob
 import sys
-from mpl_toolkits.basemap import shiftgrid
+from time import sleep
+from copy import deepcopy
 
 import pyximport
 pyximport.install()
@@ -32,7 +32,7 @@ def gridd(lon1,lat1,lon2,lat2,nlats):
             return lons,lats
 
 
-def getd(f):
+def getd(f,t):
         gid = grib_new_from_file(f)#,headers_only = True)
         if gid is None: 
             print 'time = {}, gid = None'.format(t)
@@ -100,7 +100,7 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
   try:
     for it in range(nt1,nt2): # nt + the 0 hour
 
-        name,varin,ilon,ilat=getd(f)        
+        name,varin,ilon,ilat=getd(f,it)        
 
         lon=ilon[0,:]
         lat=ilat[:,0]
@@ -108,7 +108,13 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
     # get sea level pressure and 10-m wind data.
     # mult slp by 0.01 to put in units of hPa
         if name == 'msl' : varin=varin*.01
-        print it
+    # print progress
+        sys.stdout.write('\r')
+    # the exact output you're looking for:
+        step=0.05*nt2
+        sys.stdout.write("[%-20s] %d%%" % ('='*int(it/step), 5*it/step))
+        sys.stdout.flush()
+        sleep(0.25)
 
         if minlon < 0. :
            lon=lon-180.
@@ -122,8 +128,10 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
            zlon=lon.shape[0]
 
-           data = varin[j1:j2,zlon/2+i1:]
-           data = np.hstack([data,varin[j1:j2,:i2-zlon/2]])
+           data1 = deepcopy(varin[j1:j2,zlon/2+i1:])
+           data2 = deepcopy(varin[j1:j2,:i2-zlon/2])
+           data = np.hstack([data1,data2])
+          #data = np.hstack([data,varin[j1:j2,:i2-zlon/2]])
 
         else:
 
@@ -133,7 +141,7 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
            j2=np.abs(lat-maxlat).argmin()+1
 
            lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
-           data = varin[j1:j2,i1:i2]
+           data = deepcopy(varin[j1:j2,i1:i2])
 
 
 
@@ -148,6 +156,10 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
 
 # END OF FOR
+    sys.stdout.write('\r')
+    sys.stdout.write("[%-20s] %d%%" % ('='*20, 100))
+    sys.stdout.flush()
+    sys.stdout.write('\n')
 
   except:
     print 'ERROR in meteo input'
@@ -185,7 +197,7 @@ if __name__ == "__main__":
   runtime=datetime.datetime(yyyy,mm,dd,hh)
   print runtime
 
-  nt=3
+  nt=3*(72+1)
 
   p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,nt,lon0,lon1,lat0,lat1)
 
