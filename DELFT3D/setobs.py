@@ -46,7 +46,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 
 #  BUOYS WEBCRITECH
  dat=pandas.read_csv('SeaLevelBuoys2.csv')
- print dat.columns
+#print dat.columns
 
  ID=dat[dat.columns[0]]
  lon=dat['lon']
