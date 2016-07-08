@@ -29,7 +29,7 @@ def readsrtm(minlat,maxlat,minlon,maxlon,grid_x=None,grid_y=None,interpolate=Fal
 # open NetCDF data in 
  nc = netCDF4.Dataset(file)
  ncv = nc.variables
- print ncv.keys()
+#print ncv.keys()
 
  lon = ncv['lon'][:]
  lat = ncv['lat'][:]
@@ -99,7 +99,7 @@ def readgebco(minlat,maxlat,minlon,maxlon,grid_x=None,grid_y=None,interpolate=Fa
 # open NetCDF data in 
  nc = netCDF4.Dataset(file)
  ncv = nc.variables
- print ncv.keys()
+#print ncv.keys()
 
  lon = ncv['lon'][:]
  lat = ncv['lat'][:]
@@ -166,7 +166,7 @@ def read_mod_gebco(minlat,maxlat,minlon,maxlon,grid_x=None,grid_y=None,interpola
 # open NetCDF data in 
  nc = netCDF4.Dataset(file)
  ncv = nc.variables
- print ncv.keys()
+#print ncv.keys()
 
  lon = ncv['x'][:]
  lat = ncv['y'][:]
