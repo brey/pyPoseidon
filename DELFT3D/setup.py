@@ -1,48 +1,43 @@
 import numpy as np
 import datetime
-
-from mpl_toolkits.basemap import Basemap, shiftgrid
-
 import sys
 
-from meteo import *
+from meteo import wmap
 from grid import *
 from dep import *
-from dem import *
+from dem import read_mod_gebco
 from idelft3d import meteo2delft3d
 import mdf
-import collections
-from setobs import *
+from setobs import createf
 
 
-def  setrun(lon0,lon1,lat0,lat1,fname,to,path,ni,nj):
+def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
 
-  yyyy=to.year
-  mm=to.month
-  dd=to.day
-  hh=to.hour # 0 or 12
-  time=0
-  
   nt=72
-  
-  runtime=datetime.datetime(yyyy,mm,dd,hh)
   
   Tstop=60.*nt #minutes
 
   try: 
-    p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+    yyyy=runtime.year
+    mm=runtime.month
+    dd=runtime.day
+    hh=runtime.hour
+    p,u,v,elat,elon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
   except:
-    dd=dd-1
-    hh=12
-    runtime=datetime.datetime(yyyy,mm,dd,hh)
+    print 'error'
+    runtime=runtime-datetime.timedelta(hours=12)
+    yyyy=runtime.year
+    mm=runtime.month
+    dd=runtime.day
+    hh=runtime.hour
     print 'running with input from the day before {} '.format( datetime.datetime.strftime(runtime,"%Y-%m-%d %H:00") )
-    p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+    p,u,v,elat,elon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
   # Write meteo data
-  dlat=lat[1,0]-lat[0,0]
-  dlon=lon[0,1]-lon[0,0]
-  mlat0=lat[0,0] 
-  mlon0=lon[0,0] 
+  dlat=elat[1,0]-elat[0,0]
+  dlon=elon[0,1]-elon[0,0]
+  mlat0=elat[0,0] 
+  mlon0=elon[0,0] 
   
   meteo2delft3d(p,u,v,mlat0,mlon0,dlat,dlon,runtime,nt,path=path,curvi=False)
   
@@ -147,7 +142,7 @@ if __name__ == "__main__":
 #lat0=28.5
 #lon1=43.
 #lat1=47.5
-  try:
+# try:
 
     lon0=np.float(sys.argv[1])
     lon1=np.float(sys.argv[2])
@@ -161,6 +156,6 @@ if __name__ == "__main__":
     nj=np.int(sys.argv[9])
     setrun(lon0,lon1,lat0,lat1,basename,date,path,ni,nj)
 
-  except:
-    print 'usage: python setup minlon, maxlon, minlat, maxlat, basename, date (YYYYMMDD.HH), path, ni, nj'
-    print "ex: python setup -5.5 47.5 28.5 48. 'med' '20160620.00' '../../../tmp2/' 727 285"
+# except:
+#   print 'usage: python setup minlon, maxlon, minlat, maxlat, basename, date (YYYYMMDD.HH), path, ni, nj'
+#   print "ex: python setup -5.5 47.5 28.5 48. 'med' '20160620.00' '../../../tmp2/' 727 285"
