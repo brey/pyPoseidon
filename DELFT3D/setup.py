@@ -142,7 +142,7 @@ if __name__ == "__main__":
 #lat0=28.5
 #lon1=43.
 #lat1=47.5
-# try:
+  try:
 
     lon0=np.float(sys.argv[1])
     lon1=np.float(sys.argv[2])
@@ -156,6 +156,6 @@ if __name__ == "__main__":
     nj=np.int(sys.argv[9])
     setrun(lon0,lon1,lat0,lat1,basename,date,path,ni,nj)
 
-# except:
-#   print 'usage: python setup minlon, maxlon, minlat, maxlat, basename, date (YYYYMMDD.HH), path, ni, nj'
-#   print "ex: python setup -5.5 47.5 28.5 48. 'med' '20160620.00' '../../../tmp2/' 727 285"
+  except:
+    print 'usage: python setup minlon, maxlon, minlat, maxlat, basename, date (YYYYMMDD.HH), path, ni, nj'
+    print "ex: python setup -5.5 47.5 28.5 48. 'med' '20160620.00' '../../../tmp2/' 727 285"
