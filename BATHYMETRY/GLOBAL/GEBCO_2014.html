@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+
+<head>
+	<meta name="robots" content="noindex"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <title>The GEBCO_2014 Grid &mdash; BODC Document 301801</title>
+    <meta name="Description" content='The GEBCO_2014 Grid &mdash; BODC Document 301801' />
+</head>
+<body>
+	<h2>The GEBCO_2014 Grid</h2>
+<img src="https://www.bodc.ac.uk/data/documents/nodb/images/301801AA.jpg" alt="BODC document image" /> 
+<p> 
+<a href='http://www.gebco.net'>www.gebco.net
+</a> 
+</p> 
+<h3 id="content">Contents
+</h3> 
+<p> 
+<a href="#0_pref" target="_self">Preface
+</a> 
+</p> 
+<ol> 
+<li> 
+<a href="#1_intro" target="_self">Introduction - The GEBCO_2014 Grid
+</a> 
+</li> 
+<li> 
+<a href="#2_grid" target="_self">Grid development
+</a> 
+<br />2.1 
+<a href="#2.1_proced" target="_self">Procedures used to update the GEBCO base grid
+</a> 
+<br />2.2 
+<a href="#2.2_reported" target="_self">Reporting bugs in the GEBCO Grid
+</a> 
+</li> 
+<li> 
+<a href="#3_land" target="_self">Land data
+</a> 
+</li> 
+<li> 
+<a href="#4_source" target="_self">GEBCO Source Identifier (SID) Grid
+</a> 
+<br />4.1 
+<a href="#4.1_SID" target="_self">GEBCO SID Grid coding
+</a> 
+</li> 
+<li> 
+<a href="#5_data" target="_self">Data set update history
+</a> 
+</li> 
+<li> 
+<a href="#6_format" target="_self">Grid format
+</a> 
+<br />6.1 
+<a href="#6.1_GEBCO" target="_self">2D CF-netCDF format
+</a> 
+<br />6.2 
+<a href="#6.2_GEBCO" target="_self">1D netCDF format
+</a> 
+<br />6.3 
+<a href="#6.3_GEBCO" target="_self">Esri ASCII raster
+</a> 
+<br />6.4 
+<a href="#6.4_GEBCO" target="_self">INT16 GeoTiff
+</a> 
+<br /> 
+</li> 
+<li> 
+<a href="#7_data" target="_self">Software packages and GEBCO's grids
+</a> 
+<br />7.1 
+<a href="#7.1_GEBCO" target="_self">Generic Mapping Tools (GMT)
+</a> 
+<br />7.2 
+<a href="#7.2_GEBCO" target="_self">Esri's ArcGIS Desktop software packages
+</a> 
+<br /> 
+</li> 
+<li> 
+<a href="#8_terms" target="_self">GEBCO's grids and vertical datum
+</a> 
+</li> 
+<li> 
+<a href="#9_disclaimer" target="_self">Data set attribution
+</a> 
+</li> 
+<li> 
+<a href="#10_reference" target="_self">Terms of use
+</a> 
+</li> 
+<li> 
+<a href="#11_reference" target="_self">Disclaimer
+</a> 
+</li> 
+<li> 
+<a href="#12_reference" target="_self">References and links
+</a> 
+</li> 
+</ol> 
+<p> 
+<a href="#Annex_A" target="_self">Annex A
+</a> &mdash; Data sets included in the GEBCO_2014 Grid
+</p> 
+<ol> 
+<li> 
+<a href="#A.1" target="_self">The Caspian Sea
+</a> 
+</li> 
+<li> 
+<a href="#A.2" target="_self">The Black Sea
+</a> 
+</li> 
+<li> 
+<a href="#A.3" target="_self">The Weddell Sea - Bathymetric Chart of the Weddell Sea (BCWS)
+</a> 
+</li> 
+<li> 
+<a href="#A.4" target="_self">International Bathymetric Chart of the Southern Ocean (IBCSO) v1
+</a> 
+</li> 
+<li> 
+<a href="#A.5" target="_self">International Bathymetric Chart of the Arctic Ocean (IBCAO) v3
+</a> 
+</li> 
+<li> 
+<a href="#A.6" target="_self">European Marine Observation and Data Network (EMODnet) Bathymetry 2013 data set
+</a> 
+</li> 
+<li> 
+<a href="#A.7" target="_self">Baltic Sea Bathymetry Database
+</a> 
+</li> 
+<li> 
+<a href="#A.8" target="_self">Australian Bathymetry and Topography Grid, June 2009
+</a> 
+</li> 
+<li> 
+<a href="#A.9" target="_self">Global Multi-Resolution Topography (GMRT) Synthesis
+</a> 
+</li> 
+<li> 
+<a href="#A.10" target="_self">Japan Coast Guard Grid for the North Western Pacific Ocean region
+</a> 
+</li> 
+<li> 
+<a href="#A.11" target="_self">Bathymetry of the South China Sea Region
+</a> 
+</li> 
+<li> 
+<a href="#A.12" target="_self">Bathymetry of the North American Great Lakes
+</a> 
+</li> 
+<li> 
+<a href="#A.13" target="_self">North Atlantic Ocean, Gulf of Cadiz region
+</a> 
+</li> 
+<li> 
+<a href="#A.14" target="_self">Indian Ocean region off Sumatra
+</a> 
+</li> 
+<li> 
+<a href="#A.15" target="_self">Waters off the west coast of Africa
+</a> 
+</li> 
+<li> 
+<a href="#A.16" target="_self">Northwest European Continental Shelf region
+</a> 
+</li> 
+<li> 
+<a href="#A.17" target="_self">South Pacific Ocean, Coral Sea region
+</a> 
+</li> 
+<li> 
+<a href="#A.18" target="_self">Waters off Chile
+</a> 
+</li> 
+</ol> 
+<h3 id="0_pref">Preface
+</h3> 
+<p>The General Bathymetric Chart of the Oceans (GEBCO) consists of an international group of experts who work on the development of a range of bathymetric data sets and data products, with the aim of providing the most authoritative, publicly available bathymetric data sets for the world's oceans.
+</p> 
+<p>GEBCO operates under the joint auspices of the International Hydrographic Organization (IHO) and the Intergovernmental Oceanographic Commission (IOC) of UNESCO.
+</p> 
+<p>This document provides information on GEBCO's latest gridded product, the GEBCO_2014 Grid.
+</p> 
+<p>Find out more about GEBCO from our web site &mdash; 
+<a href='https://www.gebco.net'>www.gebco.net
+</a> 
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="1_intro">1. Introduction &mdash; The GEBCO_2014 Grid
+</h3> 
+<p>The GEBCO_2014 Grid is a continuous terrain model for ocean and land with a spatial resolution of 30 arc seconds. It is an updated version of the GEBCO_08 Grid.
+</p> 
+<p>The GEBCO_08 Grid was first published in January 2009. The bathymetric portion of the grid was developed from a database of ship track soundings with interpolation between soundings guided by satellite-derived gravity data.
+</p> 
+<p>Since its initial release, the GEBCO community has been working on updating this data set. Where they improve on this 'base grid', data sets generated by other methods have been included.
+</p> 
+<p>Recognising the importance of local expertise when building a global bathymetric grid, GEBCO has been working with regional mapping groups to improve its global bathymetric model. This release of the grid benefits from collaborations with a number of regional groups. Further details can be found in 
+<a href='#Annex_A' target="_self">Annex A
+</a> and on our regional mapping web pages:
+<a href='http://www.gebco.net/regional_mapping/mapping_projects/'>www.gebco.net/regional_mapping/mapping_projects/
+</a> 
+</p> 
+<p>Details on the development of the grid are given below along with information on its update history.
+</p> 
+<p>For information on the data sets referenced in this document, please see the 
+<a href="#12_reference" target="_self">References and Links
+</a>section and
+<a href="#Annex_A" target="_self">AnnexA
+</a> below.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="2_grid">2. Grid development
+</h3> 
+<p>The GEBCO grid, called 'GEBCO_08', was originally derived from v5.0 of the SRTM30_plus data set
+<sup>3
+</sup>, released in 2008. This grid was produced by combining the published Smith and Sandwell global topographic grid between latitudes 80&deg; N and 81&deg; S (version 11.1, September, 2008) with a database of over 290 million bathymetric soundings.
+</p> 
+<p>Within the Smith and Sandwell global topographic grid, the predicted depths are based on version V16.1 of the Sandwell and Smith gravity anomaly from Geosat and ERS 1 satellite altimetry, created in March 2007.
+</p> 
+<p>The original GEBCO_08 Grid was developed as a collaborative effort by the following organisations
+</p> 
+<ul> 
+<li>The General Bathymetric Chart of the Oceans (GEBCO)
+</li> 
+<li>International Hydrographic Bureau (IHB)
+</li> 
+<li>The US National Geospatial-Intelligence Agency (NGA)
+</li> 
+<li>The US National Oceanic and Atmospheric Administration (NOAA)
+</li> 
+<li>The US Naval Oceanographic Office (NAVO)
+</li> 
+<li>Scripps Institution of Oceanography (SIO)
+</li> 
+<li>The UK Natural Environment Research Council (NERC)
+</li> 
+</ul> 
+<p>Bathymetric sounding data sets and compilation grids of measured bathymetry from a number of sources were used to generate the base grid, including
+</p> 
+<ul> 
+<li>Bathymetric soundings from the GEODAS
+<sup>10
+</sup> data set maintained by the International Hydrographic Organization (IHO) Data Center for Digital Bathymetry (DCDB) at the US National Geophysical Data Center (NGDC).
+</li> 
+<li>Bathymetric grids and data files from the marine geology and geophysics community, including contributions from the Lamont Doherty Earth Observatory (LDEO) Ridge Multibeam Synthesis Project, GEOMAR, National Science Foundation (NSF) Polar Programs, the School of Ocean and Earth Science and Technology (SOEST) at the University of Hawaii at Manoa and the WHOI/GLOBEC programme.
+</li> 
+<li>Swath bathymetry grids from Scripps Institution of Oceanography multibeam cruises.
+</li> 
+<li>Multibeam grids contributed by the Japan Agency for Marine-Earth Science and Technology (JAMSTEC)
+<sup>16
+</sup>.
+</li> 
+<li>The US National Geophysical Data Center (NGDC) Coastal Relief Model
+<sup>6
+</sup>.
+</li> 
+<li>Multibeam grids from &quot;Law of the Sea&quot; work for areas around Alaska and the Arctic, the Marianas, Kingman Reef and Palmyra Atoll, the Western Atlantic Ocean and the Gulf of Mexico from the Center for Coastal and Ocean Mapping/Joint Hydrographic Center at the University of New Hampshire, USA
+<sup>19
+</sup>.
+</li> 
+<li>Bathymetric soundings contributed by the Institut Fran&ccedil;ais de Recherche pour L'Exploitation de la Mer (IFREMER) from centre beam data from over 100 cruises.
+</li> 
+<li>The Geological Survey of Ireland (GSI) provided a bathymetric grid for Irish designated waters based on multibeam surveys carried out between 2000 and 2006 as part of the Irish National Seabed Survey
+<sup>12
+</sup>.
+</li> 
+<li>In some shallow water areas (shallower than 300 m), bathymetry data have been provided by a number of the International Hydrographic Organization's (IHO) Member States. This work has been done through a project, coordinated by the International Hydrographic Bureau (IHB), to extract shallow water bathymetry data from Electronic Navigation Charts (ENCs).
+</li> 
+</ul> 
+<p>Since the release of the first version of the GEBCO Grid in 2009, the data set has been updated with a number of bathymetric compilations as detailed in the 
+<a href="#5_data" target="_self">data set update history
+</a> section below.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h4 id="2.1_proced">2.1 Procedures used to update the GEBCO base grid
+</h4> 
+<p>The inclusion of new data sets into the existing GEBCO base grid has been done with the aim of producing a seamless global terrain model.
+</p> 
+<p>For the majority of the updates supplied in the form of bathymetric grids or multibeam surveys, the 'remove-restore' procedure (Smith and Sandwell, 1997; Becker, Sandwell and Smith, 2009 and Hell and Jakobsson, 2011) has been used.
+</p> 
+<p>This is a two stage process of computing the difference between the new data and the existing grid and then gridding the difference and adding the difference back to the existing base grid. The aim is to achieve a smooth transition between the 'new' and 'old' data sets with the minimum of perturbation of the existing base data set.
+</p> 
+<p>For new data sets supplied in the form of isolated soundings a grid has been produced from the data points using an adjustable tension continuous curvature surface gridding algorithm, i.e. 'surface' from Generic Mapping Tools (GMT) (Smith and Wessel, 1990).
+</p> 
+<h4 id="2.2_reported">2.2 Reporting bugs in the GEBCO Grid
+</h4> 
+<p>While every effort is made to produce an error free grid, some artefacts may still appear in the data set. Please see our errata web page for information on known bugs in the dataset
+</p> 
+<p>If you find any anomalies in the grid then please report them via email ( 
+<a href='mailto:enquiries@bodc.ac.uk'>enquiries@bodc.ac.uk
+</a> ), giving the problem location, and we will investigate.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="3_land">3. Land data
+</h3> 
+<p>With the exception of polar regions, land data are based on the one km averages of topography derived from version 2.0 of the US Geological Survey SRTM30
+<sup>25
+</sup> gridded digital elevation model data product, created with data from the US National Aeronautics and Space Administration (NASA) Shuttle Radar Topography Mission.
+</p> 
+<p>For the Arctic region north of 64&deg; N the GEBCO grid is based on the International Bathymetric Chart of the Arctic Ocean (IBCAO) v3
+<sup>17
+</sup>. This data set uses land data taken largely from the Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010)
+<sup>5
+</sup> data set. Over Greenland the approximately 2000 by 2000 m resolution Digital Elevation Model (DEM)
+<sup>8
+</sup> published by Ekholm (1996) is used.
+</p> 
+<p>For the Southern Ocean area, south of 60&deg; S, land data are taken from Bedmap2
+<sup>9
+</sup> data set as included in the International Bathymetric Chart of the Southern Ocean (IBCSO)
+<sup>1
+</sup>.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="4_source">4. GEBCO Source Identifier (SID) Grid
+</h3> 
+<p>The GEBCO Grid is accompanied by a Source Identifier (SID) grid. This data set identifies which of the corresponding grid cells in the GEBCO Grid are based on bathymetric soundings or bathymetric depth values from grids and which cells contain predicted or interpolated depth values. Further information about the format and coding of the data set is given below.
+</p> 
+<h4 id="4.1_SID">4.1 GEBCO SID Grid coding
+</h4> 
+<p>The table below details the coding of the GEBCO_2014 Source Identifier (SID) grid. It includes a description of the data source that the corresponding grid cell in the GEBCO_2014 Grid is based on.
+</p> 
+<table border="2" cellpadding="5"> 
+<tr> 
+<th>SID file coding
+</th> 
+<th>Description
+</th> 
+</tr> 
+<tr> 
+<td>0
+</td> 
+<td> 
+<p>The grid value at this location has been developed from a database of ship track soundings with interpolation between soundings guided by satellite derived gravity data.
+</p> 
+<p>At this location in the grid, the data value has been interpolated.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>9999
+</td> 
+<td> 
+<p>The grid value at this location has been developed from a database of ship track soundings with interpolation between soundings guided by satellite derived gravity data.
+</p> 
+<p>At this location, the grid cell has been constrained by a bathymetric sounding(s) data during the gridding process.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>-8888
+</td> 
+<td> 
+<p>The grid value at this location has a positive value (+ve), i.e. is coded as land.
+</p> 
+<p>Please note that for the Southern Ocean region (south of 60&deg;S) based on the IBCSO, elevation values are based on the Bedmap2 data set and coded as 3500.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>110
+</td> 
+<td> 
+<p>The grid value at this location is taken from the Caspian Sea grid, (see 
+<a href="#A.1" target="_self">Annex A.1
+</a> ). This grid has been generated from a data set of soundings using a kriging gridding algorithm.
+</p> 
+<p>SID grid cells that contain a sounding(s) from the Caspian Sea source data set are coded as '1100'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>120
+</td> 
+<td> 
+<p>The grid value at this location is taken from the Black Sea grid, (see 
+<a href="#A.2" target="_self">Annex A.2
+</a> ). This grid has been generated from a data set of soundings using a kriging gridding algorithm.
+</p> 
+<p>SID grid cells that contain a sounding(s) from the Black Sea source data set are coded as '1200'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>130
+</td> 
+<td> 
+<p>The grid value at this location is taken from the GEBCO_08 Grid. In this region, the GEBCO_08 Grid is based on the Weddell Sea grid, (see 
+<a href="#A.3" target="_self">Annex A.3
+</a>). This grid has been generated from a data set of bathymetric contours based largely on multibeam and single beam bathymetric surveys.
+</p> 
+<p>SID grid cells that contain trackline control from the Weddell Sea source data set are coded as '1300'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1100
+</td> 
+<td> 
+<p>The grid value at this location is taken from the Caspian Sea grid, (see 
+<a href="#A.1" target="_self">Annex A.1
+</a> ). The grid cell at this location contains a sounding(s) from the Caspian Sea source data set.
+</p> 
+<p>For the Caspian Sea grid, cells that do not contain a sounding(s) are coded as '110'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1200
+</td> 
+<td> 
+<p>The grid value at this location is taken from the Black Sea grid, (see 
+<a href="#A.2" target="_self">Annex A.2
+</a>). The grid cell at this location contains a sounding(s) from the Black Sea source data set.
+</p> 
+<p>For the Black Sea grid, cells that do not contain a sounding(s) are coded as '120'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1300
+</td> 
+<td> 
+<p>The grid value at this location is taken from the GEBCO_08 Grid. In this area the GEBCO_08 Grid is based on the Weddell Sea grid, (see 
+<a href="#A.3" target="_self">Annex A.3
+</a> ). This grid has been generated from a data set of bathymetric contours based largely on multibeam and single-beam bathymetric surveys.
+</p> 
+<p>The grid cell at this location is 'crossed' by trackline control information, i.e. survey track or isolated sounding, from the Weddell Sea source data set.
+</p> 
+<p>For the Weddell Sea grid, cells that do not contain trackline control are coded as '130'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1400
+</td> 
+<td> 
+<p>The grid value at this location is taken from the Geoscience Australia grid 'Australian Bathymetry and Topography Grid, June 2009'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1500
+</td> 
+<td> 
+<p>The grid value at this location is based on ENC soundings supplied by the East Asia Hydrographic Commission.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1550
+</td> 
+<td> 
+<p>The grid value at this location is based on ENC bathymetric contours supplied by the East Asia Hydrographic Commission.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1600
+</td> 
+<td> 
+<p>The grid value at this location is based on gridded data from the North American Great Lakes gridded data sets.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1700
+</td> 
+<td> 
+<p>The grid value at this location is based on gridded data from the Gulf of Cadiz gridded data set 'The quest for the Africa-Eurasia plate boundary west of the Strait of Gibraltar'.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1800
+</td> 
+<td> 
+<p>The grid value at this location is based on multibeam data from the 2004 cruise of HMS Scott.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1900
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCAO V3 grid ( 
+<a href='http://www.ibcao.org'>www.ibcao.org
+</a> ) and is based on interpolation.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1910
+</td> 
+<td> 
+<p>The grid value at this location is based on multibeam data.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1920
+</td> 
+<td> 
+<p>The grid value at this location is based on single beam data in the IBCAO V3 or IBCSO V1 grids.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1940
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCSO V1 grid and is based on depth data from digital bathymetric models.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>1950
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCAO V3 and is based on depth contours from digitised charts.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>2000
+</td> 
+<td> 
+<p>The grid value at this location is based on Olex data.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>2100
+</td> 
+<td> 
+<p>The grid value at this location is based on interpolation using an adjustable tension continuous curvature surface gridding algorithm 'surface' from GMT.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>2200
+</td> 
+<td> 
+<p>The grid value at this location is based on data from the Lamont-Doherty Earth Observatory (LDEO) of Columbia University, Global Multi-Resolution Topography Synthesis.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>2300
+</td> 
+<td> 
+<p>The grid value at this location is based on a gridded bathymetric data set for Irish designated waters, based on multibeam surveys, provided by the Geological Survey of Ireland. The gridded data set is included as part of the EMODnet Bathymetry grid (SID code 3800).
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3100
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCSO V1 grid and is based on data from nautical charts.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3200
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCSO V1 grid and is based on steering points.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3300
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCSO V1 grid and is based on interpolation.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3400
+</td> 
+<td> 
+<p>The grid value at this location is based on data from the GEBCO_08 Grid. In this region, the GEBCO_08 Grid is based on interpolation guided by satellite-derived gravity data.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3450
+</td> 
+<td> 
+<p>The grid value at this location is based on data from the GEBCO_08 Grid. At this location, the GEBCO_08 Grid is based on measured sounding data.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3500
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCSO V1 grid and is based on data from the Bedmap2 data set
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3600
+</td> 
+<td> 
+<p>The grid value at this location is taken from the IBCSO V1 grid and is based on other grids and data sets
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3700
+</td> 
+<td> 
+<p>The grid value at this location is based on control contours used to help constrain the grid interpolation process using GMT's 'surface' gridding algorithm
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3800
+</td> 
+<td> 
+<p>The grid value at this location is based on data from the EMODnet 2013 Grid.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>3900
+</td> 
+<td> 
+<p>The grid value at this location is taken from the Baltic Sea Bathymetry Database grid.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4000
+</td> 
+<td> 
+<p>The grid value at this location is based on the GEBCO One Minute Grid.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4100
+</td> 
+<td> 
+<p>The grid value at this location is based on bathymetric contours from the Centenary Edition of the GEBCO Digital Atlas.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4200
+</td> 
+<td> 
+<p>The grid value at this location is based on bathymetric contours from the International Bathymetric Chart of the Mediterranean (IBCM).
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4300
+</td> 
+<td> 
+<p>The grid value at this location is based on multibeam data from RRS Charles Darwin cruise CD118.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4400
+</td> 
+<td> 
+<p>The grid value at this location is based on ENC soundings provided by the Servicio Hidrogr&aacute;fico y Oceanogr&aacute;fico de la Armada de Chile.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4500
+</td> 
+<td> 
+<p>The grid value at this location is based on the Japanese Coast Guard grid and in this region the grid is based on multibeam data.
+</p> 
+</td> 
+</tr> 
+<tr> 
+<td>4550
+</td> 
+<td> 
+<p>The grid value at this location is based on the Japanese Coast Guard grid and in this region the grid is based on the J-EGG500 grid JODC-Expert Grid data for Geographic -500m.
+</p> 
+</td> 
+</tr> 
+</table> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="5_data">5. Data set update history
+</h3> 
+<p> 
+<strong>The current version of the GEBCO grid is: 20150318.
+</strong> 
+</p> 
+<p>The table below provides information on the updates included in the GEBCO_2014 Grid since its original release (as GEBCO_08) in 2009. Further information on these data sets can be found in
+<a href="#Annex_A" target="_self">Annex A
+</a> at the end of this document.
+</p> 
+<table border="2" cellpadding="5"> 
+<tr> 
+<th>Grid version number
+</th> 
+<th>Updated region
+</th> 
+<th>Annex
+</th> 
+<th>Grid release date
+</th> 
+</tr> 
+<tr> 
+<td>20150318
+</td> 
+<td> 
+<p>Southern Ocean (south of 60&deg;S) &mdash; International Bathymetric Chart of the Southern Ocean (IBCSO).
+</p> 
+<p>In version 20141103 of GEBCO_2014, there is a 500m (approximate) shift in latitude northwards of the data set compared to the source IBCSO grid in the region south of 60&deg;S. This error appears to have occurred during the process to include the IBCSO grid into GEBCO. This error has now been corrected and the area south of 60&deg;S has now been replaced in GEBCO_2014 with a re-processed version of the IBCSO grid.
+</p> 
+</td> 
+<td>&mdash;
+</td> 
+<td>March 2015
+</td> 
+</tr> 
+<tr> 
+<td>20091120
+</td> 
+<td> 
+<p>Arctic Ocean (north of 64&deg; N) &mdash; International Bathymetric Chart of the Arctic Ocean (IBCAO).
+</p> 
+<p>Please note that this data set has now been replaced by version 3 of the IBCAO and therefore information about the data set is not included in the Annex section.
+</p> 
+</td> 
+<td>&mdash;
+</td> 
+<td>December 2009
+</td> 
+</tr> 
+<tr> 
+<td>20100927
+</td> 
+<td> 
+<p>Caspian Sea &mdash; gridded data set provided by John K. Hall.
+</p> 
+</td> 
+<td>A.1
+</td> 
+<td>October 2010
+</td> 
+</tr> 
+<tr> 
+<td>20100927
+</td> 
+<td> 
+<p>Black Sea &mdash; gridded data set provided by John K. Hall.
+</p> 
+</td> 
+<td>A.2
+</td> 
+<td>October 2010
+</td> 
+</tr> 
+<tr> 
+<td>20100927
+</td> 
+<td> 
+<p>Weddell Sea &mdash; Bathymetric Chart of the Weddell Sea (BCWS), grid provided by the Alfred Wegener Institute for Polar and Marine Research (AWI)
+</p> 
+<p>Please note that this data set has now been replaced by version 1 of the IBCSO, however, it is included as part of the IBCSO compilation in some regions.
+</p> 
+</td> 
+<td>A.3
+</td> 
+<td>October 2010
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Southern Ocean (south of 60&deg; S) &mdash; International Bathymetric Chart of the Southern Ocean (IBCSO) V1
+</p> 
+</td> 
+<td>A.4
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Arctic Ocean (north of 64&deg;N) &mdash; International Bathymetric Chart of the Arctic Ocean (IBCAO) V3
+</p> 
+</td> 
+<td>A.5
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>European Marine Observation and Data Network (EMODnet), 2013 data set.
+</p> 
+</td> 
+<td>A.6
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Baltic Sea Bathymetry Database.
+</p> 
+</td> 
+<td>A.7
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Waters around Australia &mdash; Australian Bathymetry and Topography Grid, June 2009
+</p> 
+</td> 
+<td>A.8
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Bathymetry data for all ocean regions &mdash; From the Global Multi-Resolution Topography (GMRT) synthesis, provided by the Lamont-Doherty Earth Observatory at Columbia University.
+</p> 
+</td> 
+<td>A.9
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Japan Coast Guard Grid for the North Western Pacific Ocean region.
+</p> 
+</td> 
+<td>A.10
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>South China Sea region &mdash; update based on sounding data extracted from Electronic Navigation Charts (ENC), provided by the East Asia Hydrographic Commission.
+</p> 
+</td> 
+<td>A.11
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>North American Great Lakes &mdash; Bathymetric grids provided by the US National Oceanic and Atmospheric Administration (NOAA), National Geophysical Data Center (NGDC).
+</p> 
+</td> 
+<td>A.12
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>North Atlantic Ocean, Gulf of Cadiz region &mdash; Bathymetric compilation produced under the European Science Foundation (ESF) EuroMargins SWIM project 'Earthquake and Tsunami hazards of active faults at the South West Iberian Margin: deep structure, high-resolution imaging and paleoseismic signature'.
+</p> 
+</td> 
+<td>A.13
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Indian Ocean, region off Sumatra &mdash; Bathymetric survey carried out by HMS Scott in 2005.
+</p> 
+</td> 
+<td>A.14
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Waters off the West Coast of Africa &mdash; update based on bathymetry data from Olex
+</p> 
+</td> 
+<td>A.15
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Northwest European Continental Shelf area &mdash; update based on bathymetry data from Olex.
+</p> 
+</td> 
+<td>A.16
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>South Pacific Ocean, Coral Sea region &mdash; update to correct an error in the GEBCO grid due to the inclusion of an erroneous island (&quot;Sandy Island&quot;)
+</p> 
+</td> 
+<td>A.17
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+<tr> 
+<td>20141103
+</td> 
+<td> 
+<p>Waters off Chile, update based on ENC sounding data.
+</p> 
+</td> 
+<td>A.18
+</td> 
+<td>November 2014
+</td> 
+</tr> 
+</table> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="6_format">6. Grid format
+</h3> 
+<p>GEBCO's gridded data sets are made available in netCDF, in the form of both two-dimensional (2D) and one-dimensional (1D) arrays of signed 2-byte integers. In addition, the 2D gridded data set uses the NetCDF Climate and Forecast (CF) Metadata Convention ( 
+<a href='http://cfconventions.org/'>http://cfconventions.org/
+</a> ).
+</p> 
+<p>The 1D grid file format is aimed specifically for use with the 
+<a href='http://www.gebco.net/data_and_products/gebco_digital_atlas/'>GEBCO Digital Atlas software interface
+</a> and 
+<a href='http://www.gebco.net/data_and_products/gebco_digital_atlas/'>GEBCO Grid Display software
+</a>. 
+<strong>Please note
+</strong> that these software packages
+<strong>will not work with the 2D grid format files
+</strong> but solely with the global 1D grid files.
+</p> 
+<h4 id="6.1_GEBCO">6.1 2D CF-netCDF format
+</h4> 
+<p>Within the 2D CF-netCDF file, the grid is stored as a two-dimensional array of 2-byte signed integer values of elevation in metres, with negative values for bathymetric depths and positive values for topographic heights.
+</p> 
+<p>The complete data set gives global coverage, spanning 89&deg; 59' 45''N, 179&deg; 59' 45''W to 89&deg; 59' 45''S, 179&deg; 59' 45''E on a 30 arc-second grid. It consists of 21,600 rows x 43,200 columns, giving 933,120,000 data points. The netCDF storage is arranged as contiguous latitudinal bands. The data values are pixel-centre registered i.e. they refer to elevations at the centre of grid cells.
+</p> 
+<p>The data file includes header information which conforms to the NetCDF Climate and Forecast (CF) Metadata Convention ( 
+<a href='http://cfconventions.org/'>http://cfconventions.org/
+</a> ).
+</p> 
+<p> 
+<strong>Please note
+</strong> that 2D grid format files will not work with either the GEBCO Digital Atlas software interface or the GEBCO Grid Display software package &mdash; these packages are designed to use the 1D version of GEBCO's grids. See the software packages and GEBCO's grids section below for further details on how the data may be viewed and accessed.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h4 id="6.2_GEBCO">6.2 1D netCDF format
+</h4> 
+<p>Within the 1D netCDF file, the grid is stored as a one-dimensional array of 2-byte signed integer values of elevation in metres, with negative values for bathymetric depths and positive values for topographic heights.
+</p> 
+<p>The complete data set gives global coverage. The grid consists of 21,600 rows x 43,200 columns, resulting in 933,120,000 data points. The data start at the Northwest corner of the file and are arranged in latitudinal bands of 360 degrees x 120 points per degree = 43,200 values. The data range eastward from 179&deg; 59' 45'' W to 179&deg; 59' 45'' E. Thus, the first band contains 43,200 values for 89&deg; 59' 45'' N, then followed by a band of 43,200 values at 89&deg; 59' 15'' N and so on at 30 arc second latitude intervals down to 89&deg; 59' 45'' S. The data values are pixel centre registered i.e. they refer to elevations at the centre of grid cells.
+</p> 
+<p>This grid file format is suitable for use with the GEBCO Digital Atlas Software Interface and GEBCO Grid display software and packages such as Generic Mapping Tools (GMT).
+</p> 
+<p> 
+<strong>Please note
+</strong> that for ease of import into Esri ArcGIS Desktop software packages it is suggested that the 2D versions of GEBCO's grids are used. However, through the GridViewer and GDA software interfaces the data can be exported in an ASCII form suitable for conversion to an Esri raster. See the software packages and GEBCO's grids section below for further details on how the data may be viewed and accessed.
+</p> 
+<h4 id="6.3_GEBCO">6.3 Esri ASCII raster format
+</h4> 
+<p>This is an ASCII format developed for the export/exchange of Esri ARC/INFO rasters. The 
+<a href='http://resources.esri.com/help/9.3/arcgisengine/java/GP_ToolRef/spatial_analyst_tools/esri_ascii_raster_format.htm'>format
+</a> consists of a header that gives the geographic extent and grid interval of the data set, followed by the actual grid cell data values.
+</p> 
+<h4 id="6.4_GEBCO">6.4 INT16 GeoTIFF
+</h4> 
+<p>The 
+<a href='http://en.wikipedia.org/wiki/GeoTIFF'>GeoTiff
+</a> format contains geo-referencing (geographic extent and projection) information embedded within a Tiff file. The GEBCO_2014 Grid and SID grids are made available as single-channel INT16 (two byte signed integer) data values for user-defined areas in GeoTiff format.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h4 id="7_data">7. Software packages and GEBCO's grids
+</h4> 
+<p>GEBCO's grids can be used with a number of software packages and systems. The following are given as examples
+</p> 
+<h4 id="7.1_GEBCO">7.1 Generic Mapping Tools (GMT)
+</h4> 
+<p>Both GEBCO's 1D and 2D grids can be used with the GMT software system ( 
+<a href='http://gmt.soest.hawaii.edu/'>http://gmt.soest.hawaii.edu/
+</a> ). GMT is an open source collection of around 65 tools for manipulating geographic and Cartesian data sets (including filtering, trend fitting, gridding, projecting, etc.) and producing image files from the data sets.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h4 id="7.2_GEBCO">7.2 Esri ArcGIS Desktop software packages
+</h4> 
+<p>For use of GEBCO's grids in Esri ArcGIS Desktop packages, such as ArcMap, it is possible to import the data in a number of ways.
+</p> 
+<ol> 
+<li>Esri ASCII raster data sets can be converted to Esri rasters using Esri ArcToolbox routine 'ASCII to Raster' from the 'Conversion' Toolbox. Alternatively, Esri ASCII raster files can be added directly into ArcMap.
+</li> 
+<li>GeoTiff files can be added directly into ArcMap.
+</li> 
+<li>For GEBCO's grids in 2D form it is suggested that they are imported as a 'netCDF raster layer'. The 'make netCDF raster layer' routine can be found in the Multidimension toolbox in ArcToolbox. See Esri's web site for further details &mdash; 
+<a href='http://resources.arcgis.com/en/home/'>http://resources.arcgis.com/en/home/
+</a> 
+</li> 
+<li>For GEBCO's grids in 1D form you can use the GridViewer software interface ( 
+<a href='http://www.gebco.net/data_and_products/grid_display_software/'>http://www.gebco.net/data_and_products/grid_display_software/
+</a> ) to export the data in Esri ASCII raster format. See the accompanying software documentation for further details. Data in this form can be converted to an Esri raster using the ArcToolbox routine 'ASCII to Raster' from the Conversion Tools toolbox.
+</li> 
+</ol> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h4 id="8_terms">8. GEBCO's grids and vertical datum
+</h4> 
+<p>GEBCO's global elevation models are generated by the assimilation of heterogeneous data types, assuming all of them to be referred to mean sea level. However, in some shallow water areas, the grids include data from sources having a vertical datum other than mean sea level. We are working to understand how best to fully assimilate these data.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="9_disclaimer">9. Data set attribution
+</h3> 
+<p>If the data sets are used in a presentation or publication then we ask that you acknowledge the source. This should be of the form (including the appropriate version number)
+</p> 
+<p> 
+<strong>For the GEBCO_2014 Grid:
+</strong> 
+</p> 
+<p> 
+<strong>'The GEBCO_2014 Grid, version 20150318, http://www.gebco.net'.
+</strong> 
+</p> 
+<p> 
+<strong>For the GEBCO_2014 SID Grid:
+</strong> 
+</p> 
+<p> 
+<strong>'The GEBCO_2014 SID Grid, version 20150318, http://www.gebco.net'.
+</strong> 
+</p> 
+<p>The version number of the grid is given in the header information within the grid file.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="10_reference">10. Terms of use
+</h3> 
+<p>Providing the source material is properly credited, the reproduction of the gridded bathymetry data sets in derivative form for scientific research, environmental conservation, education or other non-commercial purposes is authorised without prior permission.
+</p> 
+<p>Users are encouraged to point third parties to download the GEBCO gridded data sets from our web site rather than providing the grids to third parties themselves. This will allow GEBCO to keep statistics on how much the GEBCO gridded data sets are used.
+</p> 
+<p>Users who intend to use GEBCO's gridded data for commercial purposes are kindly asked to seek our prior permission. In the first instance, please contact BODC 
+<a href='mailto:enquiries@bodc.ac.uk'>enquiries@bodc.ac.uk
+</a>. Include a clear statement of the purpose for which the material will be used and the manner in which it will be reproduced.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="11_reference">11. Disclaimer
+</h3> 
+<p> 
+<strong>The GEBCO_2014 Grid is not to be used for Navigation or for any other purpose relating to safety at sea.
+</strong> 
+</p> 
+<p>Information in the GEBCO_2014 Grid has been obtained from sources believed to be reliable but its accuracy and completeness cannot be guaranteed. While every effort has been made to ensure its reliability within the limits of present knowledge, no responsibility can be accepted by those involved in its compilation or publication for any consequential loss or damage arising from its use.
+</p> 
+<p>The GEBCO_2014 Grid is essentially a deep ocean product and does not include detailed bathymetry for shallow shelf waters. Even to the present day, most areas of the world's oceans have not been fully surveyed and, for the most part, bathymetric mapping is an interpretation based on random tracklines of data from many different sources. The quality and coverage of data from these sources is highly variable. Although the GEBCO_2014 Grid is presented at 30 arc second intervals of latitude and longitude, this does not imply that knowledge is available on sea floor depth at this resolution &mdash; the depth in most 30 arc second squares of the world's oceans has yet to be measured.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="12_reference">12. References and links
+</h3> 
+<ol> 
+<li> 
+<strong>Arndt, J.E., H. W. Schenke, M. Jakobsson, F. Nitsche, G. Buys, B. Goleby, M. Rebesco, F. Bohoyo, J.K. Hong, J. Black, R. Greku, G. Udintsev, F. Barrios, W. Reynoso-Peralta, T. Morishita, R. Wigley, (2013)
+</strong> &quot;The International Bathymetric Chart of the Southern Ocean (IBCSO) Version 1.0 - A new bathymetric compilation covering circum-Antarctic waters&quot;, Geophysical Research Letters, 
+<a href='http://dx.doi.org/10.1002/grl.50413'>doi: 10.1002/grl.50413.
+</a> 
+<strong>2013
+</strong> 
+</li> 
+<li>Australian Bathymetry and Topography Grid, 
+<strong>June 2009
+</strong>, ANZLIC unique identifier: ANZCW0703013116, Geoscience Australia
+</li> 
+<li> 
+<strong>Becker, J. J., D. T. Sandwell, W. H. F. Smith, J. Braud, B. Binder, J. Depner, D. Fabre, J. Factor, S. Ingalls, S-H. Kim, R. Ladner, K. Marks, S. Nelson, A. Pharaoh, R. Trimmer, J. Von Rosenberg, G. Wallace, P. Weatherall.
+</strong>, Global Bathymetry and Elevation Data at 30 Arc Seconds Resolution: SRTM30_PLUS, Marine Geodesy, 32:4, 355-371, 
+<strong>2009
+</strong>.
+<br /> 
+<a href='ftp://topex.ucsd.edu/pub/srtm30_plus'>ftp://topex.ucsd.edu/pub/srtm30_plus
+</a> 
+</li> 
+<li>CD118 - bathymetry data collected by RRS Charles Darwin cruise CD118 in May 1999 for the Anton Dohrn Seamount, Iceland Basin, Hatton Bank, Lousy Bank area of the Northeast Atlantic Ocean. Data collected by the Southampton Oceanography Centre (now the National Oceanography Centre, Southampton) using a Simrad EM12 S-120 multibeam echosounder.
+</li> 
+<li> 
+<strong>Danielson, J. J., and D. B. Gesch (2011)
+</strong>, Global Multi-resolution Terrain Elevation Data 2010 (GMTED2010), U.S. Geol. Surv. Open File Rep., 2011-1073, 25 pp
+</li> 
+<li> 
+<strong>Divins, D.L., and D. Metzger
+</strong>,The US National Geophysical Data Center (NGDC), NGDC Coastal Relief Model
+<br /> 
+<a href='http://www.ngdc.noaa.gov/mgg/coastal/coastal.html'>http://www.ngdc.noaa.gov/mgg/coastal/coastal.html
+</a> 
+</li> 
+<li>East Asia Hydrographic Commission
+<br /> 
+<a href='http://home.eahc.asia/'>http://home.eahc.asia/
+</a> 
+</li> 
+<li> 
+<strong>Ekholm, S. (1996)
+</strong>, A full coverage, high-resolution, topographic model of Greenland computed from a variety of digital elevation data, J. Geophys. Res., 101(B10), 21,961-21,972, 
+<a href='http://dx.doi.org/10.1029/96JB01912'>doi:10.1029/96JB01912.
+</a> 
+</li> 
+<li> 
+<strong>Fretwell, P., Pritchard, H. D. et al (2013)
+</strong>, Bedmap2: improved ice bed, surface and thickness datasets for Antarctica, The Cryosphere, 7, 375-393, 
+<strong>2013
+</strong>.
+<a href='http://www.the-cryosphere.net/7/375/2013/tc-7-375-2013.html'>http://www.the-cryosphere.net/7/375/2013/tc-7-375-2013.html
+</a> 
+</li> 
+<li>GEODAS data set at the IHO Data Center for Digital Bathymetry at the US National Geophysical Data Center (NDGC)
+<br /> 
+<a href='http://www.ngdc.noaa.gov/mgg/bathymetry/iho.html'>http://www.ngdc.noaa.gov/mgg/bathymetry/iho.html
+</a> 
+</li> 
+<li>Global Mapper, v11, GIS data processing application software, 
+<a href='http://www.bluemarblegeo.com/products/global-mapper.php'>http://www.bluemarblegeo.com/products/global-mapper.php
+</a> 
+</li> 
+<li>Gridded bathymetry data for Irish designated waters, based on multibeam surveys, provided by the Geological Survey of Ireland (GSI). High-resolution grids of the GSI multibeam data can be accessed from 
+<a href='https://jetstream.gsi.ie/iwdds/index.html'>https://jetstream.gsi.ie/iwdds/index.html
+</a> 
+</li> 
+<li> 
+<strong>Hall, J.K.
+</strong>, Geological Survey of Israel, Current Research, Vol. 13, December 2002.Bathymetric compilations of the seas around Israel I: The Caspian and Black Seas, 
+<strong>2002
+</strong> 
+</li> 
+<li> 
+<strong>Hell, B., and M. Jakobsson (2011)
+</strong>, Gridding heterogeneous bathymetric data sets with stacked continuous curvature splines in tension, Mar. Geophys. Res., 32(4), 493-501,
+<a href='http://dx.doi.org/10.1007/s11001-011-9141-1'>doi:10.1007/s11001-011-9141-1.
+</a> 
+</li> 
+<li> 
+<strong>Henstock, T.J., McNeill, L.C. and Tappin, D.R. (2006)
+</strong>. Seafloor morphology of the Sumatran subduction zone: Surface rupture during megathrust earthquakes? Geology, v34, pp485-488
+</li> 
+<li>JAMSTEC Data Site for Research Cruises
+<br /> 
+<a href='http://www.godac.jamstec.go.jp/darwin/e'>http://www.godac.jamstec.go.jp/darwin/e
+</a> 
+</li> 
+<li> 
+<strong>Jakobsson, M., L. A. Mayer, B. Coakley, J. A. Dowdeswell, S. Forbes, B. Fridman, H. Hodnesdal, R. Noormets, R. Pedersen, M. Rebesco, H.-W. Schenke, Y. Zarayskaya A, D. Accettella, A. Armstrong, R. M. Anderson, P. Bienhoff, A. Camerlenghi, I. Church, M. Edwards, J. V. Gardner, J. K. Hall, B. Hell, O. B. Hestvik, Y. Kristoffersen, C. Marcussen, R. Mohammad, D. Mosher, S. V. Nghiem, M. T. Pedrosa, P. G. Travaglini, and P. Weatherall
+</strong>, The International Bathymetric Chart of the Arctic Ocean (IBCAO) Version 3.0, Geophysical Research Letters, doi: 10.1029/2012GL052219.
+<strong>2012
+</strong> 
+</li> 
+<li>Lamont Doherty Earth Observatory (LDEO) Ridge Multibeam Synthesis Project
+<br /> 
+<a href='http://www.ldeo.columbia.edu/research/marine-geology-geophysics/ridge-multibeam-bathymetry-synthesis'>http://www.ldeo.columbia.edu/research/marine-geology-geophysics/ridge-multibeam-bathymetry-synthesis
+</a> 
+</li> 
+<li>Law of the Sea Data, UNCLOS, Article 76, extended continental shelf, foot of slope, multibeam bathymetry, seafloor mapping, Center for Coastal and Ocean Mapping/Joint Hydrographic Center (CCOM/JHC), University of New Hampshire, USA
+</li> 
+<li>Multibeam bathymetry data from the US National Geophysical Data Center, http://www.ngdc.noaa.gov/mgg/bathymetry/multibeam.html. Quality controlled ('cleaned') version of the data set, supplied by Scripps Institution of Oceanography (SIO).
+</li> 
+<li>NOAA National Geophysical Data Center, U.S. Great Lakes Bathymetry,
+<br /> 
+<a href='http://www.ngdc.noaa.gov/mgg/greatlakes/greatlakes.html'>http://www.ngdc.noaa.gov/mgg/greatlakes/greatlakes.html
+</a> 
+</li> 
+<li> 
+<strong>Ryan, W. B. F., et al. (2009)
+</strong>, Global Multi-Resolution Topography synthesis, Geochem. Geophys. Geosyst., 10, Q03014,
+<a href='http://dx.doi.org/10.1029/2008GC002332'> doi:10.1029/2008GC002332.
+</a> 
+<br /> 
+<a href='http://www.marine-geo.org/portals/gmrt/'>http://www.marine-geo.org/portals/gmrt/
+</a> 
+</li> 
+<li> 
+<strong>Sandwell, D. T., W. H. F. Smith
+</strong>, Marine gravity anomaly from Geosat and ERS 1 satellite altimetry, Journal of Geophysical Research, v. 102 , No. B5, p. 10039-10054, 
+<strong>1997
+</strong>.
+<br /> 
+<a href='ftp://topex.ucsd.edu/pub/global_grav_1min'>ftp://topex.ucsd.edu/pub/global_grav_1min
+</a> 
+<br /> 
+<a href='http://topex.ucsd.edu/sandwell/publications/71.pdf'>http://topex.ucsd.edu/sandwell/publications/71.pdf
+</a> 
+</li> 
+<li>Schenke, Hans Werner; Hinze, Heinrich; Dijkstra, Semme J; Hoppmann, Bernd; Niederjasper, Fred; Sch&ouml;ne, Tilo (1997): AWI Bathymetric Chart of the Weddell Sea, Antarctica (BCWS). Alfred Wegener Institute, Helmholtz Center for Polar and Marine Research, Bremerhaven, doi:10.1594/PANGAEA.708081
+</li> 
+<li>Shuttle Radar Topography Mission (SRTM)
+<br /> 
+<a href='http://www2.jpl.nasa.gov/srtm/'>http://www2.jpl.nasa.gov/srtm/
+</a> 
+</li> 
+<li> 
+<strong>Smith, W. H. F., and D. T. Sandwell
+</strong>, Global seafloor topography from satellite altimetry and ship depth soundings, Science, v. 277, p. 1957-1962, 26 Sept. 
+<strong>1997
+</strong> 
+<br /> 
+<a href='ftp://topex.ucsd.edu/pub/global_topo_1min'>ftp://topex.ucsd.edu/pub/global_topo_1min
+</a> 
+<br /> 
+<a href='http://topex.ucsd.edu/sandwell/publications/74.pdf'>http://topex.ucsd.edu/sandwell/publications/74.pdf
+</a> 
+</li> 
+<li> 
+<strong>Smith, W. H. F., and P. Wessel
+</strong>, Gridding with continuous curvature splines in tension, Geophysics, vol. 55 (3), pp. 293-305, 
+<strong>1990
+</strong> 
+</li> 
+<li>SRTM30 data and documentation &mdash; 
+<a href='http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html'>http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html
+</a> 
+</li> 
+<li>SOJN04MV - bathymetry data collected by R/V Melville cruise SOJN04MV in the Indian Ocean in 1997.
+</li> 
+<li>Spinoccia, M. and Buchanan, C., 2011. XYZ marine bathymetric grids of survey GA-2476 WA Margins onboard the RV Sonne. Geoscience Australia, Canberra
+</li> 
+<li>SRTM30 data and documentation: 
+<a href='http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html'>http://www2.jpl.nasa.gov/srtm/cbanddataproducts.html
+</a> 
+</li> 
+<li> 
+<strong>Wessel, P., and W. H. F. Smith
+</strong>, Free software helps map and display data, EOS Trans. Amer. Geophys. U., vol. 72 (41), pp. 441, 445-446, 
+<strong>1991
+</strong> 
+<br /> 
+<a href='http://gmt.soest.hawaii.edu/'>http://gmt.soest.hawaii.edu/
+</a> 
+</li> 
+<li> 
+<strong>Whiteway, T., (2009)
+</strong>, Australian Bathymetry and Topography Grid, June 2009. Scale 1:5000000. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/53D99B6581B9A
+</li> 
+<li> 
+<strong>Zitellini, N., Gr&agrave;cia, E., Matias, L., Terrinha, P., Abreu, M.A., DeAlteriis, G., Henriet, J.P., Da&ntilde;obeitia, J.J., Masson, D.G., Mulder, T., Ramella, R., Somoza, L. and Diez, S. (2009)
+</strong>. The quest for the Africa-Eurasia plate boundary west of the Strait of Gibraltar: Earth and Planetary Science Letters, 280, (1-4), 13-50. (doi:10.1016/j.epsl.2008.12.005)
+</li> 
+</ol> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="Annex_A">Annex A &mdash; Data sets included in the GEBCO_2014 Grid
+</h3> 
+<p>The following is a list of the data sets used to update the original GEBCO_08 base grid, upon which the GEBCO_2014 Grid is based.
+</p> 
+<ol> 
+<li> 
+<a href="#A.1" target="_self">The Caspian Sea
+</a> 
+</li> 
+<li> 
+<a href="#A.2" target="_self">The Black Sea
+</a> 
+</li> 
+<li> 
+<a href="#A.3" target="_self">Weddell Sea Grid
+</a> 
+</li> 
+<li> 
+<a href="#A.4" target="_self">International Bathymetric Chart of the Southern Ocean (IBCSO) v1
+</a> 
+</li> 
+<li> 
+<a href="#A.5" target="_self">International Bathymetric Chart of the Arctic Ocean (IBCAO) v3
+</a> 
+</li> 
+<li> 
+<a href="#A.6" target="_self">European Marine Observation and Data Network (EMODnet) Bathymetry 2013 data set
+</a> 
+</li> 
+<li> 
+<a href="#A.7" target="_self">Baltic Sea Bathymetry Database
+</a> 
+</li> 
+<li> 
+<a href="#A.8" target="_self">Australian Bathymetry and Topography Grid, June 2009
+</a> 
+</li> 
+<li> 
+<a href="#A.9" target="_self">Global Multi-Resolution Topography (GMRT) Synthesis
+</a> 
+</li> 
+<li> 
+<a href="#A.10" target="_self">Japan Coast Guard Grid for the North Western Pacific Ocean region
+</a> 
+</li> 
+<li> 
+<a href="#A.11" target="_self">Bathymetry of the South China Sea Region
+</a> 
+</li> 
+<li> 
+<a href="#A.12" target="_self">Bathymetry of the North American Great Lakes
+</a> 
+</li> 
+<li> 
+<a href="#A.13" target="_self">North Atlantic Ocean, Gulf of Cadiz region
+</a> 
+</li> 
+<li> 
+<a href="#A.14" target="_self">Indian Ocean region off Sumatra
+</a> 
+</li> 
+<li> 
+<a href="#A.15" target="_self">Waters off the west coast of Africa
+</a> 
+</li> 
+<li> 
+<a href="#A.16" target="_self">Northwest European Continental Shelf region
+</a> 
+</li> 
+<li> 
+<a href="#A.17" target="_self">South Pacific Ocean, Coral Sea region
+</a> 
+</li> 
+<li> 
+<a href="#A.18" target="_self">Waters off Chile
+</a> 
+</li> 
+</ol> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.1">Annex A.1
+</h3> 
+<h4>The Caspian Sea
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20100927 of the GEBCO_08 Grid, released in October 2010
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 46&deg; 40' E - 54&deg; 2' E; 36&deg; 31' N - 47&deg; N
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Dr. John K. Hall, Geological Survey of Israel (retired)
+</p> 
+<p>Information on the data set is given below and further details can be found in &mdash; Bathymetric compilations of the seas around Israel I: The Caspian and Black Seas, 
+<strong>J.K. Hall
+</strong>, Geological Survey of Israel, Current Research, Vol. 13, December 
+<strong>2002
+</strong>.
+</p> 
+<h5>Data set information
+</h5> 
+<p>The grid was generated from over 280,000 bathymetric soundings and points digitised from bathymetric contours, taken from 107 Russian hydrographic charts, on a Mercator projection relative to the Pulkovo 1942 datum.
+</p> 
+<p>The digitised soundings and contour data were converted from Mercator projection co-ordinates to x,y,z values on a Universal Transverse Mercator (UTM) projection on the WGS 84 datum using Global Mapper software.
+</p> 
+<p>The data, in UTM co-ordinates, were then gridded using a kriging algorithm from Golden Software Inc's Surfer software package using 100 m interval grid spacing.
+</p> 
+<p>The 100 m interval UTM grid was converted to geographic co-ordinates, with grid intervals of three arc seconds. Due to the Caspian Sea's lower sea level stand, 28 m was added to the depths in the grid, using Global Mapper software. The data set was supplied to GEBCO at this resolution.
+</p> 
+<p>The grid was sampled to 30 arc second intervals using 'grdsample' from Generic Mapping Tools (GMT).
+</p> 
+<p>Quality control checks were carried out on the data set, looking for artefacts in the gridded data. This was done by comparing the gridded data set with the source sounding and contour data. Any artefacts noted in the grid were removed.
+</p> 
+<p>The Caspian Sea grid was then incorporated into the GEBCO_08 Grid. This was achieved by firstly extracting grid points (largely land elevation) from the GEBCO_08 Grid that fell outside the geographic coverage of the Caspian Sea grid. These data were converted to ASCII x,y,z values. An ASCII x,y,z file of data values was created from the Caspian Sea grid. The data sets were combined and then gridded at 30 arc second intervals using 'Surface' (a minimum tension surface gridding algorithm) from GMT.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.2">Annex A.2
+</h3> 
+<h4>The Black Sea
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20100927 of the GEBCO_08 Grid, released in October 2010
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 26&deg; E - 41&deg; 46' E; 40&deg; N - 47&deg; 15'N
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Dr. John K. Hall, Geological Survey of Israel (retired)
+</p> 
+<p>Information on the data set is given below and further details can be found in &mdash; Bathymetric compilations of the seas around Israel I: The Caspian and Black Seas, 
+<strong>J.K. Hall
+</strong>, Geological Survey of Israel, Current Research, Vol. 13, December 
+<strong>2002
+</strong>.
+</p> 
+<h5>Data set information
+</h5> 
+<p>The grid was generated from over 196,400 bathymetric soundings digitised from Russian hydrographic charts, on a Mercator projection, relative to the WGS 72 and Pulkovo 1942 datums.
+</p> 
+<p>The data were gridded using a kriging algorithm from Golden Software Inc's Surfer software package. The gridded was converted to geographic co-ordinates (relative to WGS 84) and the data set was supplied to GEBCO at 15 arc second grid intervals.
+</p> 
+<p>The Black Sea grid was sampled to 30 arc second intervals using 'grdsample' from Generic Mapping Tools (GMT).
+</p> 
+<p>Quality control checks were carried out on the data set, looking for artefacts in the gridded data. This was done by comparing the gridded data set with the source sounding data. Any artefacts noted in the grid were removed.
+</p> 
+<p>The Black Sea grid was then incorporated into the GEBCO_08 Grid. This was achieved by firstly extracting grid points (largely land elevation) from the GEBCO_08 Grid that fell outside the geographic coverage of the Black Sea grid. These data were converted to ASCII x,y,z values. An ASCII x,y,z file of data values was created from the Black Sea grid and the data sets were combined and then gridded at 30 arc second intervals using 'Surface' (a minimum tension surface gridding algorithm) from GMT.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.3">Annex A.3
+</h3> 
+<h4>The Weddell Sea - Bathymetric Chart of the Weddell Sea (BCWS)
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20100927 of the GEBCO_08 Grid, released in October 2010
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 60&deg; S to 66&deg; S; 75&deg; W to 15&deg; W, 66&deg; S to 79&deg; S; 65&deg; W to 2&deg; E
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Alfred Wegener Institute for Polar and Marine Research (AWI), 
+<a href='http://www.awi.de'>http://www.awi.de
+</a> 
+</p> 
+<h4>Data source and gridding method
+</h4> 
+<p>The bathymetric grid was generated at AWI from the contours of the Bathymetric Chart of the Weddell Sea (BCWS). Further information about the BCWS is given below.
+</p> 
+<h4>Bathymetric Chart of the Weddell Sea (BCWS)
+</h4> 
+<p>The BCWS is a 1:1,000,000 map series plus a 1:3,000,000 master sheet based on compilations of bathymetric data in the Weddell Sea. This data set consists of bathymetric contour lines, generally at interval of 100m, but at 50m in the southern Weddell Sea.
+</p> 
+<p> 
+<strong>Chief Editor&mdash;
+</strong> Dr. Hans Werner Schenke (AWI)
+</p> 
+<p> 
+<strong>Publication dates&mdash;
+</strong> 1998-2001
+</p> 
+<p> 
+<strong>Data set Digital Object Identifier (DOI)&mdash;
+</strong> 
+<a href='http://doi.pangaea.de/10.1594/PANGAEA.708081'>doi:10.1594/PANGAEA.708081
+</a> 
+</p> 
+<p>Further information about the BCWS is given on AWI's web site.
+</p> 
+<h4>Grid preparation
+</h4> 
+<p>The bathymetric contour data from the BCWS were gridded in Mercator projection co-ordinates. Firstly, a Triangulated Irregular Network (TIN) grid was created from the contour lines using the Douglas-Peucker algorithm.
+</p> 
+<p>The TIN was converted to a grid with a regular cell spacing using Natural Neighbours interpolation with a cell size of 250m. The grid was then projected from Mercator to geographic coordinates with a cell size of 30 arc-seconds.
+</p> 
+<a href="#content">Back to contents
+</a> 
+<h3 id="A.4">Annex A.4
+</h3> 
+<h4>International Bathymetric Chart of the Southern Ocean (IBCSO) version 1
+</h4> 
+<p> 
+<strong>First included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in December 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 60&deg; S to 90&deg; S; 180&deg; W to 180&deg; E
+</p> 
+<p> 
+<strong>Data set provided by &mdash;
+</strong> Dipl.-Ing. Jan Erik Arndt, Alfred Wegener Institute, Bremerhaven, Germany, on behalf of the IBCSO team
+</p> 
+<p> 
+<strong>Data set citation &mdash; Arndt, J.E., H. W. Schenke, M. Jakobsson, F. Nitsche, G. Buys, B. Goleby, M. Rebesco, F. Bohoyo, J.K. Hong, J. Black, R. Greku, G. Udintsev, F. Barrios, W. Reynoso-Peralta, T. Morishita, R. Wigley,
+</strong>The International Bathymetric Chart of the Southern Ocean (IBCSO) Version 1.0 - A new bathymetric compilation covering circum-Antarctic waters, Geophysical Research Letters, 
+<a href='http://dx.doi.org/10.1002/grl.50413'>doi: 10.1002/grl.50413
+</a> 
+</p> 
+<p> 
+<strong>Link to data source
+</strong> &mdash; 
+<a href='http://www.ibcso.org'>www.ibcso.org
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>The IBCSO is terrain model for the Southern Ocean area south of 60&deg;S. It has been developed from a database of multibeam and single beam echo sounder data points &mdash; digitised soundings from nautical charts and regional bathymetric compilations. The data have been contributed by more than 30 institutions from 15 countries. Land and ice shelf regions are based on the Bedmap2 data sets.
+</p> 
+<p>Using the Bedmap2 data sets, the IBCSO grid is made available with a choice for land/ice shelf areas of either 'surface elevation', giving the surface elevation including ice cover, or 'bedrock', giving the surface elevation without ice cover. The data set is available at 500m grid intervals in Polar Stereographic projection units and also at one arc-minute grid intervals in geographic latitude and longitude co-ordinates.
+</p> 
+<p>Further information about the development of the data set can be found on the IBCSO web site &mdash; 
+<a href='http://www.ibcso.org'>www.ibcso.org
+</a> . Further information about Bedmap2 can be found on their web site &mdash; 
+<a href='http://www.antarctica.ac.uk//bas_research/our_research/az/bedmap2/'>www.antarctica.ac.uk//bas_research/our_research/az/bedmap2/
+</a> 
+</p> 
+<p>For consistency with the Arctic region, the 'surface elevation' version of the IBCSO grid was used to update the GEBCO grid.
+</p> 
+<p>The one arc minute interval version of the IBCSO grid was sampled to 30 arc seconds using GMT's grdsample software routine. The data were edge matched with the existing GEBCO grid at 60&deg; S using a feather blending routine, part of the Global Mapper v11.01 software package.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.5">Annex A.5
+</h3> 
+<h4>International Bathymetric Chart of the Arctic Ocean (IBCAO) version 3
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 90&deg; N to 64&deg; N; 180&deg; W to 180&deg; E
+</p> 
+<p> 
+<strong>Data set provided by &mdash;
+</strong> Prof. Martin Jakobsson, Stockholm University, Sweden, on behalf of the IBCAO team
+</p> 
+<p> 
+<strong>Citation &mdash; Jakobsson, M., L. A. Mayer, B. Coakley, J. A. Dowdeswell, S. Forbes, B. Fridman, H. Hodnesdal, R. Noormets, R. Pedersen, M. Rebesco, H.-W. Schenke, Y. Zarayskaya A, D. Accettella, A. Armstrong, R. M. Anderson, P. Bienhoff, A. Camerlenghi, I. Church, M. Edwards, J. V. Gardner, J. K. Hall, B. Hell, O. B. Hestvik, Y. Kristoffersen, C. Marcussen, R. Mohammad, D. Mosher, S. V. Nghiem, M. T. Pedrosa, P. G. Travaglini, and P. Weatherall,
+</strong> The International Bathymetric Chart of the Arctic Ocean (IBCAO) Version 3.0, Geophysical Research Letters,
+<a href='http://dx.doi.org/10.1029/2012GL052219'>doi: 10.1029/2012GL052219.
+</a> 
+</p> 
+<p> 
+<strong>Link to data source &mdash;
+</strong> 
+<a href='http://www.ibcao.org'>www.ibcao.org
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>This version of the IBCAO represents the largest improvement in the data set since its release in 1999. It includes new data sets collected by the circum-Arctic nations, opportunistic data collected from fishing vessels and data acquired from US Navy submarines and research ships of various nations. The grid has been developed on 500 metre spacing and built using an improved gridding algorithm.
+</p> 
+<p>The IBCAO grid was edge matched with the existing GEBCO grid at 64&deg; N using a feather blending routine, part of the Global Mapper v11.01 software package.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.6">Annex A.6
+</h3> 
+<h4>European Marine Observation and Data Network (EMODnet) Bathymetry 2013 data set
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 63&deg; N to 30&deg; N; 34&deg; W to 37&deg; E
+</p> 
+<p> 
+<strong>Data set provided by&mdash;
+</strong> EMODnet bathymetry team
+</p> 
+<p> 
+<strong>Link to data source &mdash;
+</strong> 
+<a href='http://www.emodnet-hydrography.eu'>www.emodnet-hydrography.eu
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>EMODnet is a project, funded by the European Commission, to bring together marine data into interoperable, continuous and publicly available data sets for complete maritime basins in European waters.
+</p> 
+<p>As part of this project, the EMODnet bathymetry portal provides bathymetry data in the form of Digital Terrain Models (DTM) for selected maritime basins. The DTMs have been produced from collated bathymetric data sets integrated into a central DTM. There are 'holes' in the central DTM in regions where high resolution data sets are not available.
+</p> 
+<p>Through a collaboration between GEBCO and the EMODnet bathymetry team, the 2013 version of the EMODnet grid has been incorporated into the GEBCO global grid using the 'remove-restore' procedure. This has resulted in a continuous grid with gaps filled by the existing GEBCO grid.
+</p> 
+<p>This combined grid has been included in GEBCO_2014 and forms the basis of future EMODnet bathymetric grid development work.
+</p> 
+<p>It is planned to continue the GEBCO and EMODnet collaboration work for future development of these data sets.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.7">Annex A.7
+</h3> 
+<h4>Baltic Sea Bathymetry Database (BSBD)
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> Baltic Sea region 66&deg; N to 53&deg; N 41'; 7&deg; 45' E to 30&deg; E
+</p> 
+<p> 
+<strong>Data set provided by&mdash;
+</strong> BSBD team
+</p> 
+<p> 
+<strong>Attribution&mdash;
+</strong> Baltic Sea Hydrographic Commission, 2013, Baltic Sea Bathymetry Database version 0.9.3. Downloaded from http://data.bshc.pro/
+</p> 
+<p> 
+<strong>Link to data source &mdash;
+</strong> 
+<a href='http://data.bshc.pro'>http://data.bshc.pro
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>The Baltic Sea Bathymetry Database is the result of an effort to generate and make available a bathymetric grid for the Baltic Sea region using data from Baltic Sea countries' national hydrographic offices under the umbrella of the Baltic Sea Hydrographic Commission.
+</p> 
+<p>The data set was sampled to the same grid size interval as the GEBCO grid and then the 'remove-restore' procedure was used to include the grid into the GEBCO global grid.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.8">Annex A.8
+</h3> 
+<h4>Australian Bathymetry and Topography Grid, June 2009
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 8&deg; 30' S to 50&deg; S; 105&deg; E to 163&deg; E
+</p> 
+<p> 
+<strong>Data set provided by&mdash;
+</strong> Geoscience Australia
+</p> 
+<p> 
+<strong>Data set identifier &mdash;
+</strong> Australia New Zealand Land Information Council (ANZLIC) unique identifier &mdash; ANZCW0703013116
+</p> 
+<p> 
+<strong>Data set citation &mdash;
+</strong> Whiteway, T., (2009), Australian Bathymetry and Topography Grid, June 2009. Scale 1:5000000. Geoscience Australia, Canberra. http://dx.doi.org/10.4225/25/53D99B6581B9A
+</p> 
+<h4>Data set information
+</h4> 
+<p>The bathymetric portion of the grid has been developed from a number of data sources, including
+</p> 
+<ul> 
+<li>Multibeam data
+</li> 
+<li>Fairsheets (1:250,000 Series)
+</li> 
+<li>Laser Airborne Depth Sounder (LADS) data
+</li> 
+<li>ETOPO2v2g bathymetric grid
+</li> 
+</ul> 
+<p>The sections of the grid based on Multibeam, Fairsheets and LADS data sets, mainly in near shore regions, have been used to update the GEBCO grid.
+</p> 
+<p>The data have been included into the GEBCO grid using the remove-restore procedure.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.9">Annex A.9
+</h3> 
+<h4>Global Multi-Resolution Topography (GMRT) synthesis
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> The GMRT synthesis contributes data in all ocean regions, the grid cells based on this data set are identified in the GEBCO Source Identifier Grid
+</p> 
+<p> 
+<strong>Data set provided by &mdash;
+</strong> The Lamont-Doherty Earth Observatory (LDEO) of Columbia University
+</p> 
+<p> 
+<strong>Link to data source &mdash;
+</strong> 
+<a href='http://www.marine-geo.org/portals/gmrt/'>http://www.marine-geo.org/portals/gmrt/
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>The LDEO GMRT synthesis makes use of sonar data collected by scientists and institutions worldwide, merging them into a single continuously updated compilation of high resolution seafloor topography. The synthesis began in 1992 as the Ridge Multibeam Synthesis (RMBS), was expanded to include multibeam bathymetry data from the Southern Ocean and now includes other bathymetry from throughout the global and coastal oceans.
+</p> 
+<p>LDEO have provided over 9,600 data tiles from their GMRT tile set (400 m resolution) for updating GEBCO's grid.
+</p> 
+<p>The data from the GMRT tile set has been included into the GEBCO grid using the remove-restore procedure.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.10">Annex A.10
+</h3> 
+<h4>Japan Coast Guard Grid for the North Western Pacific Ocean region
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> North Western Pacific Ocean area: 17&deg;N - 43&deg;N; 126&deg;E - 160&deg;E
+</p> 
+<p> 
+<strong>Data set provided by &mdash;
+</strong> Japan Oceanographic Data Center (JODC) of the Japan Coast Guard
+</p> 
+<h4>Data set information
+</h4> 
+<p>The grid for this area was originally developed at 9 arc-second intervals and based on the following source data
+</p> 
+<ul> 
+<li>(1) Land data
+</li> 
+<li>(2) Multibeam data from the Japan Coast Guard
+</li> 
+<li>(3) A pre-prepared 500m interval grid based on measured sounding data: J-EGG500 grid JODC-Expert Grid data for Geographic -500m 
+<a href='http://www.jodc.go.jp/data_set/jodc/jegg_intro.html'>www.jodc.go.jp/data_set/jodc/jegg_intro.html
+</a> 
+</li> 
+<li>(4) GEBCO_08
+</li> 
+</ul> 
+<img src="https://www.bodc.ac.uk/data/documents/nodb/images/301801AB.jpg" alt="BODC document image" /> 
+<p>The gridded data set for the area was developed by combining the above data sources using the 'surface' gridding algorithm from Generic Mapping Tools (GMT). The areas where no multibeam data exists were filled with the J-EGG500 data (3) or with GEBCO_08 grid data (4) for the areas outside of the coverage of (3).
+</p> 
+<p>To avoid 'steps' between these data sets during the gridding process, 'buffering zones' were created around data sets (2) and (3). The buffer zone width was 1 km for the contact between (2) and (3), and 2 km for the contacts between (2) and (4) or between (3) and (4).
+</p> 
+<p>The values in the 'buffering zones' are interpolated, based on values from the surrounding gridded data sets. In addition, the relatively small data gaps between land values and multibeam data or within the area based on multibeam data were interpolated from nearby data.
+</p> 
+<p>The final grid was generated by sampling to 30 arc seconds using 'grdsample' from Generic Mapping Tools.
+</p> 
+<p>The data set has been included into the GEBCO grid using the remove-restore procedure.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.11">Annex A.11
+</h3> 
+<h4>Bathymetry of the South China Sea region
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 101&deg; E - 122&deg; E; 5&deg; S - 25&deg; N
+</p> 
+<p> 
+<strong>Data set provided by &mdash;
+</strong> The East Asia Hydrographic Commission
+</p> 
+<h4>Data set information
+</h4> 
+<p>Data extracted from Electronic Navigation Charts (ENCs) has been provided by the East Asia Hydrographic Commission for part of the South China Sea region to help update the GEBCO_08 Grid. This is as part of an initiative to help improve GEBCO's grids in shallower water regions, bathymetry.
+</p> 
+<p>Over 12,200 soundings were provided with over 8,570 in waters of a depth of 200 m or shallower. The data set also contains bathymetric contours.
+</p> 
+<p>Sounding point data and data from some of the bathymetric contours in the depth region of 200 m and shallower were used to update the GEBCO grid. These data were combined with data extracted from the GEBCO grid (in regions deeper than 200 m) and gridded using an adjustable tension continuous curvature surface gridding algorithm, i.e. 'surface' from Generic Mapping Tools (GMT).
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.12">Annex A.12
+</h3> 
+<h4>Bathymetry of the North American Great Lakes
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 50&deg; N - 40&deg; 30' N; 93&deg; W - 76&deg; W
+</p> 
+<p> 
+<strong>Link to data source &mdash;
+</strong> 
+<a href='http://www.ngdc.noaa.gov/mgg/greatlakes/'>http://www.ngdc.noaa.gov/mgg/greatlakes/
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>The bathymetry data for the North American Great Lakes are made available as part of program managed by NGDC and rely on the cooperation of NOAA/Great Lakes Environmental Research Laboratory, NOAA/National Ocean Service, the Canadian Hydrographic Service, other agencies and academic laboratories.
+</p> 
+<p>The gridded data files were downloaded from the US NGDC's web site (from the above link) with the 'Mean Sea Level' export option selected.
+</p> 
+<p>The data were included into the GEBCO grid using an adjustable tension continuous curvature surface gridding algorithm, i.e. 'surface' from Generic Mapping Tools (GMT).
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.13">Annex A.13
+</h3> 
+<h4>North Atlantic Ocean, Gulf of Cadiz region &mdash; SWIM project &quot;Earthquake and Tsunami hazards of active faults at the South West Iberian Margin: deep structure, high-resolution imaging and paleoseismic signature&quot;
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 38&deg; 36' N - 34&deg; N; 13&deg; 30' W - 5&deg; 5' W
+</p> 
+<p> 
+<strong>Data set citation &mdash;
+</strong> The quest for the Africa-Eurasia plate boundary west of the Strait of Gibraltar: 
+<strong>Zitellini, N., Gr&agrave;cia, E., Matias, L., Terrinha, P., Abreu, M.A., DeAlteriis, G., Henriet, J.P., Da&ntilde;obeitia, J.J., Masson, D.G., Mulder, T., Ramella, R., Somoza, L. and Diez, S. (2009).
+</strong> Earth and Planetary Science Letters, 280, (1-4), 13-50. (
+<a href='http://dx.doi.org/10.1016/j.epsl.2008.12.005'>doi:10.1016/j.epsl.2008.12.005
+</a>)
+</p> 
+<h4>Data set information
+</h4> 
+<p>The grid was developed for a study into the missing link in the plate boundary between Eurasia and Africa in the central Atlantic &mdash; carried out under the European Science Foundation (ESF) EuroMargins SWIM project.
+</p> 
+<p>The data set was compiled from 19 bathymetric surveys carried out between 2000 and 2006 by teams belonging to 14 research institutions from seven European countries.
+</p> 
+<p>The data were included into the GEBCO grid using the remove-restore procedure.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.14">Annex A.14
+</h3> 
+<h4>Indian Ocean region off Sumatra
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 7&deg; N - 1&deg; 30' N; 92&deg; E - 96&deg; E
+</p> 
+<p> 
+<strong>Data set acknowledgement &mdash; Timothy J. Henstock, Lisa C. McNeill, and David R. Tappin,
+</strong> Seafloor morphology of the Sumatran subduction zone: Surface rupture during megathrust earthquakes? Geology, v34, pp485-488, 
+<strong>2006
+</strong> 
+</p> 
+<p>The data were gathered by HMS Scott, a UK Royal Navy survey vessel, during marine scientific research coordinated by the Joint Environment Directorate of Defence Intelligence. The Royal Navy, British Geological Survey, National Oceanography Centre (Southampton), United Kingdom Hydrographic Office and the Government of Indonesia cooperated on this project.
+</p> 
+<p> 
+<strong>Link to data source &mdash;
+</strong> 
+<a href='http://www.noc.soton.ac.uk/gg/sumatra/hms_scott.html'>http://www.noc.soton.ac.uk/gg/sumatra/hms_scott.html
+</a> 
+</p> 
+<h4>Data set information
+</h4> 
+<p>During January and February 2005, the Royal Navy survey vessel HMS Scott conducted bathymetric mapping of part of the Sumatra subduction zone. The work concentrated on the southern 450 km of the 2004 rupture (within Indonesian waters) and on the deeper water around the trench and the slope of the accretionary wedge, although some coverage of the Aceh forearc basin was also obtained.
+</p> 
+<p>The resultant bathymetric grid produced from the survey data has been included in the GEBCO Grid.
+</p> 
+<p>The data were included into the GEBCO grid using the remove-restore procedure.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.15">Annex A.15
+</h3> 
+<h4>Waters off the West Coast of Africa
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 34&deg; N - 8&deg; N; 18&deg; 30' W - 7&deg; 30' W
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Olex AS, Norway
+</p> 
+<h5>Data source
+</h5> 
+<p>Olex is a Norwegian company that produces mapping and visualisation software, largely based on data collected from fishing vessels. They have made a sub-sample of their global marine soundings database available to GEBCO. This data set is largely focussed in shallower water areas, mainly in the North Atlantic Ocean region.
+</p> 
+<h4>Data set information
+</h4> 
+<p>Data from the Olex data set within a bounding polygon, the extent of the dense Olex data coverage in this area, were used to update the GEBCO grid.
+</p> 
+<p>These data were combined with data from the existing GEBCO grid, outside of the polygon region, using an adjustable tension continuous curvature surface gridding algorithm, i.e. 'surface' from Generic Mapping Tools (GMT).
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.16">Annex A.16
+</h3> 
+<h4>Northwest European Continental Shelf region
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 64&deg; N - 45&deg; N; 10&deg; W - 15&deg; 30' E
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Olex AS, Norway
+</p> 
+<h4>Data set information
+</h4> 
+<p>Olex is a Norwegian company that produces mapping and visualisation software, largely based on data collected from fishing vessels. They have made a sub-sample of their global marine soundings database available to GEBCO. This data set is largely focussed in shallower water areas, mainly in the North Atlantic Ocean region.
+</p> 
+<p>Data from the Olex data set, for the Northwest European Continental Shelf region, have been used in the development of previous versions of the GEBCO grid. However, the coverage of the Olex data used stopped at 0&deg; E. The method used to include the data in the GEBCO grid also resulted in a line of discontinuity in the data set, see our 'reported bugs' page &mdash; http://www.bodc.ac.uk/help_and_hints/errata/.
+</p> 
+<p>The coverage of the Olex data set has now been extended to &mdash; 64&deg; N - 45&deg; N; 10&deg; W - 15&deg; 30' E.
+</p> 
+<p>The data were included in the GEBCO grid using the remove-restore procedure.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.17">Annex A.17
+</h3> 
+<h4>South Pacific Ocean, Coral Sea region
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 187&deg; S to 22&deg; S; 158&deg; E to 162&deg; E
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Geoscience Australia (on behalf of the data set originators at the University of Sydney) for data from R/V Southern Surveyor (survey code SS2012_v06) and The Royal Australian Navy, Australian Hydrographic Service for data from hydrographic surveys of the region.
+</p> 
+<h4>Data set information
+</h4> 
+<p>At the end of 2012, a scientific cruise (survey code SS2012_v06) led by the University of Sydney in the Coral Sea region of the South Pacific Ocean reported that an island, &quot;Sandy Island&quot;, shown in some digital data sets, including the GEBCO_08 Grid, did not exist. Further information can be found on GEBCO's web site.
+</p> 
+<p>It is believed that the island has been incorporated into terrain models such as GEBCO via its inclusion in digital coastline data sets.
+</p> 
+<p>In order to correct this error in the GEBCO_08 Grid, the scientists who collected the data kindly made it available to GEBCO, via Geoscience Australia. To further help with this update work, the Australian Hydrographic Office provided data from some of their survey data sets for the region.
+</p> 
+<p>Using these data sources, this area of the GEBCO_08 Grid has been updated. The update work was carried out by gridding the newly supplied data using GMT's 'surface' gridding algorithm.
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+<h3 id="A.18">Annex A.18
+</h3> 
+<h4>Waters off Chile
+</h4> 
+<p> 
+<strong>Included in &mdash;
+</strong> version 20141103 of the GEBCO_2014 Grid, released in November 2014
+</p> 
+<p> 
+<strong>Data set coverage &mdash;
+</strong> 18&deg; S to 55&deg; S; 77&deg; W to 67&deg; W
+</p> 
+<p> 
+<strong>Data set provider &mdash;
+</strong> Chilean Navy Oceanographic and Hydrographic Service
+</p> 
+<h4>Data set information
+</h4> 
+<p>Data extracted from Electronic Navigation Charts (ENCs) has been provided for waters off Chile to help update the GEBCO Grid. This is as part of an initiative to help improve GEBCO's grids in shallower water regions.
+</p> 
+<p>From this data set, over 81,000 soundings were used to update the GEBCO grid. These data were combined with other trackline survey data in the region and gridded using an adjustable tension continuous curvature surface gridding algorithm, i.e. 'surface' from Generic Mapping Tools (GMT).
+</p> 
+<p> 
+<a href="#content">Back to contents
+</a> 
+</p> 
+
+	<script type="text/javascript" src="http://www.google-analytics.com/ga.js"></script>
+    <script type="text/javascript">
+      var pageTracker = _gat._getTracker("UA-6211594-1");
+      pageTracker._trackPageview();
+    </script>
+</body>
+</html>
