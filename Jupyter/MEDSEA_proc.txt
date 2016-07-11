@@ -1,0 +1,561 @@
+map
+   basedirInteractive http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/
+   overlayImage http://tsunami.jrc.it/StormSurgeBulletins/LAST/MEDITERRANEAN_SEA_END.png
+   bboxdirInteractive -5.5,43,28.5,47.5
+   bullImage http://tsunami.jrc.it/StormSurgeBulletins/LAST/MEDITERRANEAN_SEA_END.jpg
+   bboxbullImage -5.5,43,28.5,47.5
+  xmin 27 Jun 2016 11:03:39 AM
+  xmax 11 Jul 2016 11:03:39 AM
+end map
+image
+http://oiswww.eumetsat.org/IPPS/html/latestImages/EUMETSAT_MSG_IR108EColor-centralEurope.jpg
+Meteosat 0 degree, Channels, IR 10.8
+end image
+image
+http://oiswww.eumetsat.org/IPPS/html/latestImages/EUMETSAT_MSG_RGB-naturalcolor-centralEurope.jpg
+Meteosat 0 Degree, RGB composite, Natural Colors
+end image
+image
+http://old.ecmwf.int/products/forecasts/d/getchart/catalog/products/forecasts/medium/deterministic/msl_uv850_z500!Wind%20850%20and%20mslp!0!Europe!pop!od!oper!public_plots! 2016070700!!chart.gif
+Analysis time 0
+end image
+image
+http://old.ecmwf.int/products/forecasts/d/getchart/catalog/products/forecasts/medium/deterministic/msl_uv850_z500!Wind%20850%20and%20mslp!24!Europe!pop!od!oper!public_plots! 2016070700!!chart.gif
+Forecast 24 h
+end image
+image
+http://old.ecmwf.int/products/forecasts/d/getchart/catalog/products/forecasts/medium/deterministic/msl_uv850_z500!Wind%20850%20and%20mslp!48!Europe!pop!od!oper!public_plots!2016070700!!chart.gif
+Forecast 48 h
+end image
+image
+http://old.ecmwf.int/products/forecasts/d/getchart/catalog/products/forecasts/medium/deterministic/msl_uv850_z500!Wind%20850%20and%20mslp!72!Europe!pop!od!oper!public_plots!2016070700!!chart.gif
+Forecast 72 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_u10x00u10y0000.jpg
+Wind Speed at sea level at time 0 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_u10x00u10y0024.jpg
+Wind Speed at sea level at time 24 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_u10x00u10y0048.jpg
+Wind Speed at sea level at time 48 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_u10x00u10y0072.jpg
+Wind Speed at sea level at time 72 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_TIF_H_00.jpg
+Sea Level Height at time 0
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_TIF_H_24.jpg
+Sea Level Height at time 24 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_TIF_H_48.jpg
+Sea Level Height at time 48 h
+end image
+image
+http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/calc_20160707.00/OUT_TIF_H_72.jpg
+Sea Level Height at time 72 h
+end image
+SETNOW 07 Jul 2016 11:04:20 AM
+plot
+buoyID|1630|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.72506|-2.468386|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Almeira (ES)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:04:29 AM
+plot
+buoyID|1706|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=39.4404|-0.2990|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Valencia (ES)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:04:39 AM
+plot
+buoyID|819|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=41.27749|2.213909|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Barcelona (ES)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:04:49 AM
+plot
+buoyID|1449|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=38.79034|1.45098|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Ibiza (ES)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:04:57 AM
+plot
+buoyID|1461|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=39.39457|2.614552|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Palma de Mallorca (ES)$offset
+endplot
+
+image
+http://www.helios-hotels.com/playa_hel.jpg
+Webcam in Palma de Mallorca (http://www.helios-hotels.com )
+end image
+SETNOW 07 Jul 2016 11:05:05 AM
+plot
+buoyID|100080|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=37.45276|-0.9822839|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Cartagena (ES)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:05:15 AM
+plot
+buoyID|1741|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=43.31857|3.761195|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Sète (FR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:05:25 AM
+plot
+buoyID|1721|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=43.44241|6.971288|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Cannes (FR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:05:34 AM
+plot
+buoyID|1500|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=43.09528|9.26704|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Corsica, Centuri (FR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:05:41 AM
+plot
+buoyID|1862|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=40.96251|8.40323|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Porto Torres (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:05:48 AM
+plot
+buoyID|1841|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=39.22599|8.231236|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Carloforte (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:05:54 AM
+plot
+buoyID|1848|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=43.83057|8.14948|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Imperia (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:01 AM
+plot
+buoyID|1846|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=44.32259|8.919402|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Genova (IT)$offset
+endplot
+
+image
+http://www.webcam.comune.genova.it/images_out/ingressoporto/current.jpg
+Webcam in Genova, port entrance, by Comune di Genova
+end image
+SETNOW 07 Jul 2016 11:06:07 AM
+plot
+buoyID|1843|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=41.9992|11.67727|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Civitavecchia (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:13 AM
+plot
+buoyID|1855|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=40.66343|14.20847|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Napoli (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:19 AM
+plot
+buoyID|1847|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=38.7852|15.2018|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+smoothPost 1 20
+chartTitle Ginostra (IT)$offset
+endplot
+
+image
+http://www.mareografico.it/DATA/Ginostra.jpg
+Webcam in Ginostra, Stromboli Island, by Istituto Superiore per la Protezione e la Ricerca Ambientale
+end image
+SETNOW 07 Jul 2016 11:06:23 AM
+plot
+buoyID|1858|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=38.16961|13.45963|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Palermo (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:28 AM
+plot
+buoyID|1851|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=35.48035|12.60743|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Lampedusa (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:35 AM
+plot
+buoyID|100083|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.85567|11.92482|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Pantelleria (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:44 AM
+plot
+buoyID|100084|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.66432|15.1286|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Portopalo (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:06:54 AM
+plot
+buoyID|1844|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=39.05812|17.20896|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+smoothPost 1 20
+chartTitle Crotone (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:07:01 AM
+plot
+buoyID|1866|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=42.96519|13.977|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle San Benedetto del Tronto (IT)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:07:08 AM
+plot
+buoyID|1870|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=45.38967|12.43677|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+chartTitle Venezia (IT)$offset
+endplot
+
+image
+http://93.62.201.235/maree/WEBCAM/smarcoweb2.jpg
+Webcam in Venezia, Piazza San Marco, by Istitutuzione Centro Previsione e Segnalazione Maree
+end image
+SETNOW 07 Jul 2016 11:07:16 AM
+plot
+buoyID|1452|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=37.59575|21.32675|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+smoothPost 1 20
+chartTitle Katakolo (GR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:07:26 AM
+plot
+buoyID|2003|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+HARMONICS off
+sensorID|SENSOR=35.19995|23.67472|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.25
+ymax 1.0
+removeOffset 2 1
+smoothPost 1 20
+chartTitle Paleochora (GR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:07:37 AM
+plot
+buoyID|2001|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.06577|23.00762|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+smoothPost 1 20
+chartTitle Kapsali (GR)$offset
+endplot
+
+image
+http://tsunami.jrc.it/webcams/Kapsali_LAST.jpg
+Webcam in Kapsali by National Observatory of Athens
+end image
+SETNOW 07 Jul 2016 11:07:45 AM
+plot
+buoyID|2005|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.79333|22.01143|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+smoothPost 1 20
+chartTitle Koroni (GR)$offset
+endplot
+
+image
+http://tsunami.jrc.it/webcams/Koroni_LAST.jpg
+Webcam in Koroni by National Observatory of Athens
+end image
+SETNOW 07 Jul 2016 11:07:54 AM
+plot
+buoyID|1463|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=37.81866|23.55226|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Peiraias (GR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:08:05 AM
+plot
+buoyID|2361|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.11199|28.14563|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Kalathos (GR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:08:18 AM
+plot
+buoyID|100086|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+HARMONICS off
+sensorID|SENSOR=38.12706|22.87929|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Corinth (GR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:08:27 AM
+plot
+buoyID|100088|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.45011|28.96766|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Fethiye (TR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:08:39 AM
+plot
+buoyID|1889|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=36.66055|36.05855|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Iskenderum (TR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:08:44 AM
+plot
+buoyID|2031|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=40.2462|25.98771|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -0.5
+ymax 0.75
+removeOffset 2 1
+removeOutliers 1 20
+chartTitle Gokceada (TR)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:08:54 AM
+plot
+buoyID|2367|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=31.67815|34.42682|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+removeOffset 2 1
+removeOutliers 1 20
+smoothPost 1 20
+chartTitle Ashkelon (IL)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:09:06 AM
+plot
+buoyID|1440|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+sensorID|SENSOR=31.31375|29.87623|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+removeOffset 2 1
+removeOutliers 1 20
+smoothPost 1 20
+chartTitle Alexandria (EG)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:09:12 AM
+plot
+buoyID|100091|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+HARMONICS off
+sensorID|SENSOR=43.79977|28.67779|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -8
+ymax -7
+removeOffset 2 1
+chartTitle Mangalia (RO)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:09:20 AM
+plot
+buoyID|100092|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+HARMONICS off
+sensorID|SENSOR=44.20626|28.68428|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -8
+ymax -7
+removeOffset 2 1
+chartTitle Constanta (RO)$offset
+endplot
+
+SETNOW 07 Jul 2016 11:09:28 AM
+plot
+buoyID|100093|2||http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00
+HARMONICS off
+sensorID|SENSOR=45.14679|29.74185|Sensor||-1|-1|http://tsunami.jrc.it/ECMWF/2016/FIX_MED_SEA/final/|09 Mar 2016 00:00|1.0|1||3|
+xmin 27 Jun 2016 12:00:00 AM
+xmax 11 Jul 2016 12:00:00 AM
+ymin -2
+ymax -1
+removeOffset 2 1
+chartTitle Sulina (RO)$offset
+endplot
+
