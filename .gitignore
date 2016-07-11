@@ -21,3 +21,15 @@ TAT/D3/
 
 # zip files
 *.zip
+
+#ignore .jupyter chekpoints folder
+Jupyter/.ipynb_checkpoints
+Jupyter/DEV/.ipynb_checkpoints
+Jupyter/Notebooks/.ipynb_checkpoints
+
+#ignore notebook output folders
+Jupyter/mnt
+Jupyter/tmp
+Jupyter/temp
+Jupyter/__pycache__
+
