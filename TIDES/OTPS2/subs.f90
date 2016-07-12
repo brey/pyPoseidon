@@ -3224,6 +3224,17 @@
           write(11)uv
          enddo
          close(11)
+
+!!! OUTPUT in asci
+         open(unit=12,file = 'uv.txt')
+         write(12,*) nl,ml,ncon,th_lim,ph_lim,c_id
+         do ic=1,ncon
+          uv(1,:,:)=u(ic,:,:)
+          uv(2,:,:)=v(ic,:,:)
+          write(12,*)uv
+         enddo
+         close(12)
+
          deallocate(u,v,uv,mz,mu,mv,us)        
          return
          end
