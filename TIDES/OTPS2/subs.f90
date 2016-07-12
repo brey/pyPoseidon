@@ -3110,6 +3110,18 @@
          where(hz.gt.0)mz=1
          write(11) ((mz(i,j)   ,i=1,nl),j=1,ml)
          close(11)
+
+!!!! OUTPUT in ascii
+         open(unit=14,file = 'grd.txt') 
+         write(14,*) nl,ml,th_lim,ph_lim,12.,idum
+         write(14,*)idum
+         write(14,*)hz
+         mz=0
+         where(hz.gt.0)mz=1
+         write(14,*) ((mz(i,j)   ,i=1,nl),j=1,ml)
+         close(14)
+
+
          deallocate(hz,mz)        
          return
          end
@@ -3144,6 +3156,15 @@
           write(11)z(ic,:,:)
          enddo
          close(11)
+
+!!! OUTPUT in asci
+         open(unit=13,file = 'z.txt')
+         write(13, *) nl,ml,ncon,th_lim,ph_lim,c_id
+         do ic=1,ncon
+          write(13, *)z(ic,:,:)
+         enddo
+         close(13)
+
          deallocate(z)        
          return
          end
