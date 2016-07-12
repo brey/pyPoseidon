@@ -1,0 +1,45 @@
+DATA/Model_atlas           ! 1. tpxo8 atlas compact control file
+46  62                      ! 2. latitude limits (deg N)
+-12  10                    ! 3. longitude limits (deg E)
+m2,s2,k1,o1,mf,m4          ! 4. tidal constituents to include
+DATA                       ! 5. output directory
+tst                        ! 6. output file suffix
+
+
+Comments on lines 1-7
+
+1. TPXO8-atlas-compact control file (ASCII, supplied with the model, starting
+   from "Model_") contains 3 lines:
+
+   elevation model file name
+   transport model file name
+   bathymetry grid file name
+
+   Please show FULL path to the model files in the "Model_*" file
+   unless they are located in /DATA (download default).
+
+
+2. latitude limits (deg N)
+
+3. longitude limits (deg E)
+
+4. Constituent names should be in LOWER case and separated by comma.
+   Leave the line blank, if ALL available constituents should be included
+
+5. Path to directory to output the model to
+
+6. Output file suffix. 3 output files will be generated in
+   regular OTIS binary format:
+
+   bathymetry - grid_<suffux>
+   elevations - h_<suffix>
+   transports - UV_<suffix>
+   
+   and control 3 lines ASCII file Model_<suffix> as:
+
+   <path>/h_<suffix>
+   <path>/UV_<suffix>
+   <path>/grid_<suffix>     
+   
+
+

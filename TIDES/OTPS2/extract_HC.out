@@ -1,0 +1,17 @@
+ DATA/Model_atlas
+ Elevations (m)
+   Lat     Lon       m2_amp  m2_ph   s2_amp  s2_ph   
+ HC extracted from local solution :HB                  
+  59.7000  274.9000   0.267  -177.3   0.075  -116.5
+ HC extracted from local solution :EC                  
+  48.0000  298.3000   0.061    81.7   0.022    95.5
+ HC extracted from local solution :CAGoM               
+  29.2633  270.0433   0.015   156.7   0.008   124.7
+ HC extracted from local solution :AmS                 
+  -1.1830  311.5330   1.143    41.1   0.317    82.5
+ HC extracted from global solution
+ -29.6760   59.5502   0.242  -130.4   0.154   -96.5
+ HC extracted from local solution :PatS                
+ -35.1000  302.8667   0.324   145.6   0.010  -106.2
+ HC extracted from local solution :Ind                 
+   9.7958  103.4719   0.057   143.6   0.021   152.3
