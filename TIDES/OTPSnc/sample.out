@@ -1,0 +1,4 @@
+ Model:        ES2008
+ Elevations (m)
+    Lat     Lon  |   m2_amp  m2_ph   s2_amp  s2_ph   n2_amp  n2_ph   k2_amp  k2_ph   k1_amp  k1_ph   o1_amp  o1_ph   p1_amp  p1_ph   q1_amp  q1_ph   m4_amp  m4_ph   ms4_amp  ms4_ph   mn4_amp  mn4_ph
+   60.683   -0.780   0.686   -69.2   0.239   -34.9   0.147   -91.8   0.068   -36.9   0.072   158.4   0.070    24.7   0.026   153.8   0.024   -33.5   0.009  -111.0   0.008     0.1   0.002  -146.4
