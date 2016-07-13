@@ -1,0 +1,359 @@
+OSU TIDAL PREDICTION Software
+Version for models in NETCDF format (OTPSnc)
+=====================================================================
+AUTHORS:
+  Gary Egbert & Lana Erofeeva
+  College of Atmospheric and Oceanic Sciences
+  104 COAS Admin. Bldg.
+  Oregon State University
+  Corvallis, OR 97331-5503
+  
+  E-mail:  egbert@coas.oregonstate.edu                                      
+  Fax:     (541) 737-2064
+  Ph.:     (541) 737-2947                                        
+  http://volkov.oce.orst.edu/tides/
+
+COPYRIGHT: OREGON STATE UNIVERSITY, 2012
+(see the file COPYRIGHT for lisence agreement)
+=====================================================================
+******************************************************************************
+1. INTRODUCTION
+
+OTPSnc accomplish 2 tasks:
+- extracting harmonic constants from barotropic tidal solutions
+  in NETCDF format at given locations;
+- predicting tides at given times and locations.
+
+Predictions are based on global and/or regional barotropic inverse
+tidal solutions obtained with OTIS and available for download at:
+ 
+http://volkov.oce.orst.edu/tides/
+
+******************************************************************************
+2. COMMENTS on netcdf MODEL files content
+
+Each our model *.tar.Z consist of 4 files when unpacked:
+- short ascii file Model_* (for details see comments on input 
+                          file setup.inp below);
+- tidal elevation netcdf file
+- tidal transport netcdf file
+- bathymetric grid netcdf file
+
+Variables in an elevation file:
+	char con(nc, nct) ;
+		con:log_name = "tidal constituents" ;
+	double lon_z(nx, ny) ;
+		lon_z:long_name = "longitude of Z nodes" ;
+		lon_z:units = "degree_east" ;
+	double lat_z(nx, ny) ;
+		lat_z:long_name = "latitude of Z nodes" ;
+		lat_z:units = "degree_north" ;
+	double ha(nc, nx, ny) ;
+		ha:long_name = "Tidal elevation amplitude at Z-nodes" ;
+		ha:units = "meter" ;
+		ha:field = "amplitude, scalar" ;
+	double hp(nc, nx, ny) ;
+		hp:long_name = "Tidal elevation phase at Z-nodes" ;
+		hp:units = "degree GMT" ;
+		hp:field = "phase, scalar" ;
+	double hRe(nc, nx, ny) ;
+		hRe:long_name = "Tidal elevation complex amplitude, Real part" ;
+		hRe:units = "meter" ;
+		hRe:field = "Re(z), scalar" ;
+	double hIm(nc, nx, ny) ;
+		hIm:long_name = "Tidal elevation complex amplitude, Imag part" ;
+		hIm:units = "meter" ;
+		hIm:field = "Im(z), scalar" ;
+
+Variables in an transport file:
+	char con(nc, nct) ;
+		con:log_name = "tidal constituents" ;
+	double lon_u(nx, ny) ;
+		lon_u:long_name = "longitude of U nodes" ;
+		lon_u:units = "degree_east" ;
+	double lat_u(nx, ny) ;
+		lat_u:long_name = "latitude of V nodes" ;
+		lat_u:units = "degree_north" ;
+	double lon_v(nx, ny) ;
+		lon_v:long_name = "longitude of V nodes" ;
+		lon_v:units = "degree_east" ;
+	double lat_v(nx, ny) ;
+		lat_v:long_name = "latitude of V nodes" ;
+		lat_v:units = "degree_north" ;
+	double Ua(nc, nx, ny) ;
+		Ua:long_name = "Tidal WE transport amplitude at U-nodes" ;
+		Ua:units = "meter^2/s" ;
+		Ua:field = "vector, W->E" ;
+	double ua(nc, nx, ny) ;
+		ua:long_name = "Tidal WE velocity amplitude at U-nodes" ;
+		ua:units = "cm/s" ;
+		ua:field = "vector, W->E" ;
+	double up(nc, nx, ny) ;
+		up:long_name = "Tidal WE transport/velocity phase at U-nodes" ;
+		up:units = "degree GMT" ;
+		up:field = "phase, scalar" ;
+	double Va(nc, nx, ny) ;
+		Va:long_name = "Tidal SN transport amplitude at V-nodes" ;
+		Va:units = "meter^2/s" ;
+		Va:field = "vector, S->N" ;
+	double va(nc, nx, ny) ;
+		va:long_name = "Tidal SN velocity amplitude at V-nodes" ;
+		va:units = "cm/s" ;
+		va:field = "vector, S->N" ;
+	double vp(nc, nx, ny) ;
+		vp:long_name = "Tidal SN transport/velocity phase at V-nodes" ;
+		vp:units = "degree GMT" ;
+		vp:field = "phase, scalar" ;
+	double URe(nc, nx, ny) ;
+		URe:long_name = "Tidal WE transport complex ampl., Real part, at U-nodes" ;
+		URe:units = "meter^2/s" ;
+		URe:field = "Re(U), vector W->E" ;
+	double UIm(nc, nx, ny) ;
+		UIm:long_name = "Tidal transport complex ampl., Imag part, at U-nodes" ;
+		UIm:units = "meter^2/s" ;
+		UIm:field = "Im(U), vector W->E" ;
+	double VRe(nc, nx, ny) ;
+		VRe:long_name = "Tidal transport complex ampl., Real part, at V-nodes" ;
+		VRe:units = "meter^2/s" ;
+		VRe:field = "Re(V), vector S->N " ;
+	double VIm(nc, nx, ny) ;
+		VIm:long_name = "Tidal transport complex ampl., Imag part, at V-nodes" ;
+		VIm:units = "meter^2/s" ;
+		VIm:field = "Im(V), vector S->N" ;
+
+Tidal elevations and transports are also given in these files as complex amplitudes,
+so that the partial tide for a single constituent of frequency w is given by
+
+     h(t,x) = Re [ h(x) exp { i [w (t - t0) + V0(t0)] } ]
+
+where V0(t0) is the astronomical argument for the constituent at t0.
+Note that with the usual conventions, amplitude and phase are given
+by    amp = | h |    phase = atan (-Im(h)/Re(h)) .
+
+
+******************************************************************************
+3. GRID
+
+There are "n" divisions in longitude, "m" in latitude. The elevations
+and transports are given on a C-grid ... so the locations at which U
+and V and h are given are not exactly the same.  The layout of the grid
+looks like this:
+   
+          U(2,1) - h(2,1) - U(2,2) - h(2,2) - ...
+                     |                 |
+                     |                 |
+                     |                 |
+                   V(2,1)            V(2,2)
+                     |                 |
+                     |                 |
+                     |                 |
+          U(1,1) - h(1,1) - U(2,1) - h(2,1) - ...
+                     |                 |
+                     |                 |
+                     |                 |
+                   V(1,1)            V(2,1)        
+                    
+
+OTIS grid netcdf file includes variables:
+	double dt ;
+		dt:long_name = "time step for solving NL SWE" ;
+		dt:units = "seconds" ;
+	int mz(nx, ny) ;
+		mz:long_name = "water land mask on Z nodes" ;
+		mz:option_0 = "land" ;
+		mz:option_1 = "water" ;
+		mz:_FillValue = 1 ;
+	int mu(nx, ny) ;
+		mu:long_name = "water land mask on U nodes" ;
+		mu:option_0 = "land" ;
+		mu:option_1 = "water" ;
+		mu:_FillValue = 1 ;
+	int mv(nx, ny) ;
+		mv:long_name = "water land mask on V nodes" ;
+		mv:option_0 = "land" ;
+		mv:option_1 = "water" ;
+		mv:_FillValue = 1 ;
+	int iob_z(iiob, nob_z) ;
+		iob_z:long_name = "open boundary i,j index of Z nodes" ;
+	int iob_u(iiob, nob_u) ;
+		iob_u:long_name = "open boundary i,j index of U nodes" ;
+	int iob_v(iiob, nob_v) ;
+		iob_v:long_name = "open boundary i,j index of V nodes" ;
+	double lon_z(nx, ny) ;
+		lon_z:long_name = "longitude of Z nodes" ;
+		lon_z:units = "degree_east" ;
+	double lat_z(nx, ny) ;
+		lat_z:long_name = "latitude of Z nodes" ;
+		lat_z:units = "degree_north" ;
+	double lon_u(nx, ny) ;
+		lon_u:long_name = "longitude of Z nodes" ;
+		lon_u:units = "degree_east" ;
+	double lat_u(nx, ny) ;
+		lat_u:long_name = "latitude of Z nodes" ;
+		lat_u:units = "degree_north" ;
+	double lon_v(nx, ny) ;
+		lon_v:long_name = "longitude of Z nodes" ;
+		lon_v:units = "degree_east" ;
+	double lat_v(nx, ny) ;
+		lat_v:long_name = "latitude of Z nodes" ;
+		lat_v:units = "degree_north" ;
+	double x_z(nx, ny) ;
+		x_z:long_name = "x location of Z-nodes" ;
+		x_z:units = "km" ;
+	double y_z(nx, ny) ;
+		y_z:long_name = "y location of Z-nodes" ;
+		y_z:units = "km" ;
+	double x_u(nx, ny) ;
+		x_u:long_name = "x location of U-nodes" ;
+		x_u:units = "km" ;
+	double y_u(nx, ny) ;
+		y_u:long_name = "y location of U-nodes" ;
+		y_u:units = "km" ;
+	double x_v(nx, ny) ;
+		x_v:long_name = "x location of V-nodes" ;
+		x_v:units = "km" ;
+	double y_v(nx, ny) ;
+		y_v:long_name = "y location of V-nodes" ;
+		y_v:units = "km" ;
+	double hz(nx, ny) ;
+		hz:long_name = "Bathymetry at Z-nodes" ;
+		hz:units = "meter" ;
+		hz:field = "bath, scalar" ;
+	double hu(nx, ny) ;
+		hu:long_name = "Bathymetry at U-nodes" ;
+		hu:units = "meter" ;
+		hu:field = "bath, scalar" ;
+	double hv(nx, ny) ;
+		hv:long_name = "Bathymetry at V-nodes" ;
+		hv:units = "meter" ;
+		hv:field = "bath, scalar" ;
+
+Most of OTIS solutions are given on C grids uniform in lats,lons, then
+arrays x_*,y_* are zeros. Some of solutions (i.e. Arctic solution) are
+given on C grids uniform in kilometers. In this case these arrays contain
+coordinates of nodes BOTH in km  (on uniform grid) and lats, lons.
+
+
+******************************************************************************
+4. SETUP file "setup.inp"
+
+This is EXAMPLE  of the file containing your input information.
+
+The original version of file is included in OTPS and given below:
+
+                           ! 1. tidal model control file
+lat_lon_time               ! 2. latitude/longitude/time file
+z                          ! 3. z/U/V/u/v
+m2,s2,n2,k2,k1,o1,p1,q1    ! 4. tidal constituents to include
+AP                         ! 5. AP/RI
+oce                        ! 6. oce/geo
+1                          ! 7. 1/0 correct for minor constituents
+tmp                        ! 8. output file (ASCII)
+
+
+Comments on lines 1-7
+
+1. Tidal model control file (ASCII, supplied with the model, starting
+   from "Model_") contains 3 lines:
+
+   elevation model file name
+   transport model file name
+   bathymetry grid file name
+
+   Leave line 1 blank, if are not sure which model to use. In this case
+   all models from "model.list" are checked. File "./model.list" should
+   contain all your DATA/Model_* files and is done as:
+
+   ls -1 DATA/Model_*>model.list
+
+   Please have all Model_* files ready in subdirectory DATA
+
+   Please show FULL path to the model files in the "Model_*" file
+   unless they are located in /DATA (download default).
+
+   4th line in Model_* file is used ONLY for models calculated on
+   uniform grid in km. Converting functions are provided with 
+   current version of OTPS. Please upgrade OTPS if a function is
+   missing.
+
+2. latitude, longitude and time file is an ASCII file, consisting 
+   eighter of 2 OR 8 columns:
+   latitude (degrees) longitude (degrees) [yyyy mm dd hh mm ss]
+   Common sign convention:
+   lat>0 - degrees North, lon>0 - degrees East
+   lat<0 - degrees South, lon<0 - degrees West
+   [yyyy mm dd hh mm ss] - year month day hour seconds GMT
+   These 6 columns are needed for tide predictions only.
+   You may leave them empty if only extracting HC.
+   If you want tidal predictions at the same times, but different locations,
+   you may also provide only 2 columns in the file. BUT then you have to
+   provide also 6 column file, consisting of times, given as
+    yyyy mm dd hh mm ss
+   In this case predict_tide usage will be:
+
+   predict_tide -ttime_file<setup.inp
+
+   This option is useful, if you want to obtain time series at open boundary nodes.
+
+3. Extract HC/predict tide for:
+   z/U/V/u/v - elevation(m) /WE transport(m^2/s)/ SN transport(m^2/s)/
+                             WE velocity (cm/s) / SN velocity (cm/s)
+   NOTE: Changed, Nov 2004: now for any of u/v/U/V all components
+         (that is U V u v) are calculated by predict_tide.
+
+4. Constituent names should be in LOWER case and separated by comma.
+   Leave the line blank, if ALL model constituents are included
+
+5. AP/RI - output amplitude and phase(GMT) OR real/imaginary parts.
+           Only used when extracting HC.
+           May leave blank, if predicting tide.
+
+6. Only needed for tide prediction. 1/0 - Do/Not correct for the minor
+   constituents defined in weights.h. Only works if the 8 major tidal constituents
+   fields are in the model: m2,s2,n2,k2,k1,o1,p1,q1
+
+7. oce/geo - extract ocean/geocentric HC for elevations only.
+             Geocentric tide is appropriate for comparison to or
+             correction of altimetry data.
+             May leave blank if not z on line 3.
+
+******************************************************************************
+5. COMPILING and RUNNING OTPSnc
+
+Please, have ncdump, ncgen and netcdf Fortran libraries
+installed on your computer. For instructions, please, refer to
+
+http://www.unidata.ucar.edu/software/netcdf
+
+Please, edit makifile for your architecture and paths, if neccessary.
+
+To compile:
+
+gmake extract_HC
+gmake predict_tide
+
+Run AFTER editing setup.inp:
+
+extract_HC<setup.inp                   # have lat/lon file ready
+predict_tide<setup.inp                 # have lat/lon/time file ready
+
+******************************************************************************
+6. ADDING new model
+
+  Download compressed and tarred model in NETCDF format from
+  http://volkov.oce.orst.edu/tides/
+
+     into any destination:
+        - uncompress and tar xvf;
+        - edit Model_* control file for exact path to the model
+          files (i.e. to your destination);
+        - cp file Model_* into subdirectory to OTPSnc/DATA
+
+******************************************************************************
+
+Any questions, contact  Gary Egbert (541)-737-2947
+                        egbert@coas.oregonstate.edu
+                    or  Lana Erofeeva (541)-737-3964
+                        serofeev@coas.oregonstate.edu
+
+
