@@ -23,9 +23,7 @@ TAT/D3/
 *.zip
 
 #ignore .jupyter chekpoints folder
-Jupyter/.ipynb_checkpoints
-Jupyter/DEV/.ipynb_checkpoints
-Jupyter/Notebooks/.ipynb_checkpoints
+.ipynb_checkpoints/
 
 #ignore notebook output folders
 Jupyter/mnt
