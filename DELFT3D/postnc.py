@@ -29,6 +29,8 @@ PATH='/mnt/web/brey/2016H/6/14/12/'
 PATH='/mnt/web/brey/venice/2016/6/14/12/'
 PATH='/mnt/web/brey/NEPARTAK/2016/7/6/00/'
 tag='nepartak'
+PATH='/DATA/critechuser/tide_test/'
+tag='med'
 
 inp, ord = mdf.read(PATH+tag+'.mdf')
 
@@ -38,16 +40,18 @@ date=date+datetime.timedelta(minutes=inp['Tstart'][0])
 d = Dataset(PATH+'trim-'+tag+'.nc')
 
 h = d.variables['S1'][:]
-u = d.variables['WINDU'][:]
-v = d.variables['WINDV'][:]
-x = d.variables['XCOR'][:]
-y = d.variables['YCOR'][:]
+try:
+  u = d.variables['WINDU'][:]
+  v = d.variables['WINDV'][:]
+except:
+  print 'no wind'
+  pass
+uw = d.variables['U1'][:]
+vw = d.variables['V1'][:]
+lon = d.variables['XCOR'][:]
+lat = d.variables['YCOR'][:]
 
 
-lon0=x.min()
-lon1=x.max()
-lat0=y.min()
-lat1=y.max()
 
 #READ GRID /BATHYMETRY
 grd=Grid.fromfile(PATH+tag+'.grd')
@@ -56,28 +60,45 @@ b=deb.val[:-1,:-1]
 w=b<0.
 w=w.T
 
+lon0=grd.x.min()
+lon1=grd.x.max()
+lat0=grd.y.min()
+lat1=grd.y.max()
 
+ni,nj=grd.x.T.shape
 
 m = Basemap(projection='cyl',llcrnrlat=lat0,urcrnrlat=lat1,\
              llcrnrlon=lon0,urcrnrlon=lon1,resolution='l')
+
+X=np.linspace(lon0,lon1,ni)
+Y=np.linspace(lat0,lat1,nj)
+
+x,y=np.meshgrid(X,Y)
 
 # define parallels and meridians to draw.
 parallels = np.arange(-90.,90,20.)
 meridians = np.arange(0.,360.,20.)
 
+try:
+  uu=u[-3,:,:]
+  vv=v[-3,:,:]
+  air=np.sqrt(uu**2+vv**2)
+except:
+  pass
 
-uu=u[-3,:,:]
-vv=v[-3,:,:]
-hh=h[-3,:,:]
+hh=h[-3,:-1,:-1].T
+uc=uw[-3,0,:-1,:-1].T
+vc=vw[-3,0,:-1,:-1].T
+
+c=np.sqrt(uc**2+vc**2)
 
 nt=h.shape[0]
 
-vel=np.sqrt(uu**2+vv**2)
 
 ###MASK
 #um=np.ma.masked_array(uu,uu==-999.)
 #vm=np.ma.masked_array(vv,vv==-999.)
-vel=np.sqrt(uu**2+vv**2)
+vel=np.sqrt(uc**2+vc**2)
 
 
 time=nt-1 
@@ -90,14 +111,13 @@ ax = fig1.add_axes([0.1,0.1,0.8,0.8])
 clevs=10
 
 
-CS1 = m.contour(x,y,vel,clevs,linewidths=0.5,colors='k',animated=True)
-CS2 = m.contourf(x,y,vel,clevs,cmap=plt.cm.RdBu_r,animated=True)
+CS1 = m.contour(x,y,c,clevs,linewidths=0.5,colors='k',animated=True)
+CS2 = m.contourf(x,y,c,clevs,cmap=plt.cm.RdBu_r,animated=True)
 
-ni,nj=uu.shape
 stepi=ni/50
 stepj=nj/30
 
-Q = m.quiver(x[::stepi,::stepj],y[::stepi,::stepj],uu[::stepi,::stepj],vv[::stepi,::stepj], units='x')#,scale=500)
+Q = m.quiver(x[::stepi,::stepj],y[::stepi,::stepj],uc[::stepi,::stepj],vc[::stepi,::stepj], units='x')#,scale=500)
 # make quiver key.
 qk = plt.quiverkey(Q, 0.1, 0.1, 20, '20 m/s', labelpos='W')
 # draw coastlines, parallels, meridians.
@@ -112,7 +132,8 @@ ax.set_title('Winds at '+ datetime.datetime.strftime(date+datetime.timedelta(hou
 
 
 ####### SEA LEVEL #########
-bh=np.ma.masked_where(w==True,hh)
+#bh=np.ma.masked_where(w==True,hh)
+bh=hh
 
 fig2 = plt.figure(figsize=(10,8))
 ax = fig2.add_axes([0.1,0.1,0.8,0.8])
@@ -146,7 +167,8 @@ iframes=h.shape[0]-1
 
 def updatefig1(nt):
     global CS1,CS2
-    bh=np.ma.masked_where(w==True,h[nt,:,:])
+   #bh=np.ma.masked_where(w==True,h[nt,:,:])
+    bh=h[nt,:-1,:-1].T
     for c in CS1.collections: c.remove()
     CS1 = m.contour(x,y,bh,clevs,linewidths=0.5,colors='k')
     for c in CS2.collections: c.remove()
@@ -154,7 +176,8 @@ def updatefig1(nt):
 
 def updatefig2(nt):
     global H,H1,bh
-    bh=np.ma.masked_where(w==True,h[nt,:,:])
+  # bh=np.ma.masked_where(w==True,h[nt,:,:])
+    bh=h[nt,:-1,:-1].T
     for c in H.collections: c.remove()
 #   if fig2.get_default_bbox_extra_artists():
 #      for c in fig2.get_default_bbox_extra_artists(): c.pop()
@@ -170,7 +193,7 @@ def updatefig2(nt):
 ani = animation.FuncAnimation(fig2, updatefig2, frames=iframes, repeat=False)
 
     
-ani.save('sea_level.mp4',writer = FFwriter)
+#ani.save('sea_level.mp4',writer = FFwriter)
 
 
 def anim():
@@ -179,7 +202,8 @@ def anim():
 
  for i in range(h.shape[0]):
     plt.clf()
-    bh=np.ma.masked_where(w==True,h[i,:,:])
+   #bh=np.ma.masked_where(w==True,h[i,:,:])
+    bh=h[i,:-1,:-1].T
     H = m.contourf(x,y,bh,clevs,cmap=plt.cm.RdBu_r,animated=True)
 # draw coastlines, parallels, meridians.
     m.drawcoastlines(linewidth=1.5)
