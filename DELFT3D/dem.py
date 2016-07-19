@@ -6,7 +6,7 @@ import scipy.interpolate
 import sys
 import grid
 
-PATH='/DATA/critechuser/BATHYMETRY/'
+PATH='../BATHYMETRY/'
 
 def pltm(minlat,maxlat,minlon,maxlon,lons,lats,topo,title=None):
 
