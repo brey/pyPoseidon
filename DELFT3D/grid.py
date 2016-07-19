@@ -82,21 +82,21 @@ class Grid(object):
            ie   = min(5,mn[1])
            nstr = "%5g" % (n + 1)
 
-           f.write(' ETA=' + nstr+' '+ ' '.join(("%f" % x) for x in self.x[n][ib:ie]) + '\n')
+           f.write(' ETA=' + nstr+' '+ ' '.join(("%.8e" % x) for x in self.x[n][ib:ie]) + '\n')
            for i in range(1,nrow):
               ib = i*5
               ie = min((i+1)*5,mn[1])
-              f.write('            ' + ' '.join(("%f" % x) for x in self.x[n][ib:ie]) + '\n')
+              f.write('            ' + ' '.join(("%.8e" % x) for x in self.x[n][ib:ie]) + '\n')
 
         for n in range(mn[0]):
            ib   = 0
            ie   = min(5,mn[1])
            nstr = "%5g" % (n + 1)
 
-           f.write(' ETA=' + nstr+' '+ ' '.join(("%f" % x) for x in self.y[n][ib:ie]) + '\n')
+           f.write(' ETA=' + nstr+' '+ ' '.join(("%.8e" % x) for x in self.y[n][ib:ie]) + '\n')
            for i in range(1,nrow):
               ib = i*5
               ie = min((i+1)*5,mn[1])
-              f.write('            ' + ' '.join(("%f" % x) for x in self.y[n][ib:ie]) + '\n')
+              f.write('            ' + ' '.join(("%.8e" % x) for x in self.y[n][ib:ie]) + '\n')
 
         f.close()
