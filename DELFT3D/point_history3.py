@@ -13,9 +13,9 @@ import datetime
 import pickle
 
 
-path0='/mnt/web/brey/2016H/'
+#path0='/mnt/web/brey/2016H/'
 #path1='/DATA/critechuser/2016/'
-path1='/mnt/web/brey/venice/2016/'
+path0='/mnt/web/brey/venice/2015nc/'
 
 def getmes(sdate,edate,point):
 
@@ -30,12 +30,19 @@ def getmes(sdate,edate,point):
 
   # get lat lon
   c=[a.split(' ') for a in lp[1]][0]
-  if 'lat' in c[2]: plat=c[2].split('=')[1]
+  if 'lat' in c[2]: 
+           plat=c[2].split('=')[1]
+           idt=6
+  else:
+           c=[a.split(' ') for a in lp[2]][0]
+           if 'lat' in c[2]: plat=c[2].split('=')[1]
+           idt=7
+
   if 'lon' in c[3]: plon=c[3].split('=')[1]
 
   rt=[]
   vt=[]
-  for a,b,c,d in lp[6:]:
+  for a,b,c,d in lp[idt:]:
     rt.append(datetime.datetime.strptime(a,'%d %b %Y %H:%M:%S'))
     vt.append(d)
 
@@ -69,18 +76,13 @@ def view(date0,date1,basename,point):
 ########################################################################
 
   # get simulation data
-  tdelft='20160101.00'
+  tdelft='20150101.00'
    
   if sdate < datetime.datetime.strptime(tdelft,'%Y%m%d.%H'):
      t1=tdelft
   else:
      t1=date0
   t2=date1
-
-# for venice 
-  if point==1870 :
-     plat=45.38967
-     plon=12.43677
 
   tcw,cw=get(t1,t2,path0,basename,plat,plon)
   # check if on land
@@ -125,7 +127,7 @@ def view(date0,date1,basename,point):
 ########################################################################
   # read dictionary
 
-  with open('../tmp/med.pkl', 'r') as f:
+  with open(path0+'1/1/00/med.pkl', 'r') as f:
     ptr=pickle.load(f)
 
   print ptr[int(point)]
