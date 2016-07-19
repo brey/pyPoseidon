@@ -46,12 +46,17 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 
 #  BUOYS WEBCRITECH
  dat=pandas.read_csv('SeaLevelBuoys2.csv')
+ 
+ dat.columns=np.append(['ID'],dat.columns.get_values()[1:])
 #print dat.columns
 
- ID=dat[dat.columns[0]]
+ ID=dat['ID']
  lon=dat['lon']
  lat=dat['lat']
- names=dat['name']
+ names=dat[['ID','name']]
+ names=names.set_index(['ID'])
+ dnames=names.T.to_dict('list')
+ 
 
  fig1 = plt.figure(figsize=(10,8))
  ax = fig1.add_axes([0.1,0.1,0.8,0.8])
@@ -65,6 +70,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 
  iobs=[]
  loci=[]
+ inames=[]
  k=0
  pdic={}
  for l1,l2 in zip(lon,lat):
@@ -88,6 +94,8 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
         pdic[ID[m0]]=k
       iobs.append((pi,pj))
       loci.append((l1,l2))
+     #inames.append(dnames[ID[m0]])
+      inames.append(ID[m0])
       k=k+1
      else:
       g=np.where(np.array(iobs)==[pi,pj])
@@ -101,12 +109,18 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
    pickle.dump(pdic,f)
 
  f=open(path+basename+'.obs','w')
- for p in list(iobs): 
-  f.write('{:<12}{:>12}{:>12}\n'.format(p,p[0],p[1]))
+ for p,n in zip(list(iobs),list(inames)): 
+  f.write('{:<12}{:>12}{:>12}\n'.format(n,p[0],p[1]))
    
  f.close()   
+ 
+#cnames = np.array([ '({},)'.format(l) for l in np.array(inames).ravel() ])
+
+#op=pandas.DataFrame(iobs,index=cnames)
+#op.to_csv('test',header=0,sep='\t')
 
 #PLOT
+ cs = m.contourf(grd.x,grd.y,bath.val[:-1,:-1].T,cmap=plt.cm.jet)
  count=-1
  for p in loci:
   m.plot(p[0],p[1],'ro')   
