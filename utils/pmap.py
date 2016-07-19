@@ -41,7 +41,7 @@ def getmap(filename):
         dic['CELLSIZE']=geotransform[1]
 
      v = dataset.GetRasterBand(1)
-     dic['data']=v.ReadAsArray().astype(np.float32)
+     dic['data']=v.ReadAsArray().astype(np.float64)
      dic['nan']=v.GetNoDataValue()
 
      dataset=None
