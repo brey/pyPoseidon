@@ -1,10 +1,10 @@
 import numpy as np
 import datetime
 import sys
-from netCDF4 import Dataset
 from pmap import getmap
 import lxml.etree as et
 import sys
+import glob
 
 ##########################################################################################
   #get hyflux data
@@ -73,11 +73,11 @@ def hget(t0,t1,hfpath,plat,plon):
 
     try:
 
-      filename=hfpath+'calc_{}/NETCDF_H.nc'.format(dstamp)
+      hfiles=glob.glob(hfpath+'calc_{}/TIF_H*.tif'.format(dstamp))
 
-      d =  Dataset(filename)
-      ha=d.variables['HA'][:19,i,j]
-      t=d.variables['TIME'][:19]
+      t=[np.int(l.split('_')[-1].split('.')[0]) for l in hfiles]
+        
+      # choose the files from the first 12 hours
 
       tp=[]
 #     print tinit,t[0]
@@ -91,16 +91,23 @@ def hget(t0,t1,hfpath,plat,plon):
       iw1=np.argwhere(np.array(tp)==idate).flatten()[0]
       iw2=np.argwhere(np.array(tp)==idate+datetime.timedelta(hours=12)).flatten()[0]
       tw.append(tp[iw1:iw2+1])
-      combined.append(ha[iw1:iw2+1])
+
+      for ifile in hfiles[iw1:iw2+1]:  
+            dat=getmap(ifile)
+            combined.append(np.flipud(dat.data)[i,j])
 
     except:
-      sys.stdout.write('  > problem with netcdf file, skiping'.format(dstamp))
+      sys.stdout.write('  > problem with TIFF files, skiping'.format(dstamp))
       sys.stdout.write('\n')
 
   htcw=np.array(tw).flatten()
   hcw=np.array(combined).flatten()
 
+
 # Add the last one with forecasting
+  combined=[]
+  tw=[]
+
   idate=tend
   dstamp=datetime.datetime.strftime(idate,'%Y%m%d.%H')
 
@@ -124,15 +131,13 @@ def hget(t0,t1,hfpath,plat,plon):
          tinit=tn
 
   try:
+      hfiles=glob.glob(hfpath+'calc_{}/TIF_H*.tif'.format(dstamp))
 
-      filename=hfpath+'calc_{}/NETCDF_H.nc'.format(dstamp)
-
-      d =  Dataset(filename)
-      ha=d.variables['HA'][:,i,j]
-      t=d.variables['TIME'][:]
+      t=[np.int(l.split('_')[-1].split('.')[0]) for l in hfiles]
+        
+      # choose the files from the first 12 hours
 
       tp=[]
-#     print tinit,t[0]
       for ts in t:
         if t[0] == 0 :
           tp.append(idate+datetime.timedelta(seconds=ts))
@@ -143,14 +148,17 @@ def hget(t0,t1,hfpath,plat,plon):
       iw1=np.argwhere(np.array(tp)==idate).flatten()[0]
       iw2=np.argwhere(np.array(tp)==idate+datetime.timedelta(hours=72)).flatten()[0]
       tw.append(tp[iw1:iw2+1])
-      combined.append(ha[iw1:iw2+1])
+
+      for ifile in hfiles[iw1:iw2+1]:  
+            dat=getmap(ifile)
+            combined.append(np.flipud(dat.data)[i,j])
 
   except:
-      sys.stdout.write('  > problem with netcdf file, skiping'.format(dstamp))
+      sys.stdout.write('  > problem with TIFF files, skiping'.format(dstamp))
       sys.stdout.write('\n')
 
-  htcw=np.append(htcw,np.array(tp[iw1:iw2+1]))
-  hcw=np.append(hcw,np.array(ha[iw1:iw2+1]))
+  htcw=np.append(htcw,np.array(tw))
+  hcw=np.append(hcw,np.array(combined))
 
   return  htcw,hcw
 
