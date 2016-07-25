@@ -83,8 +83,8 @@ def view(date0,date1,path,basename,point):
   tcw,cw=get(t1,t2,path,basename,plat,plon)
   # check if on land
   if np.min(cw) != np.max(cw) :
-    plt.plot(tcw[:-60],cw[:-60],'ro',markersize=7,label='DELFT3D - map')
-    plt.plot(tcw[-61:],cw[-61:],'ko',markerfacecolor='none', markeredgecolor='b', markersize=7,label='DELFT3D - map - forecast')
+    plt.plot(tcw[:-60],cw[:-60],'r--o',markersize=7,label='DELFT3D - map')
+    plt.plot(tcw[-61:],cw[-61:],'k--o',markerfacecolor='none', markeredgecolor='b', markersize=7,label='DELFT3D - map - forecast')
   else:
     print 'CONSTANT HEIGHT =',cw[0]
 
@@ -93,17 +93,17 @@ def view(date0,date1,path,basename,point):
 ########################################################################
   # read dictionary
 
-  with open(path+'med.pkl', 'r') as f:
+  try:
+   with open(path+'med.pkl', 'r') as f:
     ptr=pickle.load(f)
 
-  if int(point) not in ptr.keys():
+   if int(point) not in ptr.keys():
      print ' Location point {} not in dictionary'.format(point)
 
-  try:
   # plot
-    hcw,hw=pget(t1,t2,path,basename,ptr[int(point)])
-    plt.plot(hcw[:-60*60],hw[:-60*60],'b-',linewidth=2,label='DELFT3D - his') # don't print the forecasting after 12 hours. Thus 60h *60m for total of 72 hours forecasting
-    plt.plot(hcw[-61*61:],hw[-61*61:],'k-',linewidth=2,label='DELFT3D - his - forecasting')
+   hcw,hw=pget(t1,t2,path,basename,ptr[int(point)])
+   plt.plot(hcw[:-60*60],hw[:-60*60],'b-',linewidth=2,label='DELFT3D - his') # don't print the forecasting after 12 hours. Thus 60h *60m for total of 72 hours forecasting
+   plt.plot(hcw[-61*61:],hw[-61*61:],'k-',linewidth=2,label='DELFT3D - his - forecasting')
   except:
      print 'DELFT3D his failed'
      pass
