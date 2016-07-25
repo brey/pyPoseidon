@@ -13,10 +13,6 @@ import datetime
 import pickle
 
 
-#path0='/mnt/web/brey/2016H/'
-#path1='/DATA/critechuser/2016/'
-path0='/mnt/web/brey/venice/2015nc/'
-
 def getmes(sdate,edate,point):
 
   pdate=min([edate+datetime.timedelta(hours=72),datetime.datetime.now()])
@@ -30,15 +26,15 @@ def getmes(sdate,edate,point):
 
   # get lat lon
   c=[a.split(' ') for a in lp[1]][0]
-  if 'lat' in c[2]: 
+  if 'lat=' in c[2]: 
            plat=c[2].split('=')[1]
            idt=6
   else:
            c=[a.split(' ') for a in lp[2]][0]
-           if 'lat' in c[2]: plat=c[2].split('=')[1]
+           if 'lat=' in c[2]: plat=c[2].split('=')[1]
            idt=7
 
-  if 'lon' in c[3]: plon=c[3].split('=')[1]
+  if 'lon=' in c[3]: plon=c[3].split('=')[1]
 
   rt=[]
   vt=[]
@@ -49,7 +45,7 @@ def getmes(sdate,edate,point):
   return rt,vt,plat,plon
 
 
-def view(date0,date1,basename,point):
+def view(date0,date1,path,basename,point):
 
   sdate=datetime.datetime.strptime(date0,'%Y%m%d.%H')
   edate=datetime.datetime.strptime(date1,'%Y%m%d.%H')
@@ -76,7 +72,7 @@ def view(date0,date1,basename,point):
 ########################################################################
 
   # get simulation data
-  tdelft='20150101.00'
+  tdelft='20160101.00'
    
   if sdate < datetime.datetime.strptime(tdelft,'%Y%m%d.%H'):
      t1=tdelft
@@ -84,59 +80,30 @@ def view(date0,date1,basename,point):
      t1=date0
   t2=date1
 
-  tcw,cw=get(t1,t2,path0,basename,plat,plon)
+  tcw,cw=get(t1,t2,path,basename,plat,plon)
   # check if on land
   if np.min(cw) != np.max(cw) :
-    plt.plot(tcw[:-60],cw[:-60],'bo',markersize=7,label='DELFT3D - map')
-    plt.plot(tcw[-61:],cw[-61:],'o',markerfacecolor='none', markeredgecolor='b', markersize=7,label='DELFT3D - map - forecast')
+    plt.plot(tcw[:-60],cw[:-60],'ro',markersize=7,label='DELFT3D - map')
+    plt.plot(tcw[-61:],cw[-61:],'ko',markerfacecolor='none', markeredgecolor='b', markersize=7,label='DELFT3D - map - forecast')
   else:
     print 'CONSTANT HEIGHT =',cw[0]
-#--------------------------------------------------------------------------------------------------
-  try:
-  # check cold startup
-   tcw1,cw1=get(t1,t2,path1,basename,plat,plon)
-   if np.min(cw1) != np.max(cw1) :
-     plt.plot(tcw1,cw1,'y--',linewidth=3,markersize=7,label='DELFT3D - map2')
-  except:
-     print 'error with map2'
-     pass
-
-#--------------------------------------------------------------------------------------------------
-
-########################################################################
-#   HYFLUX
-########################################################################
-
-  try:
-  # read dictionary
-   with open('hyfp.pkl', 'r') as f:
-    hyfp=pickle.load(f)
-
-   hlon,hlat = hyfp[int(point)]
-   print 'Hyflux point = ',hlon,hlat
-
-   tf,hf=hget(t1,t2,basename,hlat,hlon)
-   plt.plot(tf[:-60],hf[:-60],'co-',markersize=7,linewidth=3,label='HYFLUX - map')
-   plt.plot(tf[-61:],hf[-61:],'o--',markerfacecolor='none', markeredgecolor='c',markersize=7,linewidth=3,label='HYFLUX - map - forecast')
-  except:
-     print 'HYFLUX failed'
-     pass
 
 ########################################################################
 #   DELFT3D - his
 ########################################################################
   # read dictionary
 
-  with open(path0+'1/1/00/med.pkl', 'r') as f:
+  with open(path+'med.pkl', 'r') as f:
     ptr=pickle.load(f)
 
-  print ptr[int(point)]
+  if int(point) not in ptr.keys():
+     print ' Location point {} not in dictionary'.format(point)
 
   try:
   # plot
-    hcw,hw=pget(t1,t2,path0,basename,ptr[int(point)])
-    plt.plot(hcw[:-60*60],hw[:-60*60],'k-',linewidth=2,label='DELFT3D - his') # don't print the forecasting after 12 hours. Thus 60h *60m for total of 72 hours forecasting
-    plt.plot(hcw[-61*61:],hw[-61*61:],'k--',linewidth=2,label='DELFT3D - his - forecasting')
+    hcw,hw=pget(t1,t2,path,basename,ptr[int(point)])
+    plt.plot(hcw[:-60*60],hw[:-60*60],'b-',linewidth=2,label='DELFT3D - his') # don't print the forecasting after 12 hours. Thus 60h *60m for total of 72 hours forecasting
+    plt.plot(hcw[-61*61:],hw[-61*61:],'k-',linewidth=2,label='DELFT3D - his - forecasting')
   except:
      print 'DELFT3D his failed'
      pass
@@ -159,7 +126,8 @@ def view(date0,date1,basename,point):
 if __name__ == "__main__":
     date0=sys.argv[1]
     date1=sys.argv[2]
-    basename=sys.argv[3]
-    point=sys.argv[4]
-    view(date0,date1,basename,point)
+    path=sys.argv[3]
+    basename=sys.argv[4]
+    point=sys.argv[5]
+    view(date0,date1,path,basename,point)
 
