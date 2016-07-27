@@ -2,34 +2,39 @@ import numpy as np
 from netCDF4 import Dataset
 from grid import *
 
+def writenc(filename,lat,lon,tstamp,val):
 
-rootgrp = Dataset('test.nc', 'w', format='NETCDF3_64BIT')
-lat = rootgrp.createDimension('lat', 260)
-lon = rootgrp.createDimension('lao', 700)
-time = rootgrp.createDimension('time', None)
-level = rootgrp.createDimension('level', None)
+ ni=lon.shape[0]
+ nj=lat.shape[0]
 
-
-times = rootgrp.createVariable('time','f8',('time',))
-levels = rootgrp.createVariable('level','i4',('level',))
-latitudes = rootgrp.createVariable('latitude','f4',('lat',))
-longitudes = rootgrp.createVariable('longitude','f4',('lon',))
-
-rootgrp.description = ''
-rootgrp.history = 'DELFT3D - JRC Ispra European Commission'
-rootgrp.source = 'netCDF4 python module tutorial'
-latitudes.units = 'degrees north'
-latitudes.point_spacing = 'even'
-longitudes.units = 'degrees east'
-longitudes.point_spacing = 'even'
-levels.units = 'm'
-times.units = 'seconds'
+ rootgrp = Dataset(filename, 'w', format='NETCDF3_64BIT')
+ lats = rootgrp.createDimension('LAT', nj)
+ lons = rootgrp.createDimension('LON', ni)
+ time = rootgrp.createDimension('TIME', None)
 
 
-latitudes[:]=lat
-longitudes[:]=lon
-levels[:]=ha
-times[:]=tsn
+ longitudes = rootgrp.createVariable('LON','f8',('LON',))
+ latitudes = rootgrp.createVariable('LAT','f8',('LAT',))
+ times = rootgrp.createVariable('TIME','f8',('TIME',))
+ levels = rootgrp.createVariable('HA','f8',('TIME','LAT','LON'))
+
+ rootgrp.description = ''
+ rootgrp.history = 'DELFT3D - JRC Ispra European Commission'
+ rootgrp.source = 'netCDF4 python module tutorial'
+ latitudes.units = 'degrees_north'
+ latitudes.point_spacing = 'even'
+ longitudes.units = 'degrees_east'
+ longitudes.point_spacing = 'even'
+ levels.units = 'm'
+ times.units = 'seconds'
 
 
-rootgrp.close()
+ levels[:]=val
+ times[:]=tstamp
+ latitudes[:]=lat
+ longitudes[:]=lon
+
+ rootgrp.close()
+
+
+

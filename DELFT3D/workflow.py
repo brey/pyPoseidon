@@ -8,20 +8,21 @@ from shutil import copy2
 from getmedf import wmap
 from idelft3d import meteo2delft3d
 import mdf
+from modnc import fTAT
 
 import subprocess
 
 #Grid size (fixed)
 
-ni=700
-nj=260
+ni=727
+nj=285
 lon0=-5.5
 lat0=28.5
 lon1=43.
 lat1=47.5
 
-path='/DATA/critechuser/2016/'
-#path='/DATA/FLOW/2016/'
+path='/DATA/MED/2016/'
+SAVEPATH='/mnt/ECMWF/processed/2016/FIX_MED_SEA_D3/'
 
 nt=72
 
@@ -104,13 +105,31 @@ def go(rundate):
    mdf.write(inp, folder+'med.mdf',selection=ord)
 # run case
 
-   p=u=v=lon=lat=None
+#  p=u=v=lon=lat=None
  
    os.chdir(folder)
   #subprocess.call(folder+'run_flow2d3d.sh',shell=True)
    os.system('./run_flow2d3d.sh')
 
 
+  # TAT interface
+   try:
+     fTAT(rundate)
+   except Exception as e:
+     print e
+     sys.exit()
+
+   fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
+   now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
+   with open(SAVEPATH+'{}/completed.txt'.format(fname),'w') as f:
+       f.write(now)
+   with open(SAVEPATH+'final/completed.txt'.format(fname),'w') as f:
+       f.write(now)
+
+
+   with open('logMED.txt'.format(fname),'a') as f:
+       f.write('{}\n'.format(rundate)
+   
 
 if __name__ == "__main__":
     inp=sys.argv[1]
