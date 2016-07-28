@@ -11,6 +11,7 @@ import mdf
 from modnc import fTAT
 
 import subprocess
+import logging
 
 #Grid size (fixed)
 
@@ -21,15 +22,16 @@ lat0=28.5
 lon1=43.
 lat1=47.5
 
-path='/DATA/MED/2016/'
+path='/mnt/web/brey/2016H/'
 SAVEPATH='/mnt/ECMWF/processed/2016/FIX_MED_SEA_D3/'
+RUNPATH='/home/critechuser/DELFT3D/python/'
 
 nt=72
 
 files=['config_d_hydro.xml','med.mdf','med.grd','med.enc','med.obs','med.dep', 'run_flow2d3d.sh']
 
 def go(rundate):
-   print rundate
+   logging.info(rundate)
 # previous date for reference
 
    previous_day=rundate-datetime.timedelta(days=1)
@@ -52,7 +54,7 @@ def go(rundate):
 # copy necessary files
    ppath = day_dir+'00/' if rundate.hour == 12 else path+'{}/{}/{}/'.format(previous_day.month,previous_day.day,12)  # previous path
    
-   print ppath
+   logging.info(ppath)
 
    for filename in files:
 
@@ -73,6 +75,8 @@ def go(rundate):
    dd=rundate.day
    hh=rundate.hour
 
+   print 'process meteo'
+
  # p,u,v,lon,lat,bat = wmap(yyyy,mm,dd,hh,0,nt,lon0,lon1,lat0,lat1,ni,nj,save=False)
    p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1,ni,nj)
 
@@ -81,6 +85,8 @@ def go(rundate):
 
    dlat=lat[1,0]-lat[0,0]
    dlon=lon[0,1]-lon[0,0]
+
+   print 'create delft3d files'
 
    meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,rundate,nt,path=folder,curvi=False)
 
@@ -106,18 +112,23 @@ def go(rundate):
 # run case
 
 #  p=u=v=lon=lat=None
+
+   print 'start run'
  
    os.chdir(folder)
   #subprocess.call(folder+'run_flow2d3d.sh',shell=True)
    os.system('./run_flow2d3d.sh')
 
 
+   print 'start analysis for TAT'
   # TAT interface
    try:
-     fTAT(rundate)
+     fTAT()
    except Exception as e:
      print e
      sys.exit()
+
+   print 'analysis finished'
 
    fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
    now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
@@ -127,9 +138,10 @@ def go(rundate):
        f.write(now)
 
 
-   with open('logMED.txt'.format(fname),'a') as f:
-       f.write('{}\n'.format(rundate)
+   with open(RUNPATH+'logMED.txt'.format(fname),'a') as f:
+       f.write('{}\n'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H')))
    
+   print 'completed'
 
 if __name__ == "__main__":
     inp=sys.argv[1]

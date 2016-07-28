@@ -2,9 +2,13 @@ import numpy as np
 import datetime
 import sys
 from workflow import *
+import logging
+
+RUNPATH='/home/critechuser/DELFT3D/python/'
 
 def comp(sd,fd):
 
+  logging.basicConfig(filename=RUNPATH+'med.log',level=logging.INFO)
     
   dt=(fd-sd).total_seconds()
   ndt=dt/(3600*12)
@@ -12,7 +16,7 @@ def comp(sd,fd):
 
   for it in range(ndt): 
     idate=sd+datetime.timedelta(hours=12*it)
-    print datetime.datetime.strftime(idate,'%Y%m%d.%H')
+    logging.info(datetime.datetime.strftime(idate,'%Y%m%d.%H'))
     go(idate)
 
   
