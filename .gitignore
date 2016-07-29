@@ -31,3 +31,5 @@ Jupyter/tmp
 Jupyter/temp
 Jupyter/__pycache__
 
+# all temp folders
+tmp/
