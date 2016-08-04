@@ -10,6 +10,8 @@ pyximport.install()
 from gribapi import *
 from redtoreg import _redtoreg
 from pygrib import gaulats
+from progressbar import ProgressBar
+import time
 
 
 def gridd(lon1,lat1,lon2,lat2,nlats):
@@ -93,10 +95,16 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
      print 'no file in {}'.format(PATH)
      return
 
+  for it in xrange(nt1):
+        gid = grib_new_from_file(f)#,headers_only = True)
+        grib_release(gid)
+
   pt=[]
   ut=[]
   vt=[]
 
+  mxv=nt2-nt1-1
+  pbar=ProgressBar(maxval=mxv or None).start()
   try:
     for it in range(nt1,nt2): # nt + the 0 hour
 
@@ -105,16 +113,21 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
         lon=ilon[0,:]
         lat=ilat[:,0]
 
+        pbar.update(it-nt1) # progressbar
+        sleep(0.25)
+
     # get sea level pressure and 10-m wind data.
     # mult slp by 0.01 to put in units of hPa
         if name == 'msl' : varin=varin*.01
-    # print progress
-        sys.stdout.write('\r')
+    #--------------------------------------------------------------------- 
+    # print progress (manual)
+       #sys.stdout.write('\r')
     # the exact output you're looking for:
-        step=0.05*nt2
-        sys.stdout.write("[%-20s] %d%%" % ('='*int(it/step), 5*it/step))
-        sys.stdout.flush()
-        sleep(0.25)
+       #step=0.05*nt2
+       #sys.stdout.write("[%-20s] %d%%" % ('='*int(it/step), 5*it/step))
+       #sys.stdout.flush()
+       #sleep(0.25)
+    #--------------------------------------------------------------------- 
 
         if minlon < 0. :
            lon=lon-180.
@@ -156,12 +169,16 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
 
 # END OF FOR
-    sys.stdout.write('\r')
-    sys.stdout.write("[%-20s] %d%%" % ('='*20, 100))
-    sys.stdout.flush()
-    sys.stdout.write('\n')
+    #--------------------------------------------------------------------- 
+    # print progress (manual)
+  # sys.stdout.write('\r')
+  # sys.stdout.write("[%-20s] %d%%" % ('='*20, 100))
+  # sys.stdout.flush()
+  # sys.stdout.write('\n')
+    #--------------------------------------------------------------------- 
 
-  except:
+  except Exception as e:
+    print e
     print 'ERROR in meteo input'
 
   f.close()
