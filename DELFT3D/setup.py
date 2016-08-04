@@ -5,6 +5,7 @@ import sys
 from meteo import wmap
 from grid import *
 from dep import *
+#from dem import readgebco14
 from dem import read_mod_gebco
 from idelft3d import meteo2delft3d
 import mdf
@@ -28,12 +29,12 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
     runtime=runtime-datetime.timedelta(hours=12)
     yyyy=runtime.year
     mm=runtime.month
-    dd=runtime.day
+    dd=runtime.day-1
     hh=runtime.hour
     print 'running with input from the day before {} '.format( datetime.datetime.strftime(runtime,"%Y-%m-%d %H:00") )
     p,u,v,elat,elon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
-  # Write meteo data
+# # Write meteo data
   dlat=elat[1,0]-elat[0,0]
   dlon=elon[0,1]-elon[0,0]
   mlat0=elat[0,0] 
@@ -48,6 +49,8 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
   
   #  GET bathymetry interpolated onto lon,lat
   bat = read_mod_gebco(lat0,lat1,lon0,lon1,lon,lat,True)
+ #bat = readgebco(lat0,lat1,lon0,lon1,lon,lat,True)
+ #blons,blats,bat = readgebco(lat0,lat1,lon0,lon1,lon,lat)
   
   # Create the GRID file
   grd = Grid()
@@ -70,18 +73,28 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
   bat2=np.hstack((bat1,nodata))
   ba.val = -bat2
   ba.shape = bat2.shape
-  
+
+  ba.val[ba.val<0]=-999.  # mask all dry points
+
   Dep.write(ba,path+fname+'.dep')
   
+  # Write .ini file
+
+# ini=np.zeros(grd.x.shape)     
+# np.savetxt(path+fname+'.ini',ini)
+# with open(path+fname+'.ini', 'w') as f:
+#   np.savetxt(f,ini)
+#   np.savetxt(f,ini)
+
   
   # Write .enc file
   
   with open(path+fname+'.enc','w') as f:
-      f.write('{:>5}{:>5}\n'.format(ni,1))
-      f.write('{:>5}{:>5}\n'.format(ni,nj))
-      f.write('{:>5}{:>5}\n'.format(1,nj))
+      f.write('{:>5}{:>5}\n'.format(ni+1,1))  # add one like ddb
+      f.write('{:>5}{:>5}\n'.format(ni+1,nj+1))
+      f.write('{:>5}{:>5}\n'.format(1,nj+1))
       f.write('{:>5}{:>5}\n'.format(1,1))
-      f.write('{:>5}{:>5}\n'.format(ni,1))
+      f.write('{:>5}{:>5}\n'.format(ni+1,1))
   
   f.close()
   
@@ -91,7 +104,7 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
   
   # Define the mdf input file
   # first read the default
-  inp, ord = mdf.read('default.mdf')
+  inp, order = mdf.read('default.mdf')
   
   #define grid file
   inp['Filcco']=fname+'.grd'
@@ -107,7 +120,7 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
   
   
   # adjust ni,nj
-  inp['MNKmax']=[ni,nj,1]
+  inp['MNKmax']=[ni+1,nj+1,1]  # add one like ddb
   
   # adjust iteration date
   inp['Itdate']=datetime.datetime.strftime(runtime.date(),'%Y-%m-%d')
@@ -130,9 +143,18 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
   
   #time interval to smooth the hydrodynamic boundary conditions
   inp['Tlfsmo']=[0.]
+
+  # specify ini file
+# if 'Filic' not in order: order.append('Filic')
+# inp['Filic']=fname+'.ini'
+
+  # netCDF output
+  if 'FlNcdf' not in order: order.append('FlNcdf')
+  inp['FlNcdf'] = 'map his'
+
   
   #SAVE mdf file
-  mdf.write(inp, path+fname+'.mdf',selection=ord)
+  mdf.write(inp, path+fname+'.mdf',selection=order)
   
   
 if __name__ == "__main__":
@@ -148,14 +170,15 @@ if __name__ == "__main__":
     lon1=np.float(sys.argv[2])
     lat0=np.float(sys.argv[3])
     lat1=np.float(sys.argv[4])
-    basename=sys.argv[5]
+    fname=sys.argv[5]
     tstamp=sys.argv[6]
-    date=datetime.datetime.strptime(tstamp,'%Y%m%d.%H') 
+    runtime=datetime.datetime.strptime(tstamp,'%Y%m%d.%H') 
     path=sys.argv[7]
     ni=np.int(sys.argv[8])
     nj=np.int(sys.argv[9])
-    setrun(lon0,lon1,lat0,lat1,basename,date,path,ni,nj)
+    setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj)
 
-  except:
+  except Exception as e:
+    print e
     print 'usage: python setup minlon, maxlon, minlat, maxlat, basename, date (YYYYMMDD.HH), path, ni, nj'
     print "ex: python setup -5.5 47.5 28.5 48. 'med' '20160620.00' '../../../tmp2/' 727 285"
