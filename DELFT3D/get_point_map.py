@@ -13,7 +13,7 @@ def get(t0,t1,path0,basename,plat,plon):
   plat=float(plat)
   plon=float(plon)
 
-  print plon,plat
+# print plon,plat
 
   tstart=datetime.datetime.strptime(t0,'%Y%m%d.%H')
   tend=datetime.datetime.strptime(t1,'%Y%m%d.%H')
@@ -28,28 +28,55 @@ def get(t0,t1,path0,basename,plat,plon):
   lat=grid.y[:,0].data
   bath=Dep.read(path+basename+'.dep',grid.shape)
   bath.val=bath.val.T[:-1,:-1]
+  dx=lon[1]-lon[0]
+  dy=lat[1]-lat[0]
+  x=lon
+  y=lat
 
 
-  i=np.abs(lon-plon).argmin()
-  j=np.abs(lat-plat).argmin()
-  print i,j,grid.x.T[i,j],grid.y.T[i,j],bath.val[i,j]
-  if bath.val[i,j]<0. :
-    lon4=grid.x.T[i-5:i+6,j-5:j+6]
-    lat4=grid.y.T[i-5:i+6,j-5:j+6]
-    print zip(lon4.flatten(),lat4.flatten())
-    print '==================='
-    for k,l in zip(lon4.flatten(),lat4.flatten()):
-         print k,l
-         i4=np.abs(lon-k).argmin()
-         j4=np.abs(lat-l).argmin()
-         print i4,j4,bath.val[i4,j4]
-         if bath.val[i4,j4] > 0.:
-             i=i4
-             j=j4
-             print i,j,grid.x.T[i,j],grid.y.T[i,j],bath.val[i,j]
-             break
+  i=np.abs(x-plon).argmin()
+  j=np.abs(y-plat).argmin()
+  x0=grid.x.T[i,j]
+  y0=grid.y.T[i,j]
+# print i,j,x0,y0,bath.val[i,j]
+  # retrieve the 4 nearest diagonal points of the i,j
+  lon4=grid.x.T[i-1:i+2:2,j-1:j+2:2]
+  lat4=grid.y.T[i-1:i+2:2,j-1:j+2:2]
+  val4=bath.val[i-1:i+2:2,j-1:j+2:2]
+# print zip(lon4.flatten(),lat4.flatten(),val4.flatten())
+# print '==================='
+  lon8=grid.x.T[i-1:i+2,j-1:j+2]
+  lat8=grid.y.T[i-1:i+2,j-1:j+2]
+  val8=bath.val[i-1:i+2,j-1:j+2]
+# print zip(lon8.flatten(),lat8.flatten(),val8.flatten())
+# print '==================='
+  # define the quandrant
+  A=plon-x0
+  B=plat-y0
+  for xx,yy in zip(lon4.flatten(),lat4.flatten()):
+#        print xx,yy
+         C=np.sign([xx-plon,A])
+         D=np.sign([yy-plat,B])
+         if C[0]==C[-1] and D[0] == D[-1] : 
+           corner=[xx,yy]
+           indx=[np.abs(x-xx).argmin(),np.abs(y-yy).argmin()]
 
+# print indx
+# print [x0,y0,bath.val[i,j]]
+# print [x0,corner[1],bath.val[i,indx[1]]]
+# print [corner[0],corner[1],bath.val[indx[0],indx[1]]]
+# print [corner[0],y0,bath.val[indx[0],j]]
 
+  
+  l=np.argwhere(np.array(val8)==np.nanmax(np.array(val8)))
+  [ii,jj]=l.ravel()
+    
+  wx=lon8[ii,jj]
+  wy=lat8[ii,jj]
+  i=np.abs(x-wx).argmin()
+  j=np.abs((y-wy).T).argmin()
+  
+# [i,j]=indx
 
   combined=[]
   tw=[]
@@ -58,9 +85,9 @@ def get(t0,t1,path0,basename,plat,plon):
     idate=tstart+datetime.timedelta(hours=12*it)
     path=path0+'{}/{}/{:02d}/'.format(idate.month,idate.day,idate.hour)
 
-    print path
+ #  print path
     d = Dataset(path+'trim-'+basename+'.nc')
-    h=d.variables['S1'][:12,i,j]
+    h=d.variables['S1'][:12,i:i+2,j:j+2]
     
 
     time=d.variables['time'][:12]
@@ -71,7 +98,7 @@ def get(t0,t1,path0,basename,plat,plon):
     for l in tm : tstamp.append(tstart+datetime.timedelta(0,int(l)))
 
     tw.append(tstamp)
-    combined.append(h)
+    combined.append(h.mean(axis=(1,2)))
 
   tcw=np.array(tw).flatten()
   cw=np.array(combined).flatten()
@@ -79,9 +106,10 @@ def get(t0,t1,path0,basename,plat,plon):
 
   idate=tend
   path=path0+'{}/{}/{:02d}/'.format(idate.month,idate.day,idate.hour)
+# print path
 
   d = Dataset(path+'trim-'+basename+'.nc')
-  h=d.variables['S1'][:,i,j]
+  h=d.variables['S1'][:,i:i+2,j:j+2]
     
 
   time=d.variables['time'][:]
@@ -92,7 +120,7 @@ def get(t0,t1,path0,basename,plat,plon):
   for l in tm : tstamp.append(tstart+datetime.timedelta(0,int(l)))
 
   tcw=np.append(tcw,np.array(tstamp))
-  cw=np.append(cw,np.array(h))
+  cw=np.append(cw,np.array(h.mean(axis=(1,2))))
 
 # w1=tcw<datetime.datetime.strptime('20160228.00','%Y%m%d.%H')
 # cwm = cw[w1].mean()
@@ -102,8 +130,9 @@ def get(t0,t1,path0,basename,plat,plon):
 if __name__ == "__main__":
     tstart=sys.argv[1]
     tend=sys.argv[2]
-    basename=sys.argv[3]
-    plat =sys.argv[4]
-    plon =sys.argv[5]
-    t,ha=get(tstart,tend,basename,plat,plon)
+    path=sys.argv[3]
+    basename=sys.argv[4]
+    plat =sys.argv[5]
+    plon =sys.argv[6]
+    t,ha=get(tstart,tend,path,basename,plat,plon)
 
