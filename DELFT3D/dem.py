@@ -94,7 +94,7 @@ def readsrtm(minlat,maxlat,minlon,maxlon,grid_x=None,grid_y=None,interpolate=Fal
   return lons,lats,topo
 
 
-def readgebco(minlat,maxlat,minlon,maxlon,grid_x=None,grid_y=None,interpolate=False):
+def readgebco14(minlat,maxlat,minlon,maxlon,grid_x=None,grid_y=None,interpolate=False):
  file=PATH+'GLOBAL/GEBCO_2014_2D.nc'
 # open NetCDF data in 
  nc = netCDF4.Dataset(file)
