@@ -88,15 +88,21 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
     m2=np.argwhere(lat==l2) 
     if m1.all()==m2.all():
      if (pi,pj) not in iobs:
+     #print '--->',pi,pj
       for m0 in m1.flatten():
+      # print 'm0=', m0
         pdic[ID[m0]]=k
-        if ID[m0] not in inames:
+        if ID[m0] not in inames and (pi,pj) not in iobs:
            iobs.append((pi,pj))
            loci.append((l1,l2))
  #         inames.append(names.ix[ID[m0],'name'])
            inames.append(ID[m0])
+        else:
+           k=k-1
+           pdic[ID[m0]]=k
         k=k+1
      else:
+    # print pi,pj
       g=np.where(np.array(iobs)==[pi,pj])
       c=collections.Counter(g[0])
       rk = [value for value, count in c.items() if count > 1][0]
@@ -143,7 +149,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 
  plt.show(block=False)
 
-
+#return iobs,inames
 
 if __name__ == "__main__":
     path='/DATA/critechuser/tmp2/'
