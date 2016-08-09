@@ -40,7 +40,7 @@ def fTAT(date=None):
    # based on day
    flist=glob.glob(path0+'*/*/*')
    fflist=[x[-7:] for x in flist]
-   fflist.sort()
+  #fflist.sort()
    newest=fflist[-1]
    rtag=newest.split('/')
    rstamp=str(t_ref.year)+''.join(rtag)
@@ -52,13 +52,15 @@ def fTAT(date=None):
    #rstamp=''.join(rtag)
   
    #rstamp='2016061712'
+   tend=datetime.datetime.strptime(rstamp,'%Y%m%d%H')
   #--------------------------------------------------------------------
 
   else:
    rstamp=date
-  
-  tend=datetime.datetime.strptime(rstamp,'%Y%m%d.%H')
-  #tend=tend-datetime.timedelta(days=1)
+   tend=datetime.datetime.strptime(rstamp,'%Y%m%d.%H')
+   #tend=tend-datetime.timedelta(days=1)
+
+
   logging.info(tend)
   
   # 10 days back for the computation of the baseline
@@ -80,7 +82,7 @@ def fTAT(date=None):
   deb=Dep.read(path0+'{}/{}/{:02d}/med.dep'.format(tend.month,tend.day,tend.hour),grid.shape)
   b=deb.val[:-1,:-1]
   w=np.isnan(b)
-  w=b<0.
+# w=b<0.
   
   
   
@@ -362,12 +364,14 @@ def fTAT(date=None):
   puttif(filename,var,geo,btem.Proj,nband,btem.nan)
   
   
+  print 'write netCDF files'
   writenc(SAVEPATH+'{}/NETCDF_H.nc'.format(fname),lat,lon,tpr,hpr)
   writenc(SAVEPATH+'{}/NETCDF_U.nc'.format(fname),lat,lon,tpr,upr)
   writenc(SAVEPATH+'{}/NETCDF_V.nc'.format(fname),lat,lon,tpr,vpr)
   
   
   # create locations file
+  print 'write locations file'
   
   locfile(points,lat,lon,plat,plon,b,hpr,tpr,tend,t_ref,SAVEPATH+'{}/'.format(fname))
   
@@ -413,3 +417,8 @@ def fTAT(date=None):
   f.close()
   
   return                  
+
+if __name__ == "__main__":
+    inp=sys.argv[1]
+    fTAT(inp)
+
