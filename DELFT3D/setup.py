@@ -6,7 +6,7 @@ from meteo import wmap
 from grid import *
 from dep import *
 #from dem import readgebco14
-from dem import read_mod_gebco
+from dem import readem
 from idelft3d import meteo2delft3d
 import mdf
 from setobs import createf
@@ -48,7 +48,8 @@ def  setrun(lon0,lon1,lat0,lat1,fname,runtime,path,ni,nj):
   lon,lat=np.meshgrid(x,y)
   
   #  GET bathymetry interpolated onto lon,lat
-  bat = read_mod_gebco(lat0,lat1,lon0,lon1,lon,lat,True)
+  pathb='../BATHYMETRY/GLOBAL/gebco30_DELTARES.nc'
+  bat = readem(lat0,lat1,lon0,lon1,pathb,lon,lat,True)
  #bat = readgebco(lat0,lat1,lon0,lon1,lon,lat,True)
  #blons,blats,bat = readgebco(lat0,lat1,lon0,lon1,lon,lat)
   
