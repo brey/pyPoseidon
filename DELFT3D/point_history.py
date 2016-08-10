@@ -40,7 +40,7 @@ def getmes(sdate,edate,point):
   vt=[]
   for a,b,c,d in lp[idt:]:
     rt.append(datetime.datetime.strptime(a,'%d %b %Y %H:%M:%S'))
-    vt.append(d)
+    vt.append([b,c,d])
 
   return rt,vt,plat,plon
 
@@ -61,11 +61,15 @@ def view(date0,date1,path,basename,point):
 
   #get measurement data
   tp,hp,plat,plon=getmes(sdate,edate,point)
+ 
+  hp=np.array(hp)
 
-  dic={'t':tp,'s':hp}
+  dic={'t':tp,'s':hp[:,0],'tide':hp[:,1], 'ss':hp[:,2] }
   data=pd.DataFrame(dic)
   data=data.set_index(['t'])
+  data['ss']=pd.to_numeric(data['ss'])
   data['s']=pd.to_numeric(data['s'])
+  data['tide']=pd.to_numeric(data['tide'])
   ax=data.plot()
 
 # if hp:
@@ -93,7 +97,7 @@ def view(date0,date1,path,basename,point):
   data1=data1.set_index(['tm'])
   data1['sm']=pd.to_numeric(data1['sm'])
   data=data.join(data1,how='outer')
-  data1.plot(ax=ax,style='ro')
+  data1.plot(ax=ax,color='r',marker='o',linestyle='')
 
   # check if on land
 # if np.min(cw) != np.max(cw) :
@@ -145,6 +149,7 @@ def view(date0,date1,path,basename,point):
 
   plt.show(block=False)
 
+  return data
 
 if __name__ == "__main__":
     date0=sys.argv[1]
@@ -152,5 +157,5 @@ if __name__ == "__main__":
     path=sys.argv[3]
     basename=sys.argv[4]
     point=sys.argv[5]
-    view(date0,date1,path,basename,point)
+    data=view(date0,date1,path,basename,point)
 
