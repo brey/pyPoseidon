@@ -112,7 +112,8 @@ def view(date0,date1,path,basename,point):
   # read dictionary
 
   try:
-   with open(path+'med.pkl', 'r') as f:
+   ppath=path+'{}/{}/{:02d}/'.format(sdate.month,sdate.day,sdate.hour)
+   with open(ppath+'med.pkl', 'r') as f:
     ptr=pickle.load(f)
 
    if int(point) not in ptr.keys():
