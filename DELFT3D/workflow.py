@@ -5,7 +5,8 @@ import os
 from shutil import copy2
 
 #from getd import wmap
-from getmedf import wmap
+#from getmedf import wmap
+from meteo import wmap
 from idelft3d import meteo2delft3d
 import mdf
 from modnc import fTAT
@@ -32,6 +33,9 @@ files=['config_d_hydro.xml','med.mdf','med.grd','med.enc','med.obs','med.dep', '
 
 def go(rundate):
    logging.info(rundate)
+   sys.stdout.write('RUNNING {}\n'.format(rundate))
+   sys.stdout.flush()
+
 # previous date for reference
 
    previous_day=rundate-datetime.timedelta(days=1)
@@ -75,20 +79,28 @@ def go(rundate):
    dd=rundate.day
    hh=rundate.hour
 
-   print 'process meteo'
+   sys.stdout.write('process meteo\n')
+   sys.stdout.flush()
+
 
  # p,u,v,lon,lat,bat = wmap(yyyy,mm,dd,hh,0,nt,lon0,lon1,lat0,lat1,ni,nj,save=False)
-   p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1,ni,nj)
+ # p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1,ni,nj)
+   p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
+
+   sys.stdout.write('\n')
 
 #write u,v,p files 
 
    dlat=lat[1,0]-lat[0,0]
    dlon=lon[0,1]-lon[0,0]
 
-   print 'create delft3d files'
+   sys.stdout.write('create delft3d files\n')
+   sys.stdout.flush()
 
    meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,rundate,nt,path=folder,curvi=False)
+
+   sys.stdout.write('\n')
 
 # modify mdf file
 
@@ -113,14 +125,20 @@ def go(rundate):
 
 #  p=u=v=lon=lat=None
 
-   print 'start run'
+   sys.stdout.write('start run\n')
+   sys.stdout.flush()
+
  
    os.chdir(folder)
   #subprocess.call(folder+'run_flow2d3d.sh',shell=True)
    os.system('./run_flow2d3d.sh')
 
+   sys.stdout.write('\n')
 
-   print 'start analysis for TAT'
+
+   sys.stdout.write('start analysis for TAT\n')
+   sys.stdout.flush()
+
   # TAT interface
    try:
      fTAT()
@@ -128,7 +146,10 @@ def go(rundate):
      print e
      sys.exit()
 
-   print 'analysis finished'
+   sys.stdout.write('\n')
+   sys.stdout.write('analysis finished\n')
+   sys.stdout.flush()
+   sys.stdout.write('\n')
 
    fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
    now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
@@ -141,7 +162,10 @@ def go(rundate):
    with open(RUNPATH+'logMED.txt'.format(fname),'a') as f:
        f.write('{}\n'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H')))
    
-   print 'completed'
+   sys.stdout.write('completed\n')
+   sys.stdout.flush()
+   sys.stdout.write('\n')
+
 
 if __name__ == "__main__":
     inp=sys.argv[1]
