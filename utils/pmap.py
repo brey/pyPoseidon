@@ -41,7 +41,42 @@ def getmap(filename):
         dic['CELLSIZE']=geotransform[1]
 
      v = dataset.GetRasterBand(1)
-     dic['data']=v.ReadAsArray().astype(np.float64)
+
+     if buf:
+            [minlon,maxlon,minlat,maxlat]=buf
+
+            gt=dic['GeoTr']
+            minx = gt[0]
+            miny = gt[3] + dic['NCOLS']*gt[4] + dic['NROWS']*gt[5]
+            maxx = gt[0] + dic['NCOLS']*gt[1] + dic['NROWS']*gt[2]
+            maxy = gt[3]
+
+            lon=np.linspace(minx,maxx,width,endpoint=True)
+            lat=np.linspace(miny,maxy,height,endpoint=True)
+
+            lat=lat[::-1]
+
+            i1=np.abs(lon-minlon).argmin()
+            if lon[i1] > minlon: i1=i1-1
+            i2=np.abs(lon-maxlon).argmin()
+            if lon[i2] < maxlon: i2=i2+1
+
+            j1=np.abs(lat-minlat).argmin()
+            if lat[j1] > minlat: j1=j1-1
+            j2=np.abs(lat-maxlat).argmin()
+            if lat[j2] < maxlat: j2=j2+1
+
+            lons, lats = np.meshgrid(lon[i1:i2],lat[j2:j1])
+            dic['lons'] = lons
+            dic['lats'] = lats
+            dic['data'] = v.ReadAsArray(i1,j2,i2-i1,j1-j2)
+
+     else:
+
+            dic['lons'] = []
+            dic['lats'] = []
+            dic['data']=v.ReadAsArray()
+
      dic['nan']=v.GetNoDataValue()
 
      dataset=None
