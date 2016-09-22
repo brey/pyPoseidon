@@ -26,7 +26,7 @@ def viewmap(filename):
 
 
 
-def getmap(filename):
+def getmap(filename, buf=None):
      dic={}
      dataset=gdal.Open(filename)
      dic['DRIVER']= dataset.GetDriver().LongName
