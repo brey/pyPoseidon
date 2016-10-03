@@ -1,0 +1,324 @@
+\documentclass[a4paper]{article}
+
+\usepackage{graphicx}
+\usepackage[margin=2.5cm,headheight=56pt,includeheadfoot]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\usepackage{caption}
+\usepackage{subcaption}
+
+
+\usepackage{xcolor}
+
+\usepackage{lipsum}
+
+
+\fancyhead[C]{
+    \scshape{
+        \renewcommand{\\}{\ {\large\textperiodcentered}\ }
+                PILOT PILOT PILOT
+    }\\
+    JOINT RESEARCH CENTRE - EUROPEAN COMMISSION
+}
+
+%\fancyhead[L]{\includegraphics[width=2cm]{EC.jpg}}
+
+
+\footskip = 10pt
+\fancyfoot[C]{
+    \scshape{
+        \renewcommand{\\}{\ {\large\textperiodcentered}\ }
+THIS IS AN EXPERIMENTAL PILOT BULLETIN: 
+             DO NOT USE FOR OPERATIONAL PURPOSES 
+             }\\
+ \centerline{
+\hspace{1cm}\includegraphics[width=3cm]{ECMWF.png}%
+\hspace{3cm}\includegraphics[width=4cm]{deltares.jpg}%
+\hspace{4cm}\includegraphics[width=3cm]{EC.jpg}%
+}
+}
+
+\begin{document}
+
+\section*{MEDITERRANEAN SEA STORM SURGE BULLETIN}
+
+\centerline{\textbf{11 Jan 2016 00:00}}
+
+\centerline{Issued 03 Oct 2016 07:57 AM UTC and valid for the next 72 h}
+
+
+\begin{figure}[h]
+\centering
+  \includegraphics[width=0.9\linewidth]{tmp/hmax.png}
+\end{figure}
+
+
+\centerline{Estimated srorm surge for the next 72 h}
+
+\newpage
+
+METEOROLOGIC ANALYSIS (ECMWF )
+
+The wind speed indicated is the 850hPa isobaric surface, which is around 1.5km above sea level
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/e0.png}
+  \caption*{Analysis time 0}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/e24.png}
+  \caption*{Forecast 24 h}
+  \label{fig:sub2}
+\end{subfigure}
+%\caption{A figure with two subfigures}
+\label{fig:test}
+
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/e48.png}
+  \caption*{Forecast 48 h}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/e72.png}
+  \caption*{Forecast 72 h}
+  \label{fig:sub2}
+\end{subfigure}
+%\caption{A figure with two subfigures}
+\label{fig:test}
+
+\end{figure}
+
+\newpage
+
+WIND IMPOSED 
+
+The wind speed here is 10 m height wind and is the quantity imposed to the sea surface
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/w0.png}
+  \caption*{Wind Speed at sea level at time 0 h}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/w24.png}
+  \caption*{Wind Speed at sea level at time 24 h}
+  \label{fig:sub2}
+\end{subfigure}
+%\caption{A figure with two subfigures}
+\label{fig:test}
+
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/w48.png}
+  \caption*{Wind Speed at sea level at time 48 h}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/w72.png}
+  \caption*{Wind Speed at sea level at time 72 h}
+  \label{fig:sub2}
+\end{subfigure}
+%\caption{A figure with two subfigures}
+\label{fig:test}
+
+\end{figure}
+
+\newpage
+
+SEA LEVEL EVOLUTION
+
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/h0.png}
+  \caption*{Sea Level Height at time 0 h}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/h24.png}
+  \caption*{Sea Level Height at time 24 h}
+  \label{fig:sub2}
+\end{subfigure}
+%\caption{A figure with two subfigures}
+\label{fig:test}
+
+\end{figure}
+
+
+\begin{figure}[h]
+\centering
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/h48.png}
+  \caption*{Sea Level Height at time 48 h}
+  \label{fig:sub1}
+\end{subfigure}%
+\begin{subfigure}{.5\textwidth}
+  \centering
+  \includegraphics[width=0.9\linewidth]{tmp/h72.png}
+  \caption*{Sea Level Height at time 72 h}
+  \label{fig:sub2}
+\end{subfigure}
+%\caption{A figure with two subfigures}
+\label{fig:test}
+
+\end{figure}
+
+
+\newpage
+
+
+\section*{SEA LEVEL STORM SURGE MEASUREMENTS AND MODELLING ESTIMATES}
+
+\subsection*{WEST MEDITERRANEAN SEA : SPAIN AND FRANCE}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g1.png}
+\includegraphics[width=0.5\textwidth]{tmp/g2.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g3.png}
+\includegraphics[width=0.5\textwidth]{tmp/g4.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g5.png}
+\includegraphics[width=0.5\textwidth]{tmp/g6.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g7.png}
+\includegraphics[width=0.5\textwidth]{tmp/g8.png}
+}
+\end{figure}
+
+\newpage
+
+\subsection*{SOUTH - WEST MEDITERRANEAN SEA : SPAIN , MOROCCO}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g9.png}
+\includegraphics[width=0.5\textwidth]{tmp/g10.png}
+}
+\end{figure}
+
+\newpage
+
+\subsection*{CENTRAL MEDITERRANEAN SEA : ITALY AND FRANCE (CORSICA )}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g11.png}
+\includegraphics[width=0.5\textwidth]{tmp/g12.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g13.png}
+\includegraphics[width=0.5\textwidth]{tmp/g14.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g15.png}
+\includegraphics[width=0.5\textwidth]{tmp/g16.png}
+}
+\end{figure}
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g17.png}
+\includegraphics[width=0.5\textwidth]{tmp/g18.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g19.png}
+\includegraphics[width=0.5\textwidth]{tmp/g20.png}
+}
+\end{figure}
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g21.png}
+\includegraphics[width=0.5\textwidth]{tmp/g22.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{tmp/g23.png}
+\includegraphics[width=0.5\textwidth]{tmp/g24.png}
+}
+\end{figure}
+
+\newpage
+
+\subsection*{EAST MEDITERRANEAN SEA : GREECE , CYPRUS AND TURKEY}
+
+\newpage
+\subsection*{MIDDLE EAST : LEBANON , ISRAEL AND EGYPT}
+
+\newpage
+\subsection*{BLACK SEA}
+
+
+\newpage
+\section*{REFERENCES}
+
+Measured data from National Centres, Estimation from Joint Research Centre (JRC) based on Meteorological Forecasts from European Centre for Medium Weather Forecast (ECMWF) and using the DELTARES-DELFT3D Flow code.
+
+European Centre for Medium Weather Forecast (ECMWF) data: http://www.ecmwf.int/
+
+DELTARES: https://www.deltares.nl/en/
+
+DELFT3D: https://oss.deltares.nl/web/delft3d
+
+EUMETSAT: http://oiswww.eumetsat.org/IPPS/html/latestImages/EUMETSAT\_MSG\_IR108EColor-centralEurope.jpg
+
+Webcam in Ginostra, Stromboli Island, by Istituto Superiore per la Protezione e la Ricerca Ambientale: http://www.mareografico.it/DATA/Ginostra.jpg
+
+Webcam in Genova Nervi, the small harbour, by Comune di Genova: http://www.webcam.comune.genova.it/images\_out/current.jpg
+
+Webcam in Venezia, Piazza San Marco, by Istitutuzione Centro Previsione e Segnalazione Maree: http://93.62.201.235/maree/WEBCAM/smarcoweb2.jpg
+
+Webcam in Palma de Mallorca, http://www.helios-hotels.com/mallorca/en/webcam-can-pastilla-beach.htm
+
+
+
+\end{document}
