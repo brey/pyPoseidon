@@ -29,7 +29,7 @@ RUNPATH='/home/critechuser/DELFT3D/python/'
 
 nt=72
 
-files=['config_d_hydro.xml','med.mdf','med.grd','med.enc','med.obs','med.dep', 'run_flow2d3d.sh']
+files=['config_d_hydro.xml','med.mdf','med.grd','med.enc','med.obs','med.dep', 'med.pkl','run_flow2d3d.sh']
 
 def go(rundate):
    logging.info(rundate)
