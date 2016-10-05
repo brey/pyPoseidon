@@ -51,8 +51,8 @@ def getmap(filename, buf=None):
             maxx = gt[0] + dic['NCOLS']*gt[1] + dic['NROWS']*gt[2]
             maxy = gt[3]
 
-            lon=np.linspace(minx,maxx,width,endpoint=True)
-            lat=np.linspace(miny,maxy,height,endpoint=True)
+            lon=np.linspace(minx,maxx,dic['NCOLS'],endpoint=True)
+            lat=np.linspace(miny,maxy,dic['NROWS'],endpoint=True)
 
             lat=lat[::-1]
 
@@ -70,6 +70,16 @@ def getmap(filename, buf=None):
             dic['lons'] = lons
             dic['lats'] = lats
             dic['data'] = v.ReadAsArray(i1,j2,i2-i1,j1-j2)
+
+            #update the geo reference
+            tl = list(dic['GeoTr'])
+            tl[0] = lons.min()
+            tl[-3] = lats.max()
+            dic['GeoTr'] = tuple(tl)
+
+            dic['NCOLS']=lons.shape[1]
+            dic['NROWS']=lats.shape[0]
+
 
      else:
 
