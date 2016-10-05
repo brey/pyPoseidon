@@ -22,6 +22,9 @@ TAT/D3/
 # zip files
 *.zip
 
+# netcdf files
+*.nc
+
 #ignore .jupyter chekpoints folder
 .ipynb_checkpoints/
 
