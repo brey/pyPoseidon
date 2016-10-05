@@ -23,6 +23,15 @@ def getmes(sdate,edate,point):
   response=urllib2.urlopen(url)
   ls=response.readlines()
   lp=[elem.strip().split(',')  for elem in ls]
+  # get name id
+  try:
+     lp0=''.join(lp[0])
+     bname=lp0.split('ID=')[1].strip('(=)').strip()
+     bid=lp0.split('ID=')[2].strip('(=)').strip()
+  except:
+     lp1=''.join(lp[1])
+     bname=lp1.split('ID=')[1].strip('(=)').strip()
+     bid=lp1.split('ID=')[2].strip('(=)').strip()
 
   # get lat lon
   c=[a.split(' ') for a in lp[1]][0]
@@ -42,7 +51,7 @@ def getmes(sdate,edate,point):
     rt.append(datetime.datetime.strptime(a,'%d %b %Y %H:%M:%S'))
     vt.append([b,c,d])
 
-  return rt,vt,plat,plon
+  return rt,vt,plat,plon,bname,bid
 
 
 def view(date0,date1,path,basename,point):
