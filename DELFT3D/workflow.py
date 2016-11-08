@@ -9,68 +9,63 @@ from shutil import copy2
 from meteo import wmap
 from idelft3d import meteo2delft3d
 import mdf
-from modnc import fTAT
+#from modnc import fTAT
 
 import subprocess
 import logging
 
-#Grid size (fixed)
 
-ni=727
-nj=285
-lon0=-5.5
-lat0=28.5
-lon1=43.
-lat1=47.5
-
-path='/mnt/web/brey/2016H/'
 SAVEPATH='/mnt/ECMWF/processed/2016/FIX_MED_SEA_D3/'
-RUNPATH='/home/critechuser/DELFT3D/python/'
+RUNPATH='/home/critechuser/'
 
-nt=72
 
-files=['config_d_hydro.xml','med.mdf','med.grd','med.enc','med.obs','med.dep', 'med.pkl','run_flow2d3d.sh']
+def go(rundate,path,dic,TAT=False):
 
-def go(rundate):
+   bname=dic['bname']
+   nt=dic['nt']
+   ni=dic['ni']
+   nj=dic['nj']
+   lon0=dic['lon0']
+   lat0=dic['lat0']
+   lon1=dic['lon1']
+   lat1=dic['lat1']
+
+   files=['config_d_hydro.xml',bname+'.mdf',bname+'.grd',bname+'.enc',bname+'.obs',bname+'.dep', bname+'.pkl','run_flow2d3d.sh']
+
    logging.info(rundate)
    sys.stdout.write('RUNNING {}\n'.format(rundate))
    sys.stdout.flush()
 
 # previous date for reference
 
-   previous_day=rundate-datetime.timedelta(days=1)
+   previous_run=rundate-datetime.timedelta(hours=12)
 
-# create the folder/run
+# create the folder/run path
 
-   month_dir=path+'{}/'.format(rundate.month)  #month subfolder  
+   folder=datetime.datetime.strftime(rundate,'%Y%m%d.%H' )
 
-   if not os.path.exists(month_dir):
-    os.makedirs(month_dir)
+   rpath=path+'{}/'.format(folder)   
 
-   day_dir=month_dir+'{}/'.format(rundate.day)  #day subfolder  
-
-   folder=day_dir+'{:02d}/'.format(rundate.hour)  #daily run subfolder :  0 or 12
-
-   if not os.path.exists(folder):
-    os.makedirs(folder)
-
+   if not os.path.exists(rpath):
+    os.makedirs(rpath)
 
 # copy necessary files
-   ppath = day_dir+'00/' if rundate.hour == 12 else path+'{}/{}/{}/'.format(previous_day.month,previous_day.day,12)  # previous path
+   pfolder=datetime.datetime.strftime(previous_run,'%Y%m%d.%H' )
+   ppath =  path+'{}/'.format(pfolder)  # previous path
    
    logging.info(ppath)
 
    for filename in files:
 
-      copy2(ppath+filename,folder+filename)
+      copy2(ppath+filename,rpath+filename)
 
 # copy restart file
 
-   inresfile='tri-rst.med.'+datetime.datetime.strftime(rundate,'%Y%m%d.%H%M%M')
+   inresfile='tri-rst.'+bname+'.'+datetime.datetime.strftime(rundate,'%Y%m%d.%H%M%M')
 
    outresfile='restart.'+datetime.datetime.strftime(rundate,'%Y%m%d.%H%M%M')
 
-   copy2(ppath+inresfile,folder+'tri-rst.'+outresfile)
+   copy2(ppath+inresfile,rpath+'tri-rst.'+outresfile)
 
 #get new meteo 
 
@@ -82,29 +77,34 @@ def go(rundate):
    sys.stdout.write('process meteo\n')
    sys.stdout.flush()
 
+   check=[os.path.exists(rpath+f) for f in ['u.amu','v.amv','p.amp']]   
+   if np.any(check)==False :
 
  # p,u,v,lon,lat,bat = wmap(yyyy,mm,dd,hh,0,nt,lon0,lon1,lat0,lat1,ni,nj,save=False)
  # p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1,ni,nj)
-   p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+       p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
 
-   sys.stdout.write('\n')
+       sys.stdout.write('\n')
 
 #write u,v,p files 
 
-   dlat=lat[1,0]-lat[0,0]
-   dlon=lon[0,1]-lon[0,0]
+       dlat=lat[1,0]-lat[0,0]
+       dlon=lon[0,1]-lon[0,0]
 
-   sys.stdout.write('create delft3d files\n')
-   sys.stdout.flush()
+       sys.stdout.write('create delft3d files\n')
+       sys.stdout.flush()
 
-   meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,rundate,nt,path=folder,curvi=False)
+       meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,rundate,nt,path=rpath,curvi=False)
+
+   else:
+       sys.stdout.write('meteo files present\n')
 
    sys.stdout.write('\n')
 
 # modify mdf file
 
-   inp, ord = mdf.read(folder+'med.mdf')
+   inp, ord = mdf.read(rpath+bname+'.mdf')
 
   # adjust iteration date
    tstart=rundate.hour*60
@@ -120,7 +120,7 @@ def go(rundate):
    inp['Restid']=outresfile
 
   # update mdf
-   mdf.write(inp, folder+'med.mdf',selection=ord)
+   mdf.write(inp, rpath+bname+'.mdf',selection=ord)
 # run case
 
 #  p=u=v=lon=lat=None
@@ -129,42 +129,44 @@ def go(rundate):
    sys.stdout.flush()
 
  
-   os.chdir(folder)
-  #subprocess.call(folder+'run_flow2d3d.sh',shell=True)
+   os.chdir(rpath)
+  #subprocess.call(rpath+'run_flow2d3d.sh',shell=True)
    os.system('./run_flow2d3d.sh')
 
    sys.stdout.write('\n')
 
 
-   sys.stdout.write('start analysis for TAT\n')
-   sys.stdout.flush()
+   if TAT :
+
+     sys.stdout.write('start analysis for TAT\n')
+     sys.stdout.flush()
 
   # TAT interface
-   try:
-     fTAT()
-   except Exception as e:
-     print e
-     sys.exit()
+     try:
+       fTAT()
+     except Exception as e:
+       print e
+       sys.exit()
 
-   sys.stdout.write('\n')
-   sys.stdout.write('analysis finished\n')
-   sys.stdout.flush()
-   sys.stdout.write('\n')
+     sys.stdout.write('\n')
+     sys.stdout.write('analysis finished\n')
+     sys.stdout.flush()
+     sys.stdout.write('\n')
 
-   fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
-   now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
-   with open(SAVEPATH+'{}/completed.txt'.format(fname),'w') as f:
+     fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
+     now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
+     with open(SAVEPATH+'{}/completed.txt'.format(fname),'w') as f:
        f.write(now)
-   with open(SAVEPATH+'final/completed.txt'.format(fname),'w') as f:
+     with open(SAVEPATH+'final/completed.txt'.format(fname),'w') as f:
        f.write(now)
 
 
-   with open(RUNPATH+'logMED.txt'.format(fname),'a') as f:
+     with open(RUNPATH+'logMED.txt'.format(fname),'a') as f:
        f.write('{}\n'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H')))
    
-   sys.stdout.write('completed\n')
-   sys.stdout.flush()
-   sys.stdout.write('\n')
+     sys.stdout.write('completed\n')
+     sys.stdout.flush()
+     sys.stdout.write('\n')
 
 
 if __name__ == "__main__":

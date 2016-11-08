@@ -2,22 +2,33 @@ import numpy as np
 import datetime
 import sys
 from netCDF4 import Dataset
+import pandas as pd
 
 
-def pget(tstart,tend,path0,basename,point):
+def pget(t0,t1,path0,basename,point):
 
-  tstart=datetime.datetime.strptime(tstart,'%Y%m%d.%H')
-  tend=datetime.datetime.strptime(tend,'%Y%m%d.%H')
+  tstart=datetime.datetime.strptime(t0,'%Y%m%d.%H')
+  tend=datetime.datetime.strptime(t1,'%Y%m%d.%H')
   dt=(tend-tstart).total_seconds()
   ndt=dt/(3600*12)
   ndt=np.int(ndt)+1
+
+  path=path0+'{}/'.format(t0)
+
+  obs=pd.read_csv(path+basename+'.obs',delim_whitespace=True,header=None, names=['ID','i','j'])
+#  obs=obs.set_index(['ID'])
+  ind,i,j=obs.xs(point)
+  d = Dataset(path+'trim-'+basename+'.nc')
+  xz=d['XZ'][i-1,j-1] # fortran/python conversion
+  yz=d['YZ'][i-1,j-1] # fortran/python conversion
 
   combined=[]
   tw=[]
 
   for it in range(ndt-1): 
     idate=tstart+datetime.timedelta(hours=12*it)
-    path=path0+'{}/{}/{:02d}/'.format(idate.month,idate.day,idate.hour)
+    idt=datetime.datetime.strftime(idate,'%Y%m%d.%H')
+    path=path0+'{}/'.format(idt)
 
    #print path
     d = Dataset(path+'trih-'+basename+'.nc')
@@ -42,12 +53,15 @@ def pget(tstart,tend,path0,basename,point):
   cw=np.array(combined).flatten()
 
   idate=tend
-  path=path0+'{}/{}/{:02d}/'.format(idate.month,idate.day,idate.hour)
+  idt=datetime.datetime.strftime(idate,'%Y%m%d.%H')
+  path=path0+'{}/'.format(idt)
 
    #print path
   d = Dataset(path+'trih-'+basename+'.nc')
 
   h=d.variables['ZWL'][:,point]
+# hlon=d.variables['XSTAT'][:,point]
+# hlat=d.variables['YSTAT'][:,point]
   time=d.variables['time'][:]
 
   tm=(idate-tstart).total_seconds()+(time-time[0])
@@ -58,7 +72,7 @@ def pget(tstart,tend,path0,basename,point):
   tcw=np.append(tcw,np.array(tstamp))
   cw=np.append(cw,np.array(h))
 
-  return tcw,cw  
+  return tcw,cw,yz,xz  
 
 if __name__ == "__main__":
     tstart=sys.argv[1]

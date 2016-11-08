@@ -173,8 +173,9 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
     # print progress (manual)
   # sys.stdout.write('\r')
   # sys.stdout.write("[%-20s] %d%%" % ('='*20, 100))
-  # sys.stdout.flush()
-  # sys.stdout.write('\n')
+    sys.stdout.flush()
+    sys.stdout.write('\n')
+    sys.stdout.write('meteo done\n')
     #--------------------------------------------------------------------- 
 
   except Exception as e:
