@@ -188,6 +188,7 @@ def fTAT(date=None):
   points=pandas.read_csv(RUNPATH+'places.txt',delimiter='\t')
   plat,plon=points['lat'][:],points['long'][:]
     
+  plt.ioff()
 
   #@ FINAL FOLDER 
   if not date:
@@ -219,7 +220,7 @@ def fTAT(date=None):
     
     plt.savefig(SAVEPATH+'final/P1_MAXHEIGHT_END.jpg',bbox_inches='tight', pad_inches=0)
     
-    plt.show(block=False)
+  # plt.show(block=False)
     
     plt.figure()
     
