@@ -3,12 +3,20 @@ import datetime
 import sys
 from workflow import *
 import logging
+import pickle
 
-RUNPATH='/home/critechuser/DELFT3D/python/'
 
-def comp(sd,fd):
+def comp(sd,fd,path,TAT):
 
-  logging.basicConfig(filename=RUNPATH+'med.log',level=logging.INFO)
+  case=path.split('/')[-2]
+
+  with open(path+case+'.pkl', 'r') as f:
+    att=pickle.load(f)
+
+
+
+
+  logging.basicConfig(filename=path+case+'.log',level=logging.INFO)
     
   dt=(fd-sd).total_seconds()
   ndt=dt/(3600*12)
@@ -17,7 +25,7 @@ def comp(sd,fd):
   for it in range(ndt): 
     idate=sd+datetime.timedelta(hours=12*it)
     logging.info(datetime.datetime.strftime(idate,'%Y%m%d.%H'))
-    go(idate)
+    go(idate,path,att,TAT)
 
   
 
@@ -27,5 +35,7 @@ if __name__ == "__main__":
     sdate=datetime.datetime.strptime(inp1,'%Y%m%d.%H')
     inp2=sys.argv[2]
     fdate=datetime.datetime.strptime(inp2,'%Y%m%d.%H')
-    comp(sdate,fdate)
+    path=sys.argv[3]
+    TAT=sys.argv[4]
+    comp(sdate,fdate,path,TAT)
 

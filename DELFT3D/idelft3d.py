@@ -51,7 +51,7 @@ def meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,time,nt,path='./',curvi=False):
 
  pfid.write('unit1            = Pa\n')
 
- time0=datetime.datetime.strptime('2016-01-01 00:00:00','%Y-%m-%d %H:%M:%S')
+ time0=datetime.datetime.strptime('2000-01-01 00:00:00','%Y-%m-%d %H:%M:%S')
 
 # write time blocks
  for it in range(nt+1): # nt + 0 hour
@@ -61,7 +61,7 @@ def meteo2delft3d(p,u,v,lat0,lon0,dlat,dlon,time,nt,path='./',curvi=False):
 
 
    for f in fi:
-     f.write('TIME = {} hours since 2016-01-01 00:00:00 +00:00\n'.format(dt))
+     f.write('TIME = {} hours since 2000-01-01 00:00:00 +00:00\n'.format(dt))
 
    np.savetxt(pfid,np.flipud(p[it,:,:]/0.01),fmt='%.3f')
    np.savetxt(ufid,np.flipud(u[it,:,:]),fmt='%.3f')

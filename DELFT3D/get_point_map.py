@@ -4,6 +4,7 @@ import sys
 from netCDF4 import Dataset
 from grid import *
 from dep import *
+import itertools
 
 
 #path0='/home/critechuser/2016/'
@@ -22,7 +23,9 @@ def get(t0,t1,path0,basename,plat,plon):
   ndt=np.int(ndt)+1
 
 
-  path=path0+'{}/{}/{:02d}/'.format(tstart.month,tstart.day,tstart.hour)
+  path=path0+'{}/'.format(t0)
+
+  # read computational grid
   grid = Grid.fromfile(path+basename+'.grd')
   lon=grid.x[0,:].data
   lat=grid.y[:,0].data
@@ -30,19 +33,22 @@ def get(t0,t1,path0,basename,plat,plon):
   bath.val=bath.val.T[:-1,:-1]
   dx=lon[1]-lon[0]
   dy=lat[1]-lat[0]
-  x=lon
-  y=lat
+  x=lon-dx/2.
+  y=lat-dy/2.
 
 
-  i=np.abs(x-plon).argmin()
-  j=np.abs(y-plat).argmin()
+  i=np.abs(lon-plon).argmin()
+  j=np.abs(lat-plat).argmin()
+  i0=i
+  j0=j
+# print i0,j0
   x0=grid.x.T[i,j]
   y0=grid.y.T[i,j]
 # print i,j,x0,y0,bath.val[i,j]
   # retrieve the 4 nearest diagonal points of the i,j
-  lon4=grid.x.T[i-1:i+2:2,j-1:j+2:2]
-  lat4=grid.y.T[i-1:i+2:2,j-1:j+2:2]
-  val4=bath.val[i-1:i+2:2,j-1:j+2:2]
+  lon4=grid.x.T[i-1:i+3:2,j-1:j+3:2]
+  lat4=grid.y.T[i-1:i+3:2,j-1:j+3:2]
+  val4=bath.val[i-1:i+3:2,j-1:j+3:2]
 # print zip(lon4.flatten(),lat4.flatten(),val4.flatten())
 # print '==================='
   lon8=grid.x.T[i-1:i+2,j-1:j+2]
@@ -59,35 +65,52 @@ def get(t0,t1,path0,basename,plat,plon):
          D=np.sign([yy-plat,B])
          if C[0]==C[-1] and D[0] == D[-1] : 
            corner=[xx,yy]
-           indx=[np.abs(x-xx).argmin(),np.abs(y-yy).argmin()]
+           indx=[np.abs(lon-xx).argmin(),np.abs(lat-yy).argmin()]
 
 # print indx
-# print [x0,y0,bath.val[i,j]]
-# print [x0,corner[1],bath.val[i,indx[1]]]
-# print [corner[0],corner[1],bath.val[indx[0],indx[1]]]
-# print [corner[0],y0,bath.val[indx[0],j]]
+# print [i,j,x0,y0,bath.val[i,j]]
+# print [i,indx[1],x0,corner[1],bath.val[i,indx[1]]]
+# print [indx[0],indx[1],corner[0],corner[1],bath.val[indx[0],indx[1]]]
+# print [indx[0],j,corner[0],y0,bath.val[indx[0],j]]
 
+  bath4=[]
+  for r in itertools.product([indx[0],i],[indx[1],j]): bath4.append(bath.val[r[0],r[1]])
+# print bath4
+  if np.isfinite(bath4).any() : 
+
+      i=np.abs(x-plon).argmin()
+      j=np.abs(y-plat).argmin()
+ #    print i,j
+
+  else:
+
+     try:
   
-  l=np.argwhere(np.array(val8)==np.nanmax(np.array(val8)))
-  [ii,jj]=l.ravel()
+        l=np.argwhere(np.array(val8)==np.nanmin(np.array(val8)))
+        [ii,jj]=l.ravel()
     
-  wx=lon8[ii,jj]
-  wy=lat8[ii,jj]
-  i=np.abs(x-wx).argmin()
-  j=np.abs((y-wy).T).argmin()
+        wx=lon8[ii,jj]
+        wy=lat8[ii,jj]
+        i=np.abs(x-wx).argmin()
+        j=np.abs((y-wy).T).argmin()
   
 # [i,j]=indx
+
+     except:
+        i,j=i0,j0
 
   combined=[]
   tw=[]
 
   for it in range(ndt-1): 
     idate=tstart+datetime.timedelta(hours=12*it)
-    path=path0+'{}/{}/{:02d}/'.format(idate.month,idate.day,idate.hour)
+    idt=datetime.datetime.strftime(idate,'%Y%m%d.%H')
+    path=path0+'{}/'.format(idt)
 
  #  print path
     d = Dataset(path+'trim-'+basename+'.nc')
-    h=d.variables['S1'][:12,i:i+2,j:j+2]
+   #h=d.variables['S1'][:12,i:i+2,j:j+2]
+    h=d.variables['S1'][:12,i,j]
     
 
     time=d.variables['time'][:12]
@@ -98,18 +121,20 @@ def get(t0,t1,path0,basename,plat,plon):
     for l in tm : tstamp.append(tstart+datetime.timedelta(0,int(l)))
 
     tw.append(tstamp)
-    combined.append(h.mean(axis=(1,2)))
+    combined.append(h)#.mean(axis=(1,2)))
 
   tcw=np.array(tw).flatten()
   cw=np.array(combined).flatten()
 # Add the last one with forecasting
 
   idate=tend
-  path=path0+'{}/{}/{:02d}/'.format(idate.month,idate.day,idate.hour)
+  idt=datetime.datetime.strftime(idate,'%Y%m%d.%H')
+  path=path0+'{}/'.format(idt)
 # print path
 
   d = Dataset(path+'trim-'+basename+'.nc')
-  h=d.variables['S1'][:,i:i+2,j:j+2]
+ #h=d.variables['S1'][:,i:i+2,j:j+2]
+  h=d.variables['S1'][:,i,j]
     
 
   time=d.variables['time'][:]
@@ -120,12 +145,12 @@ def get(t0,t1,path0,basename,plat,plon):
   for l in tm : tstamp.append(tstart+datetime.timedelta(0,int(l)))
 
   tcw=np.append(tcw,np.array(tstamp))
-  cw=np.append(cw,np.array(h.mean(axis=(1,2))))
+  cw=np.append(cw,np.array(h))#.mean(axis=(1,2))))
 
 # w1=tcw<datetime.datetime.strptime('20160228.00','%Y%m%d.%H')
 # cwm = cw[w1].mean()
   
-  return tcw,cw
+  return tcw,cw,lat[j]-dy/2.,lon[i]-dx/2.,j,i
 
 if __name__ == "__main__":
     tstart=sys.argv[1]
@@ -134,5 +159,5 @@ if __name__ == "__main__":
     basename=sys.argv[4]
     plat =sys.argv[5]
     plon =sys.argv[6]
-    t,ha=get(tstart,tend,path,basename,plat,plon)
+    t,ha,mlat,mlon,jm,im=get(tstart,tend,path,basename,plat,plon)
 

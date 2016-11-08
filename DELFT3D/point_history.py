@@ -69,7 +69,7 @@ def view(date0,date1,path,basename,point):
   ## COMPARISON WITH MEASUREMENTS AND HYFLUX
 
   #get measurement data
-  tp,hp,plat,plon=getmes(sdate,edate,point)
+  tp,hp,plat,plon,bname,bid=getmes(sdate,edate,point)
  
   hp=np.array(hp)
 
@@ -121,8 +121,8 @@ def view(date0,date1,path,basename,point):
   # read dictionary
 
   try:
-   ppath=path+'{}/{}/{:02d}/'.format(sdate.month,sdate.day,sdate.hour)
-   with open(ppath+'med.pkl', 'r') as f:
+   ppath=path+'{}/{}/{}/{:02d}/'.format(sdate.year,sdate.month,sdate.day,sdate.hour)
+   with open(ppath+basename+'.pkl', 'r') as f:
     ptr=pickle.load(f)
 
    if int(point) not in ptr.keys():
