@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.26)  3 OCT 2016 13:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.26)  4 OCT 2016 12:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -458,57 +458,57 @@ File: EC.jpg Graphic file (type jpg)
  <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 193.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [4 <./tmp/h0.png> <./tmp/h24.png> <./tmp/h48.png> <./tmp/h72.png>] <tmp/g1.png
-, id=51, 433.62pt x 289.08pt>
+ [4 <./tmp/h0.png> <./tmp/h24.png> <./tmp/h48.png> <./tmp/h72.png>] <tmp/g0.png
+, id=51, 578.16pt x 433.62pt>
+File: tmp/g0.png Graphic file (type png)
+ <use tmp/g0.png>
+Package pdftex.def Info: tmp/g0.png used on input line 204.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
+
+<tmp/g1.png, id=52, 578.16pt x 433.62pt>
 File: tmp/g1.png Graphic file (type png)
  <use tmp/g1.png>
 Package pdftex.def Info: tmp/g1.png used on input line 204.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g2.png, id=52, 433.62pt x 289.08pt>
+<tmp/g2.png, id=53, 578.16pt x 433.62pt>
 File: tmp/g2.png Graphic file (type png)
  <use tmp/g2.png>
-Package pdftex.def Info: tmp/g2.png used on input line 204.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+Package pdftex.def Info: tmp/g2.png used on input line 211.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g3.png, id=53, 433.62pt x 289.08pt>
+<tmp/g3.png, id=54, 578.16pt x 433.62pt>
 File: tmp/g3.png Graphic file (type png)
  <use tmp/g3.png>
 Package pdftex.def Info: tmp/g3.png used on input line 211.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g4.png, id=54, 433.62pt x 289.08pt>
+<tmp/g4.png, id=55, 578.16pt x 433.62pt>
 File: tmp/g4.png Graphic file (type png)
  <use tmp/g4.png>
-Package pdftex.def Info: tmp/g4.png used on input line 211.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+Package pdftex.def Info: tmp/g4.png used on input line 218.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g5.png, id=55, 433.62pt x 289.08pt>
+<tmp/g5.png, id=56, 578.16pt x 433.62pt>
 File: tmp/g5.png Graphic file (type png)
  <use tmp/g5.png>
 Package pdftex.def Info: tmp/g5.png used on input line 218.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
-
-<tmp/g6.png, id=56, 433.62pt x 289.08pt>
-File: tmp/g6.png Graphic file (type png)
- <use tmp/g6.png>
-Package pdftex.def Info: tmp/g6.png used on input line 218.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<tmp/g7.png, id=57, 433.62pt x 289.08pt>
+<tmp/g6.png, id=57, 578.16pt x 433.62pt>
+File: tmp/g6.png Graphic file (type png)
+ <use tmp/g6.png>
+Package pdftex.def Info: tmp/g6.png used on input line 225.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
+
+<tmp/g7.png, id=58, 578.16pt x 433.62pt>
 File: tmp/g7.png Graphic file (type png)
  <use tmp/g7.png>
 Package pdftex.def Info: tmp/g7.png used on input line 225.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
-
-<tmp/g8.png, id=58, 433.62pt x 289.08pt>
-File: tmp/g8.png Graphic file (type png)
- <use tmp/g8.png>
-Package pdftex.def Info: tmp/g8.png used on input line 225.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -525,133 +525,140 @@ File: EC.jpg Graphic file (type jpg)
  <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 228.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [5 <./tmp/g1.png> <./tmp/g2.png> <./tmp/g3.png> <./tmp/g4.png>] <tmp/g9.png, i
-d=66, 433.62pt x 289.08pt>
-File: tmp/g9.png Graphic file (type png)
-
-<use tmp/g9.png>
-Package pdftex.def Info: tmp/g9.png used on input line 236.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
- <tmp/g10.png, id=67, 433.62pt x 289.08pt>
-File: tmp/g10.png Graphic file (type png)
- <use tmp/g10.png>
-Package pdftex.def Info: tmp/g10.png used on input line 236.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+ [5 <./tmp/g0.png> <./tmp/g1.png> <./tmp/g2.png> <./tmp/g3.png>]
 File: ECMWF.png Graphic file (type png)
-<use ECMWF.png>
-Package pdftex.def Info: ECMWF.png used on input line 239.
+ <use ECMWF.png>
+Package pdftex.def Info: ECMWF.png used on input line 228.
 (pdftex.def)             Requested size: 85.35826pt x 17.43605pt.
 File: deltares.jpg Graphic file (type jpg)
  <use deltares.jpg>
-Package pdftex.def Info: deltares.jpg used on input line 239.
+Package pdftex.def Info: deltares.jpg used on input line 228.
+(pdftex.def)             Requested size: 113.81102pt x 57.99239pt.
+File: EC.jpg Graphic file (type jpg)
+
+<use EC.jpg>
+Package pdftex.def Info: EC.jpg used on input line 228.
+(pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
+ [6 <./tmp/g4.png> <./tmp/g5.png> <./tmp/g6.png> <./tmp/g7.png>]
+<tmp/g8.png, id=73, 578.16pt x 433.62pt>
+File: tmp/g8.png Graphic file (type png)
+ <use tmp/g8.png>
+Package pdftex.def Info: tmp/g8.png used on input line 236.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
+
+<tmp/g9.png, id=74, 578.16pt x 433.62pt>
+File: tmp/g9.png Graphic file (type png)
+ <use tmp/g9.png>
+Package pdftex.def Info: tmp/g9.png used on input line 236.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
+
+<tmp/g11.png, id=75, 578.16pt x 433.62pt>
+File: tmp/g11.png Graphic file (type png)
+ <use tmp/g11.png>
+Package pdftex.def Info: tmp/g11.png used on input line 245.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
+
+<tmp/g12.png, id=76, 578.16pt x 433.62pt>
+File: tmp/g12.png Graphic file (type png)
+ <use tmp/g12.png>
+Package pdftex.def Info: tmp/g12.png used on input line 245.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
+File: ECMWF.png Graphic file (type png)
+ <use ECMWF.png>
+Package pdftex.def Info: ECMWF.png used on input line 248.
+(pdftex.def)             Requested size: 85.35826pt x 17.43605pt.
+File: deltares.jpg Graphic file (type jpg)
+
+<use deltares.jpg>
+Package pdftex.def Info: deltares.jpg used on input line 248.
 (pdftex.def)             Requested size: 113.81102pt x 57.99239pt.
 File: EC.jpg Graphic file (type jpg)
  <use EC.jpg>
-Package pdftex.def Info: EC.jpg used on input line 239.
+Package pdftex.def Info: EC.jpg used on input line 248.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [6 <./tmp/g5.png> <./tmp/g6.png> <./tmp/g7.png> <./tmp/g8.png>] <tmp/g11.png, 
-id=75, 433.62pt x 289.08pt>
-File: tmp/g11.png Graphic file (type png)
+ [7
 
-<use tmp/g11.png>
-Package pdftex.def Info: tmp/g11.png used on input line 247.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
- <tmp/g12.png, id=76, 433.62pt x 289.08pt>
-File: tmp/g12.png Graphic file (type png)
- <use tmp/g12.png>
-Package pdftex.def Info: tmp/g12.png used on input line 247.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
-
-<tmp/g13.png, id=77, 433.62pt x 289.08pt>
+ <./tmp/g8.png> <./tmp/g9.png> <./tmp/g11.png> <./tmp/g12.png>] <tmp/g13.png, i
+d=85, 578.16pt x 433.62pt>
 File: tmp/g13.png Graphic file (type png)
  <use tmp/g13.png>
 Package pdftex.def Info: tmp/g13.png used on input line 254.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g14.png, id=78, 433.62pt x 289.08pt>
+<tmp/g14.png, id=86, 578.16pt x 433.62pt>
 File: tmp/g14.png Graphic file (type png)
  <use tmp/g14.png>
 Package pdftex.def Info: tmp/g14.png used on input line 254.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<tmp/g15.png, id=79, 433.62pt x 289.08pt>
+<tmp/g15.png, id=87, 578.16pt x 433.62pt>
 File: tmp/g15.png Graphic file (type png)
  <use tmp/g15.png>
 Package pdftex.def Info: tmp/g15.png used on input line 261.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g16.png, id=80, 433.62pt x 289.08pt>
+<tmp/g16.png, id=88, 578.16pt x 433.62pt>
 File: tmp/g16.png Graphic file (type png)
  <use tmp/g16.png>
 Package pdftex.def Info: tmp/g16.png used on input line 261.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<tmp/g17.png, id=81, 433.62pt x 289.08pt>
+<tmp/g17.png, id=89, 578.16pt x 433.62pt>
 File: tmp/g17.png Graphic file (type png)
  <use tmp/g17.png>
 Package pdftex.def Info: tmp/g17.png used on input line 267.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g18.png, id=82, 433.62pt x 289.08pt>
+<tmp/g18.png, id=90, 578.16pt x 433.62pt>
 File: tmp/g18.png Graphic file (type png)
  <use tmp/g18.png>
 Package pdftex.def Info: tmp/g18.png used on input line 267.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<tmp/g19.png, id=83, 433.62pt x 289.08pt>
+<tmp/g19.png, id=91, 578.16pt x 433.62pt>
 File: tmp/g19.png Graphic file (type png)
  <use tmp/g19.png>
 Package pdftex.def Info: tmp/g19.png used on input line 274.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g20.png, id=84, 433.62pt x 289.08pt>
+<tmp/g20.png, id=92, 578.16pt x 433.62pt>
 File: tmp/g20.png Graphic file (type png)
  <use tmp/g20.png>
 Package pdftex.def Info: tmp/g20.png used on input line 274.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<tmp/g21.png, id=85, 433.62pt x 289.08pt>
+<tmp/g21.png, id=93, 578.16pt x 433.62pt>
 File: tmp/g21.png Graphic file (type png)
  <use tmp/g21.png>
 Package pdftex.def Info: tmp/g21.png used on input line 280.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g22.png, id=86, 433.62pt x 289.08pt>
+<tmp/g22.png, id=94, 578.16pt x 433.62pt>
 File: tmp/g22.png Graphic file (type png)
  <use tmp/g22.png>
 Package pdftex.def Info: tmp/g22.png used on input line 280.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<tmp/g23.png, id=87, 433.62pt x 289.08pt>
+<tmp/g23.png, id=95, 578.16pt x 433.62pt>
 File: tmp/g23.png Graphic file (type png)
  <use tmp/g23.png>
 Package pdftex.def Info: tmp/g23.png used on input line 287.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
-<tmp/g24.png, id=88, 433.62pt x 289.08pt>
+<tmp/g24.png, id=96, 578.16pt x 433.62pt>
 File: tmp/g24.png Graphic file (type png)
  <use tmp/g24.png>
 Package pdftex.def Info: tmp/g24.png used on input line 287.
-(pdftex.def)             Requested size: 227.62206pt x 151.74721pt.
+(pdftex.def)             Requested size: 227.62206pt x 170.71231pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -668,7 +675,9 @@ File: EC.jpg Graphic file (type jpg)
  <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 290.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [7 <./tmp/g9.png> <./tmp/g10.png> <./tmp/g11.png> <./tmp/g12.png>]
+ [8
+
+ <./tmp/g13.png> <./tmp/g14.png> <./tmp/g15.png> <./tmp/g16.png>]
 File: ECMWF.png Graphic file (type png)
  <use ECMWF.png>
 Package pdftex.def Info: ECMWF.png used on input line 294.
@@ -682,7 +691,7 @@ File: EC.jpg Graphic file (type jpg)
 <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 294.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [8 <./tmp/g13.png> <./tmp/g14.png> <./tmp/g15.png> <./tmp/g16.png>]
+ [9 <./tmp/g17.png> <./tmp/g18.png> <./tmp/g19.png> <./tmp/g20.png>]
 File: ECMWF.png Graphic file (type png)
  <use ECMWF.png>
 Package pdftex.def Info: ECMWF.png used on input line 297.
@@ -695,7 +704,7 @@ File: EC.jpg Graphic file (type jpg)
  <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 297.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [9 <./tmp/g17.png> <./tmp/g18.png> <./tmp/g19.png> <./tmp/g20.png>]
+ [10 <./tmp/g21.png> <./tmp/g22.png> <./tmp/g23.png> <./tmp/g24.png>]
 File: ECMWF.png Graphic file (type png)
  <use ECMWF.png>
 Package pdftex.def Info: ECMWF.png used on input line 301.
@@ -709,7 +718,7 @@ File: EC.jpg Graphic file (type jpg)
 <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 301.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [10 <./tmp/g21.png> <./tmp/g22.png> <./tmp/g23.png> <./tmp/g24.png>]
+ [11]
 Overfull \hbox (9.52625pt too wide) in paragraph at lines 312--313
 []\OT1/cmr/m/n/10 EUMETSAT: http://oiswww.eumetsat.org/IPPS/html/latestImages/E
 UMETSAT[]MSG[]IR108EColor-
@@ -739,14 +748,14 @@ File: EC.jpg Graphic file (type jpg)
  <use EC.jpg>
 Package pdftex.def Info: EC.jpg used on input line 324.
 (pdftex.def)             Requested size: 85.35826pt x 59.36653pt.
- [11] (./report.aux)
+ [12] (./report.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
  4059 strings out of 494953
- 59843 string characters out of 6180977
+ 59838 string characters out of 6180977
  225099 words of memory out of 5000000
  7285 multiletter control sequences out of 15000+600000
  6111 words of font info for 22 fonts, out of 8000000 for 9000
@@ -757,10 +766,10 @@ r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb>
-Output written on report.pdf (11 pages, 2610253 bytes).
+Output written on report.pdf (12 pages, 2888711 bytes).
 PDF statistics:
- 139 PDF objects out of 1000 (max. 8388607)
- 42 compressed objects within 1 object stream
+ 142 PDF objects out of 1000 (max. 8388607)
+ 44 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  201 words of extra memory for PDF output out of 10000 (max. 10000000)
 

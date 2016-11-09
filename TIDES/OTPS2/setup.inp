@@ -1,11 +1,11 @@
-DATA/Model_atlas           ! 1. tidal model control file
-lat_lon_time               ! 2. latitude/longitude/<time> file
+DATA/Model_atlas_v1        ! 1. tidal model control file
+lat_lon_time1              ! 2. latitude/longitude/<time> file
 z                          ! 3. z/U/V/u/v
-m2,s2                      ! 4. tidal constituents to include
+                           ! 4. tidal constituents to include
 AP                         ! 5. AP/RI
 oce                        ! 6. oce/geo
 1                          ! 7. 1/0 correct for minor constituents
-sample.out                 ! 8. output file (ASCII)
+sample1.out                 ! 8. output file (ASCII)
 
 
 Comments on lines 1-7

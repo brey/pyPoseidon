@@ -1,6 +1,6 @@
-DATA/Model_atlas           ! 1. tpxo8 atlas compact control file
-46  62                      ! 2. latitude limits (deg N)
--12  10                    ! 3. longitude limits (deg E)
+DATA/Model_atlas_v1        ! 1. tpxo8 atlas compact control file
+28  48                     ! 2. latitude limits (deg N)
+-12  48                    ! 3. longitude limits (deg E)
 m2,s2,k1,o1,mf,m4          ! 4. tidal constituents to include
 DATA                       ! 5. output directory
 tst                        ! 6. output file suffix
