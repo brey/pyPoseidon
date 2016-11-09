@@ -2,7 +2,7 @@ import numpy as np
 import pandas
 import collections
 import pickle
-from itertools import product
+import itertools 
 
 from dep import *
 from grid import *
@@ -64,7 +64,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
     pi=ih+1 # the fortran/python index issue ??
     pj=jh+1 # the fortran/python index issue ??
 
-    print dat[dat['lon']==l1]['ID'].values, ih,jh,bval[ih,jh]
+  # print dat[dat['lon']==l1]['ID'].values, ih,jh,bval[ih,jh]
 
     l=[]
 
@@ -93,16 +93,16 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
            corner=[xx,yy]
            indx=[np.abs(gx+dx/2-xx).argmin(),np.abs(gy+dy/2-yy).argmin()]
 
-      print indx
-      print [ih,jh,x0,y0,bval[ih,jh]]
-      print [ih,indx[1],x0,corner[1],bval[ih,indx[1]]]
-      print [indx[0],indx[1],corner[0],corner[1],bval[indx[0],indx[1]]]
-      print [indx[0],jh,corner[0],y0,bval[indx[0],jh]]
+    # print indx
+     #print [ih,jh,x0,y0,bval[ih,jh]]
+     #print [ih,indx[1],x0,corner[1],bval[ih,indx[1]]]
+     #print [indx[0],indx[1],corner[0],corner[1],bval[indx[0],indx[1]]]
+     #print [indx[0],jh,corner[0],y0,bval[indx[0],jh]]
   
       bath4=np.array([bval[ih,jh],bval[ih,indx[1]],bval[indx[0],indx[1]],bval[indx[0],jh]])
       lb4=np.array([[ih,jh],[ih,indx[1]],[indx[0],indx[1]],[indx[0],jh]])
 
-      print 'finite values', np.isfinite(bath4).sum()
+     #print 'finite values', np.isfinite(bath4).sum()
 
       if np.isfinite(bath4).sum() > 1: 
           
@@ -118,17 +118,45 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 # choose minimum depth
      #  l=np.argwhere(np.array(val8)==np.nanmin(np.array(val8)))
           knan=np.argwhere(np.isfinite(bath4)).flatten()
-          print k
+        # print knan
           [k1,k2]=lb4[knan[0]]
-          print k1,k2
+        # print k1,k2
 
-          i1=np.sign(k1-ih)
-          i2=np.sign(k2-jh)
+#         i1=np.sign(k1-ih)
+#         i2=np.sign(k2-jh)
 
-          ih=ih+i1  # opposite diagonal 
-          jh=jh+i2
+#         ih=ih+i1  # opposite diagonal 
+#         jh=jh+i2
 
-          print 'DIAGO', ih,jh
+#         print 'DIAGO', ih,jh
+
+          rmax=10000.
+
+          for a,b in itertools.product([-1,1],[-1,1]):
+
+            ci=[]
+            for r in itertools.combinations([a,0,b],2): ci.append(r)
+         #  print a,b,ci
+
+            bath4=np.array([bval[k1+ci[0][0],k2+ci[0][1]],bval[k1+ci[1][0],k2+ci[1][1]],bval[k1+ci[2][0],k2+ci[2][1]],bval[k1,k2]])
+            knan=np.argwhere(np.isfinite(bath4)).flatten()
+          # print knan
+            if len(knan) > 1:
+              xn0=grd.x.T[k1,k2]
+              yn0=grd.y.T[k1,k2]
+            # print xn0,yn0,k1,k2
+              iih=np.abs(gx-(xn0+a*dx/2.)).argmin()
+              jjh=np.abs(gy-(yn0+b*dy/2.)).argmin()
+            # print iih,jjh
+              xp0=grd.x.T[iih,jjh]-dx/2.
+              yp0=grd.y.T[iih,jjh]-dy/2.
+              r=np.sqrt((l1-xp0)**2+(l2-yp0)**2)
+              if r < rmax : 
+                  rmax=r
+                  ih=iih
+                  jh=jjh
+  
+        # print 'DIAGO', ih,jh
           
           pi=ih+1 # the fortran/python index issue ??
           pj=jh+1 # the fortran/python index issue ??
@@ -159,7 +187,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 
 #   else:
 #     continue
-    print 'FINAL', dat[dat['lon']==l1]['ID'].values, ih,jh,bval[ih,jh]
+  # print 'FINAL', dat[dat['lon']==l1]['ID'].values, ih,jh,bval[ih,jh]
                  
     m1=np.argwhere(lon==l1) 
     m2=np.argwhere(lat==l2) 
