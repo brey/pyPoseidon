@@ -80,5 +80,5 @@ if __name__ == "__main__":
     path0=sys.argv[3]
     basename=sys.argv[4]
     point =sys.argv[5]
-    t,ha=pget(tstart,tend,path0,basename,point)
+    t,ha,yz,xz=pget(tstart,tend,path0,basename,point)
 

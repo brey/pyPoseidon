@@ -19,7 +19,7 @@ import xml.dom.minidom as md
 
 def  setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False):
 
-  resmin=int(resolution*60)
+  resmin=resolution*60
 
   # computei ni,nj / correct lat/lon
 

@@ -190,33 +190,26 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
 if __name__ == "__main__":
   try:
-    yyyy=sys.argv[1]
-    mm=sys.argv[2]
-    dd=sys.argv[3]
-    hh=sys.argv[4]
 
-    yyyy=int(yyyy)
-    mm=int(mm)
-    dd=int(dd)
-    hh=int(hh)
-  except:
-    to=datetime.datetime.today() 
+    lon0=sys.argv[1]
+    lon1=sys.argv[2]
+    lat0=sys.argv[3]
+    lat1=sys.argv[4]
+    runtime=sys.argv[5]
+    nt=sys.argv[6]
+    
+    to=datetime.datetime.strptime(runtime,'%Y%m%d.%H' )
+
     yyyy=to.year 
     mm=to.month 
-    dd=to.day-5
+    dd=to.day
     hh=0
 
-  lon0=-5.5
-  lat0=28.5
-  lon1=43.
-  lat1=47.5
+  except:
+    print "usage: meteo.py lon0 lon1 lat0 lat1 '20160101.00' 72"
 
+  nt=3*(int(nt)+1)
 
-  runtime=datetime.datetime(yyyy,mm,dd,hh)
-  print runtime
-
-  nt=3*(72+1)
-
-  p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,nt,lon0,lon1,lat0,lat1)
+  p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,nt,float(lon0),float(lon1),float(lat0),float(lat1))
 
 
