@@ -25,6 +25,13 @@ TAT/D3/
 # netcdf files
 *.nc
 
+# Tide files
+*_v1
+
+# zipped files
+*.Z
+*.gz
+
 #ignore .jupyter chekpoints folder
 .ipynb_checkpoints/
 
@@ -36,3 +43,8 @@ Jupyter/__pycache__
 
 # all temp folders
 tmp/
+
+# TIDE OTPS folders
+TIDES/OTPS2
+TIDES/OTPSnc
+TIDES/matlab
