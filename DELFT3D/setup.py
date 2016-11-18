@@ -17,7 +17,7 @@ import os
 import xml.dom.minidom as md
 
 
-def  setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False):
+def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False):
 
   resmin=resolution*60
 
@@ -80,10 +80,10 @@ def  setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False)
 
   if force == 'True':
 
-    try: 
-      p,u,v,elat,elon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
-    except:
-      print 'error no meteo input available for this time stamp'
+#   try: 
+    p,u,v,elat,elon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+#   except Exception as e:
+#     print e
 
 # # Write meteo data
     dlat=elat[1,0]-elat[0,0]

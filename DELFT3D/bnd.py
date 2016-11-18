@@ -8,14 +8,16 @@ from netCDF4 import Dataset
 from bilinear import bilinear_interpolation
 
 PATH='../TIDES/'
+RPATH='../../../tide/20160901.00/'
+basename='med'
 
 
-grd=Grid.fromfile('../../../tmp2/med.grd')
+grd=Grid.fromfile(RPATH+basename+'.grd')
 dlat=grd.y[1,0]-grd.y[0,0]
 dlon=grd.x[0,1]-grd.x[0,0]
 
 
-ba=Dep.read('../../../tmp2/med.dep',grd.shape)
+ba=Dep.read(RPATH+basename+'.dep',grd.shape)
 
 west=[]
 for j in range(grd.y.shape[0]):
@@ -28,7 +30,7 @@ for k in xrange(1,np.size(west)):
   if west[k]-1 in swest : swest.append(west[k])
 
 
-with open('../../../tmp2/med.bnd', 'w') as f:
+with open(RPATH+basename+'.bnd', 'w') as f:
    f.write('West1                Z A     1    {}     1    {}   0.0000000e+00 West1A West1B'.format(swest[0]+1,swest[-1]+1)) # fortran index ??
 
 
@@ -48,7 +50,7 @@ tidal_c=[''.join(k).upper().strip() for k in tidal_c]
 amp=dmed['tidal_amplitude_h']
 ph=dmed['tidal_phase_h']
 
-with open('../../../tmp2/med.bca', 'w') as f:
+with open(RPATH+basename+'.bca', 'w') as f:
 
  for k,l in zip([swest[0],swest[-1]],le):
 

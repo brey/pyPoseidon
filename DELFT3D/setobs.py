@@ -258,7 +258,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 #return iobs,inames
 
 if __name__ == "__main__":
-    path='../../../tmp/20160101.00/'
+    path='/mnt/poseidon/tide_test/Tidfor/'
     basename='med'
 # read grd file
     grd=Grid.fromfile(path+basename+'.grd')
