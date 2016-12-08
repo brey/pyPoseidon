@@ -16,8 +16,9 @@ def pget(t0,t1,path0,basename,point):
   path=path0+'{}/'.format(t0)
 
   obs=pd.read_csv(path+basename+'.obs',delim_whitespace=True,header=None, names=['ID','i','j'])
-#  obs=obs.set_index(['ID'])
   ind,i,j=obs.xs(point)
+# obs=obs.set_index(['ID'])
+# i,j=obs.xs(point)
   d = Dataset(path+'trim-'+basename+'.nc')
   xz=d['XZ'][i-1,j-1] # fortran/python conversion
   yz=d['YZ'][i-1,j-1] # fortran/python conversion

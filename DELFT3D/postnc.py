@@ -25,12 +25,14 @@ FFwriter = animation.FFMpegWriter()
 #date=datetime.datetime(2016,2,15,12,0)
 
 
-PATH='/mnt/web/brey/venice/2016/6/14/12/'
-PATH='/mnt/web/brey/NEPARTAK/2016/7/6/00/'
-tag='nepartak'
-PATH='/DATA/critechuser/tide_test/'
-PATH='/mnt/web/brey/2016H/9/6/12a/'
-tag='med'
+PATH='/home/critechuser/TC/MATTHEW/20160929.00/'
+PATH='/home/critechuser/TC/THOMA/20101021.00/'
+#PATH='/mnt/rmdisk/MATTHEW/20160929.00/'
+#PATH='/mnt/web/brey/hincast/20150329.00/'
+PATH='/mnt/web/brey/MATTHEW/HRun/20160928.00/'
+tag='MATTHEW'
+tag='TOMAS'
+tag='hur'
 
 inp, ord = mdf.read(PATH+tag+'.mdf')
 
@@ -86,9 +88,9 @@ try:
 except:
   pass
 
-hh=h[-3,:,:].T
-uc=uw[-3,0,:,:].T
-vc=vw[-3,0,:,:].T
+hh=h[-3,:-1,:-1].T
+uc=uw[-3,0,:-1,:-1].T
+vc=vw[-3,0,:-1,:-1].T
 
 c=np.sqrt(uc**2+vc**2)
 

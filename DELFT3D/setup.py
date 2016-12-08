@@ -17,17 +17,27 @@ import os
 import xml.dom.minidom as md
 
 
-def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False):
+def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,lon=None,lat=None):
 
   resmin=resolution*60
 
   # computei ni,nj / correct lat/lon
 
-  ni=int((lon1-lon0)/resolution)+1
-  nj=int((lat1-lat0)/resolution)+1
+  if lon.all()==None :
+
+    ni=int((lon1-lon0)/resolution)+1
+    nj=int((lat1-lat0)/resolution)+1
   
-  lon1=lon0+ni*resolution
-  lat1=lat0+nj*resolution
+    lon1=lon0+ni*resolution
+    lat1=lat0+nj*resolution
+
+  else:
+
+    nj,ni=lon.shape
+    lon0=lon.min()
+    lon1=lon.max()
+    lat0=lat.min()
+    lat1=lat.max()
    
   sys.stdout.write('\n')
   sys.stdout.write('run attributes lons=[{}, {}], lats=[{}, {}], ni={}, nj={}, resolution={} decimal degrees ({} minutes)\n'.format(lon0,lon1,lat0,lat1,ni,nj,resolution,resmin))
@@ -100,11 +110,15 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False):
   sys.stdout.flush()
   sys.stdout.write('\n')
 
+  if lon.all() == None:
+    sys.stdout.write('create grid')
+    sys.stdout.flush()
+    sys.stdout.write('\n')
   # set the grid 
-  x=np.linspace(lon0,lon1,ni)
-  y=np.linspace(lat0,lat1,nj)
-  lon,lat=np.meshgrid(x,y)
-  
+    x=np.linspace(lon0,lon1,ni)
+    y=np.linspace(lat0,lat1,nj)
+    lon,lat=np.meshgrid(x,y)
+
   #  GET bathymetry interpolated onto lon,lat
 # pathb='../BATHYMETRY/GLOBAL/gebco30_DELTARES.nc'
 # pathb='../BATHYMETRY/GLOBAL/GEBCO_2014_2D.nc'

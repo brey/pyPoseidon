@@ -8,7 +8,7 @@ from netCDF4 import Dataset
 from bilinear import bilinear_interpolation
 
 PATH='../TIDES/'
-RPATH='../../../tide/20160901.00/'
+RPATH='../../../tide/20131101.00/'
 basename='med'
 
 

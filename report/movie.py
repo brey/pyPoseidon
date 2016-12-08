@@ -21,53 +21,26 @@ rc('animation',html='html5')
 
 # In[3]:
 
-PATH='/DATA/critechuser/tide_test/'
-PATH='/mnt/web/brey/2016H/9/6/12/'
-PATH='/mnt/rmdisk/MATTHEW/2016/10/9/00/'
-path0='/mnt/web/brey/MATTHEW/'
-
-
-# In[4]:
-
-grid=Grid.fromfile(PATH+'hur.grd')
-lon=grid.x[0,:].data
-lat=grid.y[:,0].data
-
-
-lon0,lon1=-85,-72 #range of lons
-lat0,lat1=19,35 #range of lats
-
-i0=np.abs(lon-lon0).argmin()
-i1=np.abs(lon-lon1).argmin()
-j0=np.abs(lat-lat0).argmin()
-j1=np.abs(lat-lat1).argmin()
-
-
-
-xz,yz=np.meshgrid(lon[i0:i1],lat[j0:j1])
-
-dx=lon[1]-lon[0]
-dy=lat[1]-lat[0]
-xz=xz+dx/2.
-yz=yz+dy/2.
-
-# In[5]:
-
-deb=Dep.read(PATH+'hur.dep',grid.shape)
-b=deb.val[:-1,:-1]
-w=np.isnan(b)
+path0='/home/critechuser/TC/THOMA/'
+PATH=path0+'20101021.00/'
+basename='TOMAS'
 
 
 # ### Merging the 12h forecasts for longer time span
 
 # In[6]:
 
-tstart=datetime.datetime(2016,9,28,0)
+tstart=datetime.datetime(2010,10,21,0)
 
 
 # In[7]:
 
-tend=datetime.datetime(2016,10,9,12)
+tend=datetime.datetime(2010,10,31,12)
+
+
+d=Dataset(PATH+'trim-'+basename+'.nc')
+xz=d.variables['XZ'][:]
+yz=d.variables['YZ'][:]
 
 
 # In[8]:
@@ -82,8 +55,6 @@ im=0
 
 spl=[nl[i:i + n] for i in xrange(0, len(nl), n)]
 
-
-
 for k in spl:
 
  im += 1
@@ -96,9 +67,10 @@ for k in spl:
 
  for it in k:
     idate=tstart+datetime.timedelta(hours=12*it)
-    path=path0+'{}/{}/{}/{:02d}/'.format(idate.year,idate.month,idate.day,idate.hour)
-    d=Dataset(path+'trim-hur.nc')
-    hcombined.append(d['S1'][:12,i0:i1,j0:j1])
+    folder=datetime.datetime.strftime(idate,'%Y%m%d.%H')
+    path=path0+'{}/'.format(folder)
+    d=Dataset(path+'trim-'+basename+'.nc')
+    hcombined.append(d['S1'][:12,:,:])
     time=d['time'][:12]
     tm =(idate-tstart).total_seconds()+(time-time[0])
     for l in tm : tw.append(tstart+datetime.timedelta(0,int(l)))
@@ -130,11 +102,11 @@ for k in spl:
  iframes=ha.shape[0]
  fig = plt.figure()
  ax = fig.add_subplot(111)
-#bh=np.ma.masked_where(w==True,ha[0,:,:])
+ bh=np.ma.masked_where(xz==0,ha[0,:,:])
 #H=plt.imshow(np.flipud(h[0,:,:].T),animated=True, vmin=h.min(), vmax=h.max())
-#H=ax.imshow(np.flipud(bh),animated=True, vmin=-.5, vmax=2.)
-#H=ax.contourf(xz,yz,np.flipud(bh),animated=True, vmin=-.5, vmax=2.)
- H=ax.contourf(xz,yz,ha[0,:,:],animated=True, vmin=-.5, vmax=2.)
+ H=ax.imshow(bh,animated=True, vmin=-.5, vmax=2.)
+#H=ax.contourf(xz,yz,bh,animated=True, vmin=-.5, vmax=2.)
+# H=ax.contourf(xz,yz,bh,animated=True, vmin=-.5, vmax=2.)
  plt.colorbar(H, orientation='horizontal')
  date_text=ax.text(0.02,0.95, datetime.datetime.strftime(tcw[0],'%a %b %d  %H:%M:%S %Z %Y' ))
 
@@ -142,7 +114,7 @@ for k in spl:
 # In[18]:
 
  def animate(i):
-   #bh=np.ma.masked_where(w==True,ha[i,:,:])
+    bh=np.ma.masked_where(xz==0,ha[i,:,:])
 #    H.set_array(np.flipud(ha[i,:,:]))
     H.set_array(ha[i,:,:])
     date_text.set_text(datetime.datetime.strftime(tcw[i],'%a %b %d  %H:%M:%S %Z %Y' ))
@@ -165,7 +137,7 @@ for k in spl:
 # In[20]:
 
 #save animation
- anim.save('tmp/MATTHEW/matthew{}.mp4'.format(im), fps=10, extra_args=['-vcodec','libx264'])
+ anim.save('tmp/THOMAS/thomas{}.mp4'.format(im), fps=10, extra_args=['-vcodec','libx264'])
 
 
 # In[ ]:

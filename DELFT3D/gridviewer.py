@@ -31,8 +31,9 @@ def view(path,basename):
 
   lon_0=(lon.max()-lon.min())/2.
 
-  fig1 = plt.figure(figsize=(10,8))
-  ax = fig1.add_axes([0.1,0.1,0.8,0.8])
+  fig1 = plt.figure(figsize=(10,6))
+# ax = fig1.add_axes([0.1,0.1,0.8,0.8])
+  ax=fig1.add_subplot(111)
 
   m = Basemap(llcrnrlon=llcrnrlon,llcrnrlat=llcrnrlat,urcrnrlon=urcrnrlon,urcrnrlat=urcrnrlat,
             projection='cyl',lat_1=llcrnrlat,lat_2=urcrnrlat,lon_0=lon_0,
@@ -47,8 +48,8 @@ def view(path,basename):
   #BATH = m.contour(x,y,bt,10,linewidths=0.5,colors='k',animated=True)
   #plt.clabel(BATH, fmt = '%03g', colors = 'k', fontsize=14)
   BATH = m.contourf(x,y,bt,20,cmap=plt.cm.RdBu_r,animated=True)
-  plt.colorbar()
-  GP=m.scatter(x,y,s=2)
+  m.colorbar()
+# GP=m.scatter(x,y,s=2)
 
   parallels = np.arange(-90.,90,5.)
   meridians = np.arange(0.,360.,5.)
@@ -58,7 +59,10 @@ def view(path,basename):
   m.drawparallels(parallels,labels=[1,0,0,0],fontsize=10)
   m.drawmeridians(meridians,labels=[0,0,0,1],fontsize=10)
 
-  ax.set_title('bathymetry  ')
+  fig1.tight_layout(pad=1.08, h_pad=None, w_pad=None,rect=(0.05, 0, 1, 1))
+ #fig1.tight_layout()
+
+#  ax.set_title('bathymetry  ')
 
   try:
      __IPYTHON__ 
