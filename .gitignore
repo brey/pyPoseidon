@@ -35,14 +35,15 @@ TAT/D3/
 #ignore .jupyter chekpoints folder
 .ipynb_checkpoints/
 
+# all temp folders
+tmp/
+
 #ignore notebook output folders
 Jupyter/mnt
 Jupyter/tmp
 Jupyter/temp
 Jupyter/__pycache__
-
-# all temp folders
-tmp/
+Jupyter/Notebooks/tmp
 
 # TIDE OTPS folders
 TIDES/OTPS2
