@@ -44,6 +44,7 @@ Jupyter/tmp/
 Jupyter/temp/
 Jupyter/__pycache__/
 Jupyter/Notebooks/tmp/
+report/bulletin
 
 # TIDE OTPS folders
 TIDES/OTPS2
