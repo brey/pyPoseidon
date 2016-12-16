@@ -1,16 +1,23 @@
 \documentclass[a4paper]{article}
 
-\usepackage{graphicx}
+\usepackage{graphicx,booktabs,array}
 \usepackage[margin=2.5cm,headheight=56pt,includeheadfoot]{geometry}
 \usepackage{fancyhdr}
 \pagestyle{fancy}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage[export]{adjustbox}
 
+\usepackage{sectsty}
+\sectionfont{\fontsize{10}{12}\selectfont}
+\subsectionfont{\fontsize{8}{10}\selectfont}
 
 \usepackage{xcolor}
 
 \usepackage{lipsum}
+
+\newcommand{\addpic}[1]{\includegraphics[width=7cm]{#1}}
+\newcolumntype{C}{>{\centering\arraybackslash}m{7cm}}
 
 
 \fancyhead[C]{
@@ -49,13 +56,28 @@ THIS IS AN EXPERIMENTAL PILOT BULLETIN:
 
 \begin{figure}[h]
 \centering
-  \includegraphics[width=0.9\linewidth]{tmp/hmax.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/hmax.png}
 \end{figure}
 
 
 \centerline{Estimated srorm surge for the next 72 h}
 
 \newpage
+
+LIST OF LOCATIONS
+
+
+List of locations with height greater that \textbf{0.5 m}
+
+\newpage
+
+METEOSAT (EUMETSAT)
+
+\begin{table}\sffamily
+\begin{tabular}{l*2{C}@{}}
+& \addpic{bulletin/sat1.png} & \addpic{bulletin/sat2.png} \\ 
+\end{tabular}
+\end{table} 
 
 METEOROLOGIC ANALYSIS (ECMWF )
 
@@ -65,13 +87,13 @@ The wind speed indicated is the 850hPa isobaric surface, which is around 1.5km a
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/e0.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/e0.png}
   \caption*{Analysis time 0}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/e24.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/e24.png}
   \caption*{Forecast 24 h}
   \label{fig:sub2}
 \end{subfigure}
@@ -85,13 +107,13 @@ The wind speed indicated is the 850hPa isobaric surface, which is around 1.5km a
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/e48.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/e48.png}
   \caption*{Forecast 48 h}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/e72.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/e72.png}
   \caption*{Forecast 72 h}
   \label{fig:sub2}
 \end{subfigure}
@@ -110,13 +132,13 @@ The wind speed here is 10 m height wind and is the quantity imposed to the sea s
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/w0.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/w0.png}
   \caption*{Wind Speed at sea level at time 0 h}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/w24.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/w24.png}
   \caption*{Wind Speed at sea level at time 24 h}
   \label{fig:sub2}
 \end{subfigure}
@@ -130,13 +152,13 @@ The wind speed here is 10 m height wind and is the quantity imposed to the sea s
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/w48.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/w48.png}
   \caption*{Wind Speed at sea level at time 48 h}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/w72.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/w72.png}
   \caption*{Wind Speed at sea level at time 72 h}
   \label{fig:sub2}
 \end{subfigure}
@@ -154,13 +176,13 @@ SEA LEVEL EVOLUTION
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/h0.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/h0.png}
   \caption*{Sea Level Height at time 0 h}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/h24.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/h24.png}
   \caption*{Sea Level Height at time 24 h}
   \label{fig:sub2}
 \end{subfigure}
@@ -174,13 +196,13 @@ SEA LEVEL EVOLUTION
 \centering
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/h48.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/h48.png}
   \caption*{Sea Level Height at time 48 h}
   \label{fig:sub1}
 \end{subfigure}%
 \begin{subfigure}{.5\textwidth}
   \centering
-  \includegraphics[width=0.9\linewidth]{tmp/h72.png}
+  \includegraphics[width=0.9\linewidth]{bulletin/h72.png}
   \caption*{Sea Level Height at time 72 h}
   \label{fig:sub2}
 \end{subfigure}
@@ -199,29 +221,33 @@ SEA LEVEL EVOLUTION
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g0.png}
-\includegraphics[width=0.5\textwidth]{tmp/g1.png}
+\includegraphics[width=8cm,height=6cm,keepaspectratio]{bulletin/g1630.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1706.png}
 }
 \end{figure}
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g2.png}
-\includegraphics[width=0.5\textwidth]{tmp/g3.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g819.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1449.png}
 }
 \end{figure}
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g4.png}
-\includegraphics[width=0.5\textwidth]{tmp/g5.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1461.png}
+\includegraphics[width=0.5\textwidth]{bulletin/helios.png}
 }
 \end{figure}
 
 \begin{figure}[h]
+\includegraphics[width=0.5\textwidth,left]{bulletin/g100080.png}
+\end{figure}
+
+\begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g6.png}
-\includegraphics[width=0.5\textwidth]{tmp/g7.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1741.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1721.png}
 }
 \end{figure}
 
@@ -231,8 +257,8 @@ SEA LEVEL EVOLUTION
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g8.png}
-\includegraphics[width=0.5\textwidth]{tmp/g9.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g938.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g100062.png}
 }
 \end{figure}
 
@@ -242,48 +268,68 @@ SEA LEVEL EVOLUTION
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g10.png}
-\includegraphics[width=0.5\textwidth]{tmp/g11.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1500.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1862.png}
 }
 \end{figure}
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g13.png}
-\includegraphics[width=0.5\textwidth]{tmp/g14.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1841.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1848.png}
 }
 \end{figure}
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g15.png}
-\includegraphics[width=0.5\textwidth]{tmp/g16.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1846.png}
+\includegraphics[width=0.5\textwidth]{bulletin/genova.png}
 }
 \end{figure}
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g17.png}
-\includegraphics[width=0.5\textwidth]{tmp/g18.png}
-}
-\end{figure}
-
-\begin{figure}[h]
-\centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g19.png}
-\includegraphics[width=0.5\textwidth]{tmp/g20.png}
-}
-\end{figure}
-\begin{figure}[h]
-\centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g21.png}
-\includegraphics[width=0.5\textwidth]{tmp/g22.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1843.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1855.png}
 }
 \end{figure}
 
 \begin{figure}[h]
 \centerline{
-\includegraphics[width=0.5\textwidth]{tmp/g23.png}
-\includegraphics[width=0.5\textwidth]{tmp/g24.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1847.png}
+\includegraphics[width=0.5\textwidth]{bulletin/ginostra.png}
+}
+\end{figure}
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1858.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g1851.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g100083.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g100084.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1844.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g100085.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\leftline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1866.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1870.png}
+\includegraphics[width=0.5\textwidth]{bulletin/venice.png}
 }
 \end{figure}
 
@@ -291,12 +337,71 @@ SEA LEVEL EVOLUTION
 
 \subsection*{EAST MEDITERRANEAN SEA : GREECE , CYPRUS AND TURKEY}
 
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1452.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g2003.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g2001.png}
+\includegraphics[width=0.5\textwidth]{bulletin/kapsali.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1463.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g2361.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g100086.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g100088.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\leftline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1889.png}
+}
+\end{figure}
+
+
 \newpage
 \subsection*{MIDDLE EAST : LEBANON , ISRAEL AND EGYPT}
 
-\newpage
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g100094.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g2367.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\leftline{
+\includegraphics[width=0.5\textwidth]{bulletin/g1440.png}
+}
+\end{figure}
+
 \subsection*{BLACK SEA}
 
+\begin{figure}[h]
+\centerline{
+\includegraphics[width=0.5\textwidth]{bulletin/g100091.png}
+\includegraphics[width=0.5\textwidth]{bulletin/g100092.png}
+}
+\end{figure}
+
+\begin{figure}[h]
+\leftline{
+\includegraphics[width=0.5\textwidth]{bulletin/g100093.png}
+}
+\end{figure}
 
 \newpage
 \section*{REFERENCES}
@@ -317,8 +422,7 @@ Webcam in Genova Nervi, the small harbour, by Comune di Genova: http://www.webca
 
 Webcam in Venezia, Piazza San Marco, by Istitutuzione Centro Previsione e Segnalazione Maree: http://93.62.201.235/maree/WEBCAM/smarcoweb2.jpg
 
-Webcam in Palma de Mallorca, http://www.helios-hotels.com/mallorca/en/webcam-can-pastilla-beach.htm
-
+Webcam in Palma de Mallorca, http://www.hoteleshelios.com/en/home/hotel-helios-mallorca/
 
 
 \end{document}
