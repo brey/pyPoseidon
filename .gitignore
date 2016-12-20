@@ -1,6 +1,9 @@
 # .pyc files
 *.pyc
 
+# mac files
+*.DS_Store
+
 # the output of TAT interface
 TAT/D3/
 
