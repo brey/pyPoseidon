@@ -4,6 +4,9 @@
 # mac files
 *.DS_Store
 
+# bathymetry files
+*.grd  
+
 # the output of TAT interface
 TAT/D3/
 
