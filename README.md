@@ -28,7 +28,8 @@ No tests are available at the moment.
 * A number of scripts have been used (some with some modifications) from https://sourceforge.net/projects/openearthtools/. 
 
 ## License
-* Since a few scripts from OpenEarthTools have been used the project is released under the corresponding GPL v3 license. 
+* Since a few scripts from OpenEarthTools have been used, the project is released under the corresponding GPL v3 license. 
+
   This library is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
