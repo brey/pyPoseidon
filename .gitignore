@@ -4,9 +4,6 @@
 # mac files
 *.DS_Store
 
-# bathymetry files
-*.grd  
-
 # the output of TAT interface
 TAT/D3/
 
@@ -56,3 +53,6 @@ report/bulletin
 TIDES/OTPS2
 TIDES/OTPSnc
 TIDES/matlab
+
+# bathymetry files
+*.grd
