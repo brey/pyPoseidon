@@ -113,7 +113,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   sys.stdout.flush()
   sys.stdout.write('\n')
 
-  if lon.all() == None:
+  if 'lon' not in kwargs.keys() :
     sys.stdout.write('create grid')
     sys.stdout.flush()
     sys.stdout.write('\n')
