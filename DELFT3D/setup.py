@@ -124,8 +124,8 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
   #  GET bathymetry interpolated onto lon,lat
 # pathb='../BATHYMETRY/GLOBAL/gebco30_DELTARES.nc'
-# pathb='../BATHYMETRY/GLOBAL/GEBCO_2014_2D.nc'
-  pathb='../BATHYMETRY/GLOBAL/gebco30.nc'
+  pathb='../BATHYMETRY/GLOBAL/GEBCO_2014_2D.nc'
+# pathb='../BATHYMETRY/GLOBAL/gebco30.nc'
   bat = readem(lat0,lat1,lon0,lon1,pathb,lon,lat,plot=True,interpolate=True)
  #bat = readgebco(lat0,lat1,lon0,lon1,lon,lat,True)
  #blons,blats,bat = readgebco(lat0,lat1,lon0,lon1,lon,lat)
