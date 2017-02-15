@@ -134,10 +134,10 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
         if minlon < 0. :
            lon=lon-180.
 
-           i1=np.abs(lon-minlon).argmin()-1
-           i2=np.abs(lon-maxlon).argmin()+1
-           j1=np.abs(lat-minlat).argmin()-1
-           j2=np.abs(lat-maxlat).argmin()+1
+           i1=np.abs(lon-minlon).argmin()-2
+           i2=np.abs(lon-maxlon).argmin()+2
+           j1=np.abs(lat-minlat).argmin()-2
+           j2=np.abs(lat-maxlat).argmin()+2
 
            lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
 
@@ -150,10 +150,10 @@ def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
         else:
 
-           i1=np.abs(lon-minlon).argmin()-1
-           i2=np.abs(lon-maxlon).argmin()+1
-           j1=np.abs(lat-minlat).argmin()-1
-           j2=np.abs(lat-maxlat).argmin()+1
+           i1=np.abs(lon-minlon).argmin()-2
+           i2=np.abs(lon-maxlon).argmin()+2
+           j1=np.abs(lat-minlat).argmin()-2
+           j2=np.abs(lat-maxlat).argmin()+2
 
            lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
            data = deepcopy(varin[j1:j2,i1:i2])
