@@ -5,11 +5,13 @@ from grid import *
 
 from netCDF4 import Dataset
 
+from scipy import interpolate
+
 from bilinear import bilinear_interpolation
 
 PATH='../TIDES/'
-RPATH='../../../tide/20131101.00/'
-basename='med'
+RPATH='/home/critechuser/COAST/EUR/20131101.00/'
+basename='eur'
 
 
 grd=Grid.fromfile(RPATH+basename+'.grd')
@@ -19,26 +21,8 @@ dlon=grd.x[0,1]-grd.x[0,0]
 
 ba=Dep.read(RPATH+basename+'.dep',grd.shape)
 
-west=[]
-for j in range(grd.y.shape[0]):
-  if ba.val[j,0] > 0. : west.append(j)
-
-# take concecutive points
-swest=[]
-swest.append(west[0])
-for k in xrange(1,np.size(west)):
-  if west[k]-1 in swest : swest.append(west[k])
-
-
-with open(RPATH+basename+'.bnd', 'w') as f:
-   f.write('West1                Z A     1    {}     1    {}   0.0000000e+00 West1A West1B'.format(swest[0]+1,swest[-1]+1)) # fortran index ??
-
-
-le=['A','B']
-
-
-#read from med.nc
-dmed=Dataset(PATH+'med.nc')
+#read from tide file
+dmed=Dataset(PATH+'tpxo72.nc')
 
 lat=dmed['lat'][:]
 lon=dmed['lon'][:]
@@ -50,58 +34,73 @@ tidal_c=[''.join(k).upper().strip() for k in tidal_c]
 amp=dmed['tidal_amplitude_h']
 ph=dmed['tidal_phase_h']
 
-with open(RPATH+basename+'.bca', 'w') as f:
+#Identify WEST boundary 
 
- for k,l in zip([swest[0],swest[-1]],le):
+west=[]
+for j in range(grd.y.shape[0]):
+  if ba.val[j,0] > 0. : west.append(j)
 
-  plon=grd.x[k,0]
-  plat=grd.y[k,0]
-  i=np.abs(lon-np.float(plon)).argmin()
-  j=np.abs(lat-np.float(plat)).argmin()
+# split into branches    
+s0=[x for x in west if x-1 not in west]
+s1=[x for x in west if x+1 not in west]
 
-  x0,y0 = lon[i], lat[j]
+# strings to be used 
+le=['A','B']
 
-  # retrieve the 4 nearest diagonal points of the i,j
-  lon4=lon[i-1:i+2:2]
-  lon4=np.vstack([lon4,lon4])
-  lat4=lat[j-1:j+2:2]
-  lat4=np.vstack([lat4,lat4]).T
-# print '==================='
-  # define the quandrant
-  A=plon-x0
-  B=plat-y0
-  for xx,yy in zip(lon4.flatten(),lat4.flatten()):
-#        print xx,yy
-         C=np.sign([xx-plon,A])
-         D=np.sign([yy-plat,B])
-         if C[0]==C[-1] and D[0] == D[-1] : 
-           corner=[xx,yy]
-           indx=[np.abs(lon-xx).argmin(),np.abs(lat-yy).argmin()]
 
-  phv=np.zeros(ph.shape[-1])
-  amv=np.zeros(amp.shape[-1])
-  for k in range(amp.shape[-1]):
+#iterate over all branches
+for g,h in zip(s0,s1):
 
-      p1=[x0,y0,amp[i,j,k]]
-      p2=[x0,corner[1],amp[i,indx[1],k]]
-      p3=[corner[0],corner[1],amp[indx[0],indx[1],k]]
-      p4=[corner[0],y0,amp[indx[0],j,k]]
-  
-      points=[p1,p2,p3,p4]
+  swest = west[g-1:h+1] if g not in [0,1] else west[1:h+1]
 
-      amv[k]= bilinear_interpolation(plon,plat,points)
+# make chunks of n points if range is large
+  n=10
+  chunks = [ swest[i:i+n] for i in xrange(0, len(swest),n if n < len(swest) else len(swest)) ]
+  if len(chunks[-1]) < 3 : 
+    chunks[-2]=chunks[-2]+chunks[-1] # merge the last chunk if too small
+    chunks = chunks[:-1] # eliminate the last chunk
 
-      p1=[x0,y0,ph[i,j,k]]
-      p2=[x0,corner[1],ph[i,indx[1],k]]
-      p3=[corner[0],corner[1],ph[indx[0],indx[1],k]]
-      p4=[corner[0],y0,ph[indx[0],j,k]]
-  
-      points=[p1,p2,p3,p4]
+#write bnd file
+  with open(RPATH+basename+'.bnd', 'wa') as f:
 
-      phv[k]= bilinear_interpolation(plon,plat,points)
+   for k in chunks:
+     f.write('West{}                Z A     1    {}     1    {}   0.0000000e+00 West{}A West{}B\n'.format(k[0],k[0]+1,k[-1]+1,k[0],k[0])) # fortran index ??
 
-  f.write('West1{}\n'.format(l))
-  for a,b,c in zip(tidal_c,amv,phv):
-     f.write('{}         {:.7e}   {:.7e}\n'.format(a,b,c))
+
+#write bca file
+
+  with open(RPATH+basename+'.bca', 'wa') as f:
+
+    for ch in chunks:
+
+      for k,l in zip([ch[0],ch[-1]],le):
+
+        if l == 'A' : label = k
+
+        plon=grd.x[k,0]
+        if plon < 0 : plon = plon + 360.
+        plat=grd.y[k,0]
+        i=np.abs(lon-np.float(plon)).argmin()
+        j=np.abs(lat-np.float(plat)).argmin()
+
+        xx = lon[i-1:i+2]
+        yy = lat[j-1:j+2]
+
+
+        phv=np.zeros(ph.shape[-1])
+        amv=np.zeros(amp.shape[-1])
+        for m in range(amp.shape[-1]):
+     
+           zz = amp[i-1:i+2,j-1:j+2,m]
+           fa=interpolate.RectBivariateSpline(xx,yy,zz,kx=2,ky=2)
+           amv[m]= fa(plon,plat)
+
+           zz = ph[i-1:i+2,j-1:j+2,m]
+           fa=interpolate.RectBivariateSpline(xx,yy,zz,kx=2,ky=2)
+           phv[m]= fa(plon,plat)
+
+        f.write('West{}{}\n'.format(label,l))
+        for a,b,c in zip(tidal_c,amv,phv):
+          f.write('{}         {:.7e}   {:.7e}\n'.format(a,b,c))
 
 
