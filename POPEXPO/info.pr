@@ -1,0 +1,11 @@
+setexp source Tropical Cyclone Bulletin through GDACS/PDC
+setexp hurName SEYMOUR-16
+setexp hurId 1000322
+setexp basin EastPacific
+setexp bulNo 1
+setexp bulDate 23 Oct 2016  09:00:00
+setexp n 100000
+setexp fk 0.81 
+setexp stormsurge 0
+setexp timefactor 1
+setexp landfall 0

@@ -1,0 +1,13 @@
+<setexp>
+<source> Tropical Cyclone Bulletin through GDACS/PDC</source>
+<hurName>SEYMOUR-16</hurName>
+<hurId>1000322</hurId>
+<basin>EastPacific</basin>
+<bulNo>1</bulNo>
+<bulDate>23 Oct 2016  09:00:00</bulDate>
+<n>100000</n>
+<fk>0.81</fk>
+<stormsurge>0</stormsurge>
+<timefactor>1</timefactor>
+<landfall>0</landfall>
+</setexp>
