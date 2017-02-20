@@ -8,8 +8,8 @@ from netCDF4 import Dataset
 from bilinear import bilinear_interpolation
 
 PATH='../TIDES/'
-RPATH='../../../tide/20131101.00/'
-basename='med'
+RPATH='/home/critechproc/STORAGE/EUR/20131201.00/'
+basename='eur'
 
 
 grd=Grid.fromfile(RPATH+basename+'.grd')
@@ -38,7 +38,7 @@ le=['A','B']
 
 
 #read from med.nc
-dmed=Dataset(PATH+'med.nc')
+dmed=Dataset(PATH+'tpxo72.nc')
 
 lat=dmed['lat'][:]
 lon=dmed['lon'][:]

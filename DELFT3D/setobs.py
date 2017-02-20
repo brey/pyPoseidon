@@ -7,8 +7,8 @@ import itertools
 from dep import *
 from grid import *
 
-import matplotlib.pyplot as plt
-from mpl_toolkits.basemap import Basemap, shiftgrid
+#import matplotlib.pyplot as plt
+#from mpl_toolkits.basemap import Basemap, shiftgrid
 
 
 def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
@@ -37,15 +37,15 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
  
 #------------------------------------------------------------------
 # mapping
- fig1 = plt.figure(figsize=(10,8))
- ax = fig1.add_axes([0.1,0.1,0.8,0.8])
+#fig1 = plt.figure(figsize=(10,8))
+#ax = fig1.add_axes([0.1,0.1,0.8,0.8])
 
- m = Basemap(projection='cyl',llcrnrlat=lat0,urcrnrlat=lat1,\
-             llcrnrlon=lon0,urcrnrlon=lon1,resolution='l')
+#m = Basemap(projection='cyl',llcrnrlat=lat0,urcrnrlat=lat1,\
+#            llcrnrlon=lon0,urcrnrlon=lon1,resolution='l')
 
 # define parallels and meridians to draw.
- parallels = np.arange(-90.,90,20.)
- meridians = np.arange(0.,360.,20.)
+#parallels = np.arange(-90.,90,20.)
+#meridians = np.arange(0.,360.,20.)
 #------------------------------------------------------------------
 
  iobs=[] # initialize
@@ -60,7 +60,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 # plot first guess
     x0=grd.x.T[ih,jh]
     y0=grd.y.T[ih,jh]
-    m.plot(x0-dx/2.,y0-dy/2.,'go',markersize=10,markerfacecoloralt='green',fillstyle=None)
+ #  m.plot(x0-dx/2.,y0-dy/2.,'go',markersize=10,markerfacecoloralt='green',fillstyle=None)
     pi=ih+1 # the fortran/python index issue ??
     pj=jh+1 # the fortran/python index issue ??
 
@@ -178,7 +178,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
      x=lon8[i,j]-dx/2.
      y=lat8[i,j]-dy/2.
    # print x,y
-     m.plot(x,y,'ko',markersize=5)
+#    m.plot(x,y,'ko',markersize=5)
      ih=np.abs(gx-x).argmin()
      jh=np.abs((gy-y).T).argmin()
      pi=ih+1 # the fortran/python index issue ??
@@ -234,26 +234,26 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
 #opp.to_csv('test',header=0,sep='\t')
 
 #PLOT
- cs = m.contourf(grd.x,grd.y,bval.T,cmap=plt.cm.jet)
- count=-1
- for p in loci:
-  m.plot(p[0],p[1],'ro')   
-  count=count+1
-  plt.annotate(count,xy=(p[0],p[1]), xytext=(-15,15), textcoords='offset points', size='large', color='r', label='ACTUAL')
+#cs = m.contourf(grd.x,grd.y,bval.T,cmap=plt.cm.jet)
+#count=-1
+#for p in loci:
+# m.plot(p[0],p[1],'ro')   
+# count=count+1
+# plt.annotate(count,xy=(p[0],p[1]), xytext=(-15,15), textcoords='offset points', size='large', color='r', label='ACTUAL')
 
- count=-1
- for l1,l2 in iobs:
-  count=count+1
-  xx=grd.x.T[int(l1)-1,int(l2)-1]-dx/2. # fortran/python conversion
-  yy=grd.y.T[int(l1)-1,int(l2)-1]-dy/2.
-  m.plot(xx,yy,'rx',markersize=15,linewidth=30, label='OBS')
+#count=-1
+#for l1,l2 in iobs:
+# count=count+1
+# xx=grd.x.T[int(l1)-1,int(l2)-1]-dx/2. # fortran/python conversion
+# yy=grd.y.T[int(l1)-1,int(l2)-1]-dy/2.
+# m.plot(xx,yy,'rx',markersize=15,linewidth=30, label='OBS')
 # plt.annotate(count,xy=(xx,yy), xytext=(-5,5), textcoords='offset points', size='large', color='b')
 
- m.drawcoastlines(linewidth=1.5)
- m.drawparallels(parallels)
- m.drawmeridians(meridians)
+#m.drawcoastlines(linewidth=1.5)
+#m.drawparallels(parallels)
+#m.drawmeridians(meridians)
 
- plt.show(block=False)
+#plt.show(block=False)
 
 #return iobs,inames
 
