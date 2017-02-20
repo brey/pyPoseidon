@@ -81,10 +81,10 @@ def getd(f,t):
 
 def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
-  yyyy=int(date.year) # this is for facilitating the folder format below
-  mm=int(date.month)
-  dd=int(date.day)
-  hh=int(date.hour)
+  yyyy=date.year # this is for facilitating the folder format below
+  mm=date.month
+  dd=date.day
+  hh=date.hour
   # set PATH of the database.
 # PATHbase="/mnt/ECMWF/grib/"  # Local mapping location for the above network drive
 # PATHbase="/eos/jeodpp/data/projects/CRITECH/meteo/"  # Local mapping location for the above network drive

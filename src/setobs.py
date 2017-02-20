@@ -23,7 +23,7 @@ def createf(path,basename,lat0,lat1,lon0,lon1,grd,bath):
  gy=grd.y[:,0]-dy/2.
 
 #  BUOYS WEBCRITECH
- dat=pandas.read_csv('SeaLevelBuoys2.csv')
+ dat=pandas.read_csv('../src/SeaLevelBuoys2.csv')
  
  dat.columns=np.append(['ID'],dat.columns.get_values()[1:]) # fix ID header
 #print dat.columns
