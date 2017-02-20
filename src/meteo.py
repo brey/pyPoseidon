@@ -10,7 +10,7 @@ pyximport.install()
 from gribapi import *
 from redtoreg import _redtoreg
 from pygrib import gaulats
-from progressbar import ProgressBar
+from tqdm import tqdm
 import time
 
 
@@ -81,13 +81,17 @@ def getd(f,t):
 
 def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
+  yyyy=date.year # this is for facilitating the folder format below
+  mm=date.month
+  dd=date.day
+  hh=date.hour
   # set PATH of the database.
 # PATHbase="/mnt/ECMWF/grib/"  # Local mapping location for the above network drive
-  PATHbase="/eos/jeodpp/data/projects/CRITECH/meteo/"  # Local mapping location for the above network drive
-# PATHbase="/mnt/ECMWF2/grib/"  # Local mapping location for the above network drive
+# PATHbase="/eos/jeodpp/data/projects/CRITECH/meteo/"  # Local mapping location for the above network drive
+  PATHbase="/mnt/ECMWF2/grib/"  # Local mapping location for the above network drive
   PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
 
-  dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(date.year,date.month,d.date,date.hour))
+  dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(yyyy,mm,dd,hh))
 
   try: 
    f = open(dpath[0])
@@ -104,30 +108,17 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
   vt=[]
 
   mxv=nt2-nt1-1
-  pbar=ProgressBar(maxval=mxv or None).start()
   try:
-    for it in range(nt1,nt2): # nt + the 0 hour
+    for it in tqdm(range(nt1,nt2)): # nt + the 0 hour
 
         name,varin,ilon,ilat=getd(f,it)        
 
         lon=ilon[0,:]
         lat=ilat[:,0]
 
-        pbar.update(it-nt1) # progressbar
-        sleep(0.25)
-
     # get sea level pressure and 10-m wind data.
     # mult slp by 0.01 to put in units of hPa
         if name == 'msl' : varin=varin*.01
-    #--------------------------------------------------------------------- 
-    # print progress (manual)
-       #sys.stdout.write('\r')
-    # the exact output you're looking for:
-       #step=0.05*nt2
-       #sys.stdout.write("[%-20s] %d%%" % ('='*int(it/step), 5*it/step))
-       #sys.stdout.flush()
-       #sleep(0.25)
-    #--------------------------------------------------------------------- 
 
         if minlon < 0. :
            lon=lon-180.
@@ -170,9 +161,6 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
 # END OF FOR
     #--------------------------------------------------------------------- 
-    # print progress (manual)
-  # sys.stdout.write('\r')
-  # sys.stdout.write("[%-20s] %d%%" % ('='*20, 100))
     sys.stdout.flush()
     sys.stdout.write('\n')
     sys.stdout.write('meteo done\n')

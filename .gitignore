@@ -42,11 +42,7 @@ TAT/D3/
 tmp/
 
 #ignore notebook output folders
-Jupyter/mnt/
-Jupyter/tmp/
-Jupyter/temp/
-Jupyter/__pycache__/
-Jupyter/Notebooks/tmp/
+Notebooks/tmp/
 report/bulletin
 
 # TIDE OTPS folders
