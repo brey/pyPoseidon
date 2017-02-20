@@ -1,0 +1,1116 @@
+﻿ID,lat,lon,name,status,COUNTRY
+10,48.86,-175.6,"Station 46413 - East of ADAK, AK",active,
+11,49.63,-169.87,Station 46408 - NW Pacific S AK,active,
+12,49.63,-169.87,Station 46408 - NW Pacific S AK,active,
+13,-19.55,-74.81,Station 32401 - 260 NM West-Southwest of Arica Chile,active,
+14,-18.13419,178.4236,"Suva, Viti Levu, Fiji",active,
+16,0.05,91.9,Station 53401 - Indonesia,active,
+20,30.55,152.1178,"690 NM Southeast of Tokyo, Japan",active,
+21,48.94218,178.2702,Station 21414 - NW Pacific,active,
+22,50.17253,171.8369,175 NM S of Attu AK,active,
+23,48.04352,163.4881,240NM SE of Kamchatka Peninsula,active,
+24,43.19167,157.1417,290 NM SE of the Kuril Islands,active,
+25,38.70625,148.665,"450 NM Northeast of Tokyo, Japan",active,
+26,8.905,88.54," 600 NM West-Northwest of Phuket, Thailand",active,
+27,-19.547,-74.813,260 NM West-Southwest of Arica Chile,active,
+28,4.923316,-90.68517,"710 NM West-Southwest of Panama City, Panama",active,
+29,-17.96667,-86.38333,"630 NM Southwest of Lima, Peru",active,
+30,23.31232,-67.63937,"690 NM East of Miami, FL",active,
+31,23.3995,-63.90094,"320 NM North of San Juan, PR",active,
+32,32.9279,-72.4696,"370 NM East of Charleston, SC",active,
+33,15.26,-68.229,"230 NM South of San Juan, PR",active,
+34,26.658,-85.791,"295 NM Southeast of New Orleans, LA",active,
+35,16.03372,-107.001,"240 NM Southwest of Manzanillo, Mexico",active,
+36,10.83997,-100.085,"360 NM South-Southwest of Acapulco, Mexico",active,
+37,37.56207,-49.99998,790 NM NE of Bermuda,active,
+38,38.20436,-67.93835, 250 NM SE of Montauk Pt N.Y.,active,
+39,51.06956,-164.0105,"240 NM South of Dutch Harbor, AK",active,
+40,45.859,-128.778,"230 NM West of Astoria, OR",active,
+41,42.60425,-128.9003,"210 NM West of Coos Bay, OR",active,
+42,49.626,-169.8715,NW Pacific S AK,active,
+43,57.5,-144," 330 NM Southeast of Anchorage, AK",active,
+44,32.246,-120.698,"190 NM West-Southwest of San Diego, CA",active,
+45,48.8,-129.6,"300 NM West-Northwest of Seattle, WA",active,
+46,-8.488548,-125.0054,"2,900 NM Southeast of Hawaii",active,
+47,19.63,-156.525,"140 NM Southeast of Honolulu, HI",active,
+48,-22.99322,-168.0981,400 NM Southeast of Tonga,active,
+49,19.28561,155.7663, 610 NM Northeast of Saipan,active,
+50,11.575,154.588,790 NM Northwest of Kwajalein,active,
+51,4.00334,145.536,430 NM Southwest of Truk,active,
+52,20.93567,132.3088,"760 NM Northeast of Manila, Philippines",active,
+53,12.86667,132.3333,"740 NM West of Agana, Guam",active,
+54,0.05,91.88333,Indonesia,active,
+56,43.28,145.57,"Hanasaki, Japan HAN",active,
+59,-17.75533,168.3077,"Port Vila, Efate, Vanuatu",active,
+60,-23.01333,163.0083,Station 55012 - DART Coral Sea,active,
+61,-46.92215,160.5621,Station 55015 - DART TASMAN SEA 1,active,
+62,38.534,-28.62183,Faial Island,active,
+63,38.5315,-28.32117,Pico,active,
+64,38.6505,-27.22183,Terceira,active,
+65,-5.3633,165.0467,Station 52406 - 450 NM Northeast of the Guadalcanal,active,
+66,-9.493333,-176.245,Station 51425 - 370 NM NW of Apia,active,
+68,51.069,-164.011,"Station 46402 - 240 NM South of Dutch Harbor, AK",active,
+69,52.65,-156.94,"Station 46403 - 230 NM Southeast of Shumagin Island, AK",active,
+71,55.3,-148.5,"Station 46409 - 240 NM Southeast of Kodiak, AK",active,
+72,39.34,-127.007,"Station 46411 - 260 NM Northwest of San Francisco, CA",active,
+73,50.173,-171.837,Station 21415 - 175 NM S of Attu AK,active,
+815,-16.2311,-73.6944,Perú - Atico_PE ,active,
+816,54.253,-9.89,Ireland - Ballyglass pier  Belmullet,active,
+817,-0.433,-90.283,Ecuador - Baltra Galapagos_EC,active,
+818,44.3916,-68.205,USA - Bar_Harbor_ME ,active,
+819,41.34,2.16,Spain - Barcelona ,active,
+820,-41.0501,145.915,Australia - Burnie_Tasmania_AU ,active,
+821,34.72,-76.67,USA - Beaufort_NC ,active,
+822,-8.7666,115.2166,Indonesia - Benoa ,active,
+824,32.22,-64.7,UK - Bermuda_UK ,active,
+825,42.355,-71.0516,USA - Boston_MA ,active,
+827,-18.0008,122.2186,Australia - Broome_AU ,active,
+828,22.87861,-109.9,Mexico - Cabo_San_Lucas_MX ,active,
+829,-27.058,-70.834,Chile - Caldera_CL ,active,
+830,-12.071,-77.174,Perú - Callao La-Punta_PE,active,
+831,38.69316,-9,Portugal - Cascais ,active,
+832,51.6496,-9.9034,Ireland - Castletownbere ,active,
+833,35.54,-5.19,Spain - Ceuta ,active,
+834,39.0837,8.1829,Italy - Carloforte ,active,
+835,25.2958,60.603,Iran - Chabahar ,active,
+836,43.345,-124.3217,USA - CharlestonOR ,active,
+837,-10.4294,105.6693,Australia - Christmas_Island_AU ,active,
+839,22.3333,91.825,Bangladesh - Chittagong ,active,
+840,-7.75,109,Indonesia - Cilicap ,active,
+842,38.9683,-74.96,USA - Cape_May_NJ ,active,
+843,44.64,-67.3,USA - CutlerNavalBase_ME ,active,
+844,-12.1167,96.8919,Australia - Cocos_Island_AU ,active,
+845,6.95,79.85,Sri Lanka - Colombo ,active,
+846,6.95,79.85,Sri Lanka - Colombo ,active,
+847,-29.93,-71.35,Chile - Coquimbo_CL ,active,
+848,60.558,-145.753,USA - Cordova_AK ,active,
+849,-39.8667,-73.4333,Chile - Corral_CL ,active,
+850,43.21,-8.23,Spain - Coruña ,active,
+851,41.745,-124.183,USA - Crescent_City_CA ,active,
+852,18.3008,-65.3028,USA - Culebra_Is_PR ,active,
+853,53.86778,8.7175,Germany - Cuxhaven ,active,
+854,27.978,-82.832,USA - Clearwater_Beach_FL ,active,
+855,14.676,-17.42,Sénégal - Dakar ,active,
+856,-12.4719,130.8458,Australia - Darwin_AU ,active,
+857,7.08333,125.6333,Philippines - Davao_PH ,active,
+859,6.9806,158.2001,Micronesia - Dekehtik Pohnpei_FM,active,
+860,30.2,-88.1,USA - Dauphin_Island_AL ,active,
+861,11.6,43.1666,Djibouti - Djibouti ,active,
+862,36.1833,-75.7466,USA - Duck_Pier_NC ,active,
+865,-27.153,-109.448,Chile - Easter_CL ,active,
+866,30.05,-90.368,USA - East_Bank_1_LA ,active,
+867,58.1933,-136.3433,USA - Elfin_Cove_AK ,active,
+868,-5.3461,102.2781,Indonesia - Enggano ,active,
+869,44.9033,-66.985,USA - East_Port_ME ,active,
+870,-33.8709,121.8954,Australia - Esperance_AU ,active,
+872,30.672,-81.465,USA - Fernadina_Beach_FL ,active,
+873,43.46,-8.33,Spain - Ferrol1 ,active,
+874,-19.2773,147.0584,Australia - Cape_Ferguson_AU ,active,
+875,26.65,-81.87,USA - Fort_Myers_FL ,active,
+876,-8.5025,179.1952,Tuvalu Islands - Fongafale_TV ,active,
+877,-3.716667,-38.4667,Brasil - Fortaleza ,active,
+878,32.033,-80.902,USA - Fort_Pulaski_GA ,active,
+880,37.807,-122.465,USA - Ft_Point San_Fran,active,
+881,23.867,-166.283,USA - Tern Fr._Frigate_US,active,
+882,0.6867,73.1517,Maldive Islands - Gan ,active,
+883,-7.2333,72.4333,UK - Diego Garcia ,active,
+884,36.13,-5.35,UK - Gibraltar ,active,
+885,-38.67541,178.0229,New Zealand - Gisborne ,active,
+886,57.683,11.783,Sweden - GoteborgTorshamnen ,active,
+887,29.31,-94.793,USA - Galveston_Pier_TX ,active,
+888,-13.86,136.4158,Australia - Groote Eylandt ,active,
+889,13.438,144.652,USA - Guam (Apra Harbor) ,active,
+890,43.28,145.57,Japan - Hanasaki ,active,
+891,6.7667,73.1667,Maldive Islands - Hanimadhoo ,active,
+892,-31.8255,115.7386,Australia - Hillarys_Harbor_AU ,active,
+893,19.733,-155.058,USA - Hilo Hawaii,active,
+894,57.6,9.97,Denmark - Hirtshals ,active,
+895,-9.8047,-139.0344,Polynésie Française (French Polynesia) - Hiva_Oa Marquesas,active,
+896,53.3105,-4.633796,UK - Holyhead ,active,
+897,21.307,-157.867,USA - Honolulu Oahu,active,
+898,37.13,-6.83,Spain - Huelva5 ,active,
+899,43.5237,8.0109,Italy - Imperia ,active,
+900,-23.91666,35.5,Moçambique - Inhambane ,active,
+901,-20.2167,-70.17,Chile - Iquique_CL ,active,
+902,24.2,124.1,Japan - Ishigakijima ,active,
+903,16.739,-169.5233,USA - Johnston_US ,active,
+904,-33.617,-78.825,Chile - Juan_Fernandez ,active,
+908,24.85,67.03,Pakistan - Karachi ,active,
+909,20.78,-156.9,USA - Kaumalapau Hawaii,active,
+910,20.036,-155.832,USA - Kawaihae Hawaii,active,
+911,-54.28,-36.5,UK - King Edward Point ,active,
+912,-49.345,70.22,France - Kerguelen ,active,
+913,53.31167,-5.92167,Ireland - Kish Bank Lighthouse ,active,
+914,7.8167,98.4167,Thailand - Ko Taphao Noi ,active,
+915,6.1966,81.32,Sri Lanka - Kirinda ,active,
+916,8.7367,167.7383,USA - Kwajalein_MH ,active,
+917,24.553,-81.808,USA - Key_West_FL ,active,
+918,28.09,-17.11,Spain - LaGomera ,active,
+919,6.25,3.24, - Lagos ,active,
+920,32.867,-117.258,USA - La_Jolla_CA ,active,
+921,-2.209,-80.902,Ecuador - La_Libertad_EC ,active,
+922,18.2,-64.44,USA - LameshurBayStJohnVI ,active,
+923,-2.2667,40.9,Kenya - Lamu ,active,
+924,6.416,99.7667,Malaysia - Langkawi ,active,
+925,-4.5,55.5,Seychelles - Pt.LaRue ,active,
+927,-17.6049,177.4383,Fiji Islands - Lautoka_FJ ,active,
+928,17.7,-64.75,USA - Limetree_VI ,active,
+929,-2.0421,147.3737,Papua New Guinea - Lombrum_Manus_Is_PG ,active,
+930,17.9767,-67.0467,USA - Magueyes_Island_PR ,active,
+931,-46.8667,37.8667,South-Africa - Marion Island ,active,
+932,7.3282,134.4502,Palau Islands - Malakal ,active,
+933,4.19,73.5267,Maldive Islands - Male ,active,
+934,55.37168,-7.33432,Ireland - Malin Head Peninsular ,active,
+935,14.5833,120.9667,Philippines - Manila ,active,
+936,19.062,-104.252,Mexico - Manzanillo_MX ,active,
+937,20.6833,58.8667,Oman - Masirah ,active,
+938,35.29,-2.93,Spain - Melilla ,active,
+939,28.207,-177.356,USA - Midway ,active,
+940,-4.0667,39.39,Kenya - Mombasa ,active,
+941,18.09,-67.9383,USA - Mona_Island_PR ,active,
+942,16.4833,97.6166,Myanmar - Moulmein ,active,
+943,40.5023,14.1609,Italy - Napoli ,active,
+944,26.22,127.67,Japan - Naha ,active,
+945,-39.47566,176.9201,New Zealand - Napier ,active,
+946,21.957,-159.36,USA - Nawiliwili Kauai,active,
+948,50.103,-5.54275,UK - Newlyn ,active,
+950,-21.1368,-175.1807,Tonga Island - Nukualofa_TO ,active,
+951,18.1,-15.95,Mauritania - Nouakchott ,active,
+952,64.5,-165.43,USA - Nome_AK ,active,
+953,-8.9219,-140.0953,France - Nuku_Hiva Marquesas,active,
+954,39,141.75,Japan - Ofunato ,active,
+955,34.6,138.23,Japan - Omaezaki ,active,
+956,40.14715,18.49709,Italy - Otranto ,active,
+957,-0.95,100.3667,Indonesia - Padang ,active,
+958,13.4283,144.797,USA - Pago Bay  Guam,active,
+959,-14.2766,-170.6907,USA - Pago_Pago_AS ,active,
+960,16.755,-22.9833, islas del - Palmeira Cabo Verde,active,
+966,-34.4738,150.9119,Australia - Port_Kembla_AU ,active,
+970,-21.8167,114.191,Australia - PtMurat ,active,
+973,-38.3434,141.6132,Australia - Portland_AU ,active,
+974,-35.1086,138.467,Australia - Port_Stanavac_AU ,active,
+975,-8.2833,111.7333,Indonesia - Prigi ,active,
+978,-20.15716,57.5043,Mauritius - Pt.Louis ,active,
+979,-54.9333,-67.6112,Chile - Puerto_Williams_CL ,active,
+981,-21.2,-159.783,Cook Islands - Rarotonga_CK ,active,
+982,64.15,-21.93333,Iceland - Reykjavik ,active,
+983,-23.1333,-134.95,Polynésie Française (French Polynesia) - Rikitea_PF ,active,
+984,-19.68024,63.42119,Mauritius - Rodrigues ,active,
+985,-23.161,150.7902,Australia - Rosslyn_Bay_AU ,active,
+986,5.8333,95.3333,Indonesia - Sabang ,active,
+987,-8.190194,110.798,Indonesia - Sadeng ,active,
+988,15.2266,145.7416,USA - Saipan_US ,active,
+989,16.935,54.0067,Oman - Salalah ,active,
+990,-12.97,-38.52,Brasil - Salvador_Itaparica ,active,
+991,-26.258,-80.124,Chile - San_Felix_CL ,active,
+992,18.4617,-66.1167,USA - San_Juan_PR ,active,
+993,-33.5833,-71.6333,Chile - San_Antonio_CL ,active,
+994,-0.752,-90.307,Ecuador - SantaCruz Galapagos,active,
+996,44.625,-124.043,USA - South_Beach_OR ,active,
+997,55.3367,-160.5017,USA - Sand_Point_AK ,active,
+998,-3.224167,101.5994,Indonesia - Seblat ,active,
+999,50.678,156.1388,Russia - Severo_Kurilsk_RU ,active,
+1000,60.119,-149.427,USA - Seward_AK ,active,
+1001,1.7333,98.8,Indonesia - Sibolga ,active,
+1002,-34.18333,18.43333,South-Africa - Simonstown ,active,
+1003,57.0517,-135.3417,USA - Sitka_AK ,active,
+1005,58.35,11.216,Sweden - Smogen ,active,
+1006,4.005786,9.125922,Cameroon - Port Sonara ,active,
+1008,-42.5459,147.9327,Australia - Spring_Bay_AU ,active,
+1009,-51.75,-57.93333,UK - Stanley ,active,
+1010,17.7419,-64.6922,USA - St_Croix_VI ,active,
+1011,59.316,18.083,Sweden - Stockholm ,active,
+1012,58.2,-6.38,UK - Stornoway ,active,
+1013,14.8167,120.2833,Philippines - Subic_Bay ,active,
+1014,-69.00777,39.57028,Antarctica - Syowa ,active,
+1017,-36.6833,-73.1,Chile - Talcahuano_CL ,active,
+1018,0.554,97.822,Indonesia - Telukdalam ,active,
+1019,-32.1489,133.6413,Australia - Thevenard_AU ,active,
+1020,-6.482942,105.6634,Indonesia - Tanjung Lesung ,active,
+1021,32.78,132.97,Japan - Tosashimizu ,active,
+1022,45.64939,13.75794,Italy - TRIESTE ,active,
+1023,8.5637,81.1996,Sri Lanka - Trinconmalee ,active,
+1024,53.88333,-166.5333,USA - Unalaska ,active,
+1025,-13.8268,-171.7613,Samoa; U.S.A. - Apia_Upolu_WS ,active,
+1026,-33.033,-71.617,Chile - Valparaiso_CL ,active,
+1027,-17.7553,168.3077,Vanuatu - Vanuatu ,active,
+1028,-65.25,-64.27,Antarctica - Vernadsky ,active,
+1029,18.0939,-62.4714,USA - Vieques_PR ,active,
+1030,-18.1342,178.4236,Fiji Islands - Suva_Viti_Levu_FJ ,active,
+1031,10.34,107.071,Viet Nam - Vung Tau ,active,
+1032,-9.3898,119.2188,Indonesia - Waikelo ,active,
+1033,-43.9458,-176.5608,New Zealand - Waitangi Chatham_NZ,active,
+1034,19.29,166.618,USA - Wake_US ,active,
+1038,-6.15,39.1833,Tanzania - Zanzibar ,active,
+1043,45.7562,8.617,Tamosy Large Panel (Temp),active,
+1044,46.5,8.617,Tamosy Large Panel (Press),active,
+1047,44.62,8.63,Malpensa (Temp),active,
+1048,44.62,8.93,Malpensa (Press),active,
+1052,37.95134,-8.875896,Sines,active,
+1056,-46.66528,161.0014,Station 55013 - ETD TASMAN SEA 2,active,
+1090,44.471,155.736,Station 21419 - 209NM SE of KURIL ISLANDS,active,
+1091,25.2,-87,"Station 42408 - 310 NM South-Southeast of New Orleans, LA",active,
+1092,39.487,-70.594,"Station 44402 - 136NM SE of Fire Island, NY.",active,
+1093,46.638,-170.79,"Station 46401 - East of ADAK, AK",active,
+1094,42.903,-130.909,"Station 46405 - 325 NM West-Southwest of Newport, OR",active,
+1095,-8.491,-125.023,"Station 46406 - 2,900 NM Southeast of Hawaii",active,
+1096,55.301,-148.495,"Station 46409 - 240 NM Southeast of Kodiak, AK",active,
+1097,40,-150,Station 46499 - DART Special Test ,active,
+1098,-33.005,-172.985,"Station 54401 - 640NM Northeast of Auckland, New Zealand",active,
+1268,-10.346,56.586,Mauritius - Agalega,active,
+1271,-3.683,128.183,Indonesia - Ambon,active,
+1272,69.317,16.15,Norway - Andenes,active,
+1273,18.48,-66.702,Puerto Rico - Arecibo,active,
+1275,52.232,-174.173,"USA - Atka, AK",active,
+1277,48.84,-125.14,Canada - Bamfield,active,Canada
+1278,30.326,-89.326,"USA - Bay Waveland Yacht Club, MS",active,
+1280,43.36,-3.05,Spain - Bilbao3,active,
+1281,1.45,125.2,Indonesia - Bitung,active,
+1283,-20.444,57.711,Mauritius - Blue Bay,active,
+1284,48.38,-4.5,France - Brest,active,
+1286,29.768,-93.343,"USA - Calcasieu Pass, LA",active,
+1289,49.65,-1.63,France - Cherbourg,active,
+1290,-44.025,-176.369,New Zealand - Chatham Island,active,
+1292,-7.75,109,Indonesia - Cilacap2,active,
+1293,27.58,-97.217,"USA - Corpus Christi, TX",active,
+1294,-24.221,113.397,Australia - Cape Cuvier Wharf,active,
+1295,-3.8,55.667,Seychelles - Denis Island,active,
+1296,49.93,1.085,France - Dieppe,active,
+1297,-12.783,45.258,France - Dzaoudzi (Mayotte) FTP,active,
+1298,-12.783,45.258,France - Dzaoudzi(Mayotte) GTS,active,
+1302,18.334,-65.631,Puerto Rico - Fajardo,active,
+1306,39,-0.15,Spain - Gandia,active,
+1308,36.13,-5.35,UK - Gibraltar(GTS),active,
+1309,29.263,-89.957,"USA - Grand Isle, LA",active,
+1327,13.161,123.758,Philippines - Legaspi,active,
+1328,49.482,0.106,France - Le Havre,active,
+1329,-8.731,116.072,Indonesia - Lembar,active,
+1334,-37.55,178.159,New Zealand - East Cape,active,
+1336,61.933,5.117,Norway - Måløy,active,
+1337,43.291,5.356,France - Marseille,active,
+1338,7.106,171.373,Marshall Islands - Majuro,active,
+1339,18.217,-67.159,Puerto Rico - Mayaguez,active,
+1340,4.317,96.217,Indonesia - Meulaboh,active,
+1344,41.048,-71.96,"USA - Montauk, NY",active,
+1345,36.72,-3.52,Spain - Motril2,active,
+1353,56.55,-61.68,Canada - Nain,active,Canada
+1357,43.695,7.285,France - Nice,active,
+1367,-0.95,100.367,Indonesia - Padang2,active,
+1379,-8.283,111.733,Indonesia - Prigi2,active,
+1397,-7.983,131.291,Indonesia - Saumlaki,active,
+1400,26.42,-79.01,Bahamas - Settlement pt,active,
+1410,1.363,172.93,Kiribati - Tarawa,active,
+1429,41.523,-70.672,"USA - Woods Hole, MA",active,
+1430,46.908,-124.11,"USA - Westport,WA",active,
+1432,1.984,-157.473,Kiribati - Christmas,active,
+1433,18.055,-65.833,"USA - Yabucoa Harbor, PR",active,
+1434,59.548,-139.735,USA - Yakutat,active,
+1436,-14.803,153.585,Station 55023 - STB Coral Sea,active,
+1437,-15.8,158.5,Station 55012 - STB Coral Sea,active,
+1438,41.92,8.76,France - Ajaccio ,active,
+1439,39.867,3.117,Spain - Alcudia ,active,
+1440,31.211,29.924,Egypt - Alexandria ,active,
+1441,36.177,-5.398,Spain - Algeciras ,active,
+1442,18.48,-66.702,Puerto Rico - Arecibo (GTS) ,active,
+1443,44.665,-1.164,France - Arcachon Eyrac ,active,
+1444,50.969,1.868,France - Calais ,active,
+1445,47.874,-3.907,France - Concarneau ,active,
+1446,-40.899,176.232,New Zealand - Castlepoint ,active,
+1447,18.017,120.483,Philippines - Currimao ,active,
+1448,6.124,81.127,Sri Lanka - Hambantota ,active,
+1449,38.917,1.45,Spain - Ibiza2 ,active,
+1450,25.63,57.77,Iran - Jask ,active,
+1451,37.022,22.11,Greece - Kalamata ,active,
+1452,37.64,21.319,Greece - Katakolo ,active,
+1453,47.051,142.044,Russia - Kholmsk ,active,
+1454,46.633,142.767,Russia - Korsakov ,active,
+1455,28.141,-15.412,Spain - LasPalmas2 ,active,
+1456,10,-83.033,Costa Rica - Limon ,active,
+1457,53.45,-3.018,UK - Liverpool ,active,
+1458,-10.267,40.2,Tanzania - Mtwara ,active,
+1459,23.628,58.565,Oman - Muscat (BGAN) ,active,
+1460,23.633,58.567,Oman - Muscat ,active,
+1461,39.56,2.638,Spain - PalmadeMallorca ,active,
+1462,-7.748,108.501,Indonesia - Pangandaran ,active,
+1463,37.935,23.621,Greece - Peiraias ,active,
+1464,53.017,158.65,Russia - Petropavlovsk ,active,
+1465,42.909,133.922,Russia - Preobrazheniye ,active,
+1466,-46.085,166.589,New Zealand - Puysegur Welcome Bay ,active,
+1467,9.4,-84.167,Costa Rica - Quepos ,active,
+1468,-14.946,-147.706,"France - Rangiroa Atoll (Tuamotu, French Polynesia) ",active,
+1469,-29.28,-177.894,New Zealand - Raoul Island Boat Cove ,active,
+1470,-29.251,-177.904,New Zealand - Raoul Island Fishing Rock ,active,
+1471,48.716,-3.966,France - Roscoff ,active,
+1472,44.35,135.8,Russia - Rudnaya Pristan ,active,
+1473,18.421,-69.629,Dominican Republic - Santo Domingo/p.San Andres ,active,
+1474,50.678,156.139,Russia - Severo Kurilsk (web) ,active,
+1475,48.642,-2.028,France - Saint-Malo ,active,
+1477,37.438,24.941,Greece - Syros ,active,
+1478,36.006,-5.604,Spain - Tarifa ,active,
+1479,28.477,-16.241,Spain - Tenerife2 ,active,
+1480,-0.53,98.5,Indonesia - Tanabalah ,active,
+1482,-23.342,-149.476,France - Tubuaï Austral Islands ,active,
+1483,45.418,12.427,Italy - Venice ,active,
+1484,51.727,157.989,Russia - Vodopadnaya ,active,
+1489,36.9441,-25.149,Santa Maria,active,
+1490,-13.961,110.004,Station 56001 - STB Indian Ocean 1,active,
+1491,-15.021,117.989,Station 56003 - STP Indian Ocean 3,active,
+1493,16.838,-99.903,Mexico - Acapulco Club de Yates ,active,
+1494,53.557,6.749,Germany - Borkum Fischerbalje ,active,
+1495,50.727,1.577,France - Boulogne-Sur-Mer ,active,
+1496,3.891,-77.081,Colombia - Buenaventura ,active,
+1497,35.093,129.037,Korea - Busan ,active,
+1498,39.21,9.114,Italy - Cagliari ,active,
+1499,18.617,-91.817,"Mexico - Ciudad del Carmen, Camp. ",active,
+1500,42.967,9.35,France - Centuri ,active,
+1501,20.865,-90.405,"Mexico - Celestun, Yuc. ",active,
+1502,-35.36,-72.46,Chile - Constitucion ,active,
+1503,37.498,15.094,Italy - Catania ,active,
+1504,-47.754,-65.915,Argentina - Puerto Deseado ,active,
+1505,16.303,-61.072,"France - La Desirade Island, Guadeloupe ",active,
+1506,43.405,4.893,France - Fos-sur-Mer ,active,
+1507,18.15,-94.27,Mexico - Frontera ,active,
+1508,44.41,8.925,Italy - Genova ,active,
+1509,38.784,15.193,Italy - Ginostra (Isola di Stromboli) ,active,
+1510,32.471,34.863,Israel - Hadera ,active,
+1511,54.176,7.891,Germany - Helgoland Binnenhafen ,active,
+1512,54.758,8.297,Germany - Hörnum ,active,
+1513,-16.722,-151.032,"France - Huahine island (Society Islands, French Polynesia) ",active,
+1514,21.217,-86.717,"Mexico - Isla Mujeres, Q. R. ",active,
+1515,-42.413,173.703,New Zealand - Kaikoura ,active,
+1516,35.514,23.637,Greece - Kasteli ,active,
+1517,54.5,10.275,Germany - LT Kiel ,active,
+1518,35.5,12.604,Italy - Lampedusa ,active,
+1519,44.097,9.858,Italy - La Spezia ,active,
+1520,46.158,-1.221,France - La Rochelle-Pallice ,active,
+1521,17.94,-102.178,Mexico - Lazaro Cardenas ,active,
+1522,-37.59,-73.66,Chile - Lebu ,active,
+1523,47.543,-2.895,France - Le Crouesty ,active,
+1524,46.498,-1.794,France - Les Sables d'Olonne ,active,
+1526,24.15,-110.3,Mexico - La Paz ,active,
+1527,13.818,120.202,Philippines - Lubang ,active,
+1528,14.712,-92.401,"Mexico - Puerto Madero, Chis. ",active,
+1529,-42.763,-65.031,Argentina - Puerto Madryn ,active,
+1531,23.181,-106.424,Mexico - Mazatlan ,active,
+1532,38.196,15.563,Italy - Messina ,active,
+1533,-37.047,174.512,New Zealand - Manakau ,active,
+1534,18.09,-67.938,USA - Mona Island PR (web) ,active,
+1536,-22.247,166.412,France - Nouméa - Numbo (New Caledonia) ,active,
+1567,-45.814,170.629,New Zealand - Dunedin ,active,
+1568,38.121,13.371,Italy - Palermo ,active,
+1569,-14.277,-170.691,Samoa - Pago Pago ,active,
+1570,-45.467,-72.817,Chile - Puerto Chacabuco ,active,
+1572,-38,-57.539,Argentina - Mar del Plata ,active,
+1573,45.569,-1.062,France - Port-Bloc ,active,
+1574,40.842,8.404,Italy - Porto Torres ,active,
+1575,18.505,-68.376,Dominican Republic - Punta Cana ,active,
+1576,19.799,-70.702,Dominican Republic - Puerto Plata ,active,
+1577,21.367,-86.75,"Mexico - Puerto Morelos, Q. R. ",active,
+1578,-20.92,55.28,France - Pointe des Galets (Reunion Island) GTS ,active,
+1580,47.26,-2.2,France - Saint-Nazaire ,active,
+1581,16.168,-95.197,"Mexico - Salina Cruz, Oax. ",active,
+1582,54.511,13.643,Germany - Sassnitz ,active,
+1584,41.836,9.374,France - Solenzara ,active,
+1585,-15.917,-5.717,Saint-Helena - Saint Helena ,active,
+1586,-43.57,172.773,New Zealand - Christchurch ,active,
+1587,-37.05,-12.3,UK - Tristan da Cunha ,active,
+1588,-18.16,49.427,Madagascar - Toamasina ,active,
+1590,1.82,-78.729,Colombia - Tumaco ,active,
+1591,20.97,-97.4,Mexico - Tuxpan ,active,
+1592,19.192,-96.124,"Mexico - Veracruz, Ver. ",active,
+1594,42.617,152.583,Station 21401 - 250NM Southeast of Iturup Island,active,
+1595,-7.397,-93.5,"Station 32413 - 1000 NM WestNorthwest of Lima, Peru",active,
+1596,-26,176,Station 55016 - ETD Fiji Basin,active,
+1597,13.57379,-89.83813,El Salvador - Acajutla_SV,active,
+1599,41.92,8.76,France - Ajaccio2,active,
+1600,37.03333,27.41667,Turkey - Bodrum,active,
+1601,42.9669,9.350146,France - Centuri2,active,
+1602,-11.7035,43.24809,Comores - Comores,active,
+1603,25.133,62.033,Pakistan - Gwadar,active,
+1604,44.416,34.05,Ukraina - Kaciveli,active,
+1605,13.3093,-87.8181,El Salvador - La_Union_SV,active,
+1606,40.96667,27.96667,Turkey - Marmara Ereglisi,active,
+1607,43.72867,7.42158,"Monaco - Monaco, Fontvieille harbour",active,
+1608,43.695,7.285,France - Nice2,active,
+1609,42.01667,35.15,Turkey - Sinop,active,
+1610,41.8358,9.3738,France - Solenzara2,active,
+1611,43.1229,5.91472,France - Toulon2,active,
+1612,12.10426,-68.94156,Curaçao - Willemstad,active,
+1613,38.5,-8.5,B02 avg30,active,
+1614,38.5,-8,B02 avg300,active,
+1615,38.5,-7.5,B02 TS signal,active,
+1616,38.5,-7,B02 TS AlertLevel,active,
+1617,38.51458,-8.80941,TAD Setubal (Temp),active,
+1618,38.51458,-8.90941,TAD Setubal (Press),active,
+1619,38.78,-8.13,Lisbona (Temp),active,
+1620,38.78,-7.9,Lisbona (Press),active,
+1621,38.7,-9.41667,Cascais Tidal wave (Avg),active,
+1622,37.10191,-8.673238,Lagos (Avg),active,
+1623,38.44484,-9.102014,Sesimbra (Avg),active,
+1624,16.8333,-99.9166,Mexico - Acapulco_MX,active,
+1625,39.355,-74.4183,USA - Atlantic_City_NJ,active,
+1626,51.863,-176.632,USA - Adak_AK,active,
+1627,12.7883,44.9742,Yemen - Aden,active,
+1628,56.8975,-154.2481,USA - Alitak_US,active,
+1629,37.772,-122.298,USA - Alameda_CA,active,
+1630,36.83,-2.48,Spain - Almeria,active,
+1631,18.3333,-64.9167,USA - Charlotte-Amalie_VI,active,
+1632,61.238,-149.888,USA - Anchorage_AK,active,
+1633,-41.86691,-73.83168,Chile - Ancud_Chile,active,
+1634,-23.65313,-70.40444,Chile - Antofagasta_CL,active,
+1635,29.727,-84.982,USA - Apalachicola_FL,active,
+1636,38.913,-123.705,USA - Arena_Cove_CA,active,
+1637,-18.4758,-70.32323,Chile - Arica_CL,active,
+1638,28.9716,-13.5303,Spain - Arrecife,active,
+1639,-7.91666,-14.41666,UK - Ascension,active,
+1640,46.208,-123.767,USA - Astoria_OR,active,
+1641,39.267,-76.578,USA - Baltimore_MD,active,
+1642,41.1733,-73.1816,USA - Bridgeport_CT,active,
+1643,43.5273,-1.51483,France - Boucau-Bayonne,active,
+1644,40.7,-74.02,USA - Battery_The_NY,active,
+1645,38.5733,-76.0683,USA - Cambridge_MD,active,
+1646,48.863,-122.758,USA - Cherry_Point_WA,active,
+1647,44.67,-63.58,Canada - Halifax,active,Canada
+1648,54.18333,-133,Canada - Henslung Cove,active,Canada
+1649,-20.69283,164.9422,France - Hienghene (New Caledonia),active,
+1650,70.98333,25.98333,Norway - Honningsvåg,active,
+1651,46.0074,-1.17424,France - Ile d'Aix,active,
+1652,18.15028,-65.435,Puerto Rico; U.S.A. - Isabel Segunda,active,
+1653,-43.9733,168.6161,New Zealand - Jackson Bay,active,
+1654,20.898,-156.472,"USA - Kahului, Maui",active,
+1655,-2.801,-171.718,Kiribati - Kanton_KI,active,
+1656,57.7317,-152.512,"USA - Kodiak Island, AK",active,
+1657,28.67778,-17.76861,Spain - LaPalma,active,
+1658,29.4496,-91.3381,"USA - LAWMA, Amerada Pass, LA",active,
+1659,48.36,-4.78,France - Le Conquet,active,
+1660,37.09883,-8.666838,Portugal - Lagos,active,
+1661,53.4497,-3.0181,UK - Liverpool Test,active,
+1662,-19.0525,-169.9214,Niue - Niue,active,
+1663,-21.138,-175.1815,Tonga Island - Nuku'Alofa Harbour wharf,active,
+1664,78.93333,11.95,Norway - Ny Ålesund,active,
+1665,25.2,64.067,Pakistan - Ormara,active,
+1666,-17.53309,-149.5727,"France - Papeete (Tahiti, French Polynesia)",active,
+1667,34.75513,32.40882,Cyprus - Paphos,active,
+1668,37.73,-25.68,Portugal - Ponta_Delgada_Azor,active,
+1669,37.2903,13.5244,Italy - Porto empedocle,active,
+1670,-12.966,40.4833,Moçambique - Pemba,active,
+1671,-9.001,-158.051,Cook Islands - Penrhyn_CK,active,
+1672,17.97253,-66.7618,"Puerto Rico; U.S.A. - Penuelas (Punta Guayanilla),",active,
+1673,28.9317,-89.4067,"USA - Pilots Station East, SW Pass, LA",active,
+1674,-19.5966,-70.2136,Chile - PISAGUA_CL,active,
+1675,28.13,-15.41,Spain - Puerto de la Luz,active,
+1676,-41.4833,-72.9666,Chile - Puerto_Montt_CL,active,
+1677,30.403,-87.212,USA - Pensacola_FL,active,
+1678,-4.78333,11.83333,Congo (Brazzaville) - Pointe Noire,active,
+1679,54.32,-130.32,Canada - Prince Rupert,active,Canada
+1680,-33.96666,25.63333,South-Africa - Port Elizabeth,active,
+1681,70.388,-148.51,USA - Prudhoe_Bay_AK,active,
+1682,35.92111,14.49417,Malta - Portomaso,active,
+1683,42.5201,3.10733,France - Port-Vendres,active,
+1684,42.5201,3.10733,France - Port-Vendres2,active,
+1685,60.7176,-46.035,"Denmark - Qaqortoq, Julianehab",active,
+1686,13.7751,109.2543,Viet Nam - Qui_Nhon,active,
+1687,-21.2049,-159.7852,Cook Islands - Avatiu Rarotonga harbour wharf,active,
+1688,-20.92,55.28,France - Pointe des Galets (Reunion Island) FTP,active,
+1689,64.86667,11.25,Norway - Rørvik,active,
+1690,-10.708,123.0597,Indonesia - Rote,active,
+1691,39.63389,-0.206111,Spain - Sagunto,active,
+1692,70.4838,-21.962,"Denmark - Ittoqqortoormiit, Scoresbysund",active,
+1693,1.7333,98.8,Indonesia - Sibolga,active,
+1694,43.3952,-1.68162,France - Socoa,active,
+1695,-9.4289,159.9555,Solomon Islands - Honiara,active,
+1696,47.57,-52.72,Canada - St. Johns,active,Canada
+1697,4.8846,-1.745,Ghana - Takoradi,active,
+1698,1.2616,103.8516,Singapore - Tanjong Pagar,active,
+1699,-37.64109,176.1812,New Zealand - Port of Tauranga,active,
+1700,76.5434,-68.8626,"Denmark - Thule, Pituffik",active,
+1701,49.15,-125.91,Canada - Tofino,active,Canada
+1702,43.1229,5.91472,France - Toulon,active,
+1703,58,7.566667,Norway - Tregde,active,
+1704,47.64391,-3.447057,France - Port-Tudy (Groix island),active,
+1705,-17.80592,-149.2953,France - Vairao (Tahiti Island - French Polynesia),active,
+1706,39.44,-0.31,Spain - Valencia,active,
+1707,70.33334,31.1,Norway - Vardø,active,
+1708,54.16972,12.10333,Germany - Warnemünde,active,
+1709,50.51,-129.03,Canada - Winter Harbour,active,
+1710,-41.28462,174.7791,New Zealand - Wellington,active,
+1711,9.5142,138.1246,Micronesia - Yap Island,active,
+1712,-44.853,161.728,Station 55042 - Tasman Sea 2,active,
+1713,40.76667,27.96667,Turkey - Marmara Ereglisi 30 s (real pos. is 42.96),active,
+1714,-40.5808,-73.7372,Chile - Bahia Mansa_CL,active,
+1715,44.65667,-67.21,"USA - Cutler Farris Wharf, ME",active,
+1716,13.1,80.3,India - Chennai,active,
+1717,9.96,76.26,India - Cochin,active,
+1718,44.16,28.6,Romania - Constanta,active,
+1719,-42.48055,-73.75833,Chile - Castro_CL,active,
+1720,-29.88333,31.03333,South-Africa - Durban,active,
+1721,43.48353,6.933767,France - La Figueirette,active,
+1722,43.48353,6.933767,France - La Figueirette2,active,
+1723,-10.7208,165.8019,Solomon Islands - Lata_Wharf_SB,active,
+1724,-20.91847,167.2787,France - Lifou,active,
+1725,4.0024,-81.6042,Colombia - Malpelo,active,
+1726,-23.0975,-70.45083,Chile - Mejillones_CL,active,
+1727,8.28,73.05,India - Minicoy,active,
+1728,8.05,93.55,India - Nancowry,active,
+1729,-21.98288,166.6833,New Caledonia - Ouinne,active,
+1730,-20.80028,-70.19417,Chile - Patache_CL,active,
+1731,-43.89833,-73.74833,Chile - Puerto Melinka_CL,active,
+1732,12.05,-61.7333,"Grenada - Prickly Bay, Grenada",active,
+1733,-53.12361,-70.86028,Chile - Punta Arenas_CL,active,
+1734,11.68,92.76,India - Port Blair,active,
+1735,15.3,-61.4,Dominica island - Roseau,active,
+1736,42.63556,8.938056,France - Ile Rousse,active,
+1737,42.63556,8.938056,France - Ile Rousse2,active,
+1738,5.8333,95.3333,Indonesia - Sabang2,active,
+1739,43.3952,-1.68162,France - Socoa,active,
+1740,43.3952,-1.68162,France - Socoa2,active,
+1741,43.3976,3.69911,France - Sète,active,
+1742,-6.6928,156.4086,Solomon Islands - Tarekukure_Wharf_SB,active,
+1743,17.68,83.28,India - Visakhapatnam,active,
+1744,-22.9492,14.4986,Namibia - Walvis Bay,active,
+1745,34.72708,33.33838,Cyprus - Zygi,active,
+1746,42.11667,35.15,Turkey - Sinop 30 s (real pos. is 42.01667),active,
+1747,37.13333,27.61667,Turkey - Bodrum 30 s (real pos. is 27.41667),active,
+1793,19.7593,-72.19337,Haïti - Cap-Haïtien,active,Haïti 
+1794,-47.75358,-65.9147,Argentina - Puerto Deseado,active,Argentina 
+1795,14.60167,-61.06333,Martinique - Fort-de-France,active,Martinique 
+1796,44.02,144.29,Japan - Abashiri,active,Japan 
+1797,31.58,131.41,Japan - Aburatsu,active,Japan 
+1798,17.89,-61.82,"Antigua, Barbuda & Redonda - Barbuda",active,"Antigua, Barbuda & Redonda "
+1799,27.09,142.19,Japan - Chichijima,active,Japan 
+1800,40.65,139.93,Japan - Fukaura,active,Japan 
+1801,-23.11777,-134.9689,"France - Rikitea (French Polynesia, Gambier)",active,France 
+1802,41.78,140.72,Japan - Hakodate,active,Japan 
+1803,34.9,132.07,Japan - Hamada,active,Japan 
+1804,31.83051,34.64155,Ashdod Port,active,Israel
+1805,18.20814,-71.09216,Barahona,active,Dominican Republic
+1806,-21.5478,167.8771,"Maré (New Caledonia, Loyalty Islands)",active,France
+1807,-6.9479,110.4201,Semarang,active,Indonesia
+1808,-11.445,113.607,Station 53046 - South Bali,active,Off-shore
+1809,21.3218,-158.1193,Barbers Point,active,Hawaii; U.S.A.
+1812,14.60167,-61.06333,"Fort-de-France, Martinique",active,France
+1813,43.35917,6.7175,Port Ferréol,active,France
+1814,42.98,144.37,Japan - Kushiro,active,Japan 
+1815,33.48,135.77,Japan - Kushimoto,active,Japan 
+1816,34.92,139.83,Japan - Mera,active,Japan 
+1817,24.29,153.98,Japan - Minami-Tori-Shima,active,Japan 
+1818,32.74,129.87,Japan - Nagasaki,active,Japan 
+1819,37.5,137.16,Japan - Noto,active,Japan 
+1820,-62.4788,-59.6644,Chile - Antarctica Base Prat,active,Chile 
+1821,43.35917,6.7175,France - Port Ferréol 2,active,France 
+1822,38.32,138.52,Japan - Sado,active,Japan 
+1823,36.2,133.33,Japan - Saigo,active,Japan 
+1824,20.15,92.9,Myanmar - Sittwe,active,Myanmar 
+1825,36.76,137.11,Japan - Toyama,active,Japan 
+1826,45.41,141.69,Japan - Wakkanai,active,Japan 
+1827,16.2244,-61.53145,"Pointe à Pitre, Guadeloupe",active,France
+1828,16.2244,-61.53145,"Pointe à Pitre, Guadeloupe",active,France
+1829,46.4713,-56.1005,"Saint Pierre et Miquelon, Canada",active,France
+1837,43.62477,13.50652,Italy - Ancona (ISPRA),active,Italy 
+1838,41.44686,12.6348,Italy - Anzio (ISPRA),active,Italy 
+1839,41.14021,16.86603,Italy - Bari (ISPRA),active,Italy 
+1840,39.21019,9.114272,Italy - Cagliari (ISPRA),active,Italy 
+1841,39.14797,8.309453,Italy - Carloforte (ISPRA),active,Italy 
+1842,37.49808,15.09383,Italy - Catania (ISPRA),active,Italy 
+1843,42.09396,11.78965,Italy - Civitavecchia (ISPRA),active,Italy 
+1844,39.08358,17.13706,Italy - Crotone (ISPRA),active,Italy 
+1845,41.20999,13.58974,Italy - Gaeta (ISPRA),active,Italy 
+1846,44.41013,8.925517,Italy - Genova (ISPRA),active,Italy 
+1847,38.78518,15.19077,Italy - Ginostra (ISPRA),active,Italy 
+1848,43.87834,8.018864,Italy - Imperia (ISPRA),active,Italy 
+1849,42.11888,15.50157,Italy - Isole Tremiti (ISPRA),active,Italy 
+1850,44.09661,9.857644,Italy - La Spezia (ISPRA),active,Italy 
+1851,35.49983,12.60444,Italy - Lampedusa (ISPRA),active,Italy 
+1852,43.54629,10.29934,Italy - Livorno (ISPRA),active,Italy 
+1853,42.74263,10.23833,Italy - Marina di Campo (ISPRA),active,Italy 
+1854,38.19632,15.56351,Italy - Messina (ISPRA),active,Italy 
+1855,40.8414,14.26919,Italy - Napoli (ISPRA),active,Italy 
+1856,42.3559,14.41486,Italy - Ortona (ISPRA),active,Italy 
+1857,40.14715,18.49709,Italy - Otranto (ISPRA),active,Italy 
+1858,38.12141,13.37133,Italy - Palermo (ISPRA),active,Italy 
+1859,40.02991,15.27529,Italy - Palinuro (ISPRA),active,Italy 
+1860,40.89518,12.96559,Italy - Ponza (ISPRA),active,Italy 
+1861,37.28576,13.52684,Italy - Porto Empedocle (ISPRA),active,Italy 
+1862,40.84221,8.403913,Italy - Porto Torres (ISPRA),active,Italy 
+1863,44.49205,12.28273,Italy - Ravenna (ISPRA),active,Italy 
+1864,38.12172,15.64892,Italy - Reggio Calabria (ISPRA),active,Italy 
+1865,40.67664,14.75084,Italy - Salerno (ISPRA),active,Italy 
+1866,42.95512,13.88976,Italy - San Benedetto del Tronto (ISPRA),active,Italy 
+1867,37.50454,13.07646,Italy - Sciacca (ISPRA),active,Italy 
+1868,40.4756,17.22376,Italy - Taranto (ISPRA),active,Italy 
+1869,45.64939,13.75794,Italy - Trieste (ISPRA),active,Italy 
+1870,45.41822,12.42653,Italy - Venezia (ISPRA),active,Italy 
+1871,41.88808,16.17701,Italy - Vieste (ISPRA),active,Italy 
+1872,38.7984,15.1931,Italy - Stromboli Sciara del Fuoco (1min),active,
+1873,38.7984,15.1931,Italy - Stromboli Sciara del Fuoco (15 sec),active,
+1874,38.7984,15.1931,Italy - Stromboli Sciara del Fuoco (5 sec),active,
+1875,-26.35667,-70.64611,Chañaral_CL,active,Chile
+1876,-52.9666,-74.0667,Caleta Meteoro_CL,active,Chile
+1877,51.04809,2.366698,Dunkerque,active,France
+1878,-14.29602,-178.1602,"Leava (Futuna Island, Wallis & Futuna)",active,France
+1879,-49.3525,70.0218,Kerguelen Island,active,France
+1880,60.15532,-1.145192,Lerwick2,active,UK
+1881,-17.0009,-72.1088,Matarani,active,Perú
+1882,50.103,-5.54275,Newlyn2,active,UK
+1883,-49.132,-74.4219,CL -Puerto Eden_CL,active,Chile
+1884,-20.89278,55.53695,Sainte Marie (Reunion island),active,France
+1885,-65.25,-64.27,Vernadsky - Faraday,active,Antarctica
+1886,6.255,88.792,Station 23227 - Bay of Bengal,active,Off-shore
+1887,20.799,65.347,Station 23228 - Arabian Sea,active,Off-shore
+1888,36.61112,34.32793,Turkey - Erdemli 30 sec,active,
+1889,36.59423,36.17677,Turkey -Iskenderun 30 sec,active,
+1890,36.09742,32.94131,Turkey - Bozyazi 30 sec,active,
+1891,57.14,-2.08,UK - Aberdeen,active,UK
+1892,51.5,-2.73,UK - Avonmouth Portbury,active,UK
+1893,54.66,-5.67,UK - Bangor,active,UK
+1894,52.72,-4.05,UK - Barmouth,active,UK
+1895,50.71,-1.87,UK - Bournemouth,active,UK
+1896,-37.02896,-73.15178,CL - Coronel_CL,active,Chile
+1897,52.93,1.3,UK - Cromer,active,UK
+1898,51.22379,1.40926,UK - Deal Pier,active,UK
+1899,51.11,1.32,UK - Dover,active,UK
+1900,-66.65195,140.0017,Dumont d'Urville,active,Antarctica
+1901,9.55827,-78.94918,UK - El Porvenir,active,Panamá
+1902,52.01,-4.98,UK - Fishguard,active,UK
+1903,34.84798,24.11978,GR -Gavdos,active,Greece
+1904,51.95,1.29,UK - Harwich,active,UK
+1905,51.38211,1.11521,UK - Herne Bay,active,UK
+1906,54.03,-2.92,UK - Heysham,active,UK
+1907,51.21,-3.13,UK - Hinkley Point,active,UK
+1908,53.31,-4.62,UK - Holyhead2,active,UK
+1909,51.21,-4.11,UK - Ilfracombe,active,UK
+1910,53.63,-0.19,UK - Immingham,active,UK
+1911,49.18,-2.12,UK - Jersey,active,UK
+1912,58.46,-5.05,UK - Kinlochbervie,active,UK
+1913,55.99,-3.18,UK - Leith,active,UK
+1914,53.45,-3.02,UK - Liverpool,active,UK
+1915,53.33,-3.83,UK - Llandudno,active,UK
+1916,52.47,1.75,UK - Lowestoft,active,UK
+1917,50.74031,-1.50708,UK - Lymington,active,UK
+1918,51.71,-5.05,UK - Milford Haven,active,UK
+1919,55.75,-4.91,UK - Millport,active,UK
+1920,51.57,-3.98,UK - Mumbles,active,UK
+1921,50.78,0.06,UK - Newhaven,active,UK
+1922,51.55,-2.99,UK - Newport,active,UK
+1923,55.01,-1.44,UK - North Shields,active,UK
+1924,50.37,-4.19,UK - Plymouth,active,UK
+1925,54.84,-5.12,UK - Portpatrick,active,UK
+1926,55.21,-6.66,UK - Portrush,active,UK
+1927,50.59417,-4.83441,UK - Port Isaac,active,UK
+1928,50.8,-1.11,UK - Portsmouth,active,UK
+1929,11.23516,-74.22157,Santa Marta,active,Colombia
+1930,12.56949,-81.70149,San Andres,active,Colombia
+1931,50.65111,-1.15316,UK - Sandown Pier,active,UK
+1932,51.45,0.74,UK - Sheerness,active,UK
+1933,51.57012,-2.70001,UK - Second Severn Crossing,active,UK
+1934,54.65,-3.57,UK - St Marys,active,UK
+1935,50.60933,-1.949177,UK - Swanage Pier,active,UK
+1936,21.34,-89.30833,Telchac,active,Mexico
+1937,50.5439,-3.49179,UK - Teignmouth Pier,active,UK
+1938,56.62,-6.06,UK - Tobermory,active,UK
+1939,57.9,-5.16,UK - Ullapool,active,UK
+1940,50.71017,-2.76398,UK - West Bay Harbour,active,UK
+1941,50.61,-2.45,UK - Weymouth,active,UK
+1942,54.49,-0.61,UK - Whitby,active,UK
+1943,58.44,-3.09,UK - Wic,active,UK
+1944,54.65,-3.57,UK - Workington,active,UK
+1945,46.488,158.343,Station 21402 - 286NM East of Simushir Island,active,Off-shore
+1946,-1.13,-81.769,Station 32066 - Ecuador INOCAR,active,Off-shore
+1947,57.14,-2.08,UK - Aberdeen_NOCS,active,UK
+1948,51.5,-2.73,UK - Avonmouth Portbury_NOCS,active,UK
+1949,54.66,-5.67,UK - Bangor_NOCS,active,UK
+1950,52.72,-4.05,UK - Barmouth_NOCS,active,UK
+1951,50.71,-1.87,UK - Bournemouth_NOCS,active,UK
+1952,52.93,1.3,UK - Cromer_NOCS,active,UK
+1953,51.11,1.32,UK - Dover_NOCS,active,UK
+1954,52.01,-4.98,UK - Fishguard_NOCS,active,UK
+1955,51.95,1.29,UK - Harwich_NOCS,active,UK
+1956,54.03,-2.92,UK - Heysham_NOCS,active,UK
+1957,51.21,-3.13,UK - Hinkley Point_NOCS,active,UK
+1958,53.31,-4.62,UK - Holyhead2_NOCS,active,UK
+1959,51.21,-4.11,UK - Ilfracombe_NOCS,active,UK
+1960,53.63,-0.19,UK - Immingham_NOCS,active,UK
+1961,49.18,-2.12,UK - Jersey_NOCS,active,UK
+1962,58.46,-5.05,UK - Kinlochbervie_NOCS,active,UK
+1963,55.99,-3.18,UK - Leith_NOCS,active,UK
+1964,53.45,-3.02,UK - Liverpool_NOCS,active,UK
+1965,53.33,-3.83,UK - Llandudno_NOCS,active,UK
+1966,52.47,1.75,UK - Lowestoft_NOCS,active,UK
+1967,51.71,-5.05,UK - Milford Haven_NOCS,active,UK
+1968,55.75,-4.91,UK - Millport_NOCS,active,UK
+1969,51.57,-3.98,UK - Mumbles_NOCS,active,UK
+1970,50.78,0.06,UK - Newhaven_NOCS,active,UK
+1971,51.55,-2.99,UK - Newport_NOCS,active,UK
+1972,55.01,-1.44,UK - North Shields_NOCS,active,UK
+1973,50.37,-4.19,UK - Plymouth_NOCS,active,UK
+1974,54.84,-5.12,UK - Portpatrick_NOCS,active,UK
+1975,55.21,-6.66,UK - Portrush_NOCS,active,UK
+1976,50.8,-1.11,UK - Portsmouth_NOCS,active,UK
+1977,51.45,0.74,UK - Sheerness_NOCS,active,UK
+1978,54.65,-3.57,UK - St Marys_NOCS,active,UK
+1979,56.62,-6.06,UK - Tobermory_NOCS,active,UK
+1980,57.9,-5.16,UK - Ullapool_NOCS,active,UK
+1981,50.61,-2.45,UK - Weymouth_NOCS,active,UK
+1982,54.49,-0.61,UK - Whitby_NOCS,active,UK
+1983,58.44,-3.09,UK - Wic_NOCS,active,UK
+1984,54.65,-3.57,UK - Workington_NOCS,active,UK
+1985,60.15,-1.14,UK - Lerwick_NOCS,active,UK
+1986,50.1,-5.54,UK - Newlyn_NOCS,active,UK
+1987,58.21,-6.39,UK - Stornoway_NOCS,active,UK
+1988,39.355,-74.4183,USA - Atlantic city_IOOS,active,USA
+1989,46.9043,-124.1051,USA - Westport_IOOS,active,USA
+1990,18.3352,-65.6311,USA -Playa de Fajardo_IOOS,active,USA
+1992,37.7717,-122.2983,USA - Alameda San Francisco Bay_IOOS,active,USA
+1993,-14.28,-170.69,USA_Pago Pago_IOOS,active,USA
+1994,8.7316,167.7362,USA_Kwajalein_IOOS,active,USA
+1995,17.5907,-61.8206,USA_Barbuda_IOOS,active,USA
+1996,17.6947,-64.7538,USA_Lime Tree Bay_IOOS,active,USA
+1997,17.75,-64.705,USA_Christiansted_IOOS,active,USA
+1998,17.9701,-67.0464,USA_Magueyes Island_IOOS,active,USA
+2000,36.1418,23.0037,Kythira (Prs),active,
+2001,36.1418,23.0037,Kythira (Rad),active,
+2002,35.224,23.6786,Paleochora (Prs),active,
+2003,35.224,23.6786,Paleochora (Rad),active,
+2004,36.79751,21.9628,Koroni (Prs),active,
+2005,36.79751,21.9628,Koroni (Rad),active,
+2006,36.1418,23.0037,Kythira_NOA (Prs),active,
+2007,36.1418,23.0037,Kythira_NOA (Rad),active,
+2008,35.224,23.6786,Paleochora_NOA (Prs),active,
+2009,35.224,23.6786,Paleochora_NOA (Rad),active,
+2010,36.79751,21.9628,Koroni_NOA (Prs),active,
+2011,36.79751,21.9628,Koroni_NOA (Rad),active,
+2012,44.7059,30.7783,EUxRO01,active,Romania
+2013,32.64,-16.9067,Funchal (IPMA),active,Portugal
+2015,41.185,-8.7033,Leixoes (IPMA),active,Portugal
+2016,37.7376,-25.6617,Ponte Delgada (IPMA),active,Portugal
+2017,39.951,-8.892,Peniche (IPMA),active,Portugal
+2018,36.945,-25.1483,Santa Maria (IPMA),active,Portugal
+2019,38.5338,-28.6215,Horta (IPMA),active,Portugal
+2020,37.945,-8.892,Sines (IPMA),active,Portugal
+2021,38.6932,-9.4154,Cascais (IPMA),active,Portugal
+2022,37.0988,-8.6668,Lagos (IPMA),active,Portugal
+2024,44.3178,30.4135,EUxRO02,active,Romania
+2025,43.9791,29.9364,EUxRO03,active,Romania
+2026,38.81728,15.25179,Italy - Strombolicchio (ISPRA),active,Italy 
+2027,52.09911,4.263019,Scheveningen,active,Netherlands
+2028,52.00729,3.403201,Europlatform,active,Netherlands
+2030,53.47384,5.396695,Terschelling Noordzee,active,Netherlands
+2031,40.233,25.894,Turkey -Gokceada 30 sec,active,
+2032,51.23306,2.920556,Ostende,active,
+2033,38.49423,-8.930979,SET-01 - Setubal,active,
+2034,36.3358,25.4354,Vlychada,active,Greece
+2035,37.438,24.9411,Syros,active,Greece
+2036,37.9347,23.6212,Peiraias,active,Greece
+2037,39.7902,19.9099,Kerkira,active,Greece
+2038,38.78518,15.19077,Ginostra (TAD),active,
+2039,43.1345,28.4561,RomaniaEUXBg04,active,Romania
+2040,43.4312,28.7995,RomaniaEUXBg05,active,Romania
+2041,43.8022,28.6055,RomaniaCoastalGauge,active,Romania
+2042,44.1608,28.6572,RomaniaSite01,active,Romania
+2043,45.1621,29.7269,RomaniaSite02,active,Romania
+2044,43.8015,28.595,RomaniaSite03,active,Romania
+2045,7.08333,125.6333,Philippines - Davao_PH_rad,active,
+2046,18.017,120.483,Philippines - Currimao_Prs,active,
+2047,7.03,125.6333,Philippines - Davao_TEST_1,active,
+2048,7.04,125.6333,Philippines - Davao_TEST_2,active,
+2049,7.05,125.6333,Philippines - DavaoTEST3,active,
+2050,38.49423,-8.930979,SET-01-test,active,
+2051,38.49423,-8.930979,SET-01-300-test,active,
+2052,33.61,-7.61,Casablanca,active,
+2053,53.556,6.748,Germany - Borkum 2,active,
+2054,45.81,8.62,ARD-01,active,
+2056,43.39524,-1.681623,St Jean-de-Luz,active,France
+2057,45.55,-1.066667,Le Verdon,active,France
+2058,46.15848,-1.220736,La Pallice,active,France
+2059,46.49736,-1.793528,Les Sables D Olonne,active,France
+2060,47.8737,-3.90738,Concarneau,active,France
+2061,38.69316,-9.415384,Cascais,active,Portugal
+2062,28.14671,-15.40761,Las Palmas,active,Spain
+2063,43.36861,-8.397751,La Coruna,active,Spain
+2064,57.144,-2.08022,Aberdeen,active,Spain
+2065,48.38285,-4.494838,Brest,active,Spain
+2066,51.1144,1.32255,Dover,active,Spain
+2067,54.08533,-4.766917,Port Erin,active,Spain
+2068,53.86778,8.7175,Cuxhaven,active,Spain
+2069,60.154,-1.140381,Lerwick,active,Spain
+2070,58.00639,7.554722,Tredge,active,Spain
+2071,52.934,1.302,Cromer,active,Spain
+2072,46.15894,-1.219317,La Rochelle - La Pallice,active,Spain
+2330,64.6659,24.40708,Raahe Lapaluoto ,active,Finland 
+2331,60.15363,24.95622,Helsinki Kaivopuisto ,active,Finland 
+2333,65.67291,24.51526,Kemi Ajos ,active,Finland 
+2336,63.0815,21.57118,Vaasa Vaskiluoto ,active,Finland 
+2337,61.13353,21.46343,Rauma Ulko-Petäjäs ,active,Finland 
+2338,60.42828,22.10053,Turku Ruissalo Saaronniemi,active,Finland 
+2339,65.0403,25.4182,Oulu Toppila ,active,Finland 
+2340,63.70857,22.68958,Pietarsaari Leppäluoto ,active,Finland 
+2341,62.34395,21.21483,Kaskinen Ådskär ,active,Finland 
+2342,60.03188,20.38482,Föglö Degerby ,active,Finland 
+2343,59.82287,22.97658,Hanko Pikku Kolalahti,active,Finland 
+2344,60.56277,27.1792,Hamina Pitäjänsaari ,active,Finland 
+2345,61.59438,21.46343,Pori Mäntyluoto Kallo,active,Finland 
+2347,63.67,22.67,Pietarsaaren Golf ,active,Finland 
+2348,65.6956,24.6223,Kemi ,active,Finland 
+2349,63.096,21.61577,Vaasa ,active,Finland 
+2350,60.45148,22.26869,Turku ,active,Finland 
+2351,61.12724,21.51127,Rauma ,active,Finland 
+2352,64.68333,24.48333,Raahe ,active,Finland 
+2353,65.01236,25.46816,Oulu ,active,Finland 
+2354,61.58333,21.48333,Mäntyluoto ,active,Finland 
+2355,62.3833,21.2167,Kaskinen ,active,Finland 
+2356,60.16952,24.93545,Helsinki ,active,Finland 
+2357,59.8333,22.95,Hanko,active,
+2358,60.56974,27.19794,Hamina,active,Finland 
+2359,60.0305,20.38876,Degerby,active,Finland 
+2360,43.5237,8.0109,Italy - Imperia 2,active,
+2361,36.1139,28.0696,Kalathos,active,Greece
+2362,38.4619,23.599,Xalchida Notia,active,Greece
+2363,40.6327,22.9055,Thessaloniki,active,Greece
+2364,40.9582,17.3014,Monopoli,active,Greece
+2365,18.45833,-67.165,Puerto Rico; U.S.A. - Aguadilla (Crash Boat),active,Puerto Rico; U.S.A.
+2366,-41.8674,-73.83305,Chile - Ancud,active,Chile
+2367,31.63493,34.49376,Israel - Ashkelon,active,Israel
+2368,-36.8314,174.7865,New Zealand - Auckland_NZ,active,New Zealand
+2369,44.3916,-68.205,USA - Bar_Harbor_ME 2,active,USA
+2370,17.29003,-62.70973,St. Kitts & Nevis - Basseterre (Coast Guard Base),active,St. Kitts & Nevis
+2371,9.350921,-82.25771,Panamá - Bocas Del Toro,active,Panamá
+2372,-40.5811,-73.73702,Chile - Bahia Mansa_CL 2,active,Chile
+2373,36.80221,-6.33813,Spain - Bonanza2,active,Spain
+2374,43.5273,-1.51483,France - Boucau-Bayonne 2,active,France
+2375,50.7275,1.57746,France - Boulogne-Sur-Mer 2,active,France
+2376,-34.63938,-72.04623,Chile - Bucalemu_CL,active,Chile
+2377,12.18733,-69.01962,Curaçao - Bullen Bay,active,Curaçao
+2378,3.8906,-77.0808,Colombia - Buenaventura 1,active,Colombia
+2379,3.8906,-77.0808,Colombia - Buenaventura 2,active,Colombia
+2380,50.9694,1.86772,France - Calais 2,active,France
+2381,13.12991,-61.1955,Saint Vincent & Grenadines - Calliaqua Coast Guard Base,active,Saint Vincent & Grenadines
+2382,17.8875,-66.53083,Puerto Rico; U.S.A. - Caja de Muertos,active,Puerto Rico; U.S.A.
+2383,36.9743,-1.89959,Spain - Carboneras,active,Spain
+2384,10.3914,-75.5369,Colombia - Cartagena,active,Colombia
+2385,10.09405,-61.86548,Trinidad & Tobago - Cedros Bay,active,Trinidad & Tobago
+2386,15.79,-86.76,Honduras - La Ceiba Cabotaje Harbor,active,Honduras
+2387,49.65,-1.63,France - Cherbourg 2,active,France
+2388,11.31667,-60.55,Trinidad & Tobago - Charlotteville,active,Trinidad & Tobago
+2389,-52.96,-74.066,Chile - Caleta Meteoro_CL,active,Chile
+2390,12.32722,-83.06778,Nicaragua - Corn Island,active,Nicaragua
+2391,47.8737,-3.90738,France - Concarneau 2,active,France
+2392,-35.35592,-72.4581,Chile - Constitucion_CL,active,Chile
+2393,-29.95007,-71.3353,Chile - Coquimbo_CL 2,active,Chile
+2394,43.35727,-8.38938,Spain - Acoruna,active,Spain
+2395,12.48333,-87.1675,Nicaragua - Puerto Corinto,active,Nicaragua
+2396,-39.8866,-73.42748,Chile - Corral_CL 2,active,Chile
+2397,-37.02861,-73.15173,Chile - Coronel_CL,active,Chile
+2398,-42.48089,-73.75846,Chile - Castro_CL 2,active,Chile
+2399,49.93,1.085,France - Dieppe 2,active,France
+2400,51.04809,2.366698,France - Dunkerque 2,active,France
+2401,19.66,57.72,Oman - Duqm,active,Oman
+2402,-27.15485,-109.4394,Chile - Easter_CL 2,active,Chile
+2403,29.50181,34.91774,Israel - Elat,active,Israel
+2404,31.84836,-116.6181,Mexico - Ensenada Test 5/1,active,Mexico
+2405,31.84836,-116.6181,Mexico - Ensenada Test 0.1666/0.1666,active,Mexico
+2406,43.47618,-8.24851,Spain - Ferrol2,active,Spain
+2407,38.73466,1.41903,Spain - Formentera,active,Spain
+2408,28.49251,-13.85822,Spain - Fuerteventura,active,Spain
+2409,-36.189,175.4889,New Zealand - Great_Barrier_Is,active,New Zealand
+2410,19.29506,-81.38348,Cayman Islands - George Town,active,Cayman Islands
+2411,43.55803,-5.69835,Spain - Gijon,active,Spain
+2412,-40.34944,-9.8803,UK - Gough Island,active,UK
+2413,-52.64819,-70.20918,Chile - Bahia Gregorio_CL,active,Chile
+2414,34.46666,-120.6667,"USA - Oil Platform Harvest, CA",active,USA
+2415,47.026,-2.299,France - L'Herbaudière,active,France
+2416,47.02495,-2.29889,France - L'Herbaudière 2,active,France
+2417,27.78408,-17.90163,Spain - ElHierro,active,Spain
+2418,-28.46082,-71.22383,Chile - Huasco_CL 2,active,Chile
+2419,-28.46082,-71.22383,Chile - Huasco_CL 3,active,Chile
+2420,15.75006,-96.11689,Mexico - Huatulco,active,Mexico
+2421,5.284444,-52.58694,"France - Ile Royale, Kourou, French Guiana",active,France
+2422,5.284444,-52.58694,"France - Ile Royale, Kourou, French Guiana 2",active,France
+2423,-20.20458,-70.14783,Chile - Iquique_CL 2,active,Chile
+2424,18.23096,-72.53539,Haïti - Jacmel,active,Haïti
+2425,-33.63602,-78.82988,Chile - Juan_Fernandez 2,active,Chile
+2426,1.077958,154.8067,Micronesia - Kapingamarangi_FM,active,Micronesia
+2427,-6.10667,106.8908,"Indonesia - Kolinamil, Jakarta Port",active,Indonesia
+2428,45.9,142.08,Russia - Cape Kril'on,active,Russia
+2429,45.23,147.88,Russia - Kuril'sk,active,Russia
+2430,43.34653,-8.53012,Spain - Langosteira,active,Spain
+2431,34.91618,33.64082,Cyprus - Larnaca,active,Cyprus
+2432,46.1585,-1.22065,France - La Rochelle-Pallice 2,active,France
+2433,-37.59423,-73.66398,Chile - Lebu 2,active,Chile
+2434,48.36,-4.78,France - Le Conquet 2,active,France
+2435,49.4819,0.10599,France - Le Havre 2,active,France
+2436,60.15532,-1.145192,UK - Lerwick (tsunami),active,UK
+2437,46.4975,-1.79373,France - Les Sables d'Olonne 2,active,France
+2438,9.649983,-84.66636,Costa Rica - Los Sueños,active,Costa Rica
+2439,-15.5156,167.1886,Vanuatu - Luganville,active,Vanuatu
+2440,39.89304,4.27056,Spain - Mahon,active,Spain
+2441,24.518,56.606,Oman - Majis,active,Oman
+2442,21.32,-157.69,"Hawaii; U.S.A. - Makai Pier, Waimanalo, Hawaii",active,Hawaii; U.S.A.
+2443,-16.6269,-143.5691,Polynésie Française (French Polynesia) - Makemo - Tuamotu,active,Polynésie Française (French Polynesia)
+2444,36.71184,-4.41709,Spain - Malaga,active,Spain
+2445,43.87,146.82,Russia - Malokurilskoe,active,Russia
+2446,4.0024,-81.9042,Colombia - Malpelo 2,active,Colombia
+2447,42.40612,-8.69108,Spain - Marin,active,Spain
+2448,-23.0975,-70.45083,Chile - Mejillones_CL 2,active,Chile
+2449,44.2107,-1.2951,France - Mimizan,active,France
+2450,44.2107,-1.2951,France - Mimizan 2,active,France
+2451,43.72867,7.42158,"Monaco - Monaco2, Fontvieille harbour",active,Monaco
+2452,36.605,-121.8867,USA - Monterey,active,USA
+2453,41.0483,-71.96,"USA - Montauk, NY 1",active,USA
+2454,41.0483,-71.96,"USA - Montauk, NY 2",active,USA
+2455,42.78,132.86,Russia - Nahodka,active,Russia
+2456,9.5,112.5,China - Nansha,active,China
+2457,-34.41,173.05,New Zealand - North_Cape,active,New Zealand
+2458,46.68,141.86,Russia - Nevel'sk,active,Russia
+2459,55.2,166.02,Russia - Nikol'skoe,active,Russia
+2460,64.1713,-51.71984,Denmark - Nuuk harbor,active,Denmark
+2461,10.64203,-85.656,Costa Rica - Papagayo Marina,active,Costa Rica
+2462,-17.53279,-149.5738,Polynésie Française (French Polynesia) - Papeete - ZRN,active,Polynésie Française (French Polynesia)
+2463,-25.00898,-70.46873,Chile - Paposo_CL,active,Chile
+2464,-25.00898,-70.46873,Chile - Paposo_CL 2,active,Chile
+2465,35.03829,34.03688,Cyprus - Paralimni,active,Cyprus
+2466,-20.80321,-70.19803,Chile - Patache_CL 2,active,Chile
+2467,-45.46708,-72.82005,Chile - Puerto_Chacabuco_CL,active,Chile
+2468,15.84334,-87.9587,Honduras - Puerto Cortes,active,Honduras
+2469,-49.13723,-74.42538,Chile - Puerto Eden_CL,active,Chile
+2470,-32.13561,-71.5293,Chile - Pichidangui_CL 2,active,Chile
+2471,-32.13561,-71.5293,Chile - Pichidangui_CL 3,active,Chile
+2472,-19.59689,-70.21598,Chile - Pisagua_CL 2,active,Chile
+2473,5.89,-162.09,USA - Palmyra Island,active,USA
+2474,-43.89846,-73.7482,Chile - Puerto Melinka_CL 2,active,Chile
+2475,-41.48474,-72.96124,Chile - Puerto_Montt_CL 2,active,Chile
+2476,49.22,143.09,Russia - Poronajsk,active,Russia
+2477,42.65,130.8,Russia - Pos'et,active,Russia
+2478,-62.47927,-59.6629,Chile - Antarctica Base Prat 3,active,Chile
+2479,15.69462,-88.62202,Guatemala - Puerto Barrios,active,Guatemala
+2480,12.20111,-86.76444,Nicaragua - Puerto Sandino,active,Nicaragua
+2481,15.66667,-96.49167,Mexico - Puerto Angel,active,Mexico
+2482,-53.12373,-70.86198,Chile - Punta Arenas_CL 2,active,Chile
+2483,43.0092,3.0372,France - Port-La-Nouvelle,active,France
+2484,18.53447,-72.38004,Haïti - Port au Prince,active,Haïti
+2485,17.93461,-76.8456,Jamaica - Port Royal,active,Jamaica
+2486,13.26298,-59.64485,Barbados - Port St. Charles,active,Barbados
+2487,10.65,-61.51666,Trinidad & Tobago - Port of Spain,active,Trinidad & Tobago
+2488,20.86813,-86.86684,Mexico - Puerto Morelos 2,active,Mexico
+2489,-54.9332,-67.61057,Chile - Puerto_Williams_CL 2,active,Chile
+2490,19.57,110.82,China - Qinglan,active,China
+2491,-32.77555,-71.52528,Chile - Quintero_CL 2,active,Chile
+2492,-32.77555,-71.52528,Chile - Quintero_CL 3,active,Chile
+2493,22.29111,114.2133,Hong Kong - China - Quarry Bay,active,Hong Kong - China
+2494,-39.39766,-73.21493,Chile - Queule_CL,active,Chile
+2495,-39.39766,-73.21493,Chile - Queule_CL 2,active,Chile
+2496,-36.63614,-73.05726,Chile - Quiriquina_CL,active,Chile
+2497,-36.63614,-73.05726,Chile - Quiriquina_CL 2,active,Chile
+2498,48.716,-3.966,France - Roscoff 2,active,France
+2499,16.34552,-86.54037,Honduras - Roatan Island Punta Gorda Harbor,active,Honduras
+2500,16.16844,-95.19684,"Mexico - Salina Cruz, Oax. 2",active,Mexico
+2501,43.4613,-3.79076,Spain - Santander,active,Spain
+2502,-33.58163,-71.61819,Chile - San_Antonio_CL 2,active,Chile
+2503,11.1667,-60.7333,Trinidad & Tobago - Scarborough,active,Trinidad & Tobago
+2504,43.3976,3.69911,France - Sete,active,France
+2505,37.31849,-6.00772,Spain - Sevilla,active,Spain
+2506,60.119,-149.427,USA - Seward_AK 2,active,USA
+2507,22.47,113.88,China - Shenzhen,active,China
+2508,-33.02769,-71.63541,Chile - Valparaiso2,active,Chile
+2509,11.25111,-85.875,Nicaragua - Puerto San Juan del Sur,active,Nicaragua
+2510,-20.89278,55.53695,France - Sainte Marie (Reunion island) 2,active,France
+2511,46.53,138.33,Russia - Sosunovo,active,Russia
+2512,48.97,140.29,Russia - Sovetskaja Gavan',active,Russia
+2513,47.41,142.82,Russia - Starodubskoe,active,Russia
+2514,48.6416,-2.028,France - Saint-Malo 2,active,France
+2515,-7.199969,112.7406,Indonesia - Surabaya,active,Indonesia
+2516,22.57,59.52,Oman - Sur,active,Oman
+2517,-4.5778,-81.27985,Perú - Talara,active,Perú
+2518,-36.69538,-73.10624,Chile - Talcahuano_CL 2,active,Chile
+2519,-25.40811,-70.49168,Chile - Taltal_CL 2,active,Chile
+2520,-25.40811,-70.49168,Chile - Taltal_CL 3,active,Chile
+2521,41.07897,1.21325,Spain - Tarragona,active,Spain
+2522,15.78414,-87.45314,Honduras - Tela Harbor,active,Honduras
+2523,-22.09376,-70.21165,Chile - Tocopilla_CL 2,active,Chile
+2524,-22.09376,-70.21165,Chile - Tocopilla_CL 3,active,Chile
+2525,1.82,-78.7287,Colombia - Tumaco,active,Colombia
+2526,1.82,-78.7287,Colombia - Tumaco 2,active,Colombia
+2527,49.08,142.07,Russia - Uglegorsk,active,Russia
+2528,-54.817,-68.217,Argentina - Ushuaia,active,Argentina
+2529,-33.02731,-71.62594,Chile - Valparaiso_CL 2,active,Chile
+2530,18.0939,-65.4714,USA - Vieques_PR 2,active,USA
+2531,42.24314,-8.726,Spain - Vigo,active,Spain
+2532,42.60071,-8.77003,Spain - Villagarcia,active,Spain
+2533,43.13,131.92,Russia - Vladivostok,active,Russia
+2534,-13.17048,-176.1007,France - Mata-Utu (Wallis island),active,France
+2535,23.82,57.52,Oman - Khawr Wudam,active,Oman
+2536,16.83,112.33,China - Xisha,active,China
+2537,44.04,145.85,Russia - Yuzhno-Kuril'sk,active,Russia
+2538,21.58,111.82,China - Zhapo,active,China
+2539,17.63667,-101.5583,"Mexico - Zihuatanejo, Gro",active,Mexico
+2541,38.33833,-0.47777,Ign - Alicante1,active,Spain
+2542,38.33889,-0.48139,Ign - Alicante2,active,Spain
+2543,37.59639,-0.97361,Ign - Murcia,active,Spain
+2544,43.36444,-8.39889,Ign - Coruna,active,Spain
+2545,28.47722,-16.24111,Ign - Tenerife13,active,Spain
+2546,28.41833,-16.55056,Ign - Tenerife21,active,Spain
+2547,28.04694,-16.71805,Ign - Tenerife31,active,Spain
+2548,28.49667,-13.85917,Ign - Fuerte,active,Spain
+2551,36.83222,-2.484722,Ign - Almeria,active,Spain
+2555,42.37,14.43,Italy - Ortona (TEST),active,Italy 
+2556,43.62477,13.50652,Italy - Ancona (TEST),active,Italy 
+2557,42.95512,13.88976,Italy - San Benedetto del Tronto (TEST),active,Italy 
+2558,38.257,22.0767,Aigio,active,Greece
+2559,31.2109,29.9235,Alexandria,active,Greece
+2560,35.004,25.739,Ierapetra,active,Greece
+2561,38.4306,22.4226,Itea,active,Greece
+2562,35.349,25.153,Hrakleio,active,Greece
+2563,35.419,26.922,Kasos,active,Greece
+2564,35.514,23.637,Kasteli,active,Greece
+2565,37.26,21.664,Kyparissia,active,Greece
+2566,35.9273,27.8575,Plimiri,active,Greece
+2567,40.475,25.468,Samothraki,active,Greece
+2568,37.7814,20.9053,Zakynthos,active,Greece
+100007,45.81019,8.62856,TAD Large,active    ,Italy
+100011,38.51468,-8.90935,PT Setubal 01,active    ,Portugal
+100018,36.1418,23.0037,JRC01-P,active    ,Greece
+100019,36.1418,23.0037,JRC01-R,active    ,Greece
+100020,35.224,23.6786,JRC02-P,active    ,Greece
+100021,35.224,23.6786,JRC02-R,active    ,Greece
+100022,36.79751,21.9628,JRC03-P,active    ,Greece
+100023,36.79751,21.9628,JRC03-R,active    ,Greece
+100029,38.494234,-8.930979,SET-01,active    ,Portugal
+100031,38.8173,15.251701,ISPRA-01,active    ,Italy
+100034,38.494234,-8.930979,SET-01a,active    ,Portugal
+100037,38.8173,15.251701,ISPRA-02,active    ,Italy
+100039,39.44203,-0.31128,PDE-01,active    ,Spain
+100040,40.67664,14.75084,ISPRA-03,active    ,Italy
+100041,45.64939,13.75794,ISPRA-04,active    ,Italy
+100048,33.6127,-7.6054,MAR-01,active    ,Maroc
+100050,38.6932,-9.4154,IPMA-IGCAS,active    ,Portugal
+100052,37.0988,-8.6668,IPMA-IGLAG,active    ,Portugal
+100053,39.951,-8.892,IPMA-IHPEN,active    ,Portugal
+100054,41.185,-8.7033,IPMA-IHLEX,active    ,Portugal
+100055,36.945,-25.1483,IPMA-IHSMA,active    ,Portugal
+100056,32.64,-16.9067,IPMA-IHFUL,active    ,Portugal
+100057,37.945,-8.892,IPMA-IHSIN,active    ,Portugal
+100058,38.7984,15.1931,FI02,active    ,Italy
+100059,38.6932,-9.4154,FCUL-IGCAS,active    ,Portugal
+100060,37.0988,-8.6668,FCUL-IGLAG,active    ,Portugal
+100063,44.491368,12.282957,ISPRA-05,active    ,Italy
+100064,43.87834,8.0188,IDSL-01,active    ,Italy
+100065,44.096608,9.857644,ISPRA-06,active    ,Italy
+100066,39.21019,9.114272,ISPRA-07,active    ,Italy
+100067,39.081612,17.137044,ISPRA-08,active    ,Italy
+100068,38.12172,15.64892,ISPRA-09,active    ,Italy
+100069,38.19632,15.56351,ISPRA-10,active    ,Italy
+100071,35.5,12.604,ISPRA-11,active    ,Italy
+100072,37.50454,13.07646,ISPRA-12,active    ,Italy
+100075,36.1139,28.0696,NOA-01,active    ,Greece
+100077,37.010253,-8.92846,IDSL-04,active    ,Portugal
+100078,37.082557,-8.260396,IDSL-05,active    ,Portugal
+100079,36.54214,-6.280612,IDSL-06,active    ,Spain
+100080,37.567146,-0.978958,IDSL-07,active    ,Spain
+100083,36.83483,11.9366,IDSL-10,active    ,Italy
+100084,36.669117,15.122803,IDSL-11,active    ,Italy
+100086,37.945192,22.936536,IDSL-13,active    ,Greece
+100088,36.620688,29.092213,IDSL-15,active    ,Turkey
+100091,43.80143,28.59518,IDSL-18,active    ,Romania
+100092,44.147532,28.672009,IDSL-19,active    ,Romania
+100093,45.162173,29.727191,IDSL-20,active    ,Romania
+100097,35.9273,27.8575,NOA-02,active    ,Greece
+100101,36.620688,29.092213,SENTEX-01,active    ,
