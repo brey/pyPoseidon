@@ -82,8 +82,10 @@ def getd(f,t):
 def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
   # set PATH of the database.
-  PATHbase="/mnt/ECMWF/grib/"  # Local mapping location for the above network drive
-  PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(date.year,date.month,date.day)
+# PATHbase="/mnt/ECMWF/grib/"  # Local mapping location for the above network drive
+  PATHbase="/eos/jeodpp/data/projects/CRITECH/meteo/"  # Local mapping location for the above network drive
+  PATHbase="/mnt/ECMWF2/grib/"  # Local mapping location for the above network drive
+  PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
 
   dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(date.year,date.month,d.date,date.hour))
 

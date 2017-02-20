@@ -17,13 +17,13 @@ import os
 import xml.dom.minidom as md
 
 
-def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,lon=None,lat=None):
+def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,**kwargs):
 
   resmin=resolution*60
 
   # computei ni,nj / correct lat/lon
 
-  if lon.all()==None :
+  if 'lon' not in kwargs.keys() :
 
     ni=int((lon1-lon0)/resolution)+1
     nj=int((lat1-lat0)/resolution)+1
@@ -32,6 +32,9 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,l
     lat1=lat0+nj*resolution
 
   else:
+
+    lon=kwargs.lon
+    lat=kwargs.lat
 
     nj,ni=lon.shape
     lon0=lon.min()
@@ -110,7 +113,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,l
   sys.stdout.flush()
   sys.stdout.write('\n')
 
-  if lon.all() == None:
+  if 'lon' not in kwargs.keys() :
     sys.stdout.write('create grid')
     sys.stdout.flush()
     sys.stdout.write('\n')
@@ -121,8 +124,8 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,l
 
   #  GET bathymetry interpolated onto lon,lat
 # pathb='../BATHYMETRY/GLOBAL/gebco30_DELTARES.nc'
-# pathb='../BATHYMETRY/GLOBAL/GEBCO_2014_2D.nc'
-  pathb='../BATHYMETRY/GLOBAL/gebco30.nc'
+  pathb='../BATHYMETRY/GLOBAL/GEBCO_2014_2D.nc'
+# pathb='../BATHYMETRY/GLOBAL/gebco30.nc'
   bat = readem(lat0,lat1,lon0,lon1,pathb,lon,lat,plot=True,interpolate=True)
  #bat = readgebco(lat0,lat1,lon0,lon1,lon,lat,True)
  #blons,blats,bat = readgebco(lat0,lat1,lon0,lon1,lon,lat)

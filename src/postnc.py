@@ -29,10 +29,11 @@ PATH='/home/critechuser/TC/MATTHEW/20160929.00/'
 PATH='/home/critechuser/TC/THOMA/20101021.00/'
 #PATH='/mnt/rmdisk/MATTHEW/20160929.00/'
 #PATH='/mnt/web/brey/hincast/20150329.00/'
-PATH='/mnt/web/brey/MATTHEW/HRun/20160928.00/'
+#PATH='/mnt/web/brey/MATTHEW/HRun/20160928.00/'
+PATH='/mnt/web/SSCS/2017/FIXED/ALL_EUROPE_2m/delft3d/20170109.12a/'
 tag='MATTHEW'
 tag='TOMAS'
-tag='hur'
+tag='calc'
 
 inp, ord = mdf.read(PATH+tag+'.mdf')
 
@@ -70,7 +71,7 @@ lat1=grd.y.max()
 ni,nj=grd.x.T.shape
 
 m = Basemap(projection='cyl',llcrnrlat=lat0,urcrnrlat=lat1,\
-             llcrnrlon=lon0,urcrnrlon=lon1,resolution='l')
+             llcrnrlon=lon0,urcrnrlon=lon1,resolution='h')
 
 X=np.linspace(lon0,lon1,ni)
 Y=np.linspace(lat0,lat1,nj)
@@ -88,9 +89,9 @@ try:
 except:
   pass
 
-hh=h[-3,:-1,:-1].T
-uc=uw[-3,0,:-1,:-1].T
-vc=vw[-3,0,:-1,:-1].T
+hh=h[-3,:,:].T
+uc=uw[-3,0,:,:].T
+vc=vw[-3,0,:,:].T
 
 c=np.sqrt(uc**2+vc**2)
 
@@ -192,7 +193,7 @@ def updatefig2(nt):
     plt.title('Water Level at '+ datetime.datetime.strftime(date+datetime.timedelta(hours=nt), '%a %b %d  %H:%M:%S %Z %Y'))
     fig2.text(.01,.05,'iter= '+np.str(nt),horizontalalignment='left',size='small')
 
-ani = animation.FuncAnimation(fig2, updatefig2, frames=iframes, repeat=False)
+#ani = animation.FuncAnimation(fig2, updatefig2, frames=iframes, repeat=False)
 
     
 #ani.save('sea_level.mp4',writer = FFwriter)
