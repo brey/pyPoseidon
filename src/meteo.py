@@ -79,15 +79,13 @@ def getd(f,t):
 
 
 
-def wmap(yyyy,mm,dd,hh,nt1,nt2,minlon,maxlon,minlat,maxlat):
-  # specify date to plot.
-  date = datetime.datetime(yyyy,mm,dd,hh)
+def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
 
   # set PATH of the database.
   PATHbase="/mnt/ECMWF/grib/"  # Local mapping location for the above network drive
-  PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
+  PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(date.year,date.month,date.day)
 
-  dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(yyyy,mm,dd,hh))
+  dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(date.year,date.month,d.date,date.hour))
 
   try: 
    f = open(dpath[0])
@@ -200,16 +198,11 @@ if __name__ == "__main__":
     
     to=datetime.datetime.strptime(runtime,'%Y%m%d.%H' )
 
-    yyyy=to.year 
-    mm=to.month 
-    dd=to.day
-    hh=0
-
   except:
     print "usage: meteo.py lon0 lon1 lat0 lat1 '20160101.00' 72"
 
   nt=3*(int(nt)+1)
 
-  p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,nt,float(lon0),float(lon1),float(lat0),float(lat1))
+  p,u,v,lat,lon = wmap(to,0,nt,float(lon0),float(lon1),float(lat0),float(lat1))
 
 

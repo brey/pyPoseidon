@@ -69,20 +69,13 @@ def go(rundate,path,dic,TAT=False):
 
 #get new meteo 
 
-   yyyy=rundate.year
-   mm=rundate.month
-   dd=rundate.day
-   hh=rundate.hour
-
    sys.stdout.write('process meteo\n')
    sys.stdout.flush()
 
    check=[os.path.exists(rpath+f) for f in ['u.amu','v.amv','p.amp']]   
    if np.any(check)==False :
 
- # p,u,v,lon,lat,bat = wmap(yyyy,mm,dd,hh,0,nt,lon0,lon1,lat0,lat1,ni,nj,save=False)
- # p,u,v,lon,lat = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1,ni,nj)
-       p,u,v,lat,lon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+       p,u,v,lat,lon = wmap(rundate,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
 
        sys.stdout.write('\n')
