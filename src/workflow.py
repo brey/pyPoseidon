@@ -97,23 +97,23 @@ def go(rundate,path,dic,TAT=False):
 
 # modify mdf file
 
-   inp, ord = mdf.read(rpath+bname+'.mdf')
+   inp, order = mdf.read(rpath+bname+'.mdf')
 
   # adjust iteration date
    tstart=rundate.hour*60
    inp['Itdate']=datetime.datetime.strftime(rundate,'%Y-%m-%d')
    inp['Tstart']=[tstart]
-   inp['Tstop']=[4320+tstart]
-   inp['Flmap']  = [tstart,60,4320+tstart]
-   inp['Flhis']  = [tstart,1,4320+tstart]
+   inp['Tstop']=[nt*60+tstart]
+   inp['Flmap']  = [tstart,60,nt*60+tstart]
+   inp['Flhis']  = [tstart,inp['Dt'][0],nt*60+tstart]
 
 
-   if 'Restid' not in ord : ord.append('Restid')
+   if 'Restid' not in order : order.append('Restid')
   # adjust restart file   
    inp['Restid']=outresfile
 
   # update mdf
-   mdf.write(inp, rpath+bname+'.mdf',selection=ord)
+   mdf.write(inp, rpath+bname+'.mdf',selection=order)
 # run case
 
 #  p=u=v=lon=lat=None
