@@ -27,7 +27,7 @@ In order to keep it compact the rest if the paths are kept relative to the /src 
 
 DELFT3D needs to be compiled for your system. You can download it from http://oss.deltares.nl/web/delft3d/source-code. Follow the instruction therein.  
 
-A number of Python modules are required. A complete list is available in a file named piplist.
+A number of Python modules are required. A complete list is available in a file named requirements.txt.
 
 
 ## Tests
