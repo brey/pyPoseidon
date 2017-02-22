@@ -4,6 +4,7 @@ import glob
 import sys
 from time import sleep
 from copy import deepcopy
+import os
 
 import pyximport
 pyximport.install()
@@ -86,9 +87,7 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
   dd=date.day
   hh=date.hour
   # set PATH of the database.
-# PATHbase="/mnt/ECMWF/grib/"  # Local mapping location for the above network drive
-# PATHbase="/eos/jeodpp/data/projects/CRITECH/meteo/"  # Local mapping location for the above network drive
-  PATHbase="/mnt/ECMWF2/grib/"  # Local mapping location for the above network drive
+  PATHbase=os.environ['ECMWF']  # Local location of the grib files
   PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
 
   dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(yyyy,mm,dd,hh))
