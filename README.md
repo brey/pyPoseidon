@@ -21,7 +21,11 @@ export LD_LIBRARY_PATH=required libraries i.e. netcdf,mpich, etc.  e.g export LD
 
 export ECMWF=path/to/ECMWF/data e.g. export ECMWF=/opt/ECMWF # it is assumed that in this folder the structure is year/month/day/yyyymmdd.hh/
 
-In order to keep it compact the rest if the paths are kept relative to the /src folder. One can use symbolic links to link there the required data. See corresponding folders for more details. 
+In order to keep it compact the rest of the paths are kept relative to the /src folder. One can use symbolic links to link there the required data. See corresponding folders for more details. 
+
+* Related to ipython
+
+In the Notebooks pypath_magic is used to load local modules. In order to use the scipts however add the /src/ and /util/ folder to PYTHONPATH
 
 ### Prerequisities
 
