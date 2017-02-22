@@ -88,7 +88,7 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
   hh=date.hour
   # set PATH of the database.
   PATHbase=os.environ['ECMWF']  # Local location of the grib files
-  PATH=PATHbase+'{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
+  PATH=PATHbase+'/{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
 
   dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(yyyy,mm,dd,hh))
 

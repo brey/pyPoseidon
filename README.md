@@ -13,7 +13,7 @@ There are some system dependencies that need to be specified. These are defined 
 
 export D3D=path/to/your/delft3d/installation. e.g. export D3D=/opt/DELFT3D/5740/bin
 
-export ARCH=platform e.g. ARCH=lnx64
+export ARCH=platform e.g. export ARCH=lnx64
 
 export LD_LIBRARY_PATH=required libraries i.e. netcdf,mpich, etc.  e.g export LD_LIBRARY_PATH=/usr/local/lib
 

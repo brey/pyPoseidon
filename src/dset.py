@@ -4,6 +4,7 @@ import sys
 from shutil import copy2
 import pickle
 
+from writenc import writenc
 from meteo import wmap
 from grid import *
 from dep import *
@@ -92,9 +93,15 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   if force == 'True':
 
 #   try: 
-    p,u,v,elat,elon = wmap(yyyy,mm,dd,hh,0,3*(nt+1),lon0,lon1,lat0,lat1)
+    p,u,v,elat,elon = wmap(runtime,0,3*(nt+1),lon0,lon1,lat0,lat1)
 #   except Exception as e:
 #     print e
+
+# Write NETCDF File
+
+    t=np.arange(0,nt+1)
+
+    writenc(calc_dir+'/uvp.nc',elat[:,0],elon[0,:],u,v,p,t,rpath)
 
 # # Write meteo data
     dlat=elat[1,0]-elat[0,0]
