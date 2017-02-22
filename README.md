@@ -10,11 +10,13 @@ A number of data are inclusive in the project folders but there are some require
 There are some system dependencies that need to be specified. These are defined in appropriate env variables.
 
 * Related to DELFT3D
+
 export D3D=path/to/your/delft3d/installation. e.g. export D3D=/opt/DELFT3D/5740/bin
 export ARCH=platform e.g. ARCH=lnx64
 export LD_LIBRARY_PATH=required libraries i.e. netcdf,mpich, etc.  e.g export LD_LIBRARY_PATH=/usr/local/lib
 
 * Related to input
+
 export ECMWF=path/to/ECMWF/data e.g. export ECMWF=/opt/ECMWF # it is assumed that in this folder the structure is year/month/day/yyyymmdd.hh/
 
 In order to keep it compact the rest if the paths are kept relative to the /src folder. One can use symbolic links to link there the required data. See corresponding folders for more details. 
