@@ -25,7 +25,6 @@ def pltm(minlat,maxlat,minlon,maxlon,lons,lats,topo,title=None):
  plt.show(block=False)
 
 def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=False,interpolate=False):
-#file=PATH+'GLOBAL/GEBCO_2014_2D.nc'
 # open NetCDF data in 
  nc = netCDF4.Dataset(filename)
  ncv = nc.variables
@@ -39,7 +38,7 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
  lon = ncv[n1][:]
  lat = ncv[n2][:]
 
- if 'topo30.grd' not in filename:
+ if lon.min() < 0:
 
   if maxlon > 180:
 

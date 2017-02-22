@@ -35,8 +35,8 @@ nefis.dll
 after compiling the release
 """
 
-#libnefispath = "/home/critechuser/python/libnefis.so"
-libnefispath = "./libNefisSO.so.0.0.0"
+#libnefispath = "../libs/libnefis.so"
+libnefispath = "../libs/libNefisSO.so.0.0.0"
 libnefis = ct.CDLL(libnefispath) # LOAD NEFIS C LIBRARY
 
 ## SOME CONSTANTS

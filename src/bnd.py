@@ -9,58 +9,13 @@ from scipy import interpolate
 
 from bilinear import bilinear_interpolation
 
-PATH='../TIDES/'
-RPATH='/home/critechuser/COAST/EUR/20131101.00/'
-basename='eur'
-
-
-grd=Grid.fromfile(RPATH+basename+'.grd')
-dlat=grd.y[1,0]-grd.y[0,0]
-dlon=grd.x[0,1]-grd.x[0,0]
-lons=grd.x[0,:]
-lats=grd.y[:,0]
-
-ba=Dep.read(RPATH+basename+'.dep',grd.shape)
-
-#read from tide file
-dmed=Dataset(PATH+'tpxo72.nc')
-
-lat=dmed['lat'][:]
-lon=dmed['lon'][:]
-
-tidal_c=dmed['tidal_constituents'][:]
-
-tidal_c=[''.join(k).upper().strip() for k in tidal_c]
-
-amp=dmed['tidal_amplitude_h']
-ph=dmed['tidal_phase_h']
-
-#adjust lon according to the grid window
-if lons[0]<0 :
-    ii=np.abs(lon-180.).argmin()
-    topo = lon[ii:]-360.
-    lon = np.hstack([topo,lon[:ii]])
-    topo = amp[ii:,:,:]
-    amp = np.vstack([topo,amp[:ii,:,:]])
-    topo = ph[ii:,:,:]
-    ph = np.vstack([topo,ph[:ii,:,:]])
-
+import sys
 
 # strings to be used 
 le=['A','B']
 
-n=10  # points in chunks of the boundary
 
-dic={'West':ba.val[:-1,0],'East':ba.val[:-1,-2],'South':ba.val[0,:-1],'North':ba.val[-2,:-1]}
-idic={'West':[0,-99],'East':[lons.shape[0],-99],'South':[-99,0],'North':[-99,lats.shape[0]]}
-
-#initiate output files
-f = open(RPATH+basename+'.bnd', 'w')
-f.close()
-f = open(RPATH+basename+'.bca', 'w')
-f.close()
-
-def getboundary(bound,llon,llat):
+def getboundary(bound,llon,llat,n,RPATH):
 
 #Identify WEST boundary 
    bv = dic[bound] 
@@ -122,7 +77,66 @@ def getboundary(bound,llon,llat):
           f.write('{}         {:.7e}   {:.7e}\n'.format(a,b,c))
 
 
-getboundary('West',np.ones(lats.shape)*lons[0],lats)
-getboundary('East',np.ones(lats.shape)*lons[-1],lats)
-getboundary('North',lons,np.ones(lons.shape)*lats[-1])
-getboundary('South',lons,np.ones(lons.shape)*lats[0])
+def tidebound(RPATH,basename,grd,ba,n):
+
+  global dic, idic, lon, lat, ph, amp, tidal_c
+
+  dlat=grd.y[1,0]-grd.y[0,0]
+  dlon=grd.x[0,1]-grd.x[0,0]
+  lons=grd.x[0,:]
+  lats=grd.y[:,0]
+
+  #read from tide file
+  dmed=Dataset('../TIDES/tpxo72.nc')
+
+  lat=dmed['lat'][:]
+  lon=dmed['lon'][:]
+
+  tidal_c=dmed['tidal_constituents'][:]
+
+  tidal_c=[''.join(k).upper().strip() for k in tidal_c]
+
+  amp=dmed['tidal_amplitude_h']
+  ph=dmed['tidal_phase_h']
+
+  #adjust lon according to the grid window
+  if lons[0]<0 :
+    ii=np.abs(lon-180.).argmin()
+    topo = lon[ii:]-360.
+    lon = np.hstack([topo,lon[:ii]])
+    topo = amp[ii:,:,:]
+    amp = np.vstack([topo,amp[:ii,:,:]])
+    topo = ph[ii:,:,:]
+    ph = np.vstack([topo,ph[:ii,:,:]])
+
+
+
+  dic={'West':ba.val[:-1,0],'East':ba.val[:-1,-2],'South':ba.val[0,:-1],'North':ba.val[-2,:-1]}
+  idic={'West':[0,-99],'East':[lons.shape[0],-99],'South':[-99,0],'North':[-99,lats.shape[0]]}
+
+  #initiate output files
+  f = open(RPATH+basename+'.bnd', 'w')
+  f.close()
+  f = open(RPATH+basename+'.bca', 'w')
+  f.close()
+
+  getboundary('West',np.ones(lats.shape)*lons[0],lats,n,RPATH)
+  getboundary('East',np.ones(lats.shape)*lons[-1],lats,n,RPATH)
+  getboundary('North',lons,np.ones(lons.shape)*lats[-1],n,RPATH)
+  getboundary('South',lons,np.ones(lons.shape)*lats[0],n,RPATH)
+
+
+
+if __name__ == "__main__":
+    path='/home/critechuser/COAST/EUR/20131101.00/'
+    basename='eur'
+    n=10  # points in chunks of the boundary
+    path=sys.argv[1]
+    basename=sys.argv[2]
+    n=np.int(sys.argv[3])
+# read grd file
+    grd=Grid.fromfile(path+basename+'.grd')
+# read dep file
+    ba=Dep.read(path+basename+'.dep',grd.shape)
+
+    tidebound(path,basename,grd,ba,n)

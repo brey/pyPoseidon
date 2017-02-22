@@ -86,9 +86,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
 
 # ffiles=glob.glob(calc_dir+'*')
-
 # mfiles=[calc_dir+'u.amu',calc_dir+'v.amv',calc_dir+'p.amp']
-
 # check=np.all([mf in ffiles for mf in mfiles])
 
   if force == 'True':
@@ -123,12 +121,8 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
     lon,lat=np.meshgrid(x,y)
 
   #  GET bathymetry interpolated onto lon,lat
-# pathb='../BATHYMETRY/GLOBAL/gebco30_DELTARES.nc'
-  pathb='../BATHYMETRY/GLOBAL/GEBCO_2014_2D.nc'
-# pathb='../BATHYMETRY/GLOBAL/gebco30.nc'
-  bat = readem(lat0,lat1,lon0,lon1,pathb,lon,lat,plot=False,interpolate=True)
- #bat = readgebco(lat0,lat1,lon0,lon1,lon,lat,True)
- #blons,blats,bat = readgebco(lat0,lat1,lon0,lon1,lon,lat)
+  bathf='../BATHYMETRY/dem.nc'
+  bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=False,interpolate=True)
   
   # Write bathymetry file
   ba = Dep()
