@@ -130,6 +130,9 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   #  GET bathymetry interpolated onto lon,lat
   bathf='../BATHYMETRY/dem.nc'
   bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=False,interpolate=True)
+
+  bat = -bat # reverse for the hydro run
+  bat[bat<0]=-999.  # mask all dry points
   
   # Write bathymetry file
   ba = Dep()
@@ -142,8 +145,6 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   bat2=np.hstack((bat1,nodata))
   ba.val = -bat2
   ba.shape = bat2.shape
-
-  ba.val[ba.val<0]=-999.  # mask all dry points
 
   Dep.write(ba,calc_dir+basename+'.dep')
   

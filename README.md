@@ -27,6 +27,15 @@ In order to keep it compact the rest of the paths are kept relative to the /src 
 
 In the Notebooks pypath_magic is used to load local modules. In order to use the scipts however add the /src/ and /util/ folder to PYTHONPATH
 
+
+* Related to Cython
+
+For compiling the cython module redtoreg.pyx it might be required to set the path for the numpy headers like
+
+export CFLAGS='-I/usr/local/lib/python2.7/site-packages/numpy/core/include:$CFLAGS'
+
+This is done only once. 
+
 ### Prerequisities
 
 DELFT3D needs to be compiled for your system. You can download it from http://oss.deltares.nl/web/delft3d/source-code. Follow the instruction therein.  

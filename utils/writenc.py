@@ -15,13 +15,13 @@ def writenc(filename,lat,lon,uval,vval,pval,tstamp,t0):
 
  longitudes = rootgrp.createVariable('LON','f8',('LON',))
  latitudes = rootgrp.createVariable('LAT','f8',('LAT',))
- u = rootgrp.createVariable('U','f8',('TIME','LON','LAT'))
- v = rootgrp.createVariable('V','f8',('TIME','LON','LAT'))
+ u = rootgrp.createVariable('U','f8',('TIME','LAT','LON'))
+ v = rootgrp.createVariable('V','f8',('TIME','LAT','LON'))
  times = rootgrp.createVariable('TIME','f8',('TIME',))
- p = rootgrp.createVariable('P','f8',('TIME','LON','LAT'))
+ p = rootgrp.createVariable('P','f8',('TIME','LAT','LON'))
 
  rootgrp.description = ''
- rootgrp.history = 'DELFT3D - JRC Ispra European Commission'
+ rootgrp.history = 'JRC Ispra European Commission'
  rootgrp.source = 'netCDF4 python module tutorial'
  latitudes.units = 'degrees_north'
  latitudes.point_spacing = 'even'
@@ -29,7 +29,7 @@ def writenc(filename,lat,lon,uval,vval,pval,tstamp,t0):
  longitudes.point_spacing = 'even'
  u.units = 'm/s'
  v.units = 'm/s'
- p.units = 'm'
+ p.units = 'hPa'
  times.units = 'hours since {}'.format(t0)
 
 

@@ -137,11 +137,6 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
 
 
 
-#############################################################################################################
-### MAIN
-
-
-# Definine the domain of interest
 if __name__ == "__main__":
  try:
     minlon=sys.argv[1]

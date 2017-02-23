@@ -21,7 +21,7 @@ def write2nc(filename,lat,lon,zy,zx,tstamp,t0,val):
  levels = rootgrp.createVariable('HA','f8',('TIME','LON','LAT'))
 
  rootgrp.description = ''
- rootgrp.history = 'DELFT3D - JRC Ispra European Commission'
+ rootgrp.history = 'JRC Ispra European Commission'
  rootgrp.source = 'netCDF4 python module tutorial'
  latitudes.units = 'degrees_north'
  latitudes.point_spacing = 'even'
