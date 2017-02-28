@@ -78,10 +78,10 @@ class Dep(object):
         with open(filename, 'w') as f:
            for n in range(0,dep.shape[0]):
               for m in range(0,dep.shape[1]/12):
-                 f.write(''.join(("   % .7E" % x) for x in dep.val[n,12*m:12*m+12]))
+                 f.write(''.join(("   % .8E" % x) for x in dep.val[n,12*m:12*m+12]))
                  f.write('\n')
               if dep.shape[1]>dep.shape[1]/12*12:
-                 f.write(''.join(("   % .7E" % x) for x in dep.val[n,dep.shape[1]/12*12:dep.shape[1]]))
+                 f.write(''.join(("   % .8E" % x) for x in dep.val[n,dep.shape[1]/12*12:dep.shape[1]]))
                  f.write('\n')
            f.close   
         dep.val[dep.val == -999.0] = np.nan

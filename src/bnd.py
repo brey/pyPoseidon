@@ -15,7 +15,7 @@ import sys
 le=['A','B']
 
 
-def getboundary(bound,llon,llat,n,RPATH):
+def getboundary(bound,llon,llat,n,RPATH,basename):
 
 #Identify WEST boundary 
    bv = dic[bound] 
@@ -36,21 +36,25 @@ def getboundary(bound,llon,llat,n,RPATH):
 
 #write bnd file
     with open(RPATH+basename+'.bnd', 'a') as f:
+      idx=0
       for ch in chunks:
+        idx=idx+1
         k1 = [ch[0] if x==-99 else x for x in idic[bound]] 
         k2 = [ch[-1] if x==-99 else x for x in idic[bound]] 
-        f.write('{}{}                Z A     {}    {}     {}    {}   0.0000000e+00 {}{}A {}{}B\n'.format(bound,ch[0],k1[0]+1,k1[1]+1,k2[0]+1,k2[1]+1,bound,ch[0],bound,ch[0])) # fortran index ??
+        f.write('{}{}                Z A     {}    {}     {}    {}   0.0000000e+00 {}{}A {}{}B\n'.format(bound,idx,k1[0]+1,k1[1]+1,k2[0]+1,k2[1]+1,bound,idx,bound,idx)) # fortran index ??
 
 
 #write bca file
 
     with open(RPATH+basename+'.bca', 'a') as f:
 
+     idx=0
      for ch in chunks:
+      idx=idx+1
 
-      for k,l in zip([ch[0],ch[-1]],le):
+      for k,l in zip([ch[0]-1,ch[-1]],le):
 
-        if l == 'A' : label = k
+        if l == 'A' : label = idx
 
         plon=llon[k]
         plat=llat[k]
@@ -99,6 +103,7 @@ def tidebound(RPATH,basename,grd,ba,n):
   amp=dmed['tidal_amplitude_h']
   ph=dmed['tidal_phase_h']
 
+
   #adjust lon according to the grid window
   if lons[0]<0 :
     ii=np.abs(lon-180.).argmin()
@@ -120,20 +125,20 @@ def tidebound(RPATH,basename,grd,ba,n):
   f = open(RPATH+basename+'.bca', 'w')
   f.close()
 
-  getboundary('West',np.ones(lats.shape)*lons[0],lats,n,RPATH)
-  getboundary('East',np.ones(lats.shape)*lons[-1],lats,n,RPATH)
-  getboundary('North',lons,np.ones(lons.shape)*lats[-1],n,RPATH)
-  getboundary('South',lons,np.ones(lons.shape)*lats[0],n,RPATH)
+  getboundary('North',lons,np.ones(lons.shape)*lats[-1],n,RPATH,basename)
+  getboundary('South',lons,np.ones(lons.shape)*lats[0],n,RPATH,basename)
+  getboundary('West',np.ones(lats.shape)*lons[0],lats,n,RPATH,basename)
+  getboundary('East',np.ones(lats.shape)*lons[-1],lats,n,RPATH,basename)
 
 
 
 if __name__ == "__main__":
-    path='/home/critechuser/COAST/EUR/20131101.00/'
-    basename='eur'
+    path='/home/critechuser/test/20170227.00/'
+    basename='tide'
     n=10  # points in chunks of the boundary
-    path=sys.argv[1]
-    basename=sys.argv[2]
-    n=np.int(sys.argv[3])
+#   path=sys.argv[1]
+#   basename=sys.argv[2]
+#   n=np.int(sys.argv[3])
 # read grd file
     grd=Grid.fromfile(path+basename+'.grd')
 # read dep file

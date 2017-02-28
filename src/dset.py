@@ -8,7 +8,7 @@ from writenc import writenc
 from meteo import wmap
 from grid import *
 from dep import *
-#from dem import readgebco14
+from bnd import tidebound
 from dem import readem
 from idelft3d import meteo2delft3d
 import mdf
@@ -29,8 +29,8 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
     ni=int((lon1-lon0)/resolution)+1
     nj=int((lat1-lat0)/resolution)+1
   
-    lon1=lon0+ni*resolution
-    lat1=lat0+nj*resolution
+    lon1=lon0+(ni-1)*resolution
+    lat1=lat0+(nj-1)*resolution
 
   else:
 
@@ -129,7 +129,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
   #  GET bathymetry interpolated onto lon,lat
   bathf='../BATHYMETRY/dem.nc'
-  bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=False,interpolate=True)
+  bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=True,interpolate=True)
 
   bat = -bat # reverse for the hydro run
   bat[bat<0]=-999.  # mask all dry points
@@ -143,7 +143,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   nodata=np.empty((nj+1,1))
   nodata.fill(np.nan)
   bat2=np.hstack((bat1,nodata))
-  ba.val = -bat2
+  ba.val = bat2
   ba.shape = bat2.shape
 
   Dep.write(ba,calc_dir+basename+'.dep')
@@ -168,7 +168,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   sys.stdout.write('Grid done')
   sys.stdout.flush()
   sys.stdout.write('\n')
-  sys.stdout.write('Set enc')
+  sys.stdout.write('Set bnd')
 
   # Write .ini file
 
@@ -177,6 +177,15 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 # with open(calc_dir+basename+'.ini', 'w') as f:
 #   np.savetxt(f,ini)
 #   np.savetxt(f,ini)
+
+  # Write bnd/bca file
+  tidebound(calc_dir,basename,grd,ba,10)
+
+  sys.stdout.write('\n')
+  sys.stdout.write('Bnd done')
+  sys.stdout.flush()
+  sys.stdout.write('\n')
+  sys.stdout.write('Set enc')
 
   
   # Write .enc file

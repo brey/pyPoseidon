@@ -27,7 +27,7 @@ from Bind import BindColormap
 #from get_point_history import pget
 
 
-path='../test/'
+path='../../../test/'
 
 # check contents of folder
 tfolder = glob.glob(path+'*')

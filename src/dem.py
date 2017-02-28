@@ -54,6 +54,11 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
     j2=np.abs(lat-maxlat).argmin()
     if lat[j2] < maxlat: j2=j2+1
 
+    i1=i1-2
+    i2=i2+2
+    j1=j1-2
+    j2=j2+2
+
     lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
 
     zlon=lon.shape[0]
@@ -72,6 +77,12 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
     if lat[j1] > minlat: j1=j1-1
     j2=np.abs(lat-maxlat).argmin()
     if lat[j2] < maxlat: j2=j2+1
+
+    i1=i1-2
+    i2=i2+2
+    j1=j1-2
+    j2=j2+2
+
 
     lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
     topo = ncv[n3][j1:j2,i1:i2]
@@ -92,6 +103,11 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
     j2=np.abs(lat-maxlat).argmin()
     if lat[j2] < maxlat: j2=j2+1
 
+    i1=i1-2
+    i2=i2+2
+    j1=j1-2
+    j2=j2+2
+
     lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
 
     zlon=lon.shape[0]
@@ -111,6 +127,11 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
     j2=np.abs(lat-maxlat).argmin()
     if lat[j2] < maxlat: j2=j2+1
 
+    i1=i1-2
+    i2=i2+2
+    j1=j1-2
+    j2=j2+2
+
     lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
     topo = ncv[n3][j1:j2,i1:i2]
 
@@ -122,7 +143,7 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
   #flip on lat to make it increasing for RectBivariateSpline
   ilon=lons[0,:]
   ilat=lats[:,0]
-  sol=scipy.interpolate.RectBivariateSpline(ilon,ilat,topo.T)
+  sol=scipy.interpolate.RectBivariateSpline(ilon,ilat,topo.T)#,kx=2,ky=2)
 
   itopo=[]
   for x,y in zip(grid_x.ravel(),grid_y.ravel()):
@@ -130,6 +151,7 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
 
   itopo=np.array(itopo)
   itopo=itopo.reshape(grid_x.shape)
+
   if plot : pltm(minlat,maxlat,minlon,maxlon,grid_x,grid_y,itopo,title=title+'- interpolated')
   return itopo
  else:
