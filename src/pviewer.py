@@ -22,12 +22,14 @@ from dep import *
 from cmap2gdf import *
 from float_image import FloatImage
 from Bind import BindColormap
+from timestamped_geo_json import TimestampedGeoJson
+import mdf
 #from point_history import getmes
 #from get_point_map import get
 #from get_point_history import pget
 
 
-path='../../../test/'
+path='../test/'
 
 # check contents of folder
 tfolder = glob.glob(path+'*')
@@ -48,6 +50,8 @@ with open(pfile, 'r') as f:
     dic=pickle.load(f)
 
 basename=dic['bname']
+
+inp, order = mdf.read(calc_dir+basename+'.mdf')
 
 #read obs points dictionary
 with open(calc_dir+basename+'.pkl', 'r') as f:
@@ -207,6 +211,10 @@ mapa.add_children(comp)
 #read values
 hz=d['S1'][:]
 
+time = d.variables['time'][:].astype(int)
+
+idate = datetime.datetime.strptime(inp['Itdate'],'%Y-%m-%d')
+
 #READ GRID /BATHYMETRY
 grd=Grid.fromfile(calc_dir+basename+'.grd')
 deb=Dep.read(calc_dir+basename+'.dep',grd.shape)
@@ -222,7 +230,7 @@ lon0, lon1, lat0, lat1 = lons.min(),lons.max(),lats.min(),lats.max()
 #mask values
 w.shape,hz[-1,1:-1,1:-1].shape
 
-pz =np.ma.masked_where(w[1:-1,1:-1]==True, hz[-1,1:-1,1:-1])
+pz =np.ma.masked_where(w[1:-1,1:-1]==True, hz[0,1:-1,1:-1])
 
 # contour plot
 
@@ -236,6 +244,9 @@ colors = [p.get_facecolor().tolist()[0] for p in collec_poly.collections]
 gdf['RGBA'] = colors
 gdf['RGBA'] = gdf['RGBA'].apply(convert_to_hex)
 
+itime=idate+datetime.timedelta(seconds=time[0])
+gdf['times']=[[datetime.datetime.isoformat(itime)] for i in range(gdf.shape[0])]
+
 colors = []
 Contours = folium.GeoJson(
     gdf,
@@ -248,7 +259,10 @@ Contours = folium.GeoJson(
     )
 
 t = folium.FeatureGroup(name='Storm Surge')
-t.add_children(Contours)
+tdf=folium.GeoJson(gdf).data
+tgj = TimestampedGeoJson(tdf)
+#t.add_children(Contours)
+t.add_children(tgj)
 
 mapa.add_children(t)
 
@@ -256,15 +270,15 @@ mapa.add_children(t)
 
 ec = 'https://ec.europa.eu/jrc/sites/jrcsh/themes/jrc_multisite_subtheme/logo.png'
 
-FloatImage(ec, bottom=0, left=2).add_to(mapa)
+FloatImage(ec, bottom=2, left=92, height=10).add_to(mapa)
 
 ecmwf = 'http://www.ecmwf.int/sites/default/files/ECMWF_Master_Logo_RGB_nostrap.png'
 
-FloatImage(ecmwf, bottom=95, left=5, height=4).add_to(mapa)
+FloatImage(ecmwf, bottom=95, left=5, height=3).add_to(mapa)
 
 delft3d='https://oss.deltares.nl/image/image_gallery?uuid=13baea0c-1a8c-44c4-b4fa-89c7d4d68f3c&groupId=183920&t=1352473709104'
 
-FloatImage(delft3d, bottom=85, left=5, height=8).add_to(mapa)
+FloatImage(delft3d, bottom=85, left=5, height=7).add_to(mapa)
 
 cm1 = cm.linear.YlGn.scale(0, 3)#.to_step(10)
 cm1.caption = 'Storm Surge' 

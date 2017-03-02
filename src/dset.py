@@ -16,11 +16,17 @@ from setobs import createf
 import glob
 import os
 import xml.dom.minidom as md
+from distutils.util import strtobool
 
 
 def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,**kwargs):
 
   resmin=resolution*60
+
+  if force:
+        force = bool(strtobool(force))
+
+  print kwargs
 
   # computei ni,nj / correct lat/lon
 
@@ -90,7 +96,12 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 # mfiles=[calc_dir+'u.amu',calc_dir+'v.amv',calc_dir+'p.amp']
 # check=np.all([mf in ffiles for mf in mfiles])
 
-  if force == 'True':
+  if force :
+
+    sys.stdout.write('\n')
+    sys.stdout.write('Extract U,V,P')
+    sys.stdout.flush()
+    sys.stdout.write('\n')
 
 #   try: 
     p,u,v,elat,elon = wmap(runtime,0,3*(nt+1),lon0,lon1,lat0,lat1)
@@ -98,6 +109,10 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 #     print e
 
 # Write NETCDF File
+    sys.stdout.write('\n')
+    sys.stdout.write('Write to NetCDF')
+    sys.stdout.flush()
+    sys.stdout.write('\n')
 
     t=np.arange(0,nt+1)
 
@@ -109,9 +124,18 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
     mlat0=elat[0,0] 
     mlon0=elon[0,0] 
 
+    sys.stdout.write('\n')
+    sys.stdout.write('Write to DELFT3D Ascii')
+    sys.stdout.flush()
+    sys.stdout.write('\n')
+
   # convert to DELFT3D ascii format
     meteo2delft3d(p,u,v,mlat0,mlon0,dlat,dlon,runtime,nt,path=calc_dir,curvi=False)
   
+    sys.stdout.write('\n')
+    sys.stdout.write('Forcing done')
+    sys.stdout.flush()
+    sys.stdout.write('\n')
 
   sys.stdout.write('\n')
   sys.stdout.write('Set bathymetry')
@@ -129,7 +153,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
   #  GET bathymetry interpolated onto lon,lat
   bathf='../BATHYMETRY/dem.nc'
-  bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=True,interpolate=True)
+  bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=False,interpolate=True)
 
   bat = -bat # reverse for the hydro run
   bat[bat<0]=-999.  # mask all dry points
@@ -148,10 +172,9 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
   Dep.write(ba,calc_dir+basename+'.dep')
   
-  sys.stdout.write('\n')
   sys.stdout.write('Bathymetry done')
   sys.stdout.flush()
-  sys.stdout.write('\n')
+  sys.stdout.write('\n\n')
   sys.stdout.write('Set grid')
   
   # Create the GRID file
@@ -167,8 +190,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   sys.stdout.write('\n')
   sys.stdout.write('Grid done')
   sys.stdout.flush()
-  sys.stdout.write('\n')
-  sys.stdout.write('Set bnd')
+  sys.stdout.write('\n\n')
 
   # Write .ini file
 
@@ -179,16 +201,24 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 #   np.savetxt(f,ini)
 
   # Write bnd/bca file
-  tidebound(calc_dir,basename,grd,ba,10)
 
-  sys.stdout.write('\n')
-  sys.stdout.write('Bnd done')
-  sys.stdout.flush()
-  sys.stdout.write('\n')
-  sys.stdout.write('Set enc')
+
+  if 'tide' in kwargs.keys() :
+
+     if kwargs['tide']:
+
+        sys.stdout.write('Set bnd')
+
+        tidebound(calc_dir,basename,grd,ba,10)
+
+        sys.stdout.write('\n')
+        sys.stdout.write('Bnd done')
+        sys.stdout.flush()
+        sys.stdout.write('\n\n')
 
   
   # Write .enc file
+  sys.stdout.write('Set enc')
   
   with open(calc_dir+basename+'.enc','w') as f:
       f.write('{:>5}{:>5}\n'.format(ni+1,1))  # add one like ddb
@@ -202,7 +232,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   sys.stdout.write('\n')
   sys.stdout.write('Enc done')
   sys.stdout.flush()
-  sys.stdout.write('\n')
+  sys.stdout.write('\n\n')
   sys.stdout.write('Set observation points')
   
   # Write .obs file
@@ -211,8 +241,9 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   sys.stdout.write('\n')
   sys.stdout.write('Observation points done')
   sys.stdout.flush()
-  sys.stdout.write('\n')
+  sys.stdout.write('\n\n')
   sys.stdout.write('Set mdf')
+  sys.stdout.write('\n')
   
   # Define the mdf input file
   # first read the default
@@ -259,6 +290,11 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   #time interval to smooth the hydrodynamic boundary conditions
   inp['Tlfsmo']=[0.]
 
+
+  # set tide only run
+  if 'tide' in kwargs.keys() :
+     if (kwargs['tide']==True) & (force==False): inp['Sub1'] = ' '
+ 
   # specify ini file
 # if 'Filic' not in order: order.append('Filic')
 # inp['Filic']=basename+'.ini'
@@ -271,10 +307,9 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   #SAVE mdf file
   mdf.write(inp, calc_dir+basename+'.mdf',selection=order)
 
-  sys.stdout.write('\n')
   sys.stdout.write('mdf done')
   sys.stdout.flush()
-  sys.stdout.write('\n')
+  sys.stdout.write('\n\n')
 
   # edit and save config file
   copy2('config_d_hydro.xml',calc_dir+'config_d_hydro.xml')
@@ -307,6 +342,7 @@ if __name__ == "__main__":
     resolution=np.float(sys.argv[8])
     path=sys.argv[9]
     force=sys.argv[10]
+
 
     setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force)
 

@@ -148,6 +148,14 @@ def readem(minlat,maxlat,minlon,maxlon,filename,grid_x=None,grid_y=None,plot=Fal
   itopo=[]
   for x,y in zip(grid_x.ravel(),grid_y.ravel()):
       itopo.append(sol(x,y).ravel()[0])
+#---------------------------------------------------------------
+#     l=np.abs(ilon-np.float(x)).argmin()
+#     m=np.abs(ilat-np.float(y)).argmin()
+#     xx = ilon[l-1:l+2]
+#     yy = ilat[m-1:m+2]
+#     zz = topo.T[l-1:l+2,m-1:m+2]
+#     fa=scipy.interpolate.RectBivariateSpline(xx,yy,zz,kx=2,ky=2)
+#     itopo.append(fa(x,y))
 
   itopo=np.array(itopo)
   itopo=itopo.reshape(grid_x.shape)

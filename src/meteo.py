@@ -91,6 +91,7 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
   PATH=PATHbase+'/{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
 
   dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(yyyy,mm,dd,hh))
+  print dpath
 
   try: 
    f = open(dpath[0])
@@ -126,6 +127,8 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
            i2=np.abs(lon-maxlon).argmin()+2
            j1=np.abs(lat-minlat).argmin()-2
            j2=np.abs(lat-maxlat).argmin()+2
+
+           print i1,i2,j1,j2
 
            lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
 
