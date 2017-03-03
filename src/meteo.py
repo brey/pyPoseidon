@@ -13,6 +13,7 @@ from redtoreg import _redtoreg
 from pygrib import gaulats
 from tqdm import tqdm
 import time
+from mpl_toolkits.basemap import shiftgrid
 
 
 def gridd(lon1,lat1,lon2,lat2,nlats):
@@ -91,7 +92,6 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
   PATH=PATHbase+'/{:04d}/{:02d}/{:02d}/'.format(yyyy,mm,dd)
 
   dpath=glob.glob(PATH+'*{:04d}{:02d}{:02d}.{:02d}.tropical_cyclone.grib'.format(yyyy,mm,dd,hh))
-  print dpath
 
   try: 
    f = open(dpath[0])
@@ -120,35 +120,20 @@ def wmap(date,nt1,nt2,minlon,maxlon,minlat,maxlat):
     # mult slp by 0.01 to put in units of hPa
         if name == 'msl' : varin=varin*.01
 
+    # shift grid according to minlon
         if minlon < 0. :
            lon=lon-180.
-
-           i1=np.abs(lon-minlon).argmin()-2
-           i2=np.abs(lon-maxlon).argmin()+2
-           j1=np.abs(lat-minlat).argmin()-2
-           j2=np.abs(lat-maxlat).argmin()+2
-
-           print i1,i2,j1,j2
-
-           lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
-
            zlon=lon.shape[0]
+           varin_ = np.hstack([varin[:,zlon/2:],varin[:,0:zlon/2]])
+           varin  = varin_
 
-           data1 = deepcopy(varin[j1:j2,zlon/2+i1:])
-           data2 = deepcopy(varin[j1:j2,:i2-zlon/2])
-           data = np.hstack([data1,data2])
-          #data = np.hstack([data,varin[j1:j2,:i2-zlon/2]])
+        i1=np.abs(lon-minlon).argmin()-2
+        i2=np.abs(lon-maxlon).argmin()+2
+        j1=np.abs(lat-minlat).argmin()-2
+        j2=np.abs(lat-maxlat).argmin()+2
 
-        else:
-
-           i1=np.abs(lon-minlon).argmin()-2
-           i2=np.abs(lon-maxlon).argmin()+2
-           j1=np.abs(lat-minlat).argmin()-2
-           j2=np.abs(lat-maxlat).argmin()+2
-
-           lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
-           data = deepcopy(varin[j1:j2,i1:i2])
-
+        lons, lats = np.meshgrid(lon[i1:i2],lat[j1:j2])
+        data = deepcopy(varin[j1:j2,i1:i2])
 
 
     # mask the window
