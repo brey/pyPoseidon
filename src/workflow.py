@@ -78,7 +78,16 @@ def go(rundate,path,dic,TAT=False):
        p,u,v,lat,lon = wmap(rundate,0,3*(nt+1),lon0,lon1,lat0,lat1)
 
 
+# Write NETCDF File
        sys.stdout.write('\n')
+       sys.stdout.write('Write to NetCDF')
+       sys.stdout.flush()
+       sys.stdout.write('\n')
+
+       t=np.arange(0,nt+1)
+
+       writenc(calc_dir+'/uvp.nc',lat[:,0],lon[0,:],u,v,p,t,rpath)
+
 
 #write u,v,p files 
 

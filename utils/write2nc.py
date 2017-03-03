@@ -2,10 +2,9 @@ import numpy as np
 import sys
 from netCDF4 import Dataset
 
-def write2nc(filename,lat,lon,tstamp,t0,pval,uval,vval,sval,spval):
+def writenc(filename,lat,lon,t,t0,pval,uval,vval):#,sval,spval):
 
- ni=lon.shape[0]
- nj=lat.shape[0]
+ nj,ni =lon.shape
 
  rootgrp = Dataset(filename, 'w', format='NETCDF3_64BIT')
  lats = rootgrp.createDimension('ny_grid', nj)
@@ -13,14 +12,14 @@ def write2nc(filename,lat,lon,tstamp,t0,pval,uval,vval,sval,spval):
  time = rootgrp.createDimension('time', None)
 
 
+ times = rootgrp.createVariable('time','f8',('time',))
  longitudes = rootgrp.createVariable('lon','f8',('nx_grid','ny_grid'))
  latitudes = rootgrp.createVariable('lat','f8',('nx_grid','ny_grid',))
- p = rootgrp.createVariable('prmsl','f8',('nx_grid','ny_grid'))
- u = rootgrp.createVariable('uwind','f8',('nx_grid','ny_grid'))
+ p = rootgrp.createVariable('prmsl','f8',('time','nx_grid','ny_grid'))
+ u = rootgrp.createVariable('uwind','f8',('time','nx_grid','ny_grid'))
  v = rootgrp.createVariable('vwind','f8',('time','nx_grid','ny_grid'))
  stmp = rootgrp.createVariable('stmp','f8',('time','nx_grid','ny_grid'))
  spfh = rootgrp.createVariable('spfh','f8',('time','nx_grid','ny_grid'))
- times = rootgrp.createVariable('time','f8',('time',))
 
  rootgrp.description = ''
  rootgrp.history = 'JRC Ispra European Commission'
@@ -58,15 +57,24 @@ def write2nc(filename,lat,lon,tstamp,t0,pval,uval,vval,sval,spval):
  stmp.long_name = 'Surface Temperature'
  stmp.standard_name = 'surface temperature'
 
+ # transpose for complying with lon,lat format
 
- p[:]=pval
- times[:]=tstamp
- latitudes[:]=lat
- longitudes[:]=lon
- u[:]=uval
- v[:]=vval
- stmp[:]=sval
- spfh[:]=spval
+ pf=np.zeros((t.shape[0],ni,nj))
+ uf=np.zeros((t.shape[0],ni,nj))
+ vf=np.zeros((t.shape[0],ni,nj))
+ for k in range(t.shape[0]):
+   pf[k,:,:]=pval[k,:,:].T
+   uf[k,:,:]=uval[k,:,:].T
+   vf[k,:,:]=vval[k,:,:].T
+
+ times[:]=t
+ longitudes[:]=lon.T
+ latitudes[:]=lat.T
+ p[:]=pf
+ u[:]=uf
+ v[:]=vf
+#stmp[:]=sval
+#spfh[:]=spval
 
  rootgrp.close()
 

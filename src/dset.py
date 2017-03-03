@@ -4,7 +4,8 @@ import sys
 from shutil import copy2
 import pickle
 
-from writenc import writenc
+from write2nc import writenc
+#from writenc import writenc
 from meteo import wmap
 from grid import *
 from dep import *
@@ -116,7 +117,8 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
     t=np.arange(0,nt+1)
 
-    writenc(calc_dir+'/uvp.nc',elat[:,0],elon[0,:],u,v,p,t,rpath)
+#   writenc(calc_dir+'/uvp.nc',elat[:,0],elon[0,:],u,v,p,t,rpath)
+    writenc(calc_dir+'/uvp.nc',elat,elon,t,rpath,p,u,v)#,sval,spval)
 
 # # Write meteo data
     dlat=elat[1,0]-elat[0,0]
