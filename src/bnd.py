@@ -14,6 +14,21 @@ import sys
 # strings to be used 
 le=['A','B']
 
+nm = ['Z', 'A']
+
+def grouper(iterable):
+    prev = None
+    group = []
+    for item in iterable:
+        if not prev or item - prev <= 1:
+            group.append(item)
+        else:
+            yield group
+            group = [item]
+        prev = item
+    if group:
+        yield group
+
 
 def getboundary(bound,llon,llat,n,RPATH,basename):
 
@@ -21,52 +36,48 @@ def getboundary(bound,llon,llat,n,RPATH,basename):
    bv = dic[bound] 
 
    v=np.isfinite(bv).nonzero()
-   branches = [list(x) for x in v]
+   branches = dict(enumerate(grouper(list(v[0])), 1))
 
+   idx=0
 #iterate over all branches
    for b in branches:
 
-    s = b if b[0] not in [0,1] else b[1:]
+    if len(branches[b]) > 0:
+     s = branches[b][:] if branches[b][0] not in [0,1] else branches[b][1:]
 
 # make chunks of n points if range is large
-    chunks = [ s[i:i+n] for i in xrange(0, len(s),n if n < len(s) else len(s)) ]
-    if len(chunks[-1]) < 3 : 
-      chunks[-2]=chunks[-2]+chunks[-1] # merge the last chunk if too small
-      chunks = chunks[:-1] # eliminate the last chunk
+     chunks = [ s[i:i+n] for i in xrange(0, len(s),n if n < len(s) else len(s)) ]
+#    if len(chunks[-1]) < 3 : 
+#     chunks[-2]=chunks[-2]+chunks[-1] # merge the last chunk if too small
+#     chunks = chunks[:-1] # eliminate the last chunk
 
 #write bnd file
-    with open(RPATH+basename+'.bnd', 'a') as f:
-      idx=0
-      for ch in chunks:
+     f1 = open(RPATH+basename+'.bnd', 'a') 
+     f2 = open(RPATH+basename+'.bca', 'a')
+     for ch in chunks:
         idx=idx+1
         k1 = [ch[0] if x==-99 else x for x in idic[bound]] 
         k2 = [ch[-1] if x==-99 else x for x in idic[bound]] 
-        f.write('{}{}                Z A     {}    {}     {}    {}   0.0000000e+00 {}{}A {}{}B\n'.format(bound,idx,k1[0]+1,k1[1]+1,k2[0]+1,k2[1]+1,bound,idx,bound,idx)) # fortran index ??
-
+        bname=bound+str(idx)
+        f1.write('{0:<10s}{1:>12s}{2:>2s}{3:>6d}{4:>6d}{5:>6d}{6:>6d}   0.0000000e+00 {7:<s}{8:<g}A {9:<s}{10:<g}B\n'.format(bname,nm[0],nm[1],k1[0]+1,k1[1]+1,k2[0]+1,k2[1]+1,bound,idx,bound,idx)) # fortran index ??
 
 #write bca file
 
-    with open(RPATH+basename+'.bca', 'a') as f:
+        for k,l in zip([ch[0]-1,ch[-1]],le):
 
-     idx=0
-     for ch in chunks:
-      idx=idx+1
+         if l == 'A' : label = idx
 
-      for k,l in zip([ch[0]-1,ch[-1]],le):
+         plon=llon[k]
+         plat=llat[k]
+         i=np.abs(lon-np.float(plon)).argmin()
+         j=np.abs(lat-np.float(plat)).argmin()
 
-        if l == 'A' : label = idx
+         xx = lon[i-1:i+2]
+         yy = lat[j-1:j+2]
 
-        plon=llon[k]
-        plat=llat[k]
-        i=np.abs(lon-np.float(plon)).argmin()
-        j=np.abs(lat-np.float(plat)).argmin()
-
-        xx = lon[i-1:i+2]
-        yy = lat[j-1:j+2]
-
-        phv=np.zeros(ph.shape[-1])
-        amv=np.zeros(amp.shape[-1])
-        for m in range(amp.shape[-1]):
+         phv=np.zeros(ph.shape[-1])
+         amv=np.zeros(amp.shape[-1])
+         for m in range(amp.shape[-1]):
      
            zz = amp[i-1:i+2,j-1:j+2,m]
            fa=interpolate.RectBivariateSpline(xx,yy,zz,kx=2,ky=2)
@@ -76,9 +87,9 @@ def getboundary(bound,llon,llat,n,RPATH,basename):
            fa=interpolate.RectBivariateSpline(xx,yy,zz,kx=2,ky=2)
            phv[m]= fa(plon,plat)
 
-        f.write('{}{}{}\n'.format(bound,label,l))
-        for a,b,c in zip(tidal_c,amv,phv):
-          f.write('{}         {:.7e}   {:.7e}\n'.format(a,b,c))
+         f2.write('{}{}{}\n'.format(bound,label,l))
+         for a,b,c in zip(tidal_c,amv,phv):
+           f2.write('{0:<3s}        {1:<.7e}   {2:<.7e}\n'.format(a,b,c))
 
 
 def tidebound(RPATH,basename,grd,ba,n):
@@ -91,7 +102,7 @@ def tidebound(RPATH,basename,grd,ba,n):
   lats=grd.y[:,0]
 
   #read from tide file
-  dmed=Dataset('../TIDES/tpxo72.nc')
+  dmed=Dataset('../TIDES/tides.nc')
 
   lat=dmed['lat'][:]
   lon=dmed['lon'][:]

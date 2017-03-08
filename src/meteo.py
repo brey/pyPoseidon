@@ -13,7 +13,6 @@ from redtoreg import _redtoreg
 from pygrib import gaulats
 from tqdm import tqdm
 import time
-from mpl_toolkits.basemap import shiftgrid
 
 
 def gridd(lon1,lat1,lon2,lat2,nlats):

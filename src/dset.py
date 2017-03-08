@@ -24,20 +24,22 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
   resmin=resolution*60
 
+  # convert from str to boolean
   if force:
         force = bool(strtobool(force))
 
-  print kwargs
-
+  for key, value in kwargs.iteritems():
+        kwargs[key] = bool(strtobool(value))
+      
   # computei ni,nj / correct lat/lon
 
   if 'lon' not in kwargs.keys() :
 
-    ni=int((lon1-lon0)/resolution)+1
-    nj=int((lat1-lat0)/resolution)+1
+    ni=int(round((lon1-lon0)/resolution)) #these are cell numbers
+    nj=int(round((lat1-lat0)/resolution))
   
-    lon1=lon0+(ni-1)*resolution
-    lat1=lat0+(nj-1)*resolution
+    lon1=lon0+ni*resolution
+    lat1=lat0+nj*resolution
 
   else:
 
@@ -49,6 +51,9 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
     lon1=lon.max()
     lat0=lat.min()
     lat1=lat.max()
+
+  ni=ni+1 # transfrom to grid points
+  nj=nj+1
    
   sys.stdout.write('\n')
   sys.stdout.write('run attributes lons=[{}, {}], lats=[{}, {}], ni={}, nj={}, resolution={} decimal degrees ({} minutes)\n'.format(lon0,lon1,lat0,lat1,ni,nj,resolution,resmin))
@@ -158,7 +163,7 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
   bat = readem(lat0,lat1,lon0,lon1,bathf,lon,lat,plot=False,interpolate=True)
 
   bat = -bat # reverse for the hydro run
-  bat[bat<0]=-999.  # mask all dry points
+  bat[bat<0]=np.nan # mask all dry points
   
   # Write bathymetry file
   ba = Dep()
@@ -295,7 +300,14 @@ def setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force=False,*
 
   # set tide only run
   if 'tide' in kwargs.keys() :
-     if (kwargs['tide']==True) & (force==False): inp['Sub1'] = ' '
+     if (kwargs['tide']==True) & (force==False):
+        inp['Sub1'] = ' '
+        inp['Filbnd']=basename+'.bnd'
+        inp['Filana']=basename+'.bca'
+#       if 'Tidfor' not in order: order.append('Tidfor')
+#       inp['Tidfor']=[['M2','S2','N2','K2'], \
+#                      ['K1','O1','P1','Q1'], \
+#                      ['-----------']]
  
   # specify ini file
 # if 'Filic' not in order: order.append('Filic')
@@ -344,9 +356,15 @@ if __name__ == "__main__":
     resolution=np.float(sys.argv[8])
     path=sys.argv[9]
     force=sys.argv[10]
+    if len(sys.argv)>11:
+      tidetf=sys.argv[11]
+      try:
+         setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force,**{'tide': tidetf})
+      except Exception as e:
+         print e
+    else:
+      setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force)
 
-
-    setrun(lon0,lon1,lat0,lat1,basename,runtime,nt,resolution,path,force)
 
 
   except Exception as e:

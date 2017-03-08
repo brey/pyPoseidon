@@ -4,8 +4,7 @@ import sys
 import os
 from shutil import copy2
 
-#from getd import wmap
-#from getmedf import wmap
+from write2nc import writenc
 from meteo import wmap
 from idelft3d import meteo2delft3d
 import mdf
@@ -18,7 +17,6 @@ import logging
 SAVEPATH='/mnt/ECMWF/processed/2016/FIX_MED_SEA_D3/'
 RUNPATH='/home/critechuser/'
 
-
 def go(rundate,path,dic,TAT=False):
 
    bname=dic['bname']
@@ -30,7 +28,7 @@ def go(rundate,path,dic,TAT=False):
    lon1=dic['lon1']
    lat1=dic['lat1']
 
-   files=['config_d_hydro.xml',bname+'.mdf',bname+'.grd',bname+'.enc',bname+'.obs',bname+'.dep', bname+'.pkl','run_flow2d3d.sh']
+   files=['config_d_hydro.xml',bname+'.mdf',bname+'.grd',bname+'.enc',bname+'.obs',bname+'.dep', bname+'bnd', bname+'.bca',bname+'.pkl','run_flow2d3d.sh']
 
    logging.info(rundate)
    sys.stdout.write('RUNNING {}\n'.format(rundate))
@@ -57,7 +55,7 @@ def go(rundate,path,dic,TAT=False):
 
    for filename in files:
 
-      copy2(ppath+filename,rpath+filename)
+      if os.path.isfile(ppath+filename): copy2(ppath+filename,rpath+filename)
 
 # copy restart file
 
@@ -86,7 +84,8 @@ def go(rundate,path,dic,TAT=False):
 
        t=np.arange(0,nt+1)
 
-       writenc(calc_dir+'/uvp.nc',lat[:,0],lon[0,:],u,v,p,t,rpath)
+     # writenc(rpath+'/uvp.nc',lat[:,0],lon[0,:],u,v,p,t,rpath)
+       writenc(rpath+'/uvp.nc',lat,lon,t,folder,p,u,v)#,sval,spval)
 
 
 #write u,v,p files 
@@ -138,37 +137,37 @@ def go(rundate,path,dic,TAT=False):
    sys.stdout.write('\n')
 
 
-   if TAT :
+#  if TAT :
 
-     sys.stdout.write('start analysis for TAT\n')
-     sys.stdout.flush()
+#    sys.stdout.write('start analysis for TAT\n')
+#    sys.stdout.flush()
 
-  # TAT interface
-     try:
-       fTAT()
-     except Exception as e:
-       print e
-       sys.exit()
+# # TAT interface
+#    try:
+#      fTAT()
+#    except Exception as e:
+#      print e
+#      sys.exit()
 
-     sys.stdout.write('\n')
-     sys.stdout.write('analysis finished\n')
-     sys.stdout.flush()
-     sys.stdout.write('\n')
+#    sys.stdout.write('\n')
+#    sys.stdout.write('analysis finished\n')
+#    sys.stdout.flush()
+#    sys.stdout.write('\n')
 
-     fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
-     now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
-     with open(SAVEPATH+'{}/completed.txt'.format(fname),'w') as f:
-       f.write(now)
-     with open(SAVEPATH+'final/completed.txt'.format(fname),'w') as f:
-       f.write(now)
+#    fname='calc_{}'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H'))
+#    now=datetime.datetime.strftime(datetime.datetime.now(),'%d %b %d %H:%M:%S CET %Y')
+#    with open(SAVEPATH+'{}/completed.txt'.format(fname),'w') as f:
+#      f.write(now)
+#    with open(SAVEPATH+'final/completed.txt'.format(fname),'w') as f:
+#      f.write(now)
 
 
-     with open(RUNPATH+'logMED.txt'.format(fname),'a') as f:
-       f.write('{}\n'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H')))
-   
-     sys.stdout.write('completed\n')
-     sys.stdout.flush()
-     sys.stdout.write('\n')
+#    with open(RUNPATH+'log.txt'.format(fname),'a') as f:
+#      f.write('{}\n'.format(datetime.datetime.strftime(rundate,'%Y%m%d.%H')))
+#  
+#    sys.stdout.write('completed\n')
+#    sys.stdout.flush()
+#    sys.stdout.write('\n')
 
 
 if __name__ == "__main__":
