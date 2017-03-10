@@ -35,6 +35,9 @@ TAT/D3/
 *.Z
 *.gz
 
+# dat files
+*.dat
+
 #ignore .jupyter chekpoints folder
 .ipynb_checkpoints/
 
