@@ -1,25 +1,20 @@
 ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,status
-62,Faial Island,AZO TD,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,38.534,-28.622,Active
-64,Terceira,AZO TD,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,38.651,-27.222,Active
-56,"Hanasaki, Japan HAN",BOM,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,43.280,145.570,Active
-59,"Port Vila, Efate, Vanuatu",BOM,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,-17.755,168.308,Active
-14,"Suva, Viti Levu, Fiji",BOM,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,-18.134,178.424,Active
-47,"140 NM Southeast of Honolulu, HI",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:37,19.630,-156.525,Active
+47,"140 NM Southeast of Honolulu, HI",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:37,19.63,-156.525,Active
 22,175 NM S of Attu AK,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Mar 2011 00:30,50.173,171.837,Active
 44,"190 NM West-Southwest of San Diego, CA",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,32.246,-120.698,Active
-39,"240 NM South of Dutch Harbor, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,51.070,-164.011,Active
+39,"240 NM South of Dutch Harbor, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,51.07,-164.011,Active
 35,"240 NM Southwest of Manzanillo, Mexico",DART Pacific,4h 41m,,Details, 09 Apr 2018 07:00, 09 Apr 2018 07:00, 16 Mar 2011 00:30,16.034,-107.001,Active
 23,240NM SE of Kamchatka Peninsula,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Mar 2011 00:30,48.044,163.488,Active
 38,250 NM SE of Montauk Pt N.Y.,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 15 Mar 2011 00:30,38.204,-67.938,Active
 27,260 NM West-Southwest of Arica Chile,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,-19.547,-74.813,Active
 34,"295 NM Southeast of New Orleans, LA",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 27 Oct 2010 01:45,26.658,-85.791,Active
-45,"300 NM West-Northwest of Seattle, WA",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 10 Aug 2010 00:30,48.800,-129.600,Active
+45,"300 NM West-Northwest of Seattle, WA",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 10 Aug 2010 00:30,48.8,-129.6,Active
 31,"320 NM North of San Juan, PR",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,23.399,-63.901,Active
-43,"330 NM Southeast of Anchorage, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,57.500,-144.000,Active
-36,"360 NM South-Southwest of Acapulco, Mexico",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 15 Mar 2011 00:30,10.840,-100.085,Active
+43,"330 NM Southeast of Anchorage, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,57.5,-144.0,Active
+36,"360 NM South-Southwest of Acapulco, Mexico",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 15 Mar 2011 00:30,10.84,-100.085,Active
 48,400 NM Southeast of Tonga,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Nov 2010 00:30,-22.993,-168.098,Active
 25,"450 NM Northeast of Tokyo, Japan",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 10 Mar 2011 00:01,38.706,148.665,Active
-26,"600 NM West-Northwest of Phuket, Thailand",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 20 Apr 2010 00:30,8.905,88.540,Active
+26,"600 NM West-Northwest of Phuket, Thailand",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 20 Apr 2010 00:30,8.905,88.54,Active
 49,610 NM Northeast of Saipan,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 07 Nov 2010 00:30,19.286,155.766,Active
 29,"630 NM Southwest of Lima, Peru",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,-17.967,-86.383,Active
 30,"690 NM East of Miami, FL",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,23.312,-67.639,Active
@@ -27,56 +22,40 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 53,"740 NM West of Agana, Guam",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Mar 2011 00:30,12.867,132.333,Active
 50,790 NM Northwest of Kwajalein,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Mar 2011 00:30,11.575,154.588,Active
 42,NW Pacific S AK,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,49.626,-169.872,Active
-21,Station 21414 - NW Pacific,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Mar 2011 00:30,48.942,178.270,Active
+21,Station 21414 - NW Pacific,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 11 Mar 2011 00:30,48.942,178.27,Active
 73,Station 21415 - 175 NM S of Attu AK,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,50.173,-171.837,Active
 1886,Station 23227 - Bay of Bengal,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Jul 2012 00:30,6.255,88.792,Active
 1887,Station 23228 - Arabian Sea,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Jul 2012 00:30,20.799,65.347,Active
-1595,"Station 32413 - 1000 NM WestNorthwest of Lima, Peru",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,-7.397,-93.500,Active
+1595,"Station 32413 - 1000 NM WestNorthwest of Lima, Peru",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,-7.397,-93.5,Active
 1092,"Station 44402 - 136NM SE of Fire Island, NY.",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 15 Mar 2011 00:30,39.487,-70.594,Active
 68,"Station 46402 - 240 NM South of Dutch Harbor, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,51.069,-164.011,Active
-69,"Station 46403 - 230 NM Southeast of Shumagin Island, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,52.650,-156.940,Active
-11,Station 46408 - NW Pacific S AK,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,49.630,-169.870,Active
-12,Station 46408 - NW Pacific S AK,DART Pacific,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,49.630,-169.870,Active
+69,"Station 46403 - 230 NM Southeast of Shumagin Island, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,52.65,-156.94,Active
+11,Station 46408 - NW Pacific S AK,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,49.63,-169.87,Active
 1096,"Station 46409 - 240 NM Southeast of Kodiak, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,55.301,-148.495,Active
-71,"Station 46409 - 240 NM Southeast of Kodiak, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,55.300,-148.500,Active
-72,"Station 46411 - 260 NM Northwest of San Francisco, CA",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,39.340,-127.007,Active
-10,"Station 46413 - East of ADAK, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 08 Jan 2011 00:30,48.860,-175.600,Active
+71,"Station 46409 - 240 NM Southeast of Kodiak, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,55.3,-148.5,Active
+72,"Station 46411 - 260 NM Northwest of San Francisco, CA",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,39.34,-127.007,Active
+10,"Station 46413 - East of ADAK, AK",DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 08 Jan 2011 00:30,48.86,-175.6,Active
 66,Station 51425 - 370 NM NW of Apia,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 02 Feb 2011 00:30,-9.493,-176.245,Active
 1712,Station 55042 - Tasman Sea 2,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 27 Apr 2011 12:45,-44.853,161.728,Active
 1490,Station 56001 - STB Indian Ocean 1,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 00:30,-13.961,110.004,Active
 1491,Station 56003 - STP Indian Ocean 3,DART Pacific,5h 41m,,Details, 09 Apr 2018 06:00, 09 Apr 2018 06:00, 16 Mar 2011 02:45,-15.021,117.989,Active
-2572,Denmark - Faaborg,DMI,21m,,Details, 09 Apr 2018 11:20, 09 Apr 2018 11:00, 01 Jan 2017 00:20,55.100,10.233,Active
-2573,Denmark - Rodbyhavn,DMI,11m,,Details, 09 Apr 2018 11:30, 09 Apr 2018 11:00, 30 May 2016 00:10,54.650,11.350,Active
-2574,Denmark -Bagenkop,DMI,11m,,Details, 09 Apr 2018 11:30, 01 Jun 2016 16:50, 30 May 2016 00:10,54.750,10.677,Active
+2572,Denmark - Faaborg,DMI,21m,,Details, 09 Apr 2018 11:20, 09 Apr 2018 11:00, 01 Jan 2017 00:20,55.1,10.233,Active
+2573,Denmark - Rodbyhavn,DMI,11m,,Details, 09 Apr 2018 11:30, 09 Apr 2018 11:00, 30 May 2016 00:10,54.65,11.35,Active
+2574,Denmark -Bagenkop,DMI,11m,,Details, 09 Apr 2018 11:30, 01 Jun 2016 16:50, 30 May 2016 00:10,54.75,10.677,Active
 2575,Denmark -Gedser,DMI,11m,,Details, 09 Apr 2018 11:30, 01 Jun 2016 16:50, 30 May 2016 00:10,54.583,11.933,Active
 2576,Denmark -Hunderstend,DMI,11m,,Details, 09 Apr 2018 11:30, 28 Aug 2017 10:10, 01 Jan 2010 00:05,55.966,11.843,Active
-1620,Lisbona (Press),EURO_WEATHER,0m,,Details, 06 May 2011 04:20, 20 Jan 2014 04:20, 29 Apr 2011 14:50,38.780,-7.900,Active
-1619,Lisbona (Temp),EURO_WEATHER,0m,,Details, 06 May 2011 04:20, 20 Jan 2014 04:20, 29 Apr 2011 14:50,38.780,-8.130,Active
-2359,Degerby,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 09 Jan 2015 19:00,60.030,20.389,Active
 2342,Föglö Degerby,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,60.032,20.385,Active
-2358,Hamina,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 09 Jan 2015 19:00,60.570,27.198,Active
 2344,Hamina Pitäjänsaari,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,60.563,27.179,Active
-2357,Hanko,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 21:00,59.833,22.950,Active
 2343,Hanko Pikku Kolalahti,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,59.823,22.977,Active
-2356,Helsinki ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,60.170,24.935,Active
 2331,Helsinki Kaivopuisto,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,60.154,24.956,Active
-2355,Kaskinen ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,62.383,21.217,Active
 2341,Kaskinen Ådskär,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,62.344,21.215,Active
-2348,Kemi ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,65.696,24.622,Active
 2333,Kemi Ajos,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,65.673,24.515,Active
-2354,Mäntyluoto ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,61.583,21.483,Active
-2353,Oulu ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,65.012,25.468,Active
-2339,Oulu Toppila,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,65.040,25.418,Active
-2347,Pietarsaaren Golf ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,63.670,22.670,Active
-2340,Pietarsaari Leppäluoto,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,63.709,22.690,Active
+2339,Oulu Toppila,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,65.04,25.418,Active
+2340,Pietarsaari Leppäluoto,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,63.709,22.69,Active
 2345,Pori Mäntyluoto Kallo,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,61.594,21.463,Active
-2352,Raahe ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,64.683,24.483,Active
 2330,Raahe Lapaluoto,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,64.666,24.407,Active
-2351,Rauma ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,61.127,21.511,Active
 2337,Rauma Ulko-Petäjäs,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,61.134,21.463,Active
-2350,Turku ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,60.451,22.269,Active
 2338,Turku Ruissalo Saaronniemi,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,60.428,22.101,Active
-2349,Vaasa ,FMI,0m,,Details, 11 Apr 2018 11:00, 11 Apr 2018 09:00, 08 Jan 2015 12:00,63.096,21.616,Active
 2336,Vaasa Vaskiluoto,FMI,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 07 Jan 2015 23:00,63.082,21.571,Active
 2541,Ign - Alicante1,Ign,15m,,Details, 09 Apr 2018 11:26, 09 Apr 2018 11:26, 23 Oct 2017 09:11,38.338,-0.478,Active
 2551,Ign - Almeria,Ign,15m,,Details, 09 Apr 2018 11:26, 09 Apr 2018 11:26, 15 Oct 2015 00:01,36.832,-2.485,Active
@@ -87,369 +66,68 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1988,USA - Atlantic city_IOOS,IOOS,27m,,Details, 09 Apr 2018 11:14, 09 Apr 2018 10:56, 12 Nov 2012 15:00,39.355,-74.418,Active
 1989,USA - Westport_IOOS,IOOS,24m,,Details, 09 Apr 2018 11:17, 09 Apr 2018 10:53, 12 Nov 2012 14:59,46.904,-124.105,Active
 1995,USA_Barbuda_IOOS,IOOS,23m,,Details, 09 Apr 2018 11:18, 09 Apr 2018 10:54, 02 Jan 2013 15:02,17.591,-61.821,Active
-1997,USA_Christiansted_IOOS,IOOS,24m,,Details, 09 Apr 2018 11:17, 09 Apr 2018 10:53, 02 Jan 2013 15:02,17.750,-64.705,Active
+1997,USA_Christiansted_IOOS,IOOS,24m,,Details, 09 Apr 2018 11:17, 09 Apr 2018 10:53, 02 Jan 2013 15:02,17.75,-64.705,Active
 1994,USA_Kwajalein_IOOS,IOOS,27m,,Details, 09 Apr 2018 11:14, 09 Apr 2018 10:56, 12 Mar 2013 21:32,8.732,167.736,Active
 1996,USA_Lime Tree Bay_IOOS,IOOS,24m,,Details, 09 Apr 2018 11:17, 09 Apr 2018 10:53, 02 Jan 2013 15:02,17.695,-64.754,Active
-1998,USA_Magueyes Island_IOOS,IOOS,25m,,Details, 09 Apr 2018 11:16, 09 Apr 2018 10:52, 02 Jan 2013 15:02,17.970,-67.046,Active
-1993,USA_Pago Pago_IOOS,IOOS,21m,,Details, 09 Apr 2018 11:20, 09 Apr 2018 10:57, 06 Jan 2013 01:13,-14.280,-170.690,Active
+1998,USA_Magueyes Island_IOOS,IOOS,25m,,Details, 09 Apr 2018 11:16, 09 Apr 2018 10:52, 02 Jan 2013 15:02,17.97,-67.046,Active
+1993,USA_Pago Pago_IOOS,IOOS,21m,,Details, 09 Apr 2018 11:20, 09 Apr 2018 10:57, 06 Jan 2013 01:13,-14.28,-170.69,Active
 1837,Italy - Ancona (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,43.625,13.507,Active
 1841,Italy - Carloforte (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,39.148,8.309,Active
 1842,Italy - Catania (ISPRA),ISPRA,19m,,Details, 09 Apr 2018 11:22, 09 Apr 2018 11:01, 28 Jun 2012 05:36,37.498,15.094,Active
-1843,Italy - Civitavecchia (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,42.094,11.790,Active
-1846,Italy - Genova (ISPRA),ISPRA,19m,,Details, 09 Apr 2018 11:22, 09 Apr 2018 11:01, 28 Jun 2012 05:36,44.410,8.926,Active
+1843,Italy - Civitavecchia (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,42.094,11.79,Active
+1846,Italy - Genova (ISPRA),ISPRA,19m,,Details, 09 Apr 2018 11:22, 09 Apr 2018 11:01, 28 Jun 2012 05:36,44.41,8.926,Active
 1848,Italy - Imperia (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,43.878,8.019,Active
-1851,Italy - Lampedusa (ISPRA),ISPRA,18m,,Details, 09 Apr 2018 11:23, 09 Apr 2018 11:03, 28 Jun 2012 05:36,35.500,12.604,Active
+1851,Italy - Lampedusa (ISPRA),ISPRA,18m,,Details, 09 Apr 2018 11:23, 09 Apr 2018 11:03, 28 Jun 2012 05:36,35.5,12.604,Active
 1852,Italy - Livorno (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,43.546,10.299,Active
 1853,Italy - Marina di Campo (ISPRA),ISPRA,20m,,Details, 09 Apr 2018 11:21, 09 Apr 2018 11:00, 28 Jun 2012 05:36,42.743,10.238,Active
 1854,Italy - Messina (ISPRA),ISPRA,18m,,Details, 09 Apr 2018 11:23, 09 Apr 2018 11:02, 28 Jun 2012 05:36,38.196,15.564,Active
 1857,Italy - Otranto (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:03, 28 Jun 2012 05:36,40.147,18.497,Active
-1859,Italy - Palinuro (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:02, 28 Jun 2012 05:36,40.030,15.275,Active
+1859,Italy - Palinuro (ISPRA),ISPRA,17m,,Details, 09 Apr 2018 11:24, 09 Apr 2018 11:02, 28 Jun 2012 05:36,40.03,15.275,Active
 1862,Italy - Porto Torres (ISPRA),ISPRA,18m,,Details, 09 Apr 2018 11:23, 09 Apr 2018 11:02, 28 Jun 2012 05:36,40.842,8.404,Active
 1864,Italy - Reggio Calabria (ISPRA),ISPRA,20m,,Details, 09 Apr 2018 11:21, 09 Apr 2018 11:03, 28 Jun 2012 05:36,38.122,15.649,Active
 1865,Italy - Salerno (ISPRA),ISPRA,18m,,Details, 09 Apr 2018 11:23, 09 Apr 2018 11:06, 28 Jun 2012 05:36,40.677,14.751,Active
-1866,Italy - San Benedetto del Tronto (ISPRA),ISPRA,22m,,Details, 09 Apr 2018 11:19, 09 Apr 2018 11:06, 01 Jan 2012 00:02,42.955,13.890,Active
+1866,Italy - San Benedetto del Tronto (ISPRA),ISPRA,22m,,Details, 09 Apr 2018 11:19, 09 Apr 2018 11:06, 01 Jan 2012 00:02,42.955,13.89,Active
 1867,Italy - Sciacca (ISPRA),ISPRA,18m,,Details, 09 Apr 2018 11:23, 09 Apr 2018 11:06, 28 Jun 2012 05:36,37.505,13.076,Active
 1869,Italy - Trieste (ISPRA),ISPRA,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 28 Jun 2012 06:04,45.649,13.758,Active
 1870,Italy - Venezia (ISPRA),ISPRA,20m,,Details, 09 Apr 2018 11:21, 09 Apr 2018 11:04, 01 Jan 2015 10:40,45.418,12.427,Active
 2570,Italy - Venezia (ISPRA) TEST,ISPRA,20m,,Details, 09 Apr 2018 11:21, 09 Apr 2018 11:21, 01 Jan 2015 10:40,45.418,12.427,Active
-2027,Scheveningen,NL,0m,,Details, 31 Dec 2018 22:50, 31 Dec 2018 22:50, 04 Dec 2013 00:10,52.099,4.263,Active
-2030,Terschelling Noordzee,NL,0m,,Details, 31 Dec 2018 22:50, 31 Dec 2018 22:50, 04 Dec 2013 00:10,53.474,5.397,Active
-2613,"Adak Island, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,51.863,-176.632,Web
-2641,"Alameda, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.772,-122.300,Web
-2753,"Alexandria Bay, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.331,-75.935,Web
-2747,"Algonac, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.621,-82.527,Web
-2614,"Alitak, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,56.897,-154.248,Web
-2719,"Alpena, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.063,-83.429,Web
-2744,"American Falls, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.081,-79.061,Web
-2615,"Anchorage, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,61.237,-149.890,Web
-2787,"Annapolis, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.983,-76.482,Web
-2683,"Apalachicola, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.727,-84.982,Web
-2826,"Apra Harbor, Guam, United States of America",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,13.443,144.656,Web
-2842,"Aransas Wildlife Refuge, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.228,-96.797,Web
-2661,"Arecibo, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.481,-66.702,Web
-2642,"Arena Cove, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.915,-123.711,Web
-2745,"Ashland Ave, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.100,-79.060,Web
-2819,"Astoria, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.207,-123.768,Web
-2616,"Atka, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,52.232,-174.173,Web
-2804,"Atlantic City, NJ",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.357,-74.418,Web
-2843,"Baffin Bay, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.297,-97.405,Web
-2788,"Baltimore, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.267,-76.578,Web
-2782,"Bar Harbor, ME",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.392,-68.204,Web
-2662,"Barbuda, Antigua and Barbuda",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,17.591,-61.821,Web
-2800,"Bay Waveland Yacht Club, MS",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.325,-89.325,Web
-2604,"Bayou La Batre Bridge, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.406,-88.248,Web
-2813,"Beaufort, NC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,34.720,-76.670,Web
-2809,"Bergen Point West Reach, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.637,-74.142,Web
-2639,"Bermuda, Ferry Reach Channel, Bermuda",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,32.370,-64.695,Web
-2640,"Bermuda, St. Georges Island, Bermuda",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,32.373,-64.703,Web
-2766,"Berwick, Atchafalaya River, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.667,-91.238,Web
-2789,"Bishops Head, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.220,-76.039,Web
-2844,"Bob Hall Pier, Corpus Christi, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.580,-97.217,Web
-2643,"Bolinas, Bolinas Lagoon, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.908,-122.679,Web
-2795,"Boston, MA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.354,-71.050,Web
-2678,"Brandywine Shoal Light, DE",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.987,-75.113,Web
-2831,"Bridesburg, PA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.983,-75.075,Web
-2675,"Bridgeport, CT",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.176,-73.184,Web
-2711,"Buffalo, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.877,-78.891,Web
-2767,"Bulk Terminal, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.190,-93.301,Web
-2805,"Burlington, Delaware River, NJ",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.080,-74.873,Web
-2768,"Calcasieu Pass, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.768,-93.343,Web
-2725,"Calumet Harbor, IL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.730,-87.538,Web
-2790,"Cambridge, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.574,-76.072,Web
-2881,"Cape Disappointment, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.281,-124.046,Web
-2806,"Cape May, NJ",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.968,-74.960,Web
-2734,"Cape Vincent, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.130,-76.332,Web
-2769,"Carrollton, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.933,-90.135,Web
-2684,"Cedar Key, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.134,-83.031,Web
-2839,"Charleston, Cooper River Entrance, SC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,32.781,-79.924,Web
-2820,"Charleston, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.345,-124.322,Web
-2796,"Chatham, MA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.688,-69.951,Web
-2882,"Cherry Point, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,48.863,-122.758,Web
-2872,"Chesapeake Bay Bridge Tunnel, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,36.967,-76.113,Web
-2791,"Chesapeake City, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.527,-75.810,Web
-2605,"Chickasaw Creek, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.782,-88.074,Web
-2663,"Christiansted Harbor, St Croix, VI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,17.750,-64.705,Web
-2685,"Clearwater Beach, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.978,-82.832,Web
-2712,"Cleveland, OH",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.541,-81.635,Web
-2606,"Coast Guard Sector Mobile, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.648,-88.058,Web
-2835,"Conimicut Light, RI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.717,-71.343,Web
-2617,"Cordova, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,60.558,-145.755,Web
-2644,"Coyote Creek, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.465,-122.023,Web
-2645,"Crescent City, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.745,-124.183,Web
-2664,"Culebra, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.301,-65.302,Web
-2783,"Cutler Farris Wharf, ME",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.657,-67.205,Web
-2873,"Dahlgren, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.320,-77.037,Web
-2686,"Dames Point, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.387,-81.558,Web
-2607,"Dauphin Island, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.250,-88.075,Web
-2720,"De Tour Village, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.993,-83.898,Web
-2679,"Delaware City, DE",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.582,-75.588,Web
-2801,"Dock E, Port of Pascagoula, MS",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.348,-88.506,Web
-2608,"Dog River Bridge, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.565,-88.088,Web
-2748,"Dry Dock, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.945,-82.443,Web
-2814,"Duck, NC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,36.183,-75.747,Web
-2739,"Duluth, MN",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.776,-92.092,Web
-2749,"Dunn Paper, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.003,-82.422,Web
-2845,"Eagle Point, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.480,-94.918,Web
-2609,"East Fowl River Bridge, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.444,-88.114,Web
-2784,"Eastport, ME",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.903,-66.985,Web
-2618,"Elfin Cove, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,58.195,-136.347,Web
-2713,"Erie, PA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.154,-80.092,Web
-2665,"Esperanza, Vieques Island, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.094,-65.471,Web
-2721,"Essexville, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.640,-83.847,Web
-2770,"Eugene Island, North of , Gulf of Mexico, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.368,-91.384,Web
-2714,"Fairport, OH",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.760,-81.281,Web
-2666,"Fajardo, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.335,-65.631,Web
-2797,"Fall River, MA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.704,-71.164,Web
-2715,"Fermi Power Plant, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.960,-83.257,Web
-2687,"Fernandina Beach, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.671,-81.466,Web
-2750,"Fort Gratiot, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.007,-82.423,Web
-2688,"Fort Myers, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.648,-81.871,Web
-2803,"Fort Point, NH",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.071,-70.711,Web
-2706,"Fort Pulaski, GA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,32.037,-80.902,Web
-2707,"Fort Wayne, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.298,-83.093,Web
-2846,"Freeport, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.943,-95.302,Web
-2771,"Freshwater Canal Locks, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.552,-92.305,Web
-2883,"Friday Harbor, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,48.545,-123.013,Web
-2847,"Galveston Bay Entrance, North Jetty, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.357,-94.725,Web
-2848,"Galveston Pier 21, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.310,-94.793,Web
-2849,"Galveston Railroad Bridge, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.302,-94.896,Web
-2821,"Garibaldi, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.555,-123.919,Web
-2708,"Gibraltar, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.092,-83.187,Web
-2772,"Grand Isle, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.263,-89.957,Web
-2740,"Grand Marais, MN",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,47.749,-90.341,Web
-2726,"Green Bay, WI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.541,-88.007,Web
-2722,"Harbor Beach, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.846,-82.643,Web
-2850,"High Island, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.594,-94.390,Web
-2760,"Hilo, Hilo Bay, Kuhio Bay, HI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,19.730,-155.056,Web
-2727,"Holland, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.773,-86.213,Web
-2761,"Honolulu, HI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,21.307,-157.867,Web
-2773,"I-10 Bonnet Carre Floodway, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.068,-90.390,Web
-2689,"I-295 Bridge, St Johns River, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.192,-81.692,Web
-2667,"Isabel Segunda, Vieques Island, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.153,-65.444,Web
-2619,"Juneau, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,58.298,-134.412,Web
-2762,"Kahului, Kahului Harbor, HI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,20.895,-156.477,Web
-2763,"Kawaihae, HI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,20.037,-155.829,Web
-2620,"Ketchikan, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,55.332,-131.626,Web
-2728,"Kewaunee, WI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.464,-87.501,Web
-2690,"Key West, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,24.556,-81.808,Web
-2621,"King Cove, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,55.060,-162.326,Web
-2810,"Kings Point, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.810,-73.765,Web
-2874,"Kiptopeke, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.165,-75.988,Web
-2622,"Kodiak Island, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,57.730,-152.514,Web
-2646,"La Jolla, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,32.867,-117.257,Web
-2884,"La Push, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,47.913,-124.637,Web
-2775,"Lake Charles, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.224,-93.222,Web
-2691,"Lake Worth Pier, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.613,-80.034,Web
-2723,"Lakeport, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.142,-82.493,Web
-2668,"Lameshur Bay, St John, VI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.318,-64.724,Web
-2774,"LAWMA, Amerada Pass, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.450,-91.338,Web
-2680,"Lewes, DE",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.783,-75.119,Web
-2875,"Lewisetta, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.996,-76.464,Web
-2669,"Lime Tree Bay. St. Croix, VI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,17.695,-64.754,Web
-2755,"Little Rapids, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.486,-84.302,Web
-2885,"Longview, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.106,-122.954,Web
-2647,"Los Angeles, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,33.720,-118.273,Web
-2729,"Ludington, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.947,-86.442,Web
-2724,"Mackinaw City, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.778,-84.725,Web
-2670,"Magueyes Island, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,17.970,-67.046,Web
-2851,"Manchester, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.726,-95.266,Web
-2716,"Marblehead, OH",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.544,-82.731,Web
-2832,"Marcus Hook, PA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.812,-75.409,Web
-2741,"Marquette C.G., MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.546,-87.379,Web
-2648,"Martinez-Amorco Pier, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.035,-122.125,Web
-2852,"Matagorda Bay Entrance Channel, TX, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.427,-96.330,Web
-2853,"Matagorda City, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.710,-95.914,Web
-2671,"Mayaguez, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.218,-67.159,Web
-2692,"Mayport (Bar Pilots Dock), FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.398,-81.428,Web
-2693,"Mckay Bay Entrance, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.913,-82.425,Web
-2730,"Menominee, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.096,-87.590,Web
-2731,"Milwaukee, WI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.002,-87.888,Web
-2610,"Mobile State Docks, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.708,-88.043,Web
-2764,"Mokuoloe, HI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,21.433,-157.790,Web
-2672,"Mona Island, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.090,-67.938,Web
-2876,"Money Point, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,36.778,-76.302,Web
-2811,"Montauk, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.048,-71.959,Web
-2649,"Monterey, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,36.605,-121.888,Web
-2854,"Morgans Point, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.682,-94.985,Web
-2751,"Mouth of the Black River, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.975,-82.419,Web
-2798,"Nantucket Island, MA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.285,-70.096,Web
-2694,"Naples, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.132,-81.808,Web
-2765,"Nawiliwili, HI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,21.954,-159.356,Web
-2886,"Neah Bay, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,48.370,-124.602,Web
-2776,"New Canal Station, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.027,-90.113,Web
-2676,"New Haven, CT",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.283,-72.908,Web
-2677,"New London, Thames River, CT",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.355,-72.087,Web
-2833,"Newbold, PA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.137,-74.752,Web
-2836,"Newport, RI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.505,-71.327,Web
-2746,"Niagara Intake, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.077,-79.014,Web
-2623,"Nikiski, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,60.683,-151.398,Web
-2624,"Nikolski, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,52.941,-168.871,Web
-2625,"Nome, Norton Sound, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,64.495,-165.440,Web
-2650,"North Spit, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.766,-124.217,Web
-2792,"Ocean City Inlet, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.328,-75.091,Web
-2754,"Ogdensburg, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.703,-75.494,Web
-2651,"Oil Platform Harvest, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,34.469,-120.682,Web
-2735,"Olcott, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.338,-78.727,Web
-2695,"Old Port Tampa, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.858,-82.553,Web
-2742,"Ontonagon, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.874,-89.324,Web
-2815,"Oregon Inlet Marina, NC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,35.795,-75.548,Web
-2736,"Oswego, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.464,-76.512,Web
-2840,"Oyster Landing (N Inlet Estuary), SC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,33.352,-79.187,Web
-2855,"Packery Channel, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.633,-97.237,Web
-2827,"Pago Bay, Guam, United States of America",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,13.428,144.797,Web
-2828,"Pago Pago, American Samoa, American Samoa",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,-14.277,-170.689,Web
-2696,"Panama City Beach, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.213,-85.878,Web
-2697,"Panama City, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.152,-85.667,Web
-2802,"Pascagoula NOAA Lab, MS",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.368,-88.563,Web
-2698,"Pensacola, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.404,-87.211,Web
-2834,"Philadelphia, PA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.933,-75.142,Web
-2777,"Pilots Station East, SW Pass, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.932,-89.408,Web
-2778,"Pilottown, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.178,-89.258,Web
-2743,"Point Iroquois, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.485,-84.631,Web
-2652,"Point Reyes, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.996,-122.977,Web
-2626,"Port Alexander, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,56.247,-134.647,Web
-2887,"Port Angeles, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,48.125,-123.441,Web
-2856,"Port Aransas, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.840,-97.073,Web
-2857,"Port Arthur, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.867,-93.931,Web
-2653,"Port Chicago, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.056,-122.039,Web
-2779,"Port Fourchon, Belle Pass, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.114,-90.199,Web
-2732,"Port Inland, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.970,-85.871,Web
-2858,"Port Isabel, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.061,-97.215,Web
-2859,"Port Lavaca, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.641,-96.610,Web
-2699,"Port Manatee, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.638,-82.563,Web
-2860,"Port Mansfield, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.558,-97.426,Web
-2861,"Port O&rsquo;Connor, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.446,-96.396,Web
-2822,"Port Orford, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.739,-124.498,Web
-2654,"Port San Luis, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,35.169,-120.754,Web
-2888,"Port Townsend, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,48.113,-122.759,Web
-2785,"Portland, ME",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.657,-70.247,Web
-2837,"Providence, RI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.807,-71.401,Web
-2627,"Prudhoe Bay, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,70.411,-148.532,Web
-2838,"Quonset Point, RI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.587,-71.411,Web
-2700,"Racy Point, St Johns River, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.802,-81.548,Web
-2628,"Red Dog Dock, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,67.576,-164.064,Web
-2655,"Redwood City, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.507,-122.212,Web
-2681,"Reedy Point, DE",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.558,-75.573,Web
-2656,"Richmond, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.923,-122.410,Web
-2862,"Rincon Del San Jose, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.801,-97.471,Web
-2737,"Rochester, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.269,-77.626,Web
-2756,"Rock Cut, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.265,-84.191,Web
-2863,"Rollover Pass, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.516,-94.511,Web
-2864,"S. Bird Island, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.484,-97.318,Web
-2757,"S.W. Pier, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.501,-84.373,Web
-2866,"Sabine Pass North, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.728,-93.870,Web
-2657,"San Diego, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,32.714,-117.174,Web
-2658,"San Francisco, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.806,-122.466,Web
-2673,"San Juan, La Puntilla, San Juan Bay, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.459,-66.116,Web
-2867,"San Luis Pass, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.081,-95.131,Web
-2829,"Sand Island, Midway Islands, United States of America",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.212,-177.360,Web
-2629,"Sand Point, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,55.337,-160.502,Web
-2807,"Sandy Hook, NJ",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.467,-74.009,Web
-2659,"Santa Barbara, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,34.403,-119.693,Web
-2660,"Santa Monica, CA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,34.008,-118.500,Web
-2868,"Sargent, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.771,-95.617,Web
-2889,"Seattle, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,47.603,-122.339,Web
-2630,"Seldovia, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,59.440,-151.720,Web
-2631,"Seward, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,60.120,-149.427,Web
-2877,"Sewells Point, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,36.947,-76.330,Web
-2780,"Shell Beach, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.868,-89.673,Web
-2808,"Ship John Shoal, NJ",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.305,-75.375,Web
-2632,"Sitka, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,57.052,-135.342,Web
-2633,"Skagway, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,59.450,-135.327,Web
-2890,"Skamokawa, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.267,-123.452,Web
-2793,"Solomons Island, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.317,-76.451,Web
-2823,"South Beach, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.625,-124.043,Web
-2869,"South Padre Island CG Station, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.073,-97.168,Web
-2701,"Southbank Riverwalk, St Johns River, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.320,-81.658,Web
-2865,"SPI Brazos Santiago, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,26.067,-97.155,Web
-2841,"Springmaid Pier, SC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,33.655,-78.918,Web
-2738,"St Clair Shores, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.473,-82.879,Web
-2752,"St Clair State Police, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.812,-82.486,Web
-2824,"St Helens, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.863,-122.796,Web
-2702,"St Petersburg, Tampa Bay, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.761,-82.627,Web
-2733,"Sturgeon Bay Canal, WI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,44.796,-87.314,Web
-2717,"Sturgeon Point, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.691,-79.047,Web
-2891,"Tacoma, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,47.267,-122.413,Web
-2870,"Texas Point, Sabine Pass, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.689,-93.842,Web
-2812,"The Battery, NY",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,40.701,-74.014,Web
-2892,"Toke Point, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.708,-123.967,Web
-2794,"Tolchester Beach, MD",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,39.213,-76.245,Web
-2718,"Toledo, OH",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.694,-83.472,Web
-2703,"Trident Pier, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,28.416,-80.593,Web
-2758,"U.S. Slip, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.501,-84.340,Web
-2634,"Unalakleet, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,63.875,-160.788,Web
-2635,"Unalaska, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,53.879,-166.540,Web
-2816,"USCG Station Hatteras, NC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,35.209,-75.704,Web
-2871,"USS Lexington, TX",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,27.815,-97.389,Web
-2704,"Vaca Key, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,24.711,-81.106,Web
-2636,"Valdez, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,61.125,-146.362,Web
-2893,"Vancouver, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,45.632,-122.697,Web
-2637,"Village Cove, St Paul Island, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,57.125,-170.285,Web
-2705,"Virginia Key, FL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,25.731,-80.162,Web
-2878,"Wachapreague, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.608,-75.686,Web
-2830,"Wake Island, Pacific Ocean, United States of America",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,19.291,166.618,Web
-2682,"Washington, DC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,38.873,-77.022,Web
-2825,"Wauna, OR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.162,-123.409,Web
-2611,"Weeks Bay, Mobile Bay, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.417,-87.825,Web
-2786,"Wells, ME",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,43.320,-70.563,Web
-2781,"West Bank 1, Bayou Gauche, LA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,29.789,-90.420,Web
-2612,"West Fowl River Bridge, AL",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,30.377,-88.159,Web
-2759,"West Neebish Island, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.283,-84.205,Web
-2894,"Westport, WA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.904,-124.105,Web
-2817,"Wilmington, NC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,34.228,-77.954,Web
-2709,"Windmill Point, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.357,-82.930,Web
-2879,"Windmill Point, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.616,-76.290,Web
-2799,"Woods Hole, MA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,41.524,-70.671,Web
-2818,"Wrightsville Beach, NC",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,34.213,-77.787,Web
-2710,"Wyandotte, MI",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.202,-83.147,Web
-2674,"Yabucoa Harbor, PR",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,18.055,-65.833,Web
-2638,"Yakutat, Yakutat Bay, AK",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,59.549,-139.733,Web
-2880,"Yorktown USCG Training Center, VA",NOAA,> 100d,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,37.227,-76.479,Web
-1623,Sesimbra (Avg),PT TD,0m,,Details, 01 Jan 0001 00:00, 01 Jan 0001 00:00, 01 Jan 0001 00:00,38.445,-9.102,Active
-1613,B02 avg30,Setubal,0m,,Details, 12 Apr 2012 21:45, 01 Feb 2014 21:45, 29 Apr 2011 11:13,38.500,-8.500,Active
-1614,B02 avg300,Setubal,0m,,Details, 12 Apr 2012 21:45, 01 Feb 2014 21:44, 29 Apr 2011 11:12,38.500,-8.000,Active
-1616,B02 TS AlertLevel,Setubal,0m,,Details, 12 Apr 2012 21:45, 01 Feb 2014 21:45, 29 Apr 2011 11:13,38.500,-7.000,Active
-1615,B02 TS signal,Setubal,0m,,Details, 12 Apr 2012 21:45, 01 Feb 2014 21:44, 29 Apr 2011 11:12,38.500,-7.500,Active
 2033,SET-01 - Setubal,TAD,10m,,Details, 09 Apr 2018 11:51, 09 Apr 2018 11:12, 17 Dec 2013 13:31,38.494,-8.931,Active
 2051,SET-01-300-test,TAD,10m,,Details, 09 Apr 2018 11:51, 09 Apr 2018 11:12, 21 Dec 2013 20:03,38.494,-8.931,Active
 2050,SET-01-test,TAD,10m,,Details, 09 Apr 2018 11:51, 09 Apr 2018 11:12, 20 Dec 2013 15:12,38.494,-8.931,Active
-1618,TAD Setubal (Press),TAD,0m,,Details, 24 Jan 2060 16:01, 24 Jan 2060 16:01, 30 Apr 2011 08:26,38.515,-8.909,Active
-1617,TAD Setubal (Temp),TAD,0m,,Details, 24 Jan 2060 16:01, 24 Jan 2060 16:01, 30 Apr 2011 08:26,38.515,-8.809,Active
-1044,Tamosy Large Panel (Press),TAD,11m,,Details, 20 Jun 2030 05:01, 05 Aug 2062 21:01, 11 Jan 2000 00:03,46.500,8.617,Active
-1043,Tamosy Large Panel (Temp),TAD,0m,,Details, 20 Jun 2030 05:01, 30 May 2070 00:26, 11 Jan 2000 00:03,45.756,8.617,Active
-1014,Antarctica - Syowa ,TD UNESCO,2h 46m,,Details, 09 Apr 2018 08:55, 09 Apr 2018 08:55, 29 Apr 2011 19:15,-69.008,39.570,Active
-1028,Antarctica - Vernadsky ,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 10:39, 29 Apr 2011 19:30,-65.250,-64.270,Active
-1798,"Antigua, Barbuda & Redonda - Barbuda",TD UNESCO,1h 5m,,Details, 09 Apr 2018 10:36, 09 Apr 2018 10:36, 07 Jun 2012 19:23,17.890,-61.820,Active
-1572,Argentina - Mar del Plata ,TD UNESCO,1h 22m,,Details, 09 Apr 2018 10:19, 09 Apr 2018 10:19, 29 Apr 2011 19:14,-38.000,-57.539,Active
+1044,Tamosy Large Panel (Press),TAD,11m,,Details, 20 Jun 2030 05:01, 05 Aug 2062 21:01, 11 Jan 2000 00:03,46.5,8.617,Active
+1014,Antarctica - Syowa ,TD UNESCO,2h 46m,,Details, 09 Apr 2018 08:55, 09 Apr 2018 08:55, 29 Apr 2011 19:15,-69.008,39.57,Active
+1028,Antarctica - Vernadsky ,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 10:39, 29 Apr 2011 19:30,-65.25,-64.27,Active
+1798,"Antigua, Barbuda & Redonda - Barbuda",TD UNESCO,1h 5m,,Details, 09 Apr 2018 10:36, 09 Apr 2018 10:36, 07 Jun 2012 19:23,17.89,-61.82,Active
+1572,Argentina - Mar del Plata ,TD UNESCO,1h 22m,,Details, 09 Apr 2018 10:19, 09 Apr 2018 10:19, 29 Apr 2011 19:14,-38.0,-57.539,Active
 1794,Argentina - Puerto Deseado,TD UNESCO,1h 7m,,Details, 09 Apr 2018 10:34, 09 Apr 2018 10:34, 07 Jun 2012 19:24,-47.754,-65.915,Active
 1529,Argentina - Puerto Madryn ,TD UNESCO,1h 22m,,Details, 09 Apr 2018 10:19, 09 Apr 2018 10:19, 29 Apr 2011 19:07,-42.763,-65.031,Active
 2528,Argentina - Ushuaia,TD UNESCO,1h 23m,,Details, 09 Apr 2018 10:18, 09 Apr 2018 10:18, 17 Jan 2016 15:49,-54.817,-68.217,Active
 827,Australia - Broome_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-18.001,122.219,Active
-820,Australia - Burnie_Tasmania_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-41.050,145.915,Active
+820,Australia - Burnie_Tasmania_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-41.05,145.915,Active
 1294,Australia - Cape Cuvier Wharf,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:09,-24.221,113.397,Active
 874,Australia - Cape_Ferguson_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-19.277,147.058,Active
 837,Australia - Christmas_Island_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 11 Mar 2011 05:01,-10.429,105.669,Active
 844,Australia - Cocos_Island_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-12.117,96.892,Active
 856,Australia - Darwin_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-12.472,130.846,Active
 870,Australia - Esperance_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:12,-33.871,121.895,Active
-888,Australia - Groote Eylandt ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-13.860,136.416,Active
+888,Australia - Groote Eylandt ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-13.86,136.416,Active
 892,Australia - Hillarys_Harbor_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-31.826,115.739,Active
 966,Australia - Port_Kembla_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-34.474,150.912,Active
 973,Australia - Portland_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-38.343,141.613,Active
 970,Australia - PtMurat ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-21.817,114.191,Active
-985,Australia - Rosslyn_Bay_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-23.161,150.790,Active
+985,Australia - Rosslyn_Bay_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-23.161,150.79,Active
 1008,Australia - Spring_Bay_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:10,-42.546,147.933,Active
 1019,Australia - Thevenard_AU ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:10,-32.149,133.641,Active
 1400,Bahamas - Settlement pt,TD UNESCO,1h 0m,,Details, 09 Apr 2018 10:41, 09 Apr 2018 10:41, 29 Apr 2011 19:09,26.683,-78.983,Active
 839,Bangladesh - Chittagong ,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 01 May 2013 00:01,22.333,91.825,Active
 1809,Barbers Point,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 07 Jun 2012 19:22,21.322,-158.119,Active
 877,Brasil - Fortaleza ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:12,-3.717,-38.467,Active
-990,Brasil - Salvador_Itaparica ,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 29 Apr 2011 19:11,-12.970,-38.520,Active
+990,Brasil - Salvador_Itaparica ,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 29 Apr 2011 19:11,-12.97,-38.52,Active
 1876,Caleta Meteoro_CL,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 17 Jul 2012 02:11,-52.967,-74.067,Active
-1277,Canada - Bamfield,TD UNESCO,2h 24m,,Details, 09 Apr 2018 09:17, 09 Apr 2018 09:17, 29 Apr 2011 19:09,48.840,-125.140,Active
-1353,Canada - Nain,TD UNESCO,1h 35m,,Details, 09 Apr 2018 10:06, 09 Apr 2018 10:06, 29 Apr 2011 19:09,56.550,-61.680,Active
-1679,Canada - Prince Rupert,TD UNESCO,1h 56m,,Details, 09 Apr 2018 09:45, 09 Apr 2018 09:45, 02 May 2011 22:15,54.320,-130.320,Active
-1696,Canada - St. Johns,TD UNESCO,1h 31m,,Details, 09 Apr 2018 10:10, 09 Apr 2018 10:10, 02 May 2011 22:14,47.570,-52.720,Active
+1277,Canada - Bamfield,TD UNESCO,2h 24m,,Details, 09 Apr 2018 09:17, 09 Apr 2018 09:17, 29 Apr 2011 19:09,48.84,-125.14,Active
+1353,Canada - Nain,TD UNESCO,1h 35m,,Details, 09 Apr 2018 10:06, 09 Apr 2018 10:06, 29 Apr 2011 19:09,56.55,-61.68,Active
+1679,Canada - Prince Rupert,TD UNESCO,1h 56m,,Details, 09 Apr 2018 09:45, 09 Apr 2018 09:45, 02 May 2011 22:15,54.32,-130.32,Active
+1696,Canada - St. Johns,TD UNESCO,1h 31m,,Details, 09 Apr 2018 10:10, 09 Apr 2018 10:10, 02 May 2011 22:14,47.57,-52.72,Active
 2410,Cayman Islands - George Town,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 17 Jan 2016 15:51,19.295,-81.383,Active
 1875,Chañaral_CL,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 17 Jul 2012 02:11,-26.357,-70.646,Active
 2366,Chile - Ancud,TD UNESCO,53m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:49,-41.867,-73.833,Active
@@ -463,13 +141,13 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 2372,Chile - Bahia Mansa_CL 2,TD UNESCO,54m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 12:58,-40.581,-73.737,Active
 2376,Chile - Bucalemu_CL,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:03,-34.639,-72.046,Active
 829,Chile - Caldera_CL ,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 29 Apr 2011 19:12,-27.058,-70.834,Active
-2389,Chile - Caleta Meteoro_CL,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:04,-52.960,-74.066,Active
+2389,Chile - Caleta Meteoro_CL,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:04,-52.96,-74.066,Active
 1719,Chile - Castro_CL,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 19 Sep 2011 11:44,-42.481,-73.758,Active
 2398,Chile - Castro_CL 2,TD UNESCO,52m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:03,-42.481,-73.758,Active
-1502,Chile - Constitucion ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,-35.360,-72.460,Active
+1502,Chile - Constitucion ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,-35.36,-72.46,Active
 2392,Chile - Constitucion_CL,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:03,-35.356,-72.458,Active
-847,Chile - Coquimbo_CL ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 29 Apr 2011 19:14,-29.930,-71.350,Active
-2393,Chile - Coquimbo_CL 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:03,-29.950,-71.335,Active
+847,Chile - Coquimbo_CL ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 29 Apr 2011 19:14,-29.93,-71.35,Active
+2393,Chile - Coquimbo_CL 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:03,-29.95,-71.335,Active
 2397,Chile - Coronel_CL,TD UNESCO,53m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:03,-37.029,-73.152,Active
 849,Chile - Corral_CL ,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:12,-39.867,-73.433,Active
 2396,Chile - Corral_CL 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:03,-39.887,-73.427,Active
@@ -477,17 +155,17 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 2402,Chile - Easter_CL 2,TD UNESCO,54m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:03,-27.155,-109.439,Active
 2418,Chile - Huasco_CL 2,TD UNESCO,51m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:04,-28.461,-71.224,Active
 2419,Chile - Huasco_CL 3,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:05,-28.461,-71.224,Active
-901,Chile - Iquique_CL ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 29 Apr 2011 19:11,-20.217,-70.170,Active
+901,Chile - Iquique_CL ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 29 Apr 2011 19:11,-20.217,-70.17,Active
 2423,Chile - Iquique_CL 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:04,-20.205,-70.148,Active
 904,Chile - Juan_Fernandez ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:11,-33.617,-78.825,Active
-2425,Chile - Juan_Fernandez 2,TD UNESCO,54m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:04,-33.636,-78.830,Active
-1522,Chile - Lebu ,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:07,-37.590,-73.660,Active
+2425,Chile - Juan_Fernandez 2,TD UNESCO,54m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:04,-33.636,-78.83,Active
+1522,Chile - Lebu ,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:07,-37.59,-73.66,Active
 2433,Chile - Lebu 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:04,-37.594,-73.664,Active
 1726,Chile - Mejillones_CL,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 19 Sep 2011 11:45,-23.097,-70.451,Active
 2448,Chile - Mejillones_CL 2,TD UNESCO,51m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:04,-23.097,-70.451,Active
 2463,Chile - Paposo_CL,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:05,-25.009,-70.469,Active
 2464,Chile - Paposo_CL 2,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:04,-25.009,-70.469,Active
-1730,Chile - Patache_CL,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 19 Sep 2011 11:44,-20.800,-70.194,Active
+1730,Chile - Patache_CL,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 19 Sep 2011 11:44,-20.8,-70.194,Active
 2466,Chile - Patache_CL 2,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:04,-20.803,-70.198,Active
 2470,Chile - Pichidangui_CL 2,TD UNESCO,51m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:05,-32.136,-71.529,Active
 2471,Chile - Pichidangui_CL 3,TD UNESCO,51m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:05,-32.136,-71.529,Active
@@ -497,12 +175,12 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 2469,Chile - Puerto Eden_CL,TD UNESCO,53m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:05,-49.137,-74.425,Active
 1731,Chile - Puerto Melinka_CL,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 19 Sep 2011 12:11,-43.898,-73.748,Active
 2474,Chile - Puerto Melinka_CL 2,TD UNESCO,57m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:05,-43.898,-73.748,Active
-2467,Chile - Puerto_Chacabuco_CL,TD UNESCO,52m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:05,-45.467,-72.820,Active
+2467,Chile - Puerto_Chacabuco_CL,TD UNESCO,52m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:05,-45.467,-72.82,Active
 1676,Chile - Puerto_Montt_CL,TD UNESCO,1h 7m,,Details, 09 Apr 2018 10:34, 09 Apr 2018 10:34, 02 May 2011 22:16,-41.483,-72.967,Active
 2475,Chile - Puerto_Montt_CL 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:06,-41.485,-72.961,Active
 979,Chile - Puerto_Williams_CL ,TD UNESCO,1h 23m,,Details, 09 Apr 2018 10:18, 09 Apr 2018 10:18, 29 Apr 2011 19:13,-54.933,-67.611,Active
 2489,Chile - Puerto_Williams_CL 2,TD UNESCO,52m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:15,-54.933,-67.611,Active
-1733,Chile - Punta Arenas_CL,TD UNESCO,59m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 19 Sep 2011 11:45,-53.124,-70.860,Active
+1733,Chile - Punta Arenas_CL,TD UNESCO,59m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 19 Sep 2011 11:45,-53.124,-70.86,Active
 2482,Chile - Punta Arenas_CL 2,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 13:06,-53.124,-70.862,Active
 2494,Chile - Queule_CL,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:06,-39.398,-73.215,Active
 2491,Chile - Quintero_CL 2,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:06,-32.776,-71.525,Active
@@ -511,29 +189,29 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 993,Chile - San_Antonio_CL ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:11,-33.583,-71.633,Active
 2502,Chile - San_Antonio_CL 2,TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 15 Jun 2015 13:06,-33.582,-71.618,Active
 991,Chile - San_Felix_CL ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 29 Apr 2011 19:11,-26.258,-80.124,Active
-1017,Chile - Talcahuano_CL ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:10,-36.683,-73.100,Active
+1017,Chile - Talcahuano_CL ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:10,-36.683,-73.1,Active
 2518,Chile - Talcahuano_CL 2,TD UNESCO,49m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 15 Jun 2015 13:06,-36.695,-73.106,Active
 2519,Chile - Taltal_CL 2,TD UNESCO,49m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 15 Jun 2015 13:07,-25.408,-70.492,Active
 2523,Chile - Tocopilla_CL 2,TD UNESCO,47m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 15 Jun 2015 13:07,-22.094,-70.212,Active
 2524,Chile - Tocopilla_CL 3,TD UNESCO,51m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:14,-22.094,-70.212,Active
 1026,Chile - Valparaiso_CL ,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 29 Apr 2011 19:10,-33.033,-71.617,Active
 2529,Chile - Valparaiso_CL 2,TD UNESCO,51m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:07,-33.027,-71.626,Active
-2490,China - Qinglan,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:08,19.570,110.820,Active
-2507,China - Shenzhen,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:08,22.470,113.880,Active
-2538,China - Zhapo,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:08,21.580,111.820,Active
+2490,China - Qinglan,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:08,19.57,110.82,Active
+2507,China - Shenzhen,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:08,22.47,113.88,Active
+2538,China - Zhapo,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:08,21.58,111.82,Active
 1896,CL - Coronel_CL,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 18 Oct 2012 17:12,-37.029,-73.152,Active
 1883,CL -Puerto Eden_CL,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 10:39, 17 Jul 2012 02:14,-49.132,-74.422,Active
 2378,Colombia - Buenaventura 1,TD UNESCO,1h 9m,,Details, 09 Apr 2018 10:32, 09 Apr 2018 10:32, 19 Jan 2016 05:06,3.891,-77.081,Active
 2379,Colombia - Buenaventura 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 17 Jan 2016 15:54,3.891,-77.081,Active
 1602,Comores - Comores,TD UNESCO,1h 3m,,Details, 09 Apr 2018 10:38, 09 Apr 2018 10:38, 29 Apr 2011 19:06,-11.703,43.248,Active
 1671,Cook Islands - Penrhyn_CK,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 02 May 2011 22:15,-9.001,-158.051,Active
-981,Cook Islands - Rarotonga_CK ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 29 Apr 2011 19:11,-21.200,-159.783,Active
-1456,Costa Rica - Limon ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 29 Apr 2011 19:08,10.000,-83.033,Active
-1467,Costa Rica - Quepos ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 29 Apr 2011 19:08,9.400,-84.167,Active
-2377,Curaçao - Bullen Bay,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:09,12.187,-69.020,Active
-894,Denmark - Hirtshals ,TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 10:40, 31 Dec 2009 00:10,57.600,9.970,Active
+981,Cook Islands - Rarotonga_CK ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 29 Apr 2011 19:11,-21.2,-159.783,Active
+1456,Costa Rica - Limon ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 29 Apr 2011 19:08,10.0,-83.033,Active
+1467,Costa Rica - Quepos ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 29 Apr 2011 19:08,9.4,-84.167,Active
+2377,Curaçao - Bullen Bay,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:09,12.187,-69.02,Active
+894,Denmark - Hirtshals ,TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 10:40, 31 Dec 2009 00:10,57.6,9.97,Active
 1692,"Denmark - Ittoqqortoormiit, Scoresbysund",TD UNESCO,46m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 02 May 2011 22:27,70.484,-21.962,Active
-2460,Denmark - Nuuk harbor,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 13:12,64.171,-51.720,Active
+2460,Denmark - Nuuk harbor,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 13:12,64.171,-51.72,Active
 1685,"Denmark - Qaqortoq, Julianehab",TD UNESCO,46m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 02 May 2011 22:20,60.718,-46.035,Active
 1700,"Denmark - Thule, Pituffik",TD UNESCO,50m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 10:50, 02 May 2011 22:19,76.543,-68.863,Active
 1576,Dominican Republic - Puerto Plata ,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 29 Apr 2011 19:07,19.799,-70.702,Active
@@ -546,24 +224,24 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1605,El Salvador - La_Union_SV,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 10:39, 29 Apr 2011 19:06,13.309,-87.818,Active
 927,Fiji Islands - Lautoka_FJ ,TD UNESCO,48m,,Details, 09 Apr 2018 11:41, 09 Apr 2018 10:53, 29 Apr 2011 19:11,-17.605,177.438,Active
 1030,Fiji Islands - Suva_Viti_Levu_FJ ,TD UNESCO,48m,,Details, 09 Apr 2018 11:41, 09 Apr 2018 10:53, 29 Apr 2011 19:10,-18.134,178.424,Active
-1438,France - Ajaccio ,TD UNESCO,55m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:08,41.920,8.760,Active
-1599,France - Ajaccio2,TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 10:40, 29 Apr 2011 19:07,41.920,8.760,Active
+1438,France - Ajaccio ,TD UNESCO,55m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:08,41.92,8.76,Active
+1599,France - Ajaccio2,TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 10:40, 29 Apr 2011 19:07,41.92,8.76,Active
 1443,France - Arcachon Eyrac ,TD UNESCO,57m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 03 Feb 2010 14:48,44.665,-1.164,Active
 1643,France - Boucau-Bayonne,TD UNESCO,55m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 02 May 2011 22:15,43.527,-1.515,Active
 2374,France - Boucau-Bayonne 2,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:10,43.527,-1.515,Active
 1495,France - Boulogne-Sur-Mer ,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 29 Apr 2011 19:07,50.727,1.577,Active
 2375,France - Boulogne-Sur-Mer 2,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:11,50.728,1.577,Active
-1284,France - Brest,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 01 Jan 2010 00:01,48.380,-4.500,Active
+1284,France - Brest,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 01 Jan 2010 00:01,48.38,-4.5,Active
 1444,France - Calais ,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 01 Jan 2010 00:01,50.969,1.868,Active
 2380,France - Calais 2,TD UNESCO,59m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 17 Jan 2016 15:56,50.969,1.868,Active
-1500,France - Centuri ,TD UNESCO,56m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:07,42.967,9.350,Active
-1601,France - Centuri2,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 29 Apr 2011 19:07,42.967,9.350,Active
-1289,France - Cherbourg,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 01 Jan 2010 00:01,49.650,-1.630,Active
-2387,France - Cherbourg 2,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:11,49.650,-1.630,Active
+1500,France - Centuri ,TD UNESCO,56m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:07,42.967,9.35,Active
+1601,France - Centuri2,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 29 Apr 2011 19:07,42.967,9.35,Active
+1289,France - Cherbourg,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 01 Jan 2010 00:01,49.65,-1.63,Active
+2387,France - Cherbourg 2,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:11,49.65,-1.63,Active
 1445,France - Concarneau ,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 29 Apr 2011 19:08,47.874,-3.907,Active
 2391,France - Concarneau 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:11,47.874,-3.907,Active
-1296,France - Dieppe,TD UNESCO,56m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:09,49.930,1.085,Active
-2399,France - Dieppe 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:11,49.930,1.085,Active
+1296,France - Dieppe,TD UNESCO,56m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:09,49.93,1.085,Active
+2399,France - Dieppe 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:11,49.93,1.085,Active
 2400,France - Dunkerque 2,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:11,51.048,2.367,Active
 1298,France - Dzaoudzi(Mayotte) GTS,TD UNESCO,59m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 29 Apr 2011 19:09,-12.783,45.258,Active
 1506,France - Fos-sur-Mer ,TD UNESCO,56m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 29 Apr 2011 19:07,43.405,4.893,Active
@@ -579,18 +257,15 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1722,France - La Figueirette2,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 19 Sep 2011 11:44,43.484,6.934,Active
 1520,France - La Rochelle-Pallice ,TD UNESCO,58m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 29 Apr 2011 19:07,46.158,-1.221,Active
 2432,France - La Rochelle-Pallice 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:12,46.159,-1.221,Active
-1659,France - Le Conquet,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 01 Jan 2013 00:00,48.360,-4.780,Active
-2434,France - Le Conquet 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:12,48.360,-4.780,Active
+1659,France - Le Conquet,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 01 Jan 2013 00:00,48.36,-4.78,Active
+2434,France - Le Conquet 2,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:12,48.36,-4.78,Active
 1523,France - Le Crouesty ,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:07,47.543,-2.895,Active
 1328,France - Le Havre,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:09,49.482,0.106,Active
 2435,France - Le Havre 2,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 10:46, 15 Jun 2015 13:12,49.482,0.106,Active
 1524,France - Les Sables d'Olonne ,TD UNESCO,48m,,Details, 29 Jun 2012 19:51, 20 Jan 2014 19:51, 29 Apr 2011 19:07,46.498,-1.794,Active
-2437,France - Les Sables d'Olonne 2,TD UNESCO,51m,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,46.498,-1.794,Active
-2415,France - L'Herbaudière,TD UNESCO,56m,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,47.026,-2.299,Active
-2416,France - L'Herbaudière 2,TD UNESCO,55m,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,47.025,-2.299,Active
 1724,France - Lifou,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 19 Sep 2011 11:44,-20.918,167.279,Active
 1337,France - Marseille,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:09,43.291,5.356,Active
-2534,France - Mata-Utu (Wallis island),TD UNESCO,49m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 13:18,-13.170,-176.101,Active
+2534,France - Mata-Utu (Wallis island),TD UNESCO,49m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 13:18,-13.17,-176.101,Active
 2449,France - Mimizan,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 14:04,44.211,-1.295,Active
 2450,France - Mimizan 2,TD UNESCO,59m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 15 Jun 2015 13:13,44.211,-1.295,Active
 1357,France - Nice,TD UNESCO,45m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:09,43.695,7.285,Active
@@ -598,21 +273,21 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1536,France - Nouméa - Numbo (New Caledonia) ,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:07,-22.247,166.412,Active
 953,France - Nuku_Hiva Marquesas,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 29 Apr 2011 19:11,-8.922,-140.095,Active
 1666,"France - Papeete (Tahiti, French Polynesia)",TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 02 May 2011 22:15,-17.533,-149.573,Active
-1688,France - Pointe des Galets (Reunion Island) FTP,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 02 May 2011 22:30,-20.920,55.280,Active
-1578,France - Pointe des Galets (Reunion Island) GTS ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,-20.920,55.280,Active
+1688,France - Pointe des Galets (Reunion Island) FTP,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 02 May 2011 22:30,-20.92,55.28,Active
+1578,France - Pointe des Galets (Reunion Island) GTS ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,-20.92,55.28,Active
 1821,France - Port Ferréol 2,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 07 Jun 2012 19:23,43.359,6.718,Active
 1573,France - Port-Bloc ,TD UNESCO,47m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 29 Apr 2011 19:07,45.569,-1.062,Active
 2483,France - Port-La-Nouvelle,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 17 Jan 2016 16:03,43.009,3.037,Active
 1704,France - Port-Tudy (Groix island),TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 02 May 2011 22:14,47.644,-3.447,Active
-1683,France - Port-Vendres,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 02 May 2011 22:14,42.520,3.107,Active
-1684,France - Port-Vendres2,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 02 May 2011 22:14,42.520,3.107,Active
+1683,France - Port-Vendres,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 02 May 2011 22:14,42.52,3.107,Active
+1684,France - Port-Vendres2,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 02 May 2011 22:14,42.52,3.107,Active
 1468,"France - Rangiroa Atoll (Tuamotu, French Polynesia) ",TD UNESCO,1h 41m,,Details, 09 Apr 2018 10:00, 09 Apr 2018 10:00, 29 Apr 2011 19:10,-14.946,-147.706,Active
 1471,France - Roscoff ,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:08,48.716,-3.966,Active
 2498,France - Roscoff 2,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 15 Jun 2015 13:14,48.716,-3.966,Active
 2510,France - Sainte Marie (Reunion island) 2,TD UNESCO,42m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 17 Jan 2016 16:04,-20.893,55.537,Active
 1475,France - Saint-Malo ,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:08,48.642,-2.028,Active
 2514,France - Saint-Malo 2,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 10:49, 15 Jun 2015 13:14,48.642,-2.028,Active
-1580,France - Saint-Nazaire ,TD UNESCO,46m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 29 Apr 2011 19:07,47.260,-2.200,Active
+1580,France - Saint-Nazaire ,TD UNESCO,46m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 29 Apr 2011 19:07,47.26,-2.2,Active
 2504,France - Sete,TD UNESCO,49m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 15 Jun 2015 13:14,43.398,3.699,Active
 1741,France - Sète,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 19 Sep 2011 11:44,43.398,3.699,Active
 1694,France - Socoa,TD UNESCO,46m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 02 May 2011 22:14,43.395,-1.682,Active
@@ -626,103 +301,103 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 853,Germany - Cuxhaven ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 30 Mar 2012 00:01,53.868,8.717,Active
 1511,Germany - Helgoland Binnenhafen ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 01 Jan 2005 00:01,54.176,7.891,Active
 1512,Germany - Hörnum ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:07,54.758,8.297,Active
-1517,Germany - LT Kiel ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:07,54.500,10.275,Active
+1517,Germany - LT Kiel ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:07,54.5,10.275,Active
 1582,Germany - Sassnitz ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:07,54.511,13.643,Active
-1708,Germany - Warnemünde,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 02 May 2011 22:14,54.170,12.103,Active
-1451,Greece - Kalamata ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,37.022,22.110,Active
-1452,Greece - Katakolo ,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 29 Apr 2011 19:07,37.640,21.319,Active
+1708,Germany - Warnemünde,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 02 May 2011 22:14,54.17,12.103,Active
+1451,Greece - Kalamata ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,37.022,22.11,Active
+1452,Greece - Katakolo ,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 29 Apr 2011 19:07,37.64,21.319,Active
 1463,Greece - Peiraias ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:07,37.935,23.621,Active
 1477,Greece - Syros ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 29 Apr 2011 19:08,37.438,24.941,Active
-1732,"Grenada - Prickly Bay, Grenada",TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 22 Sep 2011 14:02,12.050,-61.733,Active
+1732,"Grenada - Prickly Bay, Grenada",TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 22 Sep 2011 14:02,12.05,-61.733,Active
 2468,Honduras - Puerto Cortes,TD UNESCO,1h 41m,,Details, 09 Apr 2018 10:00, 09 Apr 2018 10:00, 17 Jan 2016 16:20,15.843,-87.959,Active
-2499,Honduras - Roatan Island Punta Gorda Harbor,TD UNESCO,1h 41m,,Details, 09 Apr 2018 10:00, 09 Apr 2018 10:00, 17 Jan 2016 16:20,16.346,-86.540,Active
+2499,Honduras - Roatan Island Punta Gorda Harbor,TD UNESCO,1h 41m,,Details, 09 Apr 2018 10:00, 09 Apr 2018 10:00, 17 Jan 2016 16:20,16.346,-86.54,Active
 2493,Hong Kong - China - Quarry Bay,TD UNESCO,59m,,Details, 09 Apr 2018 10:42, 09 Apr 2018 10:42, 17 Jan 2016 16:07,22.291,114.213,Active
-982,Iceland - Reykjavik ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 29 Apr 2011 19:11,64.150,-21.933,Active
-1716,India - Chennai,TD UNESCO,1h 23m,,Details, 09 Apr 2018 10:18, 09 Apr 2018 10:18, 27 Sep 2011 06:20,13.100,80.300,Active
-1717,India - Cochin,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 19 Sep 2011 11:44,9.960,76.260,Active
-1728,India - Nancowry,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 19 Sep 2011 11:44,8.050,93.550,Active
-1734,India - Port Blair,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 19 Sep 2011 11:44,11.680,92.760,Active
-1743,India - Visakhapatnam,TD UNESCO,1h 12m,,Details, 09 Apr 2018 10:29, 09 Apr 2018 10:29, 19 Sep 2011 11:44,17.680,83.280,Active
+982,Iceland - Reykjavik ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 29 Apr 2011 19:11,64.15,-21.933,Active
+1716,India - Chennai,TD UNESCO,1h 23m,,Details, 09 Apr 2018 10:18, 09 Apr 2018 10:18, 27 Sep 2011 06:20,13.1,80.3,Active
+1717,India - Cochin,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 19 Sep 2011 11:44,9.96,76.26,Active
+1728,India - Nancowry,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 19 Sep 2011 11:44,8.05,93.55,Active
+1734,India - Port Blair,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 19 Sep 2011 11:44,11.68,92.76,Active
+1743,India - Visakhapatnam,TD UNESCO,1h 12m,,Details, 09 Apr 2018 10:29, 09 Apr 2018 10:29, 19 Sep 2011 11:44,17.68,83.28,Active
 1271,Indonesia - Ambon,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 11 Mar 2011 05:00,-3.683,128.183,Active
-1281,Indonesia - Bitung,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 11 Mar 2011 05:00,1.450,125.200,Active
-840,Indonesia - Cilicap ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 11 Mar 2011 05:00,-7.750,109.000,Active
+1281,Indonesia - Bitung,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 11 Mar 2011 05:00,1.45,125.2,Active
+840,Indonesia - Cilicap ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 11 Mar 2011 05:00,-7.75,109.0,Active
 1329,Indonesia - Lembar,TD UNESCO,49m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 29 Apr 2011 19:09,-8.731,116.072,Active
-957,Indonesia - Padang ,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 11 Mar 2011 05:00,-0.950,100.367,Active
+957,Indonesia - Padang ,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 11 Mar 2011 05:00,-0.95,100.367,Active
 975,Indonesia - Prigi ,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 11 Mar 2011 05:00,-8.283,111.733,Active
 986,Indonesia - Sabang ,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 10:51, 11 Mar 2011 05:00,5.833,95.333,Active
 1397,Indonesia - Saumlaki,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 11 Mar 2011 05:00,-7.983,131.291,Active
-1001,Indonesia - Sibolga ,TD UNESCO,49m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 11 Mar 2011 05:00,1.733,98.800,Active
-2515,Indonesia - Surabaya,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:17,-7.200,112.741,Active
-1032,Indonesia - Waikelo ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 11 Mar 2011 05:00,-9.390,119.219,Active
+1001,Indonesia - Sibolga ,TD UNESCO,49m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 10:52, 11 Mar 2011 05:00,1.733,98.8,Active
+2515,Indonesia - Surabaya,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:17,-7.2,112.741,Active
+1032,Indonesia - Waikelo ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 11 Mar 2011 05:00,-9.39,119.219,Active
 835,Iran - Chabahar ,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 10:39, 25 Oct 2012 00:01,25.296,60.603,Active
-816,Ireland - Ballyglass pier  Belmullet,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 01 Jan 2014 00:06,54.253,-9.890,Active
-832,Ireland - Castletownbere ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:30,51.650,-9.903,Active
-2569,Ireland - New Ballyglass pier  Belmullet,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 01 Jan 2012 10:18,54.253,-9.890,Active
+816,Ireland - Ballyglass pier  Belmullet,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 01 Jan 2014 00:06,54.253,-9.89,Active
+832,Ireland - Castletownbere ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 29 Apr 2011 19:30,51.65,-9.903,Active
+2569,Ireland - New Ballyglass pier  Belmullet,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 01 Jan 2012 10:18,54.253,-9.89,Active
 960,Islas del - Palmeira Cabo Verde,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 29 Apr 2011 19:11,16.755,-22.983,Active
 834,Italy - Carloforte ,TD UNESCO,3h 11m,,Details, 09 Apr 2018 08:30, 09 Apr 2018 08:30, 29 Apr 2011 19:24,39.084,8.183,Active
 1503,Italy - Catania ,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 29 Apr 2011 19:07,37.498,15.094,Active
-1508,Italy - Genova ,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 29 Apr 2011 19:07,44.410,8.925,Active
+1508,Italy - Genova ,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 29 Apr 2011 19:07,44.41,8.925,Active
 899,Italy - Imperia ,TD UNESCO,2h 45m,,Details, 09 Apr 2018 08:56, 09 Apr 2018 08:56, 29 Apr 2011 19:24,43.524,8.011,Active
 2360,Italy - Imperia 2,TD UNESCO,1h 6m,,Details, 09 Apr 2018 10:35, 16 Jan 2015 05:32, 28 Jun 2012 05:36,43.524,8.011,Active
-1518,Italy - Lampedusa ,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 29 Apr 2011 19:07,35.500,12.604,Active
+1518,Italy - Lampedusa ,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 29 Apr 2011 19:07,35.5,12.604,Active
 1574,Italy - Porto Torres ,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 29 Apr 2011 19:07,40.842,8.404,Active
 1483,Italy - Venice ,TD UNESCO,48m,,Details, 09 Apr 2018 10:53, 09 Apr 2018 10:53, 29 Apr 2011 19:08,45.418,12.427,Active
-1796,Japan - Abashiri,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,44.020,144.290,Active
-1797,Japan - Aburatsu,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Apr 2012 07:57,31.580,131.410,Active
-1799,Japan - Chichijima,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Apr 2012 07:57,27.090,142.190,Active
-1800,Japan - Fukaura,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,40.650,139.930,Active
-1802,Japan - Hakodate,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,41.780,140.720,Active
-1803,Japan - Hamada,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:24,34.900,132.070,Active
-890,Japan - Hanasaki ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,43.280,145.570,Active
-902,Japan - Ishigakijima ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,24.200,124.100,Active
-1815,Japan - Kushimoto,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,33.480,135.770,Active
-1814,Japan - Kushiro,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,42.980,144.370,Active
-1816,Japan - Mera,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,34.920,139.830,Active
-1817,Japan - Minami-Tori-Shima,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Apr 2012 07:57,24.290,153.980,Active
-1818,Japan - Nagasaki,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,32.740,129.870,Active
-944,Japan - Naha ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 04:47,26.220,127.670,Active
-1819,Japan - Noto,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,37.500,137.160,Active
-954,Japan - Ofunato ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,39.000,141.750,Active
-955,Japan - Omaezaki ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,34.600,138.230,Active
-1822,Japan - Sado,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,38.320,138.520,Active
-1823,Japan - Saigo,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,36.200,133.330,Active
-1021,Japan - Tosashimizu ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 04:47,32.780,132.970,Active
-1825,Japan - Toyama,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,36.760,137.110,Active
-1826,Japan - Wakkanai,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,45.410,141.690,Active
-923,Kenya - Lamu ,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 08:46, 29 Apr 2011 19:11,-2.267,40.900,Active
-940,Kenya - Mombasa ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:11,-4.067,39.390,Active
+1796,Japan - Abashiri,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,44.02,144.29,Active
+1797,Japan - Aburatsu,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Apr 2012 07:57,31.58,131.41,Active
+1799,Japan - Chichijima,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Apr 2012 07:57,27.09,142.19,Active
+1800,Japan - Fukaura,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,40.65,139.93,Active
+1802,Japan - Hakodate,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,41.78,140.72,Active
+1803,Japan - Hamada,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:24,34.9,132.07,Active
+890,Japan - Hanasaki ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,43.28,145.57,Active
+902,Japan - Ishigakijima ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,24.2,124.1,Active
+1815,Japan - Kushimoto,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,33.48,135.77,Active
+1814,Japan - Kushiro,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,42.98,144.37,Active
+1816,Japan - Mera,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,34.92,139.83,Active
+1817,Japan - Minami-Tori-Shima,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Apr 2012 07:57,24.29,153.98,Active
+1818,Japan - Nagasaki,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,32.74,129.87,Active
+944,Japan - Naha ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 04:47,26.22,127.67,Active
+1819,Japan - Noto,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,37.5,137.16,Active
+954,Japan - Ofunato ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,39.0,141.75,Active
+955,Japan - Omaezaki ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 05:00,34.6,138.23,Active
+1822,Japan - Sado,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,38.32,138.52,Active
+1823,Japan - Saigo,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:22,36.2,133.33,Active
+1021,Japan - Tosashimizu ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 11 Mar 2011 04:47,32.78,132.97,Active
+1825,Japan - Toyama,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,36.76,137.11,Active
+1826,Japan - Wakkanai,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 07 Jun 2012 19:23,45.41,141.69,Active
+923,Kenya - Lamu ,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 08:46, 29 Apr 2011 19:11,-2.267,40.9,Active
+940,Kenya - Mombasa ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:11,-4.067,39.39,Active
 1879,Kerguelen Island,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 17 Jul 2012 02:13,-49.353,70.022,Active
 1432,Kiribati - Christmas,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:09,1.984,-157.473,Active
 1655,Kiribati - Kanton_KI,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 02 May 2011 22:15,-2.801,-171.718,Active
-1410,Kiribati - Tarawa,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 11 Mar 2011 05:00,1.363,172.930,Active
+1410,Kiribati - Tarawa,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 11 Mar 2011 05:00,1.363,172.93,Active
 1497,Korea - Busan ,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 08:55, 11 Mar 2011 04:47,35.093,129.037,Active
-1878,"Leava (Futuna Island, Wallis & Futuna)",TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 28 Apr 2013 22:26,-14.296,-178.160,Active
+1878,"Leava (Futuna Island, Wallis & Futuna)",TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 28 Apr 2013 22:26,-14.296,-178.16,Active
 1880,Lerwick2,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 17 Jul 2012 02:30,60.155,-1.145,Active
-1588,Madagascar - Toamasina ,TD UNESCO,1h 7m,,Details, 09 Apr 2018 10:34, 09 Apr 2018 08:34, 29 Apr 2011 19:07,-18.160,49.427,Active
+1588,Madagascar - Toamasina ,TD UNESCO,1h 7m,,Details, 09 Apr 2018 10:34, 09 Apr 2018 08:34, 29 Apr 2011 19:07,-18.16,49.427,Active
 924,Malaysia - Langkawi ,TD UNESCO,44m,,Details, 09 Apr 2018 10:57, 09 Apr 2018 08:56, 11 Mar 2011 05:00,6.416,99.767,Active
 882,Maldive Islands - Gan ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 08:48, 29 Apr 2011 19:12,0.687,73.152,Active
 891,Maldive Islands - Hanimadhoo ,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 08:46, 29 Apr 2011 19:11,6.767,73.167,Active
-933,Maldive Islands - Male ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:11,4.190,73.527,Active
+933,Maldive Islands - Male ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:11,4.19,73.527,Active
 1806,"Maré (New Caledonia, Loyalty Islands)",TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 07 Jun 2012 19:23,-21.548,167.877,Active
 1338,Marshall Islands - Majuro,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:09,7.106,171.373,Active
 1795,Martinique - Fort-de-France,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 08:54, 07 Jun 2012 19:23,14.602,-61.063,Active
 1881,Matarani,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 17 Jul 2012 02:13,-17.001,-72.109,Active
-951,Mauritania - Nouakchott ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:11,18.100,-15.950,Active
+951,Mauritania - Nouakchott ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:11,18.1,-15.95,Active
 1268,Mauritius - Agalega,TD UNESCO,55m,,Details, 09 Apr 2018 10:46, 09 Apr 2018 08:46, 29 Apr 2011 19:13,-10.346,56.586,Active
 1283,Mauritius - Blue Bay,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:09,-20.444,57.711,Active
 978,Mauritius - Pt.Louis ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:11,-20.157,57.504,Active
-984,Mauritius - Rodrigues ,TD UNESCO,44m,,Details, 09 Apr 2018 10:57, 09 Apr 2018 08:51, 29 Apr 2011 19:11,-19.680,63.421,Active
+984,Mauritius - Rodrigues ,TD UNESCO,44m,,Details, 09 Apr 2018 10:57, 09 Apr 2018 08:51, 29 Apr 2011 19:11,-19.68,63.421,Active
 1493,Mexico - Acapulco Club de Yates ,TD UNESCO,1h 8m,,Details, 09 Apr 2018 10:33, 09 Apr 2018 08:33, 29 Apr 2011 19:08,16.838,-99.903,Active
 1499,"Mexico - Ciudad del Carmen, Camp. ",TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:37, 29 Apr 2011 19:12,18.617,-91.817,Active
 1528,"Mexico - Puerto Madero, Chis. ",TD UNESCO,1h 8m,,Details, 09 Apr 2018 10:33, 09 Apr 2018 08:33, 29 Apr 2011 19:12,14.712,-92.401,Active
 2488,Mexico - Puerto Morelos 2,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 17 Jan 2016 16:05,20.868,-86.867,Active
-1577,"Mexico - Puerto Morelos, Q. R. ",TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:35, 29 Apr 2011 19:07,21.367,-86.750,Active
+1577,"Mexico - Puerto Morelos, Q. R. ",TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:35, 29 Apr 2011 19:07,21.367,-86.75,Active
 1581,"Mexico - Salina Cruz, Oax. ",TD UNESCO,1h 8m,,Details, 09 Apr 2018 10:33, 09 Apr 2018 08:33, 29 Apr 2011 19:07,16.168,-95.197,Active
 2500,"Mexico - Salina Cruz, Oax. 2",TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:21,16.168,-95.197,Active
-1591,Mexico - Tuxpan ,TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 08:40, 29 Apr 2011 19:12,20.970,-97.400,Active
+1591,Mexico - Tuxpan ,TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 08:40, 29 Apr 2011 19:12,20.97,-97.4,Active
 1592,"Mexico - Veracruz, Ver. ",TD UNESCO,1h 1m,,Details, 09 Apr 2018 10:40, 09 Apr 2018 08:40, 29 Apr 2011 19:07,19.192,-96.124,Active
 2539,"Mexico - Zihuatanejo, Gro",TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 17 Jan 2016 16:05,17.637,-101.558,Active
-859,Micronesia - Dekehtik Pohnpei_FM,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:12,6.981,158.200,Active
+859,Micronesia - Dekehtik Pohnpei_FM,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:12,6.981,158.2,Active
 2426,Micronesia - Kapingamarangi_FM,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 10:54, 15 Jun 2015 13:21,1.078,154.807,Active
 1711,Micronesia - Yap Island,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 25 Jan 2014 00:01,9.514,138.125,Active
 1607,"Monaco - Monaco, Fontvieille harbour",TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 08:52, 29 Apr 2011 19:06,43.729,7.422,Active
@@ -733,181 +408,179 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1446,New Zealand - Castlepoint ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:08,-40.899,176.232,Active
 1290,New Zealand - Chatham Island,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:09,-44.025,-176.369,Active
 1567,New Zealand - Dunedin ,TD UNESCO,46m,,Details, 09 Apr 2018 11:37, 09 Apr 2018 08:55, 29 Apr 2011 19:07,-45.814,170.629,Active
-1334,New Zealand - East Cape,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:09,-37.550,178.159,Active
+1334,New Zealand - East Cape,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:09,-37.55,178.159,Active
 885,New Zealand - Gisborne ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:12,-38.675,178.023,Active
 2409,New Zealand - Great_Barrier_Is,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 15 Jun 2015 13:22,-36.189,175.489,Active
 1653,New Zealand - Jackson Bay,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 03 May 2011 00:44,-43.973,168.616,Active
 1515,New Zealand - Kaikoura ,TD UNESCO,46m,,Details, 09 Apr 2018 11:37, 09 Apr 2018 08:55, 29 Apr 2011 19:07,-42.413,173.703,Active
 1533,New Zealand - Manakau ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 29 Apr 2011 19:07,-37.047,174.512,Active
-945,New Zealand - Napier ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:56, 29 Apr 2011 19:11,-39.476,176.920,Active
-2457,New Zealand - North_Cape,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 15 Jun 2015 13:22,-34.410,173.050,Active
+945,New Zealand - Napier ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:56, 29 Apr 2011 19:11,-39.476,176.92,Active
+2457,New Zealand - North_Cape,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 10:55, 15 Jun 2015 13:22,-34.41,173.05,Active
 1699,New Zealand - Port of Tauranga,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:56, 02 May 2011 22:14,-37.641,176.181,Active
 1466,New Zealand - Puysegur Welcome Bay ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:56, 29 Apr 2011 19:08,-46.085,166.589,Active
-1469,New Zealand - Raoul Island Boat Cove ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 29 Apr 2011 19:08,-29.280,-177.894,Active
+1469,New Zealand - Raoul Island Boat Cove ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 29 Apr 2011 19:08,-29.28,-177.894,Active
 1470,New Zealand - Raoul Island Fishing Rock ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 29 Apr 2011 19:08,-29.251,-177.904,Active
 1710,New Zealand - Wellington,TD UNESCO,46m,,Details, 09 Apr 2018 11:37, 09 Apr 2018 08:55, 02 May 2011 22:14,-41.285,174.779,Active
 1882,Newlyn2,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 10:30, 17 Jul 2012 02:37,50.103,-5.543,Active
 2395,Nicaragua - Puerto Corinto,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 10:47, 15 Jun 2015 13:23,12.483,-87.168,Active
 2480,Nicaragua - Puerto Sandino,TD UNESCO,1h 19m,,Details, 09 Apr 2018 10:22, 09 Apr 2018 10:22, 15 Jun 2015 13:29,12.201,-86.764,Active
-1272,Norway - Andenes,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:20,69.317,16.150,Active
+1272,Norway - Andenes,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:20,69.317,16.15,Active
 1650,Norway - Honningsvåg,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,70.983,25.983,Active
 1336,Norway - Måløy,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:20,61.933,5.117,Active
-1664,Norway - Ny Ålesund,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,78.933,11.950,Active
-1689,Norway - Rørvik,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,64.867,11.250,Active
-1703,Norway - Tregde,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 01 Jan 2010 00:10,58.000,7.567,Active
-1707,Norway - Vardø,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,70.333,31.100,Active
-2401,Oman - Duqm,TD UNESCO,44m,,Details, 09 Apr 2018 10:57, 09 Apr 2018 10:57, 15 Jun 2015 13:24,19.660,57.720,Active
-2535,Oman - Khawr Wudam,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:23,23.820,57.520,Active
+1664,Norway - Ny Ålesund,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,78.933,11.95,Active
+1689,Norway - Rørvik,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,64.867,11.25,Active
+1703,Norway - Tregde,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 01 Jan 2010 00:10,58.0,7.567,Active
+1707,Norway - Vardø,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:30,70.333,31.1,Active
+2401,Oman - Duqm,TD UNESCO,44m,,Details, 09 Apr 2018 10:57, 09 Apr 2018 10:57, 15 Jun 2015 13:24,19.66,57.72,Active
+2535,Oman - Khawr Wudam,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:23,23.82,57.52,Active
 937,Oman - Masirah ,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:55, 29 Apr 2011 19:11,20.683,58.867,Active
 1460,Oman - Muscat ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:45, 29 Apr 2011 19:08,23.633,58.567,Active
 1459,Oman - Muscat (BGAN) ,TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:08,23.628,58.565,Active
 989,Oman - Salalah ,TD UNESCO,44m,,Details, 09 Apr 2018 10:57, 09 Apr 2018 08:51, 29 Apr 2011 19:11,16.935,54.007,Active
-2516,Oman - Sur,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 15 Jun 2015 13:24,22.570,59.520,Active
+2516,Oman - Sur,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 15 Jun 2015 13:24,22.57,59.52,Active
 1603,Pakistan - Gwadar,TD UNESCO,44m,,Details, 09 Apr 2018 11:42, 09 Apr 2018 08:42, 29 Apr 2011 19:06,25.133,62.033,Active
-908,Pakistan - Karachi ,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 08:51, 29 Apr 2011 19:11,24.850,67.030,Active
-1665,Pakistan - Ormara,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 02 May 2011 22:15,25.200,64.067,Active
-932,Palau Islands - Malakal ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 01 Sep 2013 00:01,7.328,134.450,Active
+908,Pakistan - Karachi ,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 08:51, 29 Apr 2011 19:11,24.85,67.03,Active
+1665,Pakistan - Ormara,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:49, 02 May 2011 22:15,25.2,64.067,Active
+932,Palau Islands - Malakal ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 01 Sep 2013 00:01,7.328,134.45,Active
 2371,Panamá - Bocas Del Toro,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:24,9.351,-82.258,Active
 929,Papua New Guinea - Lombrum_Manus_Is_PG ,TD UNESCO,6m,,Details, 09 Apr 2018 11:56, 09 Apr 2018 11:05, 11 Mar 2011 05:00,-2.042,147.374,Active
 830,Perú - Callao La-Punta_PE,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:14,-12.071,-77.174,Active
-2517,Perú - Talara,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 17 Jan 2016 16:08,-4.578,-81.280,Active
+2517,Perú - Talara,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 17 Jan 2016 16:08,-4.578,-81.28,Active
 1447,Philippines - Currimao ,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 08:48, 29 Mar 2012 00:01,18.017,120.483,Active
 2046,Philippines - Currimao_Prs,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 01 Jan 2011 00:01,18.017,120.483,Active
 857,Philippines - Davao_PH ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 01 Mar 2011 00:01,7.083,125.633,Active
 2045,Philippines - Davao_PH_rad,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 01 Jan 2011 00:04,7.083,125.633,Active
-2047,Philippines - Davao_TEST_1,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 25 Jun 2011 00:02,7.030,125.633,Active
-2048,Philippines - Davao_TEST_2,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 21 Feb 2013 00:01,7.040,125.633,Active
-2049,Philippines - DavaoTEST3,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 25 Jun 2011 00:02,7.050,125.633,Active
+2047,Philippines - Davao_TEST_1,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 25 Jun 2011 00:02,7.03,125.633,Active
+2048,Philippines - Davao_TEST_2,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 21 Feb 2013 00:01,7.04,125.633,Active
+2049,Philippines - DavaoTEST3,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 25 Jun 2011 00:02,7.05,125.633,Active
 1327,Philippines - Legaspi,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 11 Mar 2011 05:00,13.161,123.758,Active
 1527,Philippines - Lubang ,TD UNESCO,52m,,Details, 09 Apr 2018 10:49, 09 Apr 2018 08:04, 16 Jun 2010 11:22,13.818,120.202,Active
 935,Philippines - Manila ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 17 Feb 2013 00:01,14.583,120.967,Active
 1828,"Pointe à Pitre, Guadeloupe",TD UNESCO,40m,,Details, 09 Apr 2018 11:01, 09 Apr 2018 08:55, 07 Jun 2012 19:23,16.224,-61.531,Active
 895,Polynésie Française (French Polynesia) - Hiva_Oa Marquesas,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 09:02, 29 Apr 2011 19:11,-9.805,-139.034,Active
 2443,Polynésie Française (French Polynesia) - Makemo - Tuamotu,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 15:49,-16.627,-143.569,Active
-983,Polynésie Française (French Polynesia) - Rikitea_PF ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 29 Apr 2011 19:11,-23.133,-134.950,Active
+983,Polynésie Française (French Polynesia) - Rikitea_PF ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:56, 29 Apr 2011 19:11,-23.133,-134.95,Active
 1813,Port Ferréol,TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 08:52, 07 Jun 2012 19:22,43.359,6.718,Active
-831,Portugal - Cascais ,TD UNESCO,4h 49m,,Details, 09 Apr 2018 06:51, 09 Apr 2018 06:51, 01 Jan 2010 00:04,38.693,-9.000,Active
+831,Portugal - Cascais ,TD UNESCO,4h 49m,,Details, 09 Apr 2018 06:51, 09 Apr 2018 06:51, 01 Jan 2010 00:04,38.693,-9.0,Active
 1660,Portugal - Lagos,TD UNESCO,33m,,Details, 09 Apr 2018 11:08, 09 Apr 2018 09:08, 02 May 2011 22:19,37.099,-8.667,Active
-1668,Portugal - Ponta_Delgada_Azor,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:15,37.730,-25.680,Active
-1273,Puerto Rico - Arecibo,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 08:54, 29 Apr 2011 19:09,18.480,-66.702,Active
-2455,Russia - Nahodka,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 15 Jun 2015 13:26,42.780,132.860,Active
-1464,Russia - Petropavlovsk ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 11 Mar 2011 05:00,53.017,158.650,Active
-2477,Russia - Pos'et,TD UNESCO,57m,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,42.650,130.800,Active
+1668,Portugal - Ponta_Delgada_Azor,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2011 22:15,37.73,-25.68,Active
+1273,Puerto Rico - Arecibo,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 08:54, 29 Apr 2011 19:09,18.48,-66.702,Active
+2455,Russia - Nahodka,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 10:44, 15 Jun 2015 13:26,42.78,132.86,Active
+1464,Russia - Petropavlovsk ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 11 Mar 2011 05:00,53.017,158.65,Active
 1465,Russia - Preobrazheniye ,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 08:44, 11 Mar 2011 05:00,42.909,133.922,Active
-1472,Russia - Rudnaya Pristan ,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 08:44, 11 Mar 2011 05:00,44.350,135.800,Active
-2511,Russia - Sosunovo,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:26,46.530,138.330,Active
-2512,Russia - Sovetskaja Gavan',TD UNESCO,57m,,Details, 01 Jan 0001 00:00,Last Value .000 m, 01 Jan 0001 00:00,48.970,140.290,Active
-2533,Russia - Vladivostok,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:27,43.130,131.920,Active
-1829,"Saint Pierre et Miquelon, Canada",TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 08:52, 07 Jun 2012 19:22,46.471,-56.100,Active
+1472,Russia - Rudnaya Pristan ,TD UNESCO,57m,,Details, 09 Apr 2018 10:44, 09 Apr 2018 08:44, 11 Mar 2011 05:00,44.35,135.8,Active
+2511,Russia - Sosunovo,TD UNESCO,58m,,Details, 09 Apr 2018 10:43, 09 Apr 2018 10:43, 15 Jun 2015 13:26,46.53,138.33,Active
+2533,Russia - Vladivostok,TD UNESCO,56m,,Details, 09 Apr 2018 10:45, 09 Apr 2018 10:45, 15 Jun 2015 13:27,43.13,131.92,Active
+1829,"Saint Pierre et Miquelon, Canada",TD UNESCO,48m,,Details, 09 Apr 2018 10:52, 09 Apr 2018 08:52, 07 Jun 2012 19:22,46.471,-56.1,Active
 1585,Saint-Helena - Saint Helena ,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 08:51, 29 Apr 2011 19:07,-15.917,-5.717,Active
 1025,Samoa; U.S.A. - Apia_Upolu_WS ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:02, 29 Apr 2011 19:10,-13.827,-171.761,Active
 1930,San Andres,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 18 Oct 2012 17:15,12.569,-81.701,Active
 1929,Santa Marta,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 18 Oct 2012 17:15,11.235,-74.222,Active
-1807,Semarang,TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 09:03, 07 Jun 2012 19:23,-6.948,110.420,Active
-855,Sénégal - Dakar ,TD UNESCO,40m,,Details, 09 Apr 2018 11:01, 09 Apr 2018 08:46, 29 Apr 2011 19:12,14.676,-17.420,Active
-925,Seychelles - Pt.LaRue ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:11,-4.500,55.500,Active
+1807,Semarang,TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 09:03, 07 Jun 2012 19:23,-6.948,110.42,Active
+855,Sénégal - Dakar ,TD UNESCO,40m,,Details, 09 Apr 2018 11:01, 09 Apr 2018 08:46, 29 Apr 2011 19:12,14.676,-17.42,Active
+925,Seychelles - Pt.LaRue ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:11,-4.5,55.5,Active
 1695,Solomon Islands - Honiara,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 11 Mar 2011 05:00,-9.429,159.956,Active
 1742,Solomon Islands - Tarekukure_Wharf_SB,TD UNESCO,6m,,Details, 09 Apr 2018 11:56, 09 Apr 2018 11:17, 19 Sep 2011 11:44,-6.693,156.409,Active
 2394,Spain - Acoruna,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:16,43.357,-8.389,Active
 1439,Spain - Alcudia ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:08,39.867,3.117,Active
 1441,Spain - Algeciras ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 29 Apr 2011 19:08,36.177,-5.398,Active
-1630,Spain - Almeria,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 02 May 2011 22:15,36.830,-2.478,Active
-1638,Spain - Arrecife,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2013 00:00,28.972,-13.530,Active
-819,Spain - Barcelona ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:12,41.340,2.160,Active
-1280,Spain - Bilbao3,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:09,43.360,-3.050,Active
+1630,Spain - Almeria,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 02 May 2011 22:15,36.83,-2.478,Active
+1638,Spain - Arrecife,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 02 May 2013 00:00,28.972,-13.53,Active
+819,Spain - Barcelona ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:12,41.34,2.16,Active
+1280,Spain - Bilbao3,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:59, 29 Apr 2011 19:09,43.36,-3.05,Active
 2373,Spain - Bonanza2,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 17 Jan 2016 16:17,36.802,-6.338,Active
-2383,Spain - Carboneras,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:17,36.974,-1.900,Active
-833,Spain - Ceuta ,TD UNESCO,4h 41m,,Details, 09 Apr 2018 07:00, 08 Apr 2018 07:00, 30 May 2011 00:10,35.900,-5.317,Active
-850,Spain - Coruña ,TD UNESCO,3h 51m,,Details, 09 Apr 2018 07:50, 08 Apr 2018 07:50, 29 Apr 2011 19:20,43.210,-8.230,Active
+2383,Spain - Carboneras,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:17,36.974,-1.9,Active
+833,Spain - Ceuta ,TD UNESCO,4h 41m,,Details, 09 Apr 2018 07:00, 08 Apr 2018 07:00, 30 May 2011 00:10,35.9,-5.317,Active
+850,Spain - Coruña ,TD UNESCO,3h 51m,,Details, 09 Apr 2018 07:50, 08 Apr 2018 07:50, 29 Apr 2011 19:20,43.21,-8.23,Active
 2417,Spain - ElHierro,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:17,27.784,-17.902,Active
-873,Spain - Ferrol1 ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 02 Jan 2010 00:01,43.460,-8.330,Active
+873,Spain - Ferrol1 ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 02 Jan 2010 00:01,43.46,-8.33,Active
 2406,Spain - Ferrol2,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:17,43.476,-8.249,Active
 2407,Spain - Formentera,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 18 Jan 2016 02:03,38.735,1.419,Active
 2408,Spain - Fuerteventura,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:17,28.493,-13.858,Active
-1306,Spain - Gandia,TD UNESCO,4h 55m,,Details, 09 Apr 2018 06:46, 09 Apr 2018 06:46, 29 Apr 2011 19:09,39.000,-0.150,Active
+1306,Spain - Gandia,TD UNESCO,4h 55m,,Details, 09 Apr 2018 06:46, 09 Apr 2018 06:46, 29 Apr 2011 19:09,39.0,-0.15,Active
 2411,Spain - Gijon,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 17 Jan 2016 16:17,43.558,-5.698,Active
-898,Spain - Huelva5 ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 02 Jan 2014 09:12,37.130,-6.830,Active
-1449,Spain - Ibiza2 ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 29 Apr 2011 19:08,38.917,1.450,Active
-918,Spain - LaGomera ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 29 Apr 2011 19:11,28.090,-17.110,Active
-2430,Spain - Langosteira,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 17 Jan 2016 16:12,43.347,-8.530,Active
+898,Spain - Huelva5 ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 02 Jan 2014 09:12,37.13,-6.83,Active
+1449,Spain - Ibiza2 ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 29 Apr 2011 19:08,38.917,1.45,Active
+918,Spain - LaGomera ,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 29 Apr 2011 19:11,28.09,-17.11,Active
+2430,Spain - Langosteira,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 17 Jan 2016 16:12,43.347,-8.53,Active
 1657,Spain - LaPalma,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 08:58, 02 May 2011 22:15,28.678,-17.769,Active
 1455,Spain - LasPalmas2 ,TD UNESCO,50m,,Details, 09 Apr 2018 10:51, 09 Apr 2018 08:54, 02 Jan 2014 09:13,28.141,-15.412,Active
 2444,Spain - Malaga,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:12,36.712,-4.417,Active
 2447,Spain - Marin,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:12,42.406,-8.691,Active
-938,Spain - Melilla ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 08:59, 29 Apr 2011 19:11,35.290,-2.930,Active
-1345,Spain - Motril2,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:58, 29 Apr 2011 19:09,36.720,-3.520,Active
-1675,Spain - Puerto de la Luz,TD UNESCO,5h 42m,,Details, 09 Apr 2018 05:59, 08 Apr 2018 05:59, 02 May 2011 22:20,28.130,-15.410,Active
+938,Spain - Melilla ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 08:59, 29 Apr 2011 19:11,35.29,-2.93,Active
+1345,Spain - Motril2,TD UNESCO,46m,,Details, 09 Apr 2018 10:55, 09 Apr 2018 08:58, 29 Apr 2011 19:09,36.72,-3.52,Active
+1675,Spain - Puerto de la Luz,TD UNESCO,5h 42m,,Details, 09 Apr 2018 05:59, 08 Apr 2018 05:59, 02 May 2011 22:20,28.13,-15.41,Active
 2501,Spain - Santander,TD UNESCO,42m,,Details, 09 Apr 2018 10:59, 09 Apr 2018 10:59, 17 Jan 2016 16:13,43.461,-3.791,Active
 2505,Spain - Sevilla,TD UNESCO,53m,,Details, 09 Apr 2018 10:48, 09 Apr 2018 10:48, 15 Jun 2015 13:29,37.318,-6.008,Active
 1478,Spain - Tarifa ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 29 Apr 2011 19:08,36.006,-5.604,Active
 2521,Spain - Tarragona,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:29,41.079,1.213,Active
 1479,Spain - Tenerife2 ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 25 Dec 2012 00:01,28.477,-16.241,Active
-1706,Spain - Valencia,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:58, 02 May 2011 22:14,39.440,-0.310,Active
+1706,Spain - Valencia,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 08:58, 02 May 2011 22:14,39.44,-0.31,Active
 2531,Spain - Vigo,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:29,42.243,-8.726,Active
-2532,Spain - Villagarcia,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:29,42.601,-8.770,Active
-846,Sri Lanka - Colombo ,TD UNESCO,40m,,Details, 09 Apr 2018 11:01, 09 Apr 2018 09:01, 29 Apr 2011 19:12,6.950,79.850,Active
-1023,Sri Lanka - Trinconmalee ,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 08:54, 30 Apr 2011 02:11,8.564,81.200,Active
+2532,Spain - Villagarcia,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 10:58, 15 Jun 2015 13:29,42.601,-8.77,Active
+846,Sri Lanka - Colombo ,TD UNESCO,40m,,Details, 09 Apr 2018 11:01, 09 Apr 2018 09:01, 29 Apr 2011 19:12,6.95,79.85,Active
+1023,Sri Lanka - Trinconmalee ,TD UNESCO,1h 2m,,Details, 09 Apr 2018 10:39, 09 Apr 2018 08:54, 30 Apr 2011 02:11,8.564,81.2,Active
 886,Sweden - GoteborgTorshamnen ,TD UNESCO,1h 42m,,Details, 09 Apr 2018 09:59, 09 Apr 2018 07:57, 01 Jan 2010 00:05,57.683,11.783,Active
-1005,Sweden - Smogen ,TD UNESCO,1h 41m,,Details, 09 Apr 2018 10:00, 09 Apr 2018 07:59, 29 Apr 2011 19:25,58.350,11.216,Active
+1005,Sweden - Smogen ,TD UNESCO,1h 41m,,Details, 09 Apr 2018 10:00, 09 Apr 2018 07:59, 29 Apr 2011 19:25,58.35,11.216,Active
 1011,Sweden - Stockholm ,TD UNESCO,1h 46m,,Details, 09 Apr 2018 09:55, 09 Apr 2018 07:55, 29 Apr 2011 19:25,59.316,18.083,Active
-1038,Tanzania - Zanzibar ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 29 Apr 2011 19:10,-6.150,39.183,Active
+1038,Tanzania - Zanzibar ,TD UNESCO,43m,,Details, 09 Apr 2018 10:58, 09 Apr 2018 08:58, 29 Apr 2011 19:10,-6.15,39.183,Active
 950,Tonga Island - Nukualofa_TO ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,-21.137,-175.181,Active
-2487,Trinidad & Tobago - Port of Spain,TD UNESCO,2h 9m,,Details, 09 Apr 2018 09:32, 09 Apr 2018 09:32, 15 Jun 2015 13:42,10.650,-61.517,Active
+2487,Trinidad & Tobago - Port of Spain,TD UNESCO,2h 9m,,Details, 09 Apr 2018 09:32, 09 Apr 2018 09:32, 15 Jun 2015 13:42,10.65,-61.517,Active
 2503,Trinidad & Tobago - Scarborough,TD UNESCO,2h 8m,,Details, 09 Apr 2018 09:33, 09 Apr 2018 09:33, 15 Jun 2015 13:43,11.167,-60.733,Active
 1606,Turkey - Marmara Ereglisi,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 08:59, 29 Apr 2011 19:06,40.967,27.967,Active
-1609,Turkey - Sinop,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 08:52, 29 Apr 2011 19:07,42.017,35.150,Active
+1609,Turkey - Sinop,TD UNESCO,54m,,Details, 09 Apr 2018 10:47, 09 Apr 2018 08:52, 29 Apr 2011 19:07,42.017,35.15,Active
 876,Tuvalu Islands - Fongafale_TV ,TD UNESCO,33m,,Details, 09 Apr 2018 11:08, 09 Apr 2018 09:05, 29 Apr 2011 19:12,-8.502,179.195,Active
-1891,UK - Aberdeen,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,57.140,-2.080,Active
-1892,UK - Avonmouth Portbury,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.500,-2.730,Active
-1893,UK - Bangor,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.660,-5.670,Active
-1894,UK - Barmouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.720,-4.050,Active
-824,UK - Bermuda_UK ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:18,32.220,-64.700,Active
-1895,UK - Bournemouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.710,-1.870,Active
-1897,UK - Cromer,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.930,1.300,Active
+1891,UK - Aberdeen,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,57.14,-2.08,Active
+1892,UK - Avonmouth Portbury,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.5,-2.73,Active
+1893,UK - Bangor,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.66,-5.67,Active
+1894,UK - Barmouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.72,-4.05,Active
+824,UK - Bermuda_UK ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:18,32.22,-64.7,Active
+1895,UK - Bournemouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.71,-1.87,Active
+1897,UK - Cromer,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.93,1.3,Active
 1898,UK - Deal Pier,TD UNESCO,2h 47m,,Details, 09 Apr 2018 08:53, 09 Apr 2018 08:53, 18 Oct 2012 17:11,51.224,1.409,Active
 883,UK - Diego Garcia ,TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:00, 29 Apr 2011 19:12,-7.233,72.433,Active
-1899,UK - Dover,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.110,1.320,Active
+1899,UK - Dover,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.11,1.32,Active
 1901,UK - El Porvenir,TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 09:03, 18 Oct 2012 17:12,9.558,-78.949,Active
-1902,UK - Fishguard,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.010,-4.980,Active
-1308,UK - Gibraltar(GTS),TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 08:54, 29 Apr 2011 19:09,36.130,-5.350,Active
-2412,UK - Gough Island,TD UNESCO,1h 7m,,Details, 09 Apr 2018 10:34, 09 Apr 2018 10:34, 16 Jun 2015 08:58,-40.349,-9.880,Active
-1904,UK - Harwich,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.950,1.290,Active
-1906,UK - Heysham,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.030,-2.920,Active
-1907,UK - Hinkley Point,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.210,-3.130,Active
+1902,UK - Fishguard,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.01,-4.98,Active
+1308,UK - Gibraltar(GTS),TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 08:54, 29 Apr 2011 19:09,36.13,-5.35,Active
+2412,UK - Gough Island,TD UNESCO,1h 7m,,Details, 09 Apr 2018 10:34, 09 Apr 2018 10:34, 16 Jun 2015 08:58,-40.349,-9.88,Active
+1904,UK - Harwich,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.95,1.29,Active
+1906,UK - Heysham,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.03,-2.92,Active
+1907,UK - Hinkley Point,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.21,-3.13,Active
 896,UK - Holyhead ,TD UNESCO,29m,,Details, 09 Apr 2018 11:12, 09 Apr 2018 09:13, 29 Apr 2011 19:11,53.311,-4.634,Active
-1908,UK - Holyhead2,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,53.310,-4.620,Active
-1909,UK - Ilfracombe,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.210,-4.110,Active
-1910,UK - Immingham,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,53.630,-0.190,Active
-911,UK - King Edward Point ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 09:05, 29 Apr 2011 19:10,-54.280,-36.500,Active
-1912,UK - Kinlochbervie,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,58.460,-5.050,Active
-1913,UK - Leith,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.990,-3.180,Active
-1457,UK - Liverpool ,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 29 Apr 2011 19:08,53.450,-3.018,Active
-1915,UK - Llandudno,TD UNESCO,1h 26m,,Details, 09 Apr 2018 10:15, 09 Apr 2018 08:45, 18 Oct 2012 17:30,53.330,-3.830,Active
-1916,UK - Lowestoft,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.470,1.750,Active
-1917,UK - Lymington,TD UNESCO,3h 20m,,Details, 09 Apr 2018 08:20, 09 Apr 2018 08:20, 18 Oct 2012 17:12,50.740,-1.507,Active
-1918,UK - Milford Haven,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.710,-5.050,Active
-1919,UK - Millport,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.750,-4.910,Active
-1920,UK - Mumbles,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.570,-3.980,Active
-1921,UK - Newhaven,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.780,0.060,Active
-1922,UK - Newport,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.550,-2.990,Active
-1923,UK - North Shields,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.010,-1.440,Active
-1924,UK - Plymouth,TD UNESCO,1h 26m,,Details, 09 Apr 2018 10:15, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.370,-4.190,Active
+1908,UK - Holyhead2,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,53.31,-4.62,Active
+1909,UK - Ilfracombe,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.21,-4.11,Active
+1910,UK - Immingham,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,53.63,-0.19,Active
+911,UK - King Edward Point ,TD UNESCO,51m,,Details, 09 Apr 2018 10:50, 09 Apr 2018 09:05, 29 Apr 2011 19:10,-54.28,-36.5,Active
+1912,UK - Kinlochbervie,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,58.46,-5.05,Active
+1913,UK - Leith,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.99,-3.18,Active
+1457,UK - Liverpool ,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 29 Apr 2011 19:08,53.45,-3.018,Active
+1915,UK - Llandudno,TD UNESCO,1h 26m,,Details, 09 Apr 2018 10:15, 09 Apr 2018 08:45, 18 Oct 2012 17:30,53.33,-3.83,Active
+1916,UK - Lowestoft,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,52.47,1.75,Active
+1917,UK - Lymington,TD UNESCO,3h 20m,,Details, 09 Apr 2018 08:20, 09 Apr 2018 08:20, 18 Oct 2012 17:12,50.74,-1.507,Active
+1918,UK - Milford Haven,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.71,-5.05,Active
+1919,UK - Millport,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.75,-4.91,Active
+1920,UK - Mumbles,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.57,-3.98,Active
+1921,UK - Newhaven,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.78,0.06,Active
+1922,UK - Newport,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.55,-2.99,Active
+1923,UK - North Shields,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.01,-1.44,Active
+1924,UK - Plymouth,TD UNESCO,1h 26m,,Details, 09 Apr 2018 10:15, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.37,-4.19,Active
 1927,UK - Port Isaac,TD UNESCO,31m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 09:11, 18 Oct 2012 17:13,50.594,-4.834,Active
-1925,UK - Portpatrick,TD UNESCO,1h 26m,,Details, 09 Apr 2018 10:15, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.840,-5.120,Active
-1926,UK - Portrush,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.210,-6.660,Active
-1928,UK - Portsmouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.800,-1.110,Active
-1933,UK - Second Severn Crossing,TD UNESCO,31m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 03:17, 18 Oct 2012 17:13,51.570,-2.700,Active
-1932,UK - Sheerness,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.450,0.740,Active
-1934,UK - St Marys,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.650,-3.570,Active
-1012,UK - Stornoway ,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 29 Apr 2011 19:30,58.200,-6.380,Active
+1925,UK - Portpatrick,TD UNESCO,1h 26m,,Details, 09 Apr 2018 10:15, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.84,-5.12,Active
+1926,UK - Portrush,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,55.21,-6.66,Active
+1928,UK - Portsmouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.8,-1.11,Active
+1933,UK - Second Severn Crossing,TD UNESCO,31m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 03:17, 18 Oct 2012 17:13,51.57,-2.7,Active
+1932,UK - Sheerness,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,51.45,0.74,Active
+1934,UK - St Marys,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.65,-3.57,Active
+1012,UK - Stornoway ,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 29 Apr 2011 19:30,58.2,-6.38,Active
 1935,UK - Swanage Pier,TD UNESCO,31m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 08:58, 18 Oct 2012 17:15,50.609,-1.949,Active
-1938,UK - Tobermory,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,56.620,-6.060,Active
-1939,UK - Ullapool,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,57.900,-5.160,Active
-1940,UK - West Bay Harbour,TD UNESCO,31m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 09:11, 18 Oct 2012 17:10,50.710,-2.764,Active
-1941,UK - Weymouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.610,-2.450,Active
-1942,UK - Whitby,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.490,-0.610,Active
-1943,UK - Wic,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,58.440,-3.090,Active
-1944,UK - Workington,TD UNESCO,2h 56m,,Details, 09 Apr 2018 08:45, 09 Apr 2018 06:45, 18 Oct 2012 17:30,54.650,-3.570,Active
+1938,UK - Tobermory,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,56.62,-6.06,Active
+1939,UK - Ullapool,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,57.9,-5.16,Active
+1940,UK - West Bay Harbour,TD UNESCO,31m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 09:11, 18 Oct 2012 17:10,50.71,-2.764,Active
+1941,UK - Weymouth,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,50.61,-2.45,Active
+1942,UK - Whitby,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,54.49,-0.61,Active
+1943,UK - Wic,TD UNESCO,1h 11m,,Details, 09 Apr 2018 10:30, 09 Apr 2018 08:45, 18 Oct 2012 17:30,58.44,-3.09,Active
+1944,UK - Workington,TD UNESCO,2h 56m,,Details, 09 Apr 2018 08:45, 09 Apr 2018 06:45, 18 Oct 2012 17:30,54.65,-3.57,Active
 1626,USA - Adak_AK,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 02 May 2011 22:15,51.863,-176.632,Active
 1629,USA - Alameda_CA,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 08:59, 02 May 2011 22:15,37.772,-122.298,Active
 1628,USA - Alitak_US,TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 09:03, 02 May 2011 22:15,56.897,-154.248,Active
@@ -919,31 +592,31 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1625,USA - Atlantic_City_NJ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 09:02, 02 May 2011 22:15,39.355,-74.418,Active
 1641,USA - Baltimore_MD,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 02 May 2011 22:15,39.267,-76.578,Active
 818,USA - Bar_Harbor_ME ,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 11:06, 29 Apr 2011 19:12,44.392,-68.205,Active
-1644,USA - Battery_The_NY,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 02 May 2011 22:15,40.700,-74.020,Active
+1644,USA - Battery_The_NY,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 02 May 2011 22:15,40.7,-74.02,Active
 1278,"USA - Bay Waveland Yacht Club, MS",TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 09:04, 29 Apr 2011 19:09,30.326,-89.326,Active
-821,USA - Beaufort_NC ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:12,34.720,-76.670,Active
+821,USA - Beaufort_NC ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:12,34.72,-76.67,Active
 825,USA - Boston_MA ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 29 Apr 2011 19:18,42.355,-71.052,Active
 1642,USA - Bridgeport_CT,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 08:54, 02 May 2011 22:15,41.173,-73.182,Active
 1286,"USA - Calcasieu Pass, LA",TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 09:03, 29 Apr 2011 19:09,29.768,-93.343,Active
 1645,USA - Cambridge_MD,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 02 May 2011 22:15,38.573,-76.068,Active
-842,USA - Cape_May_NJ ,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 11:06, 29 Apr 2011 19:12,38.968,-74.960,Active
+842,USA - Cape_May_NJ ,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 11:06, 29 Apr 2011 19:12,38.968,-74.96,Active
 836,USA - CharlestonOR ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:18,43.345,-124.322,Active
 1646,USA - Cherry_Point_WA,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 09:04, 02 May 2011 22:15,48.863,-122.758,Active
 854,USA - Clearwater_Beach_FL ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:12,27.978,-82.832,Active
 848,USA - Cordova_AK ,TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 11:03, 29 Apr 2011 19:12,60.558,-145.753,Active
-1293,"USA - Corpus Christi, TX",TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:09,27.580,-97.217,Active
+1293,"USA - Corpus Christi, TX",TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:09,27.58,-97.217,Active
 851,USA - Crescent_City_CA ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:12,41.745,-124.183,Active
 852,USA - Culebra_Is_PR ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 29 Apr 2011 19:12,18.301,-65.303,Active
-1715,"USA - Cutler Farris Wharf, ME",TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 19 Sep 2011 11:44,44.657,-67.210,Active
-860,USA - Dauphin_Island_AL ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:12,30.200,-88.100,Active
+1715,"USA - Cutler Farris Wharf, ME",TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 09:00, 19 Sep 2011 11:44,44.657,-67.21,Active
+860,USA - Dauphin_Island_AL ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:12,30.2,-88.1,Active
 862,USA - Duck_Pier_NC ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 11:02, 29 Apr 2011 19:12,36.183,-75.747,Active
 869,USA - East_Port_ME ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:12,44.903,-66.985,Active
 867,USA - Elfin_Cove_AK ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:12,58.193,-136.343,Active
 872,USA - Fernadina_Beach_FL ,TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 11:03, 29 Apr 2011 19:12,30.672,-81.465,Active
-875,USA - Fort_Myers_FL ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 11:02, 29 Apr 2011 19:12,26.650,-81.870,Active
+875,USA - Fort_Myers_FL ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 11:02, 29 Apr 2011 19:12,26.65,-81.87,Active
 878,USA - Fort_Pulaski_GA ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:12,32.033,-80.902,Active
 880,USA - Ft_Point San_Fran,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 11:06, 29 Apr 2011 19:12,37.807,-122.465,Active
-887,USA - Galveston_Pier_TX ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:12,29.310,-94.793,Active
+887,USA - Galveston_Pier_TX ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 11:04, 29 Apr 2011 19:12,29.31,-94.793,Active
 1309,"USA - Grand Isle, LA",TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:01, 29 Apr 2011 19:09,29.263,-89.957,Active
 889,USA - Guam (Apra Harbor) ,TD UNESCO,41m,,Details, 09 Apr 2018 11:00, 09 Apr 2018 11:00, 29 Apr 2011 19:11,13.438,144.652,Active
 893,USA - Hilo Hawaii,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:11,19.733,-155.058,Active
@@ -954,22 +627,22 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1656,"USA - Kodiak Island, AK",TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 09:05, 02 May 2011 22:32,57.732,-152.512,Active
 916,USA - Kwajalein_MH ,TD UNESCO,45m,,Details, 09 Apr 2018 10:56, 09 Apr 2018 10:56, 11 Mar 2011 05:00,8.737,167.738,Active
 920,USA - La_Jolla_CA ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,32.867,-117.258,Active
-922,USA - LameshurBayStJohnVI ,TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:18,18.200,-64.440,Active
-1658,"USA - LAWMA, Amerada Pass, LA",TD UNESCO,33m,,Details, 09 Apr 2018 11:08, 09 Apr 2018 09:08, 02 May 2011 22:15,29.450,-91.338,Active
-928,USA - Limetree_VI ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,17.700,-64.750,Active
+922,USA - LameshurBayStJohnVI ,TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:18,18.2,-64.44,Active
+1658,"USA - LAWMA, Amerada Pass, LA",TD UNESCO,33m,,Details, 09 Apr 2018 11:08, 09 Apr 2018 09:08, 02 May 2011 22:15,29.45,-91.338,Active
+928,USA - Limetree_VI ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,17.7,-64.75,Active
 930,USA - Magueyes_Island_PR ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 09:04, 29 Apr 2011 19:11,17.977,-67.047,Active
 939,USA - Midway ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 09:07, 29 Apr 2011 19:11,28.207,-177.356,Active
-941,USA - Mona_Island_PR ,TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:14,18.090,-67.938,Active
-1344,"USA - Montauk, NY",TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:09,41.048,-71.960,Active
-2453,"USA - Montauk, NY 1",TD UNESCO,32m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 11:09, 17 Jan 2016 16:19,41.048,-71.960,Active
-946,USA - Nawiliwili Kauai,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,21.957,-159.360,Active
-952,USA - Nome_AK ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,64.500,-165.430,Active
+941,USA - Mona_Island_PR ,TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:14,18.09,-67.938,Active
+1344,"USA - Montauk, NY",TD UNESCO,34m,,Details, 09 Apr 2018 11:07, 09 Apr 2018 09:07, 29 Apr 2011 19:09,41.048,-71.96,Active
+2453,"USA - Montauk, NY 1",TD UNESCO,32m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 11:09, 17 Jan 2016 16:19,41.048,-71.96,Active
+946,USA - Nawiliwili Kauai,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,21.957,-159.36,Active
+952,USA - Nome_AK ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:11,64.5,-165.43,Active
 2414,"USA - Oil Platform Harvest, CA",TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 11:06, 17 Jan 2016 16:24,34.467,-120.667,Active
 958,USA - Pago Bay  Guam,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 11 Mar 2011 05:00,13.428,144.797,Active
 959,USA - Pago_Pago_AS ,TD UNESCO,32m,,Details, 09 Apr 2018 11:09, 09 Apr 2018 09:09, 29 Apr 2011 19:11,-14.277,-170.691,Active
 1677,USA - Pensacola_FL,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:04, 02 May 2011 22:24,30.403,-87.212,Active
 1673,"USA - Pilots Station East, SW Pass, LA",TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 02 May 2011 22:15,28.932,-89.407,Active
-1681,USA - Prudhoe_Bay_AK,TD UNESCO,3h 9m,,Details, 09 Apr 2018 08:32, 09 Apr 2018 08:32, 02 May 2011 22:15,70.388,-148.510,Active
+1681,USA - Prudhoe_Bay_AK,TD UNESCO,3h 9m,,Details, 09 Apr 2018 08:32, 09 Apr 2018 08:32, 02 May 2011 22:15,70.388,-148.51,Active
 988,USA - Saipan_US ,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 11 Mar 2011 04:47,15.227,145.742,Active
 992,USA - San_Juan_PR ,TD UNESCO,35m,,Details, 09 Apr 2018 11:06, 09 Apr 2018 09:06, 29 Apr 2011 19:11,18.462,-66.117,Active
 997,USA - Sand_Point_AK ,TD UNESCO,37m,,Details, 09 Apr 2018 11:04, 09 Apr 2018 09:04, 29 Apr 2011 19:10,55.337,-160.502,Active
@@ -979,67 +652,37 @@ ID,Name,Group,Latency,Status,Details,Last Date,Max. Time,Min. Time,lat,lon,statu
 1010,USA - St_Croix_VI ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:10,17.742,-64.692,Active
 881,USA - Tern Fr._Frigate_US,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 11:05, 29 Apr 2011 19:12,23.867,-166.283,Active
 1024,USA - Unalaska ,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:10,53.883,-166.533,Active
-1034,USA - Wake_US ,TD UNESCO,33m,,Details, 09 Apr 2018 11:08, 09 Apr 2018 09:08, 11 Mar 2011 05:00,19.290,166.618,Active
-1430,"USA - Westport,WA",TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:09,46.908,-124.110,Active
+1034,USA - Wake_US ,TD UNESCO,33m,,Details, 09 Apr 2018 11:08, 09 Apr 2018 09:08, 11 Mar 2011 05:00,19.29,166.618,Active
+1430,"USA - Westport,WA",TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:09,46.908,-124.11,Active
 1429,"USA - Woods Hole, MA",TD UNESCO,38m,,Details, 09 Apr 2018 11:03, 09 Apr 2018 09:03, 29 Apr 2011 19:09,41.523,-70.672,Active
 1434,USA - Yakutat,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:05, 29 Apr 2011 19:09,59.548,-139.735,Active
 2439,Vanuatu - Luganville,TD UNESCO,30m,,Details, 09 Apr 2018 12:08, 09 Apr 2018 11:11, 15 Jun 2015 13:36,-15.516,167.189,Active
 1027,Vanuatu - Vanuatu ,TD UNESCO,30m,,Details, 09 Apr 2018 12:08, 09 Apr 2018 09:11, 29 Apr 2011 19:10,-17.755,168.308,Active
-1885,Vernadsky - Faraday,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 09:09, 17 Jul 2012 02:24,-65.250,-64.270,Active
+1885,Vernadsky - Faraday,TD UNESCO,47m,,Details, 09 Apr 2018 10:54, 09 Apr 2018 09:09, 17 Jul 2012 02:24,-65.25,-64.27,Active
 1686,Viet Nam - Qui_Nhon,TD UNESCO,36m,,Details, 09 Apr 2018 11:05, 09 Apr 2018 09:11, 02 May 2011 22:14,13.775,109.254,Active
-1031,Viet Nam - Vung Tau ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 09:08, 11 Mar 2011 05:00,10.340,107.071,Active
+1031,Viet Nam - Vung Tau ,TD UNESCO,39m,,Details, 09 Apr 2018 11:02, 09 Apr 2018 09:08, 11 Mar 2011 05:00,10.34,107.071,Active
 1627,Yemen - Aden,TD UNESCO,1h 3m,,Details, 09 Apr 2018 10:38, 09 Apr 2018 04:42, 02 May 2011 22:15,12.788,44.974,Active
-100007,TAD Large,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 20 Jun 2030 05:01, 02 Jan 2000 00:01,45.810,8.629,Active
-100029,SET-01,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 29 Jun 2015 14:57, 17 Dec 2013 13:31,38.494,-8.931,Active
 100040,ISPRA-03,TADSERVER,1m,,Details, 09 Apr 2018 12:13, 09 Apr 2018 10:15, 18 Mar 2014 15:33,40.677,14.751,Active
 100041,ISPRA-04,TADSERVER,14m,,Details, 09 Apr 2018 11:57, 09 Apr 2018 10:15, 31 Mar 2014 16:25,45.649,13.758,Active
-100050,IPMA-IGCAS,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 06:51, 08 May 2014 11:09,38.693,-9.415,Active
-100052,IPMA-IGLAG,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 22 May 2014 15:26,37.099,-8.667,Active
 100053,IPMA-IHPEN,TADSERVER,2m,,Details, 09 Apr 2018 12:12, 09 Apr 2018 10:13, 02 Jun 2014 09:01,39.951,-8.892,Active
 100054,IPMA-IHLEX,TADSERVER,3m,,Details, 09 Apr 2018 12:12, 09 Apr 2018 10:14, 02 Jun 2014 09:01,41.185,-8.703,Active
 100055,IPMA-IHSMA,TADSERVER,1m,,Details, 09 Apr 2018 12:13, 09 Apr 2018 10:14, 02 Jun 2014 09:01,36.945,-25.148,Active
-100056,IPMA-IHFUL,TADSERVER,2m,,Details, 09 Apr 2018 12:12, 09 Apr 2018 10:14, 01 Jun 2014 14:12,32.640,-16.907,Active
-100064,IDSL-01,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 16 Jan 2015 05:32, 28 Jun 2012 05:36,43.878,8.019,Active
-100068,ISPRA-09,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 28 Nov 2014 20:52,38.122,15.649,Active
+100056,IPMA-IHFUL,TADSERVER,2m,,Details, 09 Apr 2018 12:12, 09 Apr 2018 10:14, 01 Jun 2014 14:12,32.64,-16.907,Active
 100069,ISPRA-10,TADSERVER,1m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 28 Nov 2014 20:52,38.196,15.564,Active
-100071,ISPRA-11,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 09 Dec 2014 08:15,35.500,12.604,Active
-100072,ISPRA-12,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 09 Dec 2014 08:25,37.505,13.076,Active
-100075,NOA-01,TADSERVER,1m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 06 Nov 2011 09:29,36.114,28.070,Active
-100077,IDSL-04,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 22 May 2014 15:26,37.010,-8.928,Active
-100078,IDSL-05,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 08 Oct 2015 17:18,37.083,-8.260,Active
-100079,IDSL-06,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 16 Nov 2015 15:25,36.542,-6.281,Active
-100080,IDSL-07,TADSERVER,0m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:17, 01 Mar 2016 10:09,37.567,-0.979,Active
-100082,IDSL-09,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 19 Nov 2014 04:22,38.928,8.720,Active
-100083,IDSL-10,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 01 Jan 1970 00:01,36.835,11.937,Active
-100084,IDSL-11,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 01 Mar 2016 13:16,36.669,15.123,Active
-100085,IDSL-12,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 28 Nov 2014 20:52,38.908,17.029,Active
-100086,IDSL-13,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 19 Dec 2015 00:00,37.945,22.937,Active
-100088,IDSL-15,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 17 Dec 2015 14:33,36.621,29.092,Active
-100091,IDSL-18,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 09 Nov 2015 11:15,43.801,28.595,Active
-100092,IDSL-19,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 09 Nov 2015 11:20,44.148,28.672,Active
-100093,IDSL-20,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 09 Nov 2015 11:15,45.162,29.727,Active
-100094,IDSL-21,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 23 Jun 2016 07:59,34.258,35.657,Active
+100075,NOA-01,TADSERVER,1m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 06 Nov 2011 09:29,36.114,28.07,Active
 100097,NOA-02,TADSERVER,1m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 10 Nov 2015 19:54,35.927,27.858,Active
 100101,SENTEZ-01,TADSERVER,1m,,Details, 09 Apr 2018 12:09, 09 Apr 2018 10:14, 25 Jan 2016 15:00,36.621,29.092,Active
 100103,MAR-02,TADSERVER,1m,,Details, 09 Apr 2018 12:14, 20 Apr 2016 09:09, 29 Apr 2011 19:11,35.112,-2.293,Active
 100106,NOA-03,TADSERVER,2m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 11 Jun 2016 12:01,35.419,26.922,Active
-100108,IDSL-24,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 19 Dec 2015 00:00,38.360,22.254,Active
 100109,NOA-04,TADSERVER,2m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 07 Dec 2016 16:59,35.004,25.739,Active
-100110,NOA-05,TADSERVER,3m,,Details, 09 Apr 2018 12:13, 09 Apr 2018 10:16, 07 Dec 2016 17:00,38.430,22.423,Active
+100110,NOA-05,TADSERVER,3m,,Details, 09 Apr 2018 12:13, 09 Apr 2018 10:16, 07 Dec 2016 17:00,38.43,22.423,Active
 100111,NOA-06,TADSERVER,3m,,Details, 09 Apr 2018 12:12, 09 Apr 2018 10:15, 13 Dec 2016 16:02,38.257,22.077,Active
 100112,NOA-07,TADSERVER,1m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 13 Dec 2016 16:01,37.781,20.905,Active
-100113,NOA-08,TADSERVER,2m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 13 Dec 2016 16:02,37.260,21.664,Active
+100113,NOA-08,TADSERVER,2m,,Details, 09 Apr 2018 12:14, 09 Apr 2018 10:16, 13 Dec 2016 16:02,37.26,21.664,Active
 100115,NOA-10,TADSERVER,1m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 13 Dec 2016 16:02,35.348,25.153,Active
-100116,IDSL-101,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 22 Feb 2017 17:22,45.579,9.160,Active
-100124,IDSL-29,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 17 Jan 2016 16:12,39.872,4.308,Active
-100126,IDSL-31,TADSERVER,0m,,Details, 09 Apr 2018 12:15, 09 Apr 2018 10:17, 28 Nov 2016 17:14,35.896,-5.312,Active
-100129,IDSL-26,TADSERVER,0m,,Details, 09 Apr 2018 12:16, 09 Apr 2018 10:17, 28 Nov 2016 18:57,32.822,35.007,Active
-100130,IDSL-32,TADSERVER,0m,,Details, 09 Apr 2018 12:16, 09 Apr 2018 10:17, 13 Sep 2017 07:37,34.726,33.340,Active
 100131,IDSL-27,TADSERVER,3h 35m,,Details, 09 Apr 2018 08:05, 09 Apr 2018 08:05, 05 Oct 2017 15:05,32.472,34.883,Active
-100137,IDSL-28,TADSERVER,0m,,Details, 09 Apr 2018 12:16, 09 Apr 2018 10:17, 06 Oct 2017 09:30,31.796,34.626,Active
-100142,TAD-001,TADSERVER,0m,,Details, 09 Apr 2018 12:00, 09 Apr 2018 10:14, 25 Jan 2018 13:47,38.515,-8.909,Active
-100146,MM-52,TADSERVER,4m,,Details, 09 Apr 2018 12:07, 09 Apr 2018 10:07, 23 Feb 2018 23:02,45.579,9.160,Active
+100146,MM-52,TADSERVER,4m,,Details, 09 Apr 2018 12:07, 09 Apr 2018 10:07, 23 Feb 2018 23:02,45.579,9.16,Active
 100151,AIPO-2923,TADSERVER,11m,,Details, 09 Apr 2018 11:50, 09 Apr 2018 10:00, 07 Mar 2018 00:20,45.571,9.131,Active
 100152,AIPO-2917,TADSERVER,11m,,Details, 09 Apr 2018 11:50, 09 Apr 2018 10:00, 07 Mar 2018 00:20,45.644,9.137,Active
 100153,AIPO-2937,TADSERVER,21m,,Details, 09 Apr 2018 11:50, 09 Apr 2018 10:00, 07 Mar 2018 00:20,45.509,9.196,Active
-100154,AIPO-2918,TADSERVER,11m,,Details, 09 Apr 2018 11:50, 09 Apr 2018 10:00, 07 Mar 2018 00:20,45.579,9.160,Active
+100154,AIPO-2918,TADSERVER,11m,,Details, 09 Apr 2018 11:50, 09 Apr 2018 10:00, 07 Mar 2018 00:20,45.579,9.16,Active
