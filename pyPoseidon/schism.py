@@ -238,10 +238,11 @@ class schism():
         path = kwargs.get('rpath','./') 
                 
         [p,u,v] = kwargs.get('vars','[None,None,None]')                
+        lon, lat = kwargs.get('coordvars', ('longitude', 'latitude'))
         
-        ar = ar0.sortby('latitude', ascending=True)
+        ar = ar0.sortby(lat, ascending=True)
             
-        xx, yy = np.meshgrid(ar.longitude.data, ar.latitude.data) 
+        xx, yy = np.meshgrid(ar[lon].data, ar[lat].data) 
         
         zero = np.zeros(ar[p].data.shape)
                        
