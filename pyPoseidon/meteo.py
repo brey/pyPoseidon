@@ -20,7 +20,6 @@ import xarray as xr
 import pandas as pd
 import importlib
 from pyPoseidon.utils.get_value import get_value
-import xesmf as xe
 import logging
 
 logger = logging.getLogger('pyPoseidon')
@@ -158,8 +157,10 @@ class meteo:
         model=importlib.import_module('pyPoseidon.model') #load pyPoseidon model class
             
         s = getattr(model,solver) # get solver class
-            
-        s.to_force(self.Dataset,vars=['msl','u10','v10'], **kwargs)
+        
+
+        var_list = kwargs.pop('vars', ['msl','u10','v10'])
+        s.to_force(self.Dataset,vars=var_list, **kwargs_)
         
 
 def cfgrib(filenames=None, lon_min=None, lon_max=None, lat_min=None, lat_max=None, start_date=None, end_date=None, time_frame=None, irange=[0,-1,1], combine_forecast=False, combine_by='by_coords', **kwargs):
@@ -612,7 +613,7 @@ def from_url(url = None, lon_min=None, lon_max=None, lat_min=None, lat_max=None,
         
 
 
-def netcdf(filename=None, **kwargs):
+def netcdf(filenames=None, **kwargs):
 
         
     #--------------------------------------------------------------------- 

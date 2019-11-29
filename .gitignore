@@ -7,7 +7,7 @@
 # cfgrib idx
 *.idx
 
-# the local test folder 
+# the local test folder
 examples/test
 
 # the local Notebook folder
@@ -33,9 +33,6 @@ Notebooks/*
 
 # zip files
 *.zip
-
-# netcdf files
-*.nc
 
 # Tide files
 *_v1
@@ -73,3 +70,8 @@ __pycache__
 *.egg-info
 github.token
 *.log
+
+# direnv
+.direnv/
+.envrc
+venv/
