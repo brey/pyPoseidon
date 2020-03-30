@@ -160,25 +160,41 @@ class schism():
             logger.info('using default parameter file ...\n')
             #---------------------------------------------------------------------             
             
-            config_file = DATA_PATH + 'param.nml'
+            config_file = DATA_PATH + 'param.in.sample'
         
-        params = f90nml.read(config_file)
+        params = pd.read_csv(config_file,engine='python',comment='!', header=None, sep=r"\s*=", names=['attrs','vals'])
+
+        fix_list = [k for k in params.attrs if '=' in k ]
+
+        for k in fix_list:
+            try:
+                 name, value = params.loc[params.attrs == k,'attrs'].values[0].split('=')
+                 params.loc[params.attrs == k,'attrs'] = name
+                 params.loc[params.attrs == name,'vals'] = value
+            except:
+                     pass
+            
+        params = params.set_index('attrs')
+        params.index = params.index.str.strip()
+        params.vals = params.vals.str.strip()
         
         #update key values
         
-        patch = {'start_year' : self.start_date.year, 'start_month' : self.start_date.month,
-                  'start_day' : self.start_date.day, 'start_hour' : self.start_date.hour}
+        params.loc['start_year'] = self.start_date.year
+        params.loc['start_month'] = self.start_date.month
+        params.loc['start_day'] = self.start_date.day
+        params.loc['start_hour'] = self.start_date.hour
         
-        params = unml(params, patch)        
         #update 
         if dic :
-            params = unml(params, dic)
+            for key,val in dic.items():
+                params.loc[key] = val
         
         #test rnday
-        if np.float(params['CORE']['rnday']) * 24 * 3600 > (self.end_date - self.start_date).total_seconds():
+        if np.float(params.loc['rnday'].values[0]) * 24 * 3600 > (self.end_date - self.start_date).total_seconds():
             #--------------------------------------------------------------------- 
             logger.warning('rnday larger than simulation range\n')
-            logger.warning('rnday={} while simulation time is {}\n'.format(params['core']['rnday'],(self.end_date - self.start_date).total_seconds()/(3600*24.)))
+            logger.warning('rnday={} while simulation time is {}\n'.format(params.loc['rnday'].values[0],(self.end_date - self.start_date).total_seconds()/(3600*24.)))
             #---------------------------------------------------------------------             
             
         
@@ -188,11 +204,11 @@ class schism():
         if output: 
             #save params 
             #--------------------------------------------------------------------- 
-            logger.info('output param.nml file ...\n')
+            logger.info('output param.in file ...\n')
             #---------------------------------------------------------------------             
             
-            path = get_value(self,kwargs,'rpath','./')
-            self.params.write(path + 'param.nml',force=True)
+            path = get_value(self,kwargs,'rpath','./') 
+            self.params.to_csv(path + 'param.in', header=None, sep='=')  #save to file
 
 #============================================================================================        
 # METEO
@@ -219,7 +235,7 @@ class schism():
         if hasattr(self, 'meteo'):
             # add 1 hour for Schism issue with end time   
             ap = self.meteo.Dataset.isel(time = -1)
-            ap['time'] = ap.time.values + pd.to_timedelta('1H')
+            ap['time'] = ap.time.values + pd.to_timedelta('2H')
         
             self.meteo.Dataset = xr.concat([self.meteo.Dataset,ap],dim='time')
         
@@ -299,7 +315,7 @@ class schism():
         if not os.path.exists(path+'sflux'):
             os.makedirs(path+'sflux')
         
-        filename = kwargs.get('filename','sflux/sflux_air_1.0001.nc') 
+        filename = kwargs.get('filename','sflux/sflux_air_1.001.nc') 
                
         sout.to_netcdf(path+filename)
                 
@@ -408,7 +424,7 @@ class schism():
 
        # save params.in
         
-        self.params.write(path + 'param.nml',force=True)            
+        self.params.to_csv(path + 'param.in', header=None, sep='=')  #save to file
                          
         
         #save hgrid.gr3
@@ -495,7 +511,7 @@ class schism():
            try:               
               if split_by :
                   times, datasets = zip(*self.meteo.Dataset.groupby('time.{}'.format(split_by)))
-                  mpaths = ['sflux/sflux_air_1.{:04d}.nc'.format(t + 1) for t in np.arange(len(times))]
+                  mpaths = ['sflux/sflux_air_1.{:03d}.nc'.format(t + 1) for t in np.arange(len(times))]
                   for das,mpath in list(zip(datasets,mpaths)):
                       self.to_force(das,vars=['msl','u10','v10'],rpath=path, filename=mpath, **kwargs)
               else:  
@@ -621,21 +637,32 @@ class schism():
     def read_folder(self, rfolder,**kwargs):
         
         self.rpath = rfolder
-        s = glob.glob(rfolder + '/param.nml')
+        s = glob.glob(rfolder + '/param.in')
         mfiles = glob.glob(rfolder + '/sflux/*.nc')
         
         hfile = rfolder + '/hgrid.gr3' # Grid
-        self.params = f90nml.read(s[0])
+        params = pd.read_csv(s[0],engine='python',comment='!', header=None, sep=r"\s*=", names=['attrs','vals'])
+        fix_list = [k for k in params.attrs if '=' in k ]
+
+        for k in fix_list:
+            try:
+                name, value = params.loc[params.attrs == k,'attrs'].values[0].split('=')
+                params.loc[params.attrs == k,'attrs'] = name
+                params.loc[params.attrs == name,'vals'] = value
+            except:
+                pass
+            
+        self.params = params.set_index('attrs')
         
         mykeys = ['start_year','start_month','start_day']
-        sdate = [self.params['opt'][x] for x in mykeys] # extract date info from param.nml
+        sdate = [self.params.loc[x].values[0] for x in mykeys] # extract date info from param.in
         sd = '-'.join(str(item) for item in sdate) # join in str
         sd = pd.to_datetime(sd) # convert to datestamp
          
-        sh = [self.params['opt'][x] for x in ['start_hour','utc_start']] # get time attrs
+        sh = [self.params.loc[x].values[0] for x in ['start_hour','utc_start']] # get time attrs
         sd = sd + pd.to_timedelta('{}H'.format(sh[0] + sh[1])) # complete start_date
         
-        ed = sd + pd.to_timedelta('{}D'.format(self.params['core']['rnday'])) # compute end date based on rnday
+        ed = sd + pd.to_timedelta('{}D'.format(self.params.loc['rnday'].values[0])) # compute end date based on rnday
         
         self.start_date = sd #set attrs
         self.end_date = ed
@@ -1340,10 +1367,10 @@ class schism():
         stations['gindex'] = stations['gindex'].astype(int)
         
         #modify config paramater
-        self.params['SCHOUT']['iout_sta'] = 1
-        self.params['SCHOUT']['nspool_sta'] = nspool_sta
-        self.params.write(path + 'param.nml',force=True)
-        
+        self.params.loc['iout_sta'] = 1
+        self.params.loc['nspool_sta'] = nspool_sta
+        self.params.to_csv(path + 'param.in', header=None, sep='=') 
+
                 
         self.stations = stations
         
@@ -1383,8 +1410,9 @@ class schism():
             df.columns.name = vals.loc[idx,'variable']
             df.index = pd.to_datetime(dstamp) + pd.to_timedelta(df.index,unit='S')
             pindex = pd.MultiIndex.from_product([df.T.columns,df.T.index])
+            pindex.names=['time','point']
 
-            dfs.append(pd.DataFrame(df.values.flatten(),index = pindex, columns=[vals.loc[idx,'variable']]).to_xarray().rename({'level_0':'time','level_1':'point'}))        
+            dfs.append(pd.DataFrame(df.values.flatten(),index = pindex, columns=[vals.loc[idx,'variable']]).to_xarray())        
         
         
         self.time_series = xr.combine_by_coords(dfs)
