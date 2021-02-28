@@ -29,8 +29,7 @@ import logging
 logger = logging.getLogger('pyPoseidon')
 
 
-DATA_PATH = os.path.dirname(pyPoseidon.__file__)+'/misc/'    
-TEST_DATA_PATH = os.path.dirname(pyPoseidon.__file__)+'/tests/data/'
+DATA_PATH = os.path.dirname(pyPoseidon.__file__)+'/misc/'
 
 
 def geo(df, path='.', tag='jigsaw'):
@@ -140,9 +139,9 @@ def jigsaw(**kwargs):
         
             if hfun == 'auto':
         
-                dem = pdem.dem(**geometry, dem_source = TEST_DATA_PATH + 'dem.nc')
                 
                 res_min = kwargs.get('resolution_min',.01) 
+                dem = pdem.dem(**geometry, dem_source = DATA_PATH + 'dem.nc')
                 res_max = kwargs.get('resolution_max',.5)
                 dhdx = kwargs.get('dhdx',.15)
         
