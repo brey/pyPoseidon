@@ -182,7 +182,7 @@ pycparser = "*"
 
 [[package]]
 name = "cfgrib"
-version = "0.9.8.5"
+version = "0.9.9.0"
 description = "Python interface to map GRIB files to the NetCDF Common Data Model following the CF Convention using ecCodes."
 category = "main"
 optional = false
@@ -190,11 +190,12 @@ python-versions = ">=3.5"
 
 [package.dependencies]
 attrs = ">=19.2"
-cffi = "*"
 click = "*"
+eccodes = "*"
 numpy = "*"
 
 [package.extras]
+tests = ["dask", "flake8", "pytest", "pytest-cov", "scipy", "xarray (>=0.12.0)"]
 xarray = ["xarray (>=0.12.0)"]
 
 [[package]]
@@ -1757,8 +1758,8 @@ testing = ["pytest (>=4.6)", "pytest-checkdocs (>=1.2.3)", "pytest-flake8", "pyt
 
 [metadata]
 lock-version = "1.1"
-python-versions = ">=3.7, <3.9"
-content-hash = "f7bcbd958c396007d92084348cf97b89ce588a01846941349bbb50ea131af9f9"
+python-versions = ">=3.7, <3.10"
+content-hash = "4819e8549d65e2ebc4e5ffb7fc0e6f812a7a73de95382f213afc8ffeeca33c48"
 
 [metadata.files]
 affine = [
@@ -1858,8 +1859,8 @@ cffi = [
     {file = "cffi-1.14.5.tar.gz", hash = "sha256:fd78e5fee591709f32ef6edb9a015b4aa1a5022598e36227500c8f4e02328d9c"},
 ]
 cfgrib = [
-    {file = "cfgrib-0.9.8.5-py2.py3-none-any.whl", hash = "sha256:600686f95c09e2da80e516e42dbdf3e57e56864a760f4ff3db71174e41d98bd1"},
-    {file = "cfgrib-0.9.8.5.tar.gz", hash = "sha256:07c224d7ac823a1df5738b96b9d3621515538f51f67e55044f9cc8ec1668e1bd"},
+    {file = "cfgrib-0.9.9.0-py3-none-any.whl", hash = "sha256:c3bd9f042f9910a5f5d786be556736c08403571e9859e1a87f8a87509b09247e"},
+    {file = "cfgrib-0.9.9.0.tar.gz", hash = "sha256:6ff0227df9c5ee34aa7d6ab1f7af3fbe6838523a8a9891c74040b419b03ad289"},
 ]
 cftime = [
     {file = "cftime-1.4.1-cp36-cp36m-macosx_10_9_x86_64.whl", hash = "sha256:0bb59517610c385d4b0d3b40bb8d988c10e6c2ce086cb741d13d699b61ca1f13"},
